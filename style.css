@@ -8,6 +8,14 @@ body {
   line-height: 1.6;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  font-size: 0.9em;
+  gap: 20px;
+}
+
 h1, h2 {
   text-align: center;
   color: #222;
