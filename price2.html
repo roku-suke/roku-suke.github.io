@@ -8,42 +8,26 @@
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
       font-family: sans-serif;
     }
-    body {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-    header {
+    header, footer {
       background: #f8f8f8;
       padding: 20px;
       text-align: center;
-      z-index: 1;
     }
     .adsbygoogle {
-      position: absolute;
-      top: 100px; /* ヘッダーの下に配置（調整可） */
-      left: 0;
+      display: block;
       width: 100%;
-      height: 100px; /* 広告の高さを固定 */
-      z-index: 10;
+      height: 100px;
+      margin: 0 auto;
     }
     main {
-      margin-top: 200px; /* ヘッダー＋広告の高さ分だけ下げる */
-      height: calc(100vh - 260px); /* ヘッダー＋広告＋フッターの高さを引く */
-      overflow: hidden;
+      padding: 0;
     }
     iframe {
       width: 100%;
-      height: 100%;
+      min-height: 800px; /* 必要に応じて調整。スクロール可能にする */
       border: none;
-    }
-    footer {
-      background: #f8f8f8;
-      text-align: center;
-      padding: 20px;
     }
     a {
       font-size: 1.1em;
@@ -60,7 +44,6 @@
     <p>主要な買取店舗の価格を一覧で比較できます。表は定期的に更新され、最新情報を反映しています。</p>
   </header>
 
-  <!-- 広告（absoluteで浮かせる） -->
   <ins class="adsbygoogle"
        data-ad-client="ca-pub-9014722014583256"
        data-ad-slot="1160901054"
