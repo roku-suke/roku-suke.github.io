@@ -56,11 +56,6 @@
       text-align: center;
       margin-bottom: 10px;
     }
-    @media screen and (max-width: 767px) {
-      #scroll-ad {
-        display: none !important;
-      }
-    }
   </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
 </head>
@@ -110,33 +105,6 @@
   <footer>
     <a href="index.html">🏠 ホームに戻る</a>
   </footer>
-
-  <!-- price_scroll_ad -->
-  <div id="scroll-ad" style="
-    position:fixed;
-    right:0;
-    bottom:100px;
-    width:160px;
-    height:600px;
-    z-index:9999;
-    display:none;">
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:160px;height:600px"
-         data-ad-client="ca-pub-9014722014583256"
-         data-ad-slot="60032441784"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <script>
-    window.addEventListener('scroll', function() {
-      const ad = document.getElementById('scroll-ad');
-      if (window.scrollY > 500 && window.innerWidth >= 768) {
-        ad.style.display = 'block';
-      } else {
-        ad.style.display = 'none';
-      }
-    });
-  </script>
 
 </body>
 </html>
