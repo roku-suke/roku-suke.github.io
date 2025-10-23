@@ -8,31 +8,58 @@
     html, body {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
+      font-family: 'Roboto', 'Open Sans', 'Helvetica', sans-serif;
+      background: #fff;
     }
     header, footer {
       background: #f8f8f8;
       padding: 20px;
       text-align: center;
     }
-    .adsbygoogle {
-      display: block;
-      width: 100%;
-      height: 100px;
-      margin: 0 auto;
-    }
     main {
       padding: 0;
     }
     iframe {
       width: 100%;
-      min-height: 800px; /* 必要に応じて調整。スクロール可能にする */
+      min-height: 800px;
       border: none;
     }
     a {
       font-size: 1.1em;
       color: #0077cc;
       text-decoration: none;
+    }
+    .adsbygoogle {
+      display: block;
+      margin: 40px auto;
+    }
+    .price-table-ad {
+      font-size: 1em;
+      line-height: 1.6;
+      border: 1px solid #DDD;
+      border-radius: 6px;
+      padding: 16px 20px;
+      background-color: #FFFFFF;
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    .price-table-ad h2 {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin: 0 0 8px;
+    }
+    .price-table-ad .description {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 767px) {
+      #scroll-ad {
+        display: none !important;
+      }
     }
   </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
@@ -44,20 +71,72 @@
     <p>主要な買取店舗の価格を一覧で比較できます。表は定期的に更新され、最新情報を反映しています。</p>
   </header>
 
+  <!-- price_top_ad -->
   <ins class="adsbygoogle"
+       style="display:block"
        data-ad-client="ca-pub-9014722014583256"
-       data-ad-slot="1160901054"
-       data-ad-format="auto"
+       data-ad-slot="7138671333"
+       data-ad-format="horizontal"
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <main>
     <iframe src="https://docs.google.com/spreadsheets/d/1Pb1PrAFQrqw5B6L2x_66eich6vFQ3XrGYYiXZzAyUts/"></iframe>
+
+    <!-- price_table_ad -->
+    <div class="price-table-ad">
+      <h2>最新の買取価格をチェック</h2>
+      <p class="description">買取価格は日々変動します。今すぐ最新情報を確認しましょう。</p>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-9014722014583256"
+           data-ad-slot="3420525870"
+           data-ad-format="fluid"
+           data-ad-layout="in-article"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
   </main>
+
+  <!-- price_footer_ad -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-9014722014583256"
+       data-ad-slot="8481267950"
+       data-ad-format="multiplex"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <footer>
     <a href="index.html">🏠 ホームに戻る</a>
   </footer>
+
+  <!-- price_scroll_ad -->
+  <div id="scroll-ad" style="
+    position:fixed;
+    right:0;
+    bottom:100px;
+    width:160px;
+    height:600px;
+    z-index:9999;
+    display:none;">
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:160px;height:600px"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="60032441784"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const ad = document.getElementById('scroll-ad');
+      if (window.scrollY > 500 && window.innerWidth >= 768) {
+        ad.style.display = 'block';
+      } else {
+        ad.style.display = 'none';
+      }
+    });
+  </script>
 
 </body>
 </html>
