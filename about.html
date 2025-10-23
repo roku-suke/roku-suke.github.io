@@ -5,23 +5,65 @@
   <title>運営者情報</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: sans-serif; padding: 40px; background: #f9f9f9; line-height: 1.6; }
-    h1 { text-align: center; }
-    a { color: #0077cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { text-align: center; margin-top: 40px; }
+    body {
+      font-family: 'Roboto', 'Open Sans', 'Helvetica', sans-serif;
+      padding: 40px;
+      background: #f9f9f9;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    .adsbygoogle {
+      display: block;
+      margin: 40px auto;
+    }
+    @media screen and (max-width: 767px) {
+      #scroll-ad {
+        display: none !important;
+      }
+    }
   </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <h1>運営者情報</h1>
 
+  <!-- about_top_ad -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-9014722014583256"
+       data-ad-slot="3078063457"
+       data-ad-format="horizontal"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
   <p>このサイト「iPhone買取価格比較」は、気になった買取価格をざっくり比較できるように作ったものです。</p>
 
   <p>運営者：ろくすけ<br>
-    所在地：埼玉県を中心に放浪中<br>
-    職業：ギターを背負って酒場を渡り歩く自由人</p>
+     所在地：埼玉県を中心に放浪中<br>
+     職業：ギターを背負って酒場を渡り歩く自由人</p>
 
   <p>iPhoneの買取価格を店舗ごとに並べたり、過去の価格推移をグラフにしたり、ご意見を集めたりしています。</p>
 
@@ -29,9 +71,45 @@
 
   <p>ご意見・ご要望は <a href="feedback.html">こちらのページ</a> からお寄せください。</p>
 
+  <!-- about_footer_ad -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-9014722014583256"
+       data-ad-slot="8089141499"
+       data-ad-format="multiplex"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
   <footer>
-    <a href="index.html">🏠 ホームに戻る</a>
+    <p><a href="index.html">🏠 ホームに戻る</a></p>
   </footer>
+
+  <!-- about_scroll_ad -->
+  <div id="scroll-ad" style="
+    position:fixed;
+    right:0;
+    bottom:100px;
+    width:160px;
+    height:600px;
+    z-index:9999;
+    display:none;">
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:160px;height:600px"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="5860644559"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const ad = document.getElementById('scroll-ad');
+      if (window.scrollY > 500 && window.innerWidth >= 768) {
+        ad.style.display = 'block';
+      } else {
+        ad.style.display = 'none';
+      }
+    });
+  </script>
 
 </body>
 </html>
