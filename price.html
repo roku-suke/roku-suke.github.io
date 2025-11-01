@@ -4,6 +4,38 @@
   <meta charset="UTF-8">
   <title>iPhone買取価格一覧表</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="iPhoneの買取価格を主要店舗ごとに一覧で比較。最新情報を定期更新。">
+  <meta name="keywords" content="iPhone買取, iPhone価格比較, スマホ買取, 買取相場">
+
+  <!-- 構造化データ：WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "iPhone買取価格一覧表",
+    "description": "主要な買取店舗のiPhone価格を一覧で比較。最新相場を定期更新。最新iPhoneまで掲載。",
+    "url": "https://value.hi-rokusuke.net/price.html"
+  }
+  </script>
+
+  <!-- 構造化データ：Product（追加） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "iPhone買取価格一覧表",
+    "description": "主要な買取店舗のiPhone価格を比較した一覧表。",
+    "brand": "iPhone",
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "1000",
+      "highPrice": "150000",
+      "priceCurrency": "JPY"
+    }
+  }
+  </script>
+
+ 
   <style>
     html, body {
       margin: 0;
@@ -63,7 +95,8 @@
 
   <header>
     <h1>iPhone買取価格一覧表</h1>
-    <p>主要な買取店舗の価格を一覧で比較できます。表は定期的に更新され、最新情報を反映しています。</p>
+    <h2>主要店舗の比較と最新相場</h2>
+    <p>このページでは、iPhoneの買取価格を店舗ごとに一覧で比較できます。価格表は定期的に更新され、最新情報を反映しています。</p>
   </header>
 
   <!-- price_top_ad -->
@@ -76,7 +109,18 @@
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
   <main>
-    <iframe src="https://docs.google.com/spreadsheets/d/1Pb1PrAFQrqw5B6L2x_66eich6vFQ3XrGYYiXZzAyUts/"></iframe>
+
+    <!-- 補足説明セクション：iframeの前に入れる -->
+    <section class="price-table-ad">
+      <h2>掲載店舗と対応機種</h2>
+      <div class="description">
+        買取一丁目・モバイル一番・買取楽園・買取ルデヤ・mobilemixなど、主要な買取店の価格を掲載。最新iPhoneまで幅広く対応しています。
+      </div>
+    </section>
+
+   
+    <!-- Googleスプレッドシートの価格表 -->
+    <iframe src="https://docs.google.com/spreadsheets/d/1Pb1PrAFQrqw5B6L2x_66eich6vFQ3XrGYYiXZzAyUts/" loading="lazy"></iframe>
 
   <!-- price_footer_ad2 -->
   <ins class="adsbygoogle"
