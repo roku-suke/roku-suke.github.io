@@ -2,11 +2,10 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>iPhone買取価格比較</title>
+  <title>iPhone買取価格比較・リアルタイム相場ダッシュボード</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="iPhoneの買取価格を店舗別に比較できる情報サイト。価格推移やグラフも掲載。ご意見も受付中。">
-  <meta name="keywords" content="iPhone買取, iPhone価格比較, スマホ買取, 買取相場, iPhone価格推移">
-
+  <meta name="description" content="iPhone 18 Pro Max、18 Pro、iPhone Duoの主要店舗買取価格を一覧で比較。1時間ごとに自動更新。">
+  <meta name="keywords" content="iPhone買取, iPhone価格比較, スマホ買取, 買取相場, iPhone18, iPhone Duo">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
@@ -14,11 +13,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-9X38Q03YBN');
   </script>
 
-  
   <!-- 構造化データ -->
   <script type="application/ld+json">
   {
@@ -26,42 +23,86 @@
     "@type": "WebSite",
     "name": "iPhone買取価格比較",
     "url": "https://value.hi-rokusuke.net/",
-    "description": "iPhoneの買取価格を店舗別に比較できる情報サイト。価格推移やグラフも掲載。ご意見も受付中。",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://value.hi-rokusuke.net/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "description": "主要買取店舗のiPhone最新相場を自動集計・比較。"
   }
   </script>
 
-  
   <style>
-    body { font-family: sans-serif; padding: 40px; background: #f9f9f9; }
-    h1 { text-align: center; }
-    ul { list-style: none; padding: 0; max-width: 600px; margin: 0 auto; }
-    li { margin: 20px 0; }
-    a { font-size: 1.2em; color: #0077cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .adsbygoogle { display: block; margin: 40px auto; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 40px 16px;
+      background: #f8fafc;
+      color: #1e293b;
+      margin: 0;
+    }
+    .wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      color: #0f172a;
+    }
+    .lead-text {
+      font-size: 0.92rem;
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .main-btn {
+      display: block;
+      background: #2563eb;
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 16px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+      transition: all 0.2s ease;
+      margin: 0 auto 12px;
+    }
+    .main-btn:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+    }
+    .sub-note {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+    .adsbygoogle { display: block; margin: 24px auto; }
+    footer {
+      margin-top: 32px;
+      font-size: 0.85rem;
+      color: #64748b;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 16px;
+    }
+    footer a { color: #64748b; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
 
-    /* スマホでスクロール広告を非表示 */
     @media screen and (max-width: 767px) {
-      #scroll-ad {
-        display: none !important;
-      }
+      #scroll-ad { display: none !important; }
     }
   </style>
+
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="wrapper">
   <h1>iPhone買取価格比較</h1>
-  <p style="text-align:center;">
-    このサイトでは、主要な買取店舗の価格を比較し、<br>
-    過去の価格推移やグラフも確認できます。<br>
-    ご意見・ご要望も受け付けており、内容は改善に活かしています。
+  <p class="lead-text">
+    買取一丁目・モバイル一番・買取楽園・MobileMixなど<br>
+    主要買取店舗の相場・損益指標を1時間ごとに自動更新。
   </p>
 
   <!-- index_top_ad -->
@@ -73,13 +114,11 @@
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-  <!-- リンク一覧 -->
-  <ul>
-    <li><a href="price.html">📱 iPhone等の買取価格一覧</a><br><small>現在の買取価格を店舗別に比較できます</small></li>
-    <li><a href="history17.html">📈 iPhone17価格推移・グラフ</a><br><small>iPhone17の価格変動をグラフで確認できます</small></li>
-    <li><a href="history16.html">📈 iPhone16価格推移・グラフ</a><br><small>iPhone16の価格変動をグラフで確認できます</small></li>
-    <li><a href="feedback.html">💬 ご意見・ご要望</a><br><small>サイトや価格表に関するご意見をお寄せください</small></li>
-  </ul>
+  <!-- メインダッシュボードへの直接ボタン -->
+  <a href="price.html" class="main-btn">
+    📱 iPhone 18 / Duo 買取価格ダッシュボードを見る
+  </a>
+  <div class="sub-note">※ 毎時0分自動更新 / USD/JPY為替リアルタイム取得</div>
 
   <!-- index_footer_ad2 -->
   <ins class="adsbygoogle"
@@ -88,41 +127,39 @@
        data-ad-slot="2067856210"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-  <!-- フッターリンク -->
   <footer>
     <p><a href="about.html">運営者情報</a> ｜ <a href="privacy.html">プライバシーポリシー</a></p>
   </footer>
+</div>
 
-  <!-- index_scroll_ad -->
-  <div id="scroll-ad" style="
-    position:fixed;
-    right:0;
-    bottom:100px;
-    width:160px;
-    height:600px;
-    z-index:9999;
-    display:none;">
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:160px;height:600px"
-         data-ad-client="ca-pub-9014722014583256"
-         data-ad-slot="6003244134"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
+<!-- サイド追従広告（PCのみ） -->
+<div id="scroll-ad" style="
+  position:fixed;
+  right:0;
+  bottom:100px;
+  width:160px;
+  height:600px;
+  z-index:9999;
+  display:none;">
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:160px;height:600px"
+       data-ad-client="ca-pub-9014722014583256"
+       data-ad-slot="6003244134"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
-  <script>
-    window.addEventListener('scroll', function() {
-      const ad = document.getElementById('scroll-ad');
-      if (window.scrollY > 500 && window.innerWidth >= 768) {
-        ad.style.display = 'block';
-      } else {
-        ad.style.display = 'none';
-      }
-    });
-  </script>
+<script>
+  window.addEventListener('scroll', function() {
+    const ad = document.getElementById('scroll-ad');
+    if (window.scrollY > 300 && window.innerWidth >= 900) {
+      ad.style.display = 'block';
+    } else {
+      ad.style.display = 'none';
+    }
+  });
+</script>
 
 </body>
 </html>
