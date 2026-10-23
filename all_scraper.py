@@ -87,7 +87,7 @@ def parse_color_diff_and_availability(color_name, remarks_text):
 
     # 「他色買取不可」判定
     if "他色買取不可" in rem:
-        if color_name == "バーガンディ":
+        if color_name in ["バーガンディ", "スターホワイト"]:
             return True, 0
         else:
             return False, 0
@@ -199,7 +199,7 @@ def fetch_1chome():
     return results
 
 
-# 2. モバイル一番 (Duoの判明したSIDを完全指定)
+# 2. モバイル一番
 def fetch_mobile_ichiban():
     print("[2/6] モバイル一番 取得中...")
     pages = [
@@ -259,6 +259,77 @@ def fetch_mobile_ichiban():
     return results, remarks_log
 
 
+# 3. 買取楽園 カラー価格解析補助
+def parse_rakuen_color_prices(base_price, desc_raw, colors):
+    if base_price is None:
+        return {c: None for c in colors}
+
+    desc = re.sub(r'<[^>]+>', ' ', desc_raw)
+    desc = desc.replace('\n', ' ').replace('\r', ' ').replace(' ', ' ')
+
+    prices = {c: base_price for c in colors}
+
+    # 「他色買取不可」判定
+    if "他色買取不可" in desc or "他色不可" in desc:
+        for c in colors:
+            if c not in ["バーガンディ", "スターホワイト"]:
+                prices[c] = None
+
+    if "ナイトスカイ" in colors:
+        alias_to_color = {
+            "スターホワイト": "スターホワイト", "ホワイト": "スターホワイト", "白": "スターホワイト",
+            "ナイトスカイ": "ナイトスカイ", "スカイ": "ナイトスカイ", "ブラック": "ナイトスカイ", "黒": "ナイトスカイ",
+        }
+    else:
+        alias_to_color = {
+            "バーガンディ": "バーガンディ", "紫": "バーガンディ",
+            "ブラック": "ブラック", "黒": "ブラック",
+            "シルバー": "シルバー", "銀": "シルバー",
+            "グレイシャー": "グレイシャー", "グレーシャー": "グレイシャー", "グレイシャ-": "グレイシャー", "青": "グレイシャー",
+        }
+
+    token_pat = r'(?:バーガンディ|グレイシャー|グレーシャー|グレイシャ-|スターホワイト|ナイトスカイ|ホワイト|ブラック|シルバー|スカイ|[黒青銀白紫])'
+    color_group_pat = rf'(?:{token_pat}(?:[ /、]{token_pat})*)'
+
+    # 直接価格指定 ("青 266,000" / "黒/青 330,500" / "黒/青/銀 375,000")
+    for m in re.finditer(rf'({color_group_pat})\s*[:：]?\s*[¥￥]?\s*([\d,]{{5,}})\s*円?', desc):
+        raw_colors = m.group(1)
+        raw_val = re.sub(r'[^\d]', '', m.group(2))
+        if raw_val:
+            val = int(raw_val)
+            for tok in re.split(r'[ /、]+', raw_colors):
+                target_c = alias_to_color.get(tok)
+                if target_c and target_c in prices:
+                    prices[target_c] = val
+
+    # 差額指定 ("黒/青 -2000" / "他色 -3000")
+    for m in re.finditer(rf'({color_group_pat}|他色)\s*[:：]?\s*([▲△▼+-]\s*[\d,]+)', desc):
+        raw_colors = m.group(1)
+        raw_diff = m.group(2).replace('▲', '-').replace('▼', '-').replace('△', '+')
+        raw_num = re.sub(r'[^\d-]', '', raw_diff)
+        if raw_num:
+            diff = int(raw_num)
+            if raw_colors == "他色":
+                for c in colors:
+                    if c not in ["バーガンディ", "スターホワイト"]:
+                        prices[c] = base_price + diff
+            else:
+                for tok in re.split(r'[ /、]+', raw_colors):
+                    target_c = alias_to_color.get(tok)
+                    if target_c and target_c in prices:
+                        prices[target_c] = base_price + diff
+
+    # 特定色「買取不可」 ("銀 買取不可")
+    for m in re.finditer(rf'({color_group_pat})\s*[:：]?\s*買取不可', desc):
+        raw_colors = m.group(1)
+        for tok in re.split(r'[ /、]+', raw_colors):
+            target_c = alias_to_color.get(tok)
+            if target_c and target_c in prices:
+                prices[target_c] = None
+
+    return prices
+
+
 # 3. 買取楽園
 def fetch_kaitorirakuen():
     print("[3/6] 買取楽園 取得中...")
@@ -268,35 +339,33 @@ def fetch_kaitorirakuen():
         "https://www.keitairakuen.com/product-category/keitai/iphone/iphone18-%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba/iphone-duo/",
     ]
     pattern = re.compile(
-        r'<p class="name product-title[^>]*>(.*?)</p>[\s\S]*?<div class="woocommerce-loop-description">[\s\S]*?(未開封|開封済み)[\s\S]*?<p class="global-attribute-price">新品:.*?&yen;</span>([\d,]+)</bdi>'
+        r'<p class="name product-title[^>]*>(.*?)</p>[\s\S]*?<div class="woocommerce-loop-description">([\s\S]*?)</div>[\s\S]*?<p class="global-attribute-price">新品:.*?&yen;</span>([\d,]+)</bdi>'
     )
-    base_dict = {}
+    results = {}
 
     for url in urls:
         for attempt in range(3):
             try:
                 res = requests.get(url, headers=HEADERS, timeout=20)
                 if res.status_code == 200:
-                    for m_name, cond, price in pattern.findall(res.text):
-                        if "未開封" in cond:
+                    for m_name, desc_text, price in pattern.findall(res.text):
+                        if "未開封" in desc_text:
                             for target in ALL_MODELS:
-                                clean_t = (
-                                    target.replace(" Pro Max ", " Promax ")
-                                    .replace(" ", "")
-                                    .lower()
-                                )
+                                clean_t = target.replace(" Pro Max ", " Promax ").replace(" ", "").lower()
                                 if clean_t in m_name.replace(" ", "").lower():
-                                    base_dict[target] = int(price.replace(",", ""))
+                                    base_p = int(price.replace(",", ""))
+                                    m_colors = get_series_colors(target)
+                                    results[target] = parse_rakuen_color_prices(base_p, desc_text, m_colors)
                     break
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"買取楽園 一時エラー ({url}): {e}")
             time.sleep(0.5)
 
-    results = {}
     for name in ALL_MODELS:
-        bp = base_dict.get(name)
-        m_colors = get_series_colors(name)
-        results[name] = {c: bp for c in m_colors}
+        if name not in results:
+            m_colors = get_series_colors(name)
+            results[name] = {c: None for c in m_colors}
+
     return results
 
 
@@ -310,14 +379,13 @@ def fetch_rudeya():
     return results
 
 
-# 5. MobileMix (Duo診断機能付き)
+# 5. MobileMix
 def fetch_mobilemix():
     print("[5/6] MobileMix 取得中...")
     results = {}
     remarks_log = {}
     diag_mix = []
 
-    # Pro系
     pro_url = "https://mobile-mix.jp/?category=7"
     pro_map = [
         ("18 Pro Max 256GB", "613"), ("18 Pro Max 512GB", "614"),
@@ -360,7 +428,6 @@ def fetch_mobilemix():
     except Exception as e:
         print(f"MobileMix Pro系エラー: {e}")
 
-    # Duo系 (category=3 および category=7 を探索)
     duo_urls = [
         "https://mobile-mix.jp/?category=3",
         "https://mobile-mix.jp/?category=7"
@@ -387,7 +454,6 @@ def fetch_mobilemix():
                 for idx, r in enumerate(rows):
                     txt = r.get_text().replace(" ", "").replace(" ", "")
                     if "Duo" in txt and (cap in txt or cap_short in txt):
-                        # 金額パターンの抽出
                         nums = re.findall(r"[\d,]{6,}", txt)
                         for n in nums:
                             val = int(n.replace(",", ""))
@@ -574,8 +640,7 @@ def process_history(current_data, now_dt):
 
 
 def main():
-    jst = datetime.timezone(datetime.timedelta(hours=9))
-    now_dt = datetime.datetime.now(jst).replace(tzinfo=None)
+    now_dt = datetime.datetime.now()
     print("=== 全6店舗・3シリーズ価格データ取得および厳密分析開始 ===")
 
     usd_jpy = fetch_usd_jpy()
@@ -683,7 +748,10 @@ def main():
 
     print(f"データ生成完了！ '{CHECK_LOG_FILE}' に全機種の詳細サマリーを保存しました。")
     print("\n------------------------------------------------------------")
-    # input("確認が完了したら、Enterキーを押してウィンドウを閉じてください...")
+
+    # GitHub Actions上の自動実行時はそのまま終了し、PCローカル実行時のみEnter待ちにする
+    if not os.environ.get("GITHUB_ACTIONS"):
+        input("確認が完了したら、Enterキーを押してウィンドウを閉じてください...")
 
 
 if __name__ == "__main__":
