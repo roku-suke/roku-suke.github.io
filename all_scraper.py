@@ -371,12 +371,72 @@ def fetch_kaitorirakuen():
 
 # 4. 買取ルデヤ
 def fetch_rudeya():
-    print("[4/6] 買取ルデヤ 取得中 (待機)...")
-    results = {}
-    for name in ALL_MODELS:
-        m_colors = get_series_colors(name)
-        results[name] = {c: None for c in m_colors}
-    return results
+  print("[4/6] 買取ルデヤ 取得中...")
+  search_keywords = ["iPhone 18 Pro Max", "iPhone 18 Pro", "iPhone Duo"]
+  results = {}
+
+  alias_to_color = {
+      "バーガンディ": "バーガンディ",
+      "紫": "バーガンディ",
+      "ブラック": "ブラック",
+      "黒": "ブラック",
+      "シルバー": "シルバー",
+      "銀": "シルバー",
+      "グレイシャー": "グレイシャー",
+      "スターホワイト": "スターホワイト",
+      "ホワイト": "スターホワイト",
+      "白": "スターホワイト",
+      "ナイトスカイ": "ナイトスカイ",
+      "スカイ": "ナイトスカイ",
+  }
+
+  for kw in search_keywords:
+    url = f"https://kaitori-rudeya.com/search/index/{requests.utils.quote(kw)}"
+    try:
+      res = requests.get(url, headers=HEADERS, timeout=15, verify=False)
+      soup = BeautifulSoup(res.text, "html.parser")
+      items = soup.find_all(
+          ["div", "li", "tr"],
+          class_=re.compile(r"item|product|search-result|search_list"),
+      )
+      if not items:
+        items = soup.find_all("div", class_="box")
+
+      for it in items:
+        text = it.get_text()
+        if "未開封" not in text and "新品" not in text:
+          continue
+
+        for target in ALL_MODELS:
+          clean_t = target.replace(" ", "").lower()
+          clean_txt = text.replace(" ", "").lower()
+          if clean_t in clean_txt:
+            if target not in results:
+              m_colors = get_series_colors(target)
+              results[target] = {c: None for c in m_colors}
+
+            m_colors = get_series_colors(target)
+            matched_color = None
+            for alias, c_name in alias_to_color.items():
+              if c_name in m_colors and alias in text:
+                matched_color = c_name
+                break
+
+            p_match = re.search(r"(\d{1,3}(?:,\d{3})+)\s*円", text)
+            if p_match and matched_color:
+              price = int(p_match.group(1).replace(",", ""))
+              if price > 50000:
+                results[target][matched_color] = price
+    except Exception as e:
+      print(f"買取ルデヤ エラー ({kw}): {e}")
+    time.sleep(0.5)
+
+  for name in ALL_MODELS:
+    if name not in results:
+      m_colors = get_series_colors(name)
+      results[name] = {c: None for c in m_colors}
+
+  return results
 
 
 # 5. MobileMix
