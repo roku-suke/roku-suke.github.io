@@ -574,7 +574,8 @@ def process_history(current_data, now_dt):
 
 
 def main():
-    now_dt = datetime.datetime.now()
+    jst = datetime.timezone(datetime.timedelta(hours=9))
+    now_dt = datetime.datetime.now(jst)
     print("=== 全6店舗・3シリーズ価格データ取得および厳密分析開始 ===")
 
     usd_jpy = fetch_usd_jpy()
