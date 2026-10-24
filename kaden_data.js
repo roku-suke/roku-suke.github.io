@@ -1,0 +1,1 @@
+window.KADEN_DATA = [];
