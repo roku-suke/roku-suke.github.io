@@ -256,7 +256,7 @@
     footer { text-align: center; margin-top: 24px; padding: 20px; font-size: 0.9rem; }
     footer a { color: #0077cc; text-decoration: none; font-weight: bold; }
 
-    /* 店舗リンクのスタイル */
+    /* 店舗リンクのスタイル（青文字・下線消去） */
     th a {
       color: inherit !important;
       text-decoration: none !important;
@@ -363,37 +363,38 @@
   // 1. Firebase 閲覧中ユーザー監視設定
   // ==========================================
   const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://YOUR_DATABASE_NAME.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyDouxwWQCgn-4Sq6wA503XzbPh3FG_MrOo",
+    authDomain: "iphone-tracker-2db9e.firebaseapp.com",
+    databaseURL: "https://iphone-tracker-2db9e-default-rtdb.firebaseio.com",
+    projectId: "iphone-tracker-2db9e",
+    storageBucket: "iphone-tracker-2db9e.firebasestorage.app",
+    messagingSenderId: "138170739435",
+    appId: "1:138170739435:web:d08a229acf17b129452cae"
   };
 
   try {
-    if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
-      firebase.initializeApp(firebaseConfig);
-      const db = firebase.database();
-      const presenceRef = db.ref("online_users");
-      const userRef = presenceRef.push();
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    const presenceRef = db.ref("online_users");
+    const userRef = presenceRef.push();
 
-      db.ref(".info/connected").on("value", (snap) => {
-        if (snap.val() === true) {
-          userRef.onDisconnect().remove();
-          userRef.set(true);
-        }
-      });
+    // 接続・切断の自動監視
+    db.ref(".info/connected").on("value", (snap) => {
+      if (snap.val() === true) {
+        // タブを閉じたり離脱した時に自動でデータベースから削除
+        userRef.onDisconnect().remove();
+        userRef.set(true);
+      }
+    });
 
-      presenceRef.on("value", (snap) => {
-        const count = snap.numChildren();
-        const el = document.getElementById("online-count");
-        if (el) el.textContent = count > 0 ? count : 1;
-      });
-    }
+    // リアルタイム人数カウントの反映
+    presenceRef.on("value", (snap) => {
+      const count = snap.numChildren();
+      const el = document.getElementById("online-count");
+      if (el) el.textContent = count > 0 ? count : 1;
+    });
   } catch (err) {
-    console.log("Firebase not configured yet:", err);
+    console.log("Firebase error:", err);
   }
 
   // ==========================================
