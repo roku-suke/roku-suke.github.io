@@ -104,7 +104,7 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       background: #eff6ff;
       border: 1px solid #bfdbfe;
       padding: 8px 16px;
@@ -113,6 +113,29 @@
       color: #1e40af;
       font-weight: 500;
     }
+
+    /* 閲覧中ユーザー数バッジ */
+    .online-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      padding: 3px 9px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .online-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #10b981;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+    }
+
     .refresh-btn {
       background: #ffffff;
       border: 1px solid #93c5fd;
@@ -229,17 +252,18 @@
     .m-shop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-size: 0.78rem; }
     .m-shop-box { background: #ffffff; padding: 5px 6px; border-radius: 4px; border: 1px solid #edf2f7; }
     .m-shop-name { font-size: 0.7rem; color: var(--text-sub); display: block; }
-    
+
     footer { text-align: center; margin-top: 24px; padding: 20px; font-size: 0.9rem; }
     footer a { color: #0077cc; text-decoration: none; font-weight: bold; }
 
+    /* 店舗リンクのスタイル */
     th a {
       color: inherit !important;
       text-decoration: none !important;
     }
     th a:hover {
       text-decoration: underline !important;
-    }    
+    }
   </style>
 
   <script id="scraped-data-script" src="./all_prices.js"></script>
@@ -253,6 +277,11 @@
       <p style="margin: 4px 0 0 14px; font-size: 0.85rem; color: #64748b;">主要店舗の比較と最新相場ダッシュボード</p>
     </div>
     <div class="info-bar">
+      <!-- 閲覧中バッジ -->
+      <span class="online-badge">
+        <span class="online-dot"></span>
+        <span>閲覧中: <strong id="online-count">1</strong>人</span>
+      </span>
       <span><strong>＜参考値＞</strong></span>
       <span id="usd-jpy">USD/JPY: 取得中...</span>
       <span id="updated-at">取得中...</span>
@@ -325,7 +354,51 @@
   <a href="index.html">🏠 ホームに戻る</a>
 </footer>
 
+<!-- Firebase SDK（リアルタイム閲覧者数集計） -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
 <script>
+  // ==========================================
+  // 1. Firebase 閲覧中ユーザー監視設定
+  // ==========================================
+  const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+    databaseURL: "https://YOUR_DATABASE_NAME.firebaseio.com",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_PROJECT_ID.appspot.com",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID"
+  };
+
+  try {
+    if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.database();
+      const presenceRef = db.ref("online_users");
+      const userRef = presenceRef.push();
+
+      db.ref(".info/connected").on("value", (snap) => {
+        if (snap.val() === true) {
+          userRef.onDisconnect().remove();
+          userRef.set(true);
+        }
+      });
+
+      presenceRef.on("value", (snap) => {
+        const count = snap.numChildren();
+        const el = document.getElementById("online-count");
+        if (el) el.textContent = count > 0 ? count : 1;
+      });
+    }
+  } catch (err) {
+    console.log("Firebase not configured yet:", err);
+  }
+
+  // ==========================================
+  // 2. 価格表データ描画ロジック
+  // ==========================================
   let currentSeries = '18promax';
   let cachedData = null;
 
