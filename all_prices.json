@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/24 10:00:00",
+  "updated_at": "2026/10/24 11:00:00",
   "usd_jpy": 156.84,
   "series": {
     "18promax": [
@@ -13,8 +13,8 @@
             "cShift": "",
             "ichiban": 236000,
             "iShift": "",
-            "rakuen": 235000,
-            "rShift": "",
+            "rakuen": 236000,
+            "rShift": "up",
             "rudeya": 236000,
             "mobilemix": 236000,
             "mShift": "",
@@ -28,13 +28,13 @@
             "cShift": "",
             "ichiban": 224000,
             "iShift": "",
-            "rakuen": 222000,
-            "rShift": "",
+            "rakuen": 224000,
+            "rShift": "up",
             "rudeya": 224000,
             "mobilemix": 224000,
             "mShift": "",
-            "mobaste": 221000,
-            "sShift": 221000,
+            "mobaste": 222000,
+            "sShift": 222000,
             "trend": "-"
           },
           {
@@ -43,13 +43,13 @@
             "cShift": "",
             "ichiban": 221000,
             "iShift": "",
-            "rakuen": 220000,
-            "rShift": "",
+            "rakuen": 221000,
+            "rShift": "up",
             "rudeya": 222000,
             "mobilemix": 221000,
             "mShift": "",
-            "mobaste": 218000,
-            "sShift": 218000,
+            "mobaste": 219000,
+            "sShift": 219000,
             "trend": "-"
           },
           {
@@ -58,8 +58,8 @@
             "cShift": "",
             "ichiban": 226000,
             "iShift": "",
-            "rakuen": 224000,
-            "rShift": "",
+            "rakuen": 226000,
+            "rShift": "up",
             "rudeya": 226000,
             "mobilemix": 226000,
             "mShift": "",
@@ -99,8 +99,8 @@
             "rudeya": 265000,
             "mobilemix": 265000,
             "mShift": "",
-            "mobaste": 256000,
-            "sShift": 256000,
+            "mobaste": 263000,
+            "sShift": 263000,
             "trend": "-"
           },
           {
@@ -114,8 +114,8 @@
             "rudeya": 262000,
             "mobilemix": 262000,
             "mShift": "",
-            "mobaste": 254000,
-            "sShift": 254000,
+            "mobaste": 260000,
+            "sShift": 260000,
             "trend": "-"
           },
           {
@@ -129,8 +129,8 @@
             "rudeya": 266000,
             "mobilemix": 266000,
             "mShift": "",
-            "mobaste": 257000,
-            "sShift": 257000,
+            "mobaste": 264000,
+            "sShift": 264000,
             "trend": "-"
           }
         ]
@@ -150,8 +150,8 @@
             "rudeya": 345000,
             "mobilemix": 345000,
             "mShift": "",
-            "mobaste": 345000,
-            "sShift": 345000,
+            "mobaste": 343000,
+            "sShift": 343000,
             "trend": "-"
           },
           {
@@ -160,13 +160,13 @@
             "cShift": "",
             "ichiban": 334000,
             "iShift": "",
-            "rakuen": 330500,
-            "rShift": "",
+            "rakuen": 334000,
+            "rShift": "up",
             "rudeya": 334000,
             "mobilemix": 334000,
             "mShift": "",
-            "mobaste": 326000,
-            "sShift": 326000,
+            "mobaste": 332000,
+            "sShift": 332000,
             "trend": "-"
           },
           {
@@ -175,13 +175,13 @@
             "cShift": "",
             "ichiban": 330000,
             "iShift": "",
-            "rakuen": 326500,
-            "rShift": "",
+            "rakuen": 330000,
+            "rShift": "up",
             "rudeya": 330000,
             "mobilemix": 330000,
             "mShift": "",
-            "mobaste": 322000,
-            "sShift": 322000,
+            "mobaste": 328000,
+            "sShift": 328000,
             "trend": "-"
           },
           {
@@ -190,13 +190,13 @@
             "cShift": "",
             "ichiban": 334000,
             "iShift": "",
-            "rakuen": 330500,
-            "rShift": "",
+            "rakuen": 334000,
+            "rShift": "up",
             "rudeya": 334000,
             "mobilemix": 334000,
             "mShift": "",
-            "mobaste": 326000,
-            "sShift": 326000,
+            "mobaste": 332000,
+            "sShift": 332000,
             "trend": "-"
           }
         ]
@@ -279,8 +279,8 @@
             "cShift": "",
             "ichiban": 206000,
             "iShift": "",
-            "rakuen": 204000,
-            "rShift": "",
+            "rakuen": 206000,
+            "rShift": "up",
             "rudeya": 206000,
             "mobilemix": 206000,
             "mShift": "",
@@ -294,13 +294,13 @@
             "cShift": "",
             "ichiban": 196000,
             "iShift": "",
-            "rakuen": 192000,
-            "rShift": "",
+            "rakuen": 196000,
+            "rShift": "up",
             "rudeya": 196000,
-            "mobilemix": 191000,
-            "mShift": "",
-            "mobaste": 191000,
-            "sShift": 191000,
+            "mobilemix": 193000,
+            "mShift": "up",
+            "mobaste": 194000,
+            "sShift": 194000,
             "trend": "-"
           },
           {
@@ -309,13 +309,13 @@
             "cShift": "",
             "ichiban": 194000,
             "iShift": "",
-            "rakuen": 190000,
-            "rShift": "",
+            "rakuen": 194000,
+            "rShift": "up",
             "rudeya": 194000,
             "mobilemix": null,
             "mShift": "",
-            "mobaste": 188000,
-            "sShift": 188000,
+            "mobaste": 192000,
+            "sShift": 192000,
             "trend": "-"
           },
           {
@@ -324,13 +324,13 @@
             "cShift": "",
             "ichiban": 196000,
             "iShift": "",
-            "rakuen": 192000,
-            "rShift": "",
+            "rakuen": 196000,
+            "rShift": "up",
             "rudeya": 196000,
             "mobilemix": 196000,
             "mShift": "",
-            "mobaste": 191000,
-            "sShift": 191000,
+            "mobaste": 194000,
+            "sShift": 194000,
             "trend": "-"
           }
         ]
@@ -380,8 +380,8 @@
             "rudeya": 229000,
             "mobilemix": null,
             "mShift": "",
-            "mobaste": 224000,
-            "sShift": 224000,
+            "mobaste": 226000,
+            "sShift": 226000,
             "trend": "-"
           },
           {
@@ -395,8 +395,8 @@
             "rudeya": 233000,
             "mobilemix": 231000,
             "mShift": "",
-            "mobaste": 229000,
-            "sShift": 229000,
+            "mobaste": 231000,
+            "sShift": 231000,
             "trend": "-"
           }
         ]
@@ -547,11 +547,11 @@
             "iShift": "up",
             "rakuen": 387000,
             "rShift": "down",
-            "rudeya": 403500,
-            "mobilemix": 407000,
-            "mShift": "",
-            "mobaste": 390000,
-            "sShift": 390000,
+            "rudeya": 387000,
+            "mobilemix": 388000,
+            "mShift": "down",
+            "mobaste": 387000,
+            "sShift": 387000,
             "trend": "-"
           },
           {
@@ -562,11 +562,11 @@
             "iShift": "up",
             "rakuen": 387000,
             "rShift": "down",
-            "rudeya": 403500,
-            "mobilemix": 407000,
-            "mShift": "",
-            "mobaste": 390000,
-            "sShift": 390000,
+            "rudeya": 387000,
+            "mobilemix": 388000,
+            "mShift": "down",
+            "mobaste": 387000,
+            "sShift": 387000,
             "trend": "-"
           }
         ]
@@ -583,11 +583,11 @@
             "iShift": "",
             "rakuen": 425000,
             "rShift": "down",
-            "rudeya": 434000,
-            "mobilemix": 442000,
-            "mShift": "",
-            "mobaste": 423000,
-            "sShift": 423000,
+            "rudeya": 425000,
+            "mobilemix": 425000,
+            "mShift": "down",
+            "mobaste": 425000,
+            "sShift": 425000,
             "trend": "-"
           },
           {
@@ -598,11 +598,11 @@
             "iShift": "",
             "rakuen": 425000,
             "rShift": "down",
-            "rudeya": 434000,
-            "mobilemix": 442000,
-            "mShift": "",
-            "mobaste": 423000,
-            "sShift": 423000,
+            "rudeya": 425000,
+            "mobilemix": 425000,
+            "mShift": "down",
+            "mobaste": 425000,
+            "sShift": 425000,
             "trend": "-"
           }
         ]
@@ -619,11 +619,11 @@
             "iShift": "",
             "rakuen": 490000,
             "rShift": "down",
-            "rudeya": 493000,
-            "mobilemix": 497000,
-            "mShift": "",
-            "mobaste": 480000,
-            "sShift": 480000,
+            "rudeya": 490000,
+            "mobilemix": 490000,
+            "mShift": "down",
+            "mobaste": 490000,
+            "sShift": 490000,
             "trend": "-"
           },
           {
@@ -634,11 +634,11 @@
             "iShift": "",
             "rakuen": 490000,
             "rShift": "down",
-            "rudeya": 493000,
-            "mobilemix": 497000,
-            "mShift": "",
-            "mobaste": 480000,
-            "sShift": 480000,
+            "rudeya": 490000,
+            "mobilemix": 490000,
+            "mShift": "down",
+            "mobaste": 490000,
+            "sShift": 490000,
             "trend": "-"
           }
         ]
@@ -649,32 +649,32 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 570000,
-            "cShift": "down",
-            "ichiban": 570000,
+            "chome": 577000,
+            "cShift": "up",
+            "ichiban": 575000,
             "iShift": "up",
             "rakuen": 570000,
             "rShift": "down",
-            "rudeya": 580000,
-            "mobilemix": 580000,
-            "mShift": "",
-            "mobaste": 560000,
-            "sShift": 560000,
+            "rudeya": 577000,
+            "mobilemix": 577000,
+            "mShift": "down",
+            "mobaste": 575000,
+            "sShift": 575000,
             "trend": "-"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 570000,
-            "cShift": "down",
-            "ichiban": 570000,
+            "chome": 577000,
+            "cShift": "up",
+            "ichiban": 575000,
             "iShift": "up",
             "rakuen": 570000,
             "rShift": "down",
-            "rudeya": 580000,
-            "mobilemix": 580000,
-            "mShift": "",
-            "mobaste": 560000,
-            "sShift": 560000,
+            "rudeya": 577000,
+            "mobilemix": 577000,
+            "mShift": "down",
+            "mobaste": 575000,
+            "sShift": 575000,
             "trend": "-"
           }
         ]
