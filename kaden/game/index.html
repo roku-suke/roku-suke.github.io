@@ -341,7 +341,7 @@
     
     // 1. JSON ファイルを直接 fetch
     try {
-      const res = await fetch('./kaden_data.json?t=' + Date.now());
+      const res = await fetch('./data.json?t=' + Date.now());
       if (res.ok) {
         data = await res.json();
       }
