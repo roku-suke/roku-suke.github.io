@@ -111,7 +111,6 @@
     }
     @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
-    /* 操作バー */
     .controls-bar {
       max-width: 1280px;
       margin: 0 auto;
@@ -166,7 +165,7 @@
       overflow: hidden;
     }
 
-    /* テーブルヘッダー（PC用） */
+    /* PCテーブル表示 */
     .table-header {
       display: grid;
       grid-template-columns: 2.2fr 1fr 3.5fr;
@@ -300,7 +299,7 @@
       white-space: nowrap;
     }
 
-    /* スマホ表示（768px以下でカード形式に自動切り替え） */
+    /* スマホカード表示（768px以下） */
     @media (max-width: 768px) {
       .table-header { display: none; }
       .product-list {
@@ -365,7 +364,7 @@
     </div>
   </div>
 
-  <!-- 条件フィルター（操作バー） -->
+  <!-- 操作バー（銘柄選択は削除） -->
   <div class="controls-bar">
     <input type="text" id="searchInput" class="search-input" placeholder="銘柄・仕様・JAN・ショップ名で絞り込み...">
     
@@ -375,24 +374,15 @@
       <option value="rakuten_diff_desc">楽天 利益額が大きい順</option>
     </select>
 
-    <!-- 表示数切替 -->
     <div class="filter-item-group">
       <span style="font-weight:700; color:var(--text-sub);">表示数:</span>
       <label><input type="radio" name="displayCount" value="1"> 1位のみ</label>
       <label><input type="radio" name="displayCount" value="3" checked> TOP3</label>
     </div>
 
-    <!-- 正規店のみ / 在庫ありのみ -->
     <div class="filter-item-group">
       <label><input type="checkbox" id="officialOnlyCheck"> 各社公式・正規店のみ</label>
       <label><input type="checkbox" id="inStockOnlyCheck"> 在庫ありのみ</label>
-    </div>
-
-    <!-- 銘柄カテゴリ絞り込み -->
-    <div class="filter-item-group">
-      <label><input type="checkbox" class="cat-check" value="IQOS"> iQOS</label>
-      <label><input type="checkbox" class="cat-check" value="glo"> glo</label>
-      <label><input type="checkbox" class="cat-check" value="Ploom"> Ploom</label>
     </div>
   </div>
 </header>
@@ -479,19 +469,12 @@
     render();
   }
 
-  function getSelectedCategories() {
-    const checked = Array.from(document.querySelectorAll(".cat-check:checked")).map(cb => cb.value.toLowerCase());
-    return checked;
-  }
-
   function filterAndSortData() {
     const query = document.getElementById("searchInput").value.toLowerCase().trim();
     const sortVal = document.getElementById("sortSelect").value;
     const isOfficialOnly = document.getElementById("officialOnlyCheck").checked;
     const isInStockOnly = document.getElementById("inStockOnlyCheck").checked;
-    const selectedCats = getSelectedCategories();
 
-    // ヘッダータイトルの連動切り替え
     const headerTitle = document.getElementById("rakutenHeaderTitle");
     if (headerTitle) {
       headerTitle.textContent = isOfficialOnly 
@@ -500,23 +483,12 @@
     }
 
     let filtered = rawData.filter(item => {
-      // 銘柄チェック（未選択時は全表示、選択時は該当する銘柄のみ）
-      if (selectedCats.length > 0) {
-        const itemMemo = (item.memo || "").toLowerCase();
-        const itemName = (item.name || "").toLowerCase();
-        const hitCat = selectedCats.some(cat => itemMemo.includes(cat) || itemName.includes(cat));
-        if (!hitCat) return false;
-      }
-
-      // 対象の楽天リスト（正規店のみONならofficial_top3、OFFならall_top3）
       const targetTop = isOfficialOnly ? (item.official_top3 || []) : (item.all_top3 || []);
 
-      // 在庫ありのみチェック
       if (isInStockOnly && targetTop.length === 0) {
         return false;
       }
 
-      // 検索ワード
       if (query) {
         const hit = (item.name && item.name.toLowerCase().includes(query)) ||
                     (item.jan && item.jan.includes(query)) ||
@@ -585,16 +557,14 @@
           const isProfit = r.profit >= 0;
           const label = isProfit ? "見込利益:" : "損失:";
           const diffText = isProfit ? `+¥${r.profit.toLocaleString()}` : `-¥${Math.abs(r.profit).toLocaleString()}`;
-          const rateText = isProfit ? `+${r.profit_rate}%` : `${r.profit_rate}%`;
+          const rateText = isProfit ? `+${r.profit_rate}\%` : `${r.profit_rate}%`;
           const valColor = isProfit ? "color:var(--green);" : "color:var(--red);";
 
           return `
             <div class="rakuten-item">
               <div class="rakuten-shop-box">
-                <span style="font-weight:700;">${medal}</span>
-                ${shopTypeBadge}
-                <span title="${r.shop}">${r.shop}</span>
-                ${r.postage_flag === 1 ? '<span class="badge-postage">無料</span>' : ''}
+                <span style="font-weight:700;">${medal}</span>${shopTypeBadge}
+                <span title="${r.shop}">${r.shop}</span>${r.postage_flag === 1 ? '<span class="badge-postage">無料</span>' : ''}
               </div>
               <div class="rakuten-right">
                 <span class="rakuten-price">仕入: ¥${r.price.toLocaleString()}</span>
@@ -611,7 +581,10 @@
         rakutenHtml = `<div style="font-size:0.8rem; color:var(--text-sub); padding: 8px 12px;">${msg}</div>`;
       }
 
-      const directUrl = item.chome_url || "#";
+      // 取得された正規のwineDetail URLへ遷移（未取得時も自ページの/#にはしない安全弁）
+      const directUrl = (item.chome_url && item.chome_url !== '#' && !item.chome_url.endsWith('/#'))
+        ? item.chome_url
+        : `https://www.1-chome.com/electricAppliance?category=10801204`;
 
       html += `
         <div class="product-row">
@@ -645,10 +618,6 @@
 
   document.querySelectorAll("input[name='displayCount']").forEach(radio => {
     radio.addEventListener("change", render);
-  });
-
-  document.querySelectorAll(".cat-check").forEach(cb => {
-    cb.addEventListener("change", render);
   });
 
   loadData();
