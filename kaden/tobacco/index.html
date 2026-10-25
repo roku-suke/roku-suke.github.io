@@ -2,10 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>電子タバコ 安値TOP3 比較ダッシュボード</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Apple製品 買取価格・相場比較</title>
+  <meta name="description" content="iPad・AirPods・Apple Watchなどの買取一丁目価格、Apple公式定価・楽天市場との損益率・差額をリアルタイム比較。">
 
-  <!-- Google tag (gtag.js) アクセス解析 -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,291 +15,384 @@
     gtag('config', 'G-9X38Q03YBN');
   </script>
 
-  <!-- Google AdSense 共通スクリプト -->
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
+
+  <!-- Firebase (閲覧人数リアルタイム表示) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
 
   <style>
     :root {
-      --bg: #f4f6f9;
+      --bg: #f8fafc;
       --card-bg: #ffffff;
-      --text-main: #1f2937;
-      --text-sub: #6b7280;
-      --border: #e5e7eb;
-      --accent: #2563eb;
-      --profit-plus: #15803d;
-      --profit-plus-bg: #dcfce7;
-      --profit-minus: #b91c1c;
-      --profit-minus-bg: #fee2e2;
+      --text-main: #0f172a;
+      --text-sub: #64748b;
+      --border: #e2e8f0;
+      --blue: #1d68ff;
+      --green: #10b981;
+      --red: #ef4444;
+      --rakuten-bg: #fffdf5;
+      --rakuten-border: #fef08a;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text-main);
-      padding: 0 16px 24px 16px;
-      line-height: 1.5;
-    }
-    .container { max-width: 1400px; margin: 0 auto; }
-
-    /* 固定ヘッダーコンテナ */
-    .sticky-header-container {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      padding-top: 16px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding-bottom: 40px;
     }
 
     header {
-      margin-bottom: 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: var(--card-bg);
-      padding: 10px 16px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    .header-left { display: flex; align-items: center; gap: 14px; }
-    .btn-home {
-      background: #fff;
-      border: 1px solid var(--border);
-      color: var(--text-sub);
-      text-decoration: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      transition: all 0.2s;
-      white-space: nowrap;
+    .header-top {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-back {
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      padding: 6px 12px;
+      background: #f1f5f9;
+      color: var(--text-main);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
     }
-    .btn-home:hover { background: #f3f4f6; color: var(--text-main); }
-    h1 { font-size: 1.25rem; font-weight: 700; color: #111827; }
-    
-    .header-right { display: flex; align-items: center; gap: 12px; }
-    
-    .live-users-badge {
-      display: inline-flex;
+    .page-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      display: flex;
       align-items: center;
       gap: 6px;
-      background: #ecfdf5;
-      border: 1px solid #a7f3d0;
-      color: #065f46;
-      padding: 3px 10px;
-      border-radius: 20px;
-      font-size: 0.78rem;
-      font-weight: 700;
     }
-    .live-pulse {
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.78rem;
+    }
+    .badge-live {
+      background: #ecfdf5;
+      color: #059669;
+      border: 1px solid #a7f3d0;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .live-dot {
       width: 7px;
       height: 7px;
-      background-color: #10b981;
+      background: #10b981;
       border-radius: 50%;
-      animation: pulse-green 2s infinite;
+      display: inline-block;
+      animation: pulse 1.8s infinite;
     }
-    @keyframes pulse-green {
-      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-      70% { transform: scale(1); box-shadow: 0 0 0 5px rgba(16, 185, 129, 0); }
-      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-    }
-    .live-users-badge b { color: #047857; font-variant-numeric: tabular-nums; }
-    .meta-info { font-size: 0.8rem; color: var(--text-sub); }
+    @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
-    /* 操作バー */
-    .controls {
+    .controls-bar {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 8px 16px 12px 16px;
       display: flex;
-      gap: 12px;
-      background: var(--card-bg);
-      padding: 10px 14px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
       flex-wrap: wrap;
+      gap: 10px;
       align-items: center;
+      border-top: 1px solid #f1f5f9;
     }
-    .search-box { flex: 1; min-width: 200px; }
-    .sort-box { width: 260px; }
-    input[type="text"], select { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
-    .filter-options { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-    .filter-options label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #374151; }
-    .filter-options .mode-toggle { background: #eff6ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe; color: #1d4ed8; }
-    .view-count-toggle { display: flex; align-items: center; gap: 8px; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
+    .search-input {
+      flex: 1 1 200px;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.88rem;
+    }
+    .select-control {
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.85rem;
+      background: #fff;
+    }
+    .filter-group {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .btn-tab {
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-sub);
+    }
+    .btn-tab.active {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+    }
 
-    /* 広告枠 */
+    .container {
+      max-width: 1280px;
+      margin: 12px auto;
+      padding: 0 12px;
+    }
     .ad-banner {
-      margin: 14px auto;
+      margin: 12px auto;
       text-align: center;
       max-width: 100%;
       overflow: hidden;
     }
 
-    /* インフィード広告行 */
-    .infeed-row td {
-      background-color: #f8fafc;
-      padding: 18px 16px;
-      text-align: center;
-      border-top: 1px dashed var(--border);
-      border-bottom: 1px dashed var(--border);
+    /* ========================================================
+       PC表示（テーブル・一覧レイアウト）
+       ======================================================== */
+    .table-header {
+      display: grid;
+      grid-template-columns: 2fr 1.3fr 3.5fr;
+      padding: 10px 16px;
+      background: #f1f5f9;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-sub);
+      border-radius: 8px 8px 0 0;
+      border: 1px solid var(--border);
+      border-bottom: none;
     }
-    .infeed-label {
-      font-size: 0.72rem;
-      color: #94a3b8;
-      letter-spacing: 0.05em;
-      margin-bottom: 6px;
-      display: block;
-    }
-    .infeed-box {
-      max-width: 800px;
-      margin: 0 auto;
-      min-height: 90px;
-    }
-    .infeed-row:hover td { background-color: #f8fafc; }
-    
-    .table-wrapper { background: var(--card-bg); border-radius: 8px; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid var(--border); }
-    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
-    th { background: #f9fafb; padding: 12px 16px; font-weight: 600; color: #4b5563; border-bottom: 1px solid var(--border); }
-    td { padding: 16px; border-bottom: 1px solid var(--border); vertical-align: middle; }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #f9fafb; }
-    
-    .item-col { min-width: 280px; max-width: 340px; word-break: keep-all; overflow-wrap: break-word; }
-    .item-name { font-weight: 600; color: #111827; line-height: 1.4; margin-bottom: 4px; font-size: 0.95rem; text-decoration: none; display: inline-block; }
-    .item-name:hover { color: var(--accent); text-decoration: underline; }
-    .chome-link-icon { font-size: 0.75rem; color: #9ca3af; margin-left: 4px; text-decoration: none; }
-    .memo-tag { display: inline-block; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 2px 7px; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
-    .jan { font-size: 0.75rem; color: var(--text-sub); display: block; margin-top: 4px; font-family: monospace; }
-    
-    .price-col { min-width: 120px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
-    .buy-price { color: #111827; font-size: 1.15rem; }
-    
-    .top3-col { min-width: 680px; }
-    .rank-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border-radius: 6px; margin-bottom: 6px; border: 1px solid transparent; }
-    .rank-row:last-child { margin-bottom: 0; }
-    .rank-row.rank-1 { background-color: #fefce8; border-color: #fef08a; }
-    .rank-row.rank-2 { background-color: #f3f4f6; border-color: #e5e7eb; }
-    .rank-row.rank-3 { background-color: #fff7ed; border-color: #ffedd5; }
-    
-    .rank-left { display: flex; align-items: center; gap: 8px; min-width: 210px; }
-    .rank-badge { font-size: 1.1rem; min-width: 24px; text-align: center; }
-    .shop-type-badge { font-size: 0.65rem; font-weight: 700; padding: 1px 4px; border-radius: 3px; }
-    .type-official { background: #dbeafe; color: #1e40af; }
-    .type-general { background: #f3f4f6; color: #4b5563; }
-    
-    .shop-name { font-weight: 600; font-size: 0.9rem; color: #374151; }
-    .postage-badge { font-size: 0.7rem; font-weight: 700; margin-left: 4px; padding: 2px 6px; border-radius: 3px; }
-    .postage-free { background: #dcfce7; color: #166534; }
-    .postage-paid { background: #fee2e2; color: #991b1b; }
-    
-    .rank-center { font-size: 0.95rem; font-variant-numeric: tabular-nums; font-weight: 600; min-width: 140px; }
-    .price-label { font-size: 0.75rem; color: var(--text-sub); margin-right: 4px; }
-    .price-val { font-size: 1.05rem; color: #111827; }
-    
-    .rank-right { min-width: 170px; text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
-    .profit-line { font-weight: 700; font-size: 1rem; }
-    .rate-badge { font-size: 0.75rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-top: 2px; }
-    
-    .plus { color: var(--profit-plus); }
-    .bg-plus { background-color: var(--profit-plus-bg); color: var(--profit-plus); }
-    .minus { color: var(--profit-minus); }
-    .bg-minus { background-color: var(--profit-minus-bg); color: var(--profit-minus); }
-    
-    .btn-buy { background: #bf0000; color: #fff; text-decoration: none; padding: 7px 16px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; margin-left: 14px; transition: background 0.2s; white-space: nowrap; }
-    .btn-buy:hover { background: #990000; }
-    .no-stock { text-align: center; color: var(--text-sub); padding: 16px; font-style: italic; }
-
-    .bottom-nav {
-      margin-top: 24px;
+    .product-list {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      border: 1px solid var(--border);
+      border-radius: 0 0 8px 8px;
+      background: #ffffff;
+    }
+    .product-row {
+      display: grid;
+      grid-template-columns: 2fr 1.3fr 3.5fr;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      gap: 12px;
+    }
+    .product-row:last-child {
+      border-bottom: none;
     }
 
-    @media (max-width: 768px) {
-      body { padding: 0 8px 16px 8px; }
-      .sticky-header-container { padding-top: 8px; padding-bottom: 8px; }
-      header { flex-direction: column; align-items: flex-start; gap: 8px; padding: 8px 12px; }
-      .header-right { width: 100%; justify-content: space-between; }
-      .controls { padding: 8px; gap: 8px; }
-      .search-box, .sort-box { width: 100%; min-width: 100%; }
-      .view-count-toggle { width: 100%; justify-content: space-around; }
+    .col-name {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .product-name {
+      font-size: 0.92rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .product-name a { color: inherit; text-decoration: none; }
+    .product-name a:hover { text-decoration: underline; color: var(--blue); }
+    .product-meta {
+      font-size: 0.72rem;
+      color: var(--text-sub);
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .badge-cat {
+      background: #f1f5f9;
+      color: #475569;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.68rem;
+    }
 
-      .table-wrapper { background: transparent; border: none; box-shadow: none; overflow-x: visible; }
-      table, thead, tbody, th, td, tr { display: block; }
-      thead { display: none; }
-      tr { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 14px; padding: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03); }
-      td { padding: 0; border: none; }
-      .item-col { max-width: 100%; margin-bottom: 10px; }
-      .price-col {
-        text-align: left; display: flex; align-items: baseline; justify-content: space-between;
-        background: #f8fafc; padding: 8px 12px; border-radius: 6px; margin-bottom: 10px;
+    .col-price {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+    }
+    .val-chome {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .official-info {
+      font-size: 0.75rem;
+      color: var(--text-sub);
+    }
+    .diff-plus { color: var(--green); font-weight: 700; }
+    .diff-minus { color: var(--red); font-weight: 700; }
+
+    .col-rakuten {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .rakuten-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 10px;
+      background: var(--rakuten-bg);
+      border: 1px solid var(--rakuten-border);
+      border-radius: 6px;
+      font-size: 0.8rem;
+    }
+    .rakuten-shop-box {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      max-width: 45%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .badge-official {
+      font-size: 0.68rem;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+    .badge-general {
+      font-size: 0.68rem;
+      background: #f1f5f9;
+      color: #64748b;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+    .badge-postage {
+      font-size: 0.68rem;
+      background: #dcfce7;
+      color: #15803d;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+    .rakuten-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .rakuten-price { font-weight: 700; color: #334155; }
+    .btn-buy {
+      background: #b91c1c;
+      color: #fff;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* ========================================================
+       スマホ表示（768px以下でカード形式に自動切り替え）
+       ======================================================== */
+    @media (max-width: 768px) {
+      .table-header { display: none; }
+      .product-list {
+        border: none;
+        background: transparent;
+        gap: 12px;
       }
-      .price-col::before { content: "一丁目買取相場"; font-size: 0.8rem; color: var(--text-sub); font-weight: 700; }
-      .top3-col { min-width: 100%; }
-      .rank-row { flex-direction: column; align-items: stretch; gap: 6px; padding: 8px 10px; margin-bottom: 8px; }
-      .rank-center { display: flex; justify-content: space-between; }
-      .rank-right { flex-direction: row; justify-content: space-between; align-items: center; padding-top: 4px; border-top: 1px dashed rgba(0,0,0,0.06); }
-      .btn-buy { margin-left: 0; width: 100%; text-align: center; margin-top: 4px; }
-      .infeed-row { padding: 10px !important; margin-bottom: 14px; }
+      .product-row {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 14px;
+        gap: 10px;
+      }
+      .col-price {
+        padding-bottom: 6px;
+        border-bottom: 1px dashed var(--border);
+      }
+      .rakuten-shop-box { max-width: 40%; }
+    }
+
+    .infeed-ad-row {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .infeed-ad-row {
+        border: 1px dashed var(--border);
+        border-radius: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <div class="sticky-header-container">
-    <header>
-      <div class="header-left">
-        <a href="../../index.html" class="btn-home">⬅ ポータル</a>
-        <div>
-          <h1 id="page-title">電子タバコ 正規店＆市場全体 安値TOP3 比較</h1>
-        </div>
+<header>
+  <div class="header-top">
+    <div class="header-left">
+      <a href="../../index.html" class="btn-back">⬅ ポータル</a>
+      <div class="page-title">
+        <span>🍎 Apple製品 買取・相場比較</span>
       </div>
-      <div class="header-right">
-        <div class="live-users-badge">
-          <span class="live-pulse"></span>
-          <span>閲覧中: <b id="online-count">1</b>人</span>
-        </div>
-        <div class="meta-info" id="updated-at">最終更新: -</div>
-      </div>
-    </header>
-
-    <div class="controls">
-      <div class="search-box">
-        <input type="text" id="filter-input" placeholder="銘柄・仕様・JAN・ショップ名で絞り込み...">
-      </div>
-      <div class="sort-box">
-        <select id="sort-select">
-          <option value="profit_rate_desc" selected>【最安店】の利益(率)が高い順</option>
-          <option value="profit_amount_desc">【最安店】の見込利益(額)が大きい順</option>
-          <option value="profit_asc">【最安店】の損失額順 (損切り・赤字確認)</option>
-          <option value="buy_desc">一丁目買取価格が高い順</option>
-        </select>
-      </div>
-      <div class="filter-options">
-        <div class="view-count-toggle">
-          <span>表示数:</span>
-          <label><input type="radio" name="rank-limit" value="1"> 1位のみ</label>
-          <label><input type="radio" name="rank-limit" value="3" checked> TOP3</label>
-        </div>
-        <label class="mode-toggle">
-          <input type="checkbox" id="official-only" checked> 各社公式・正規店のみ
-        </label>
-        <label><input type="checkbox" id="in-stock-only" checked> 在庫ありのみ</label>
-        <span style="display: inline-flex; gap: 10px;">
-          <label><input type="checkbox" id="brand-iqos"> iQOS</label>
-          <label><input type="checkbox" id="brand-glo"> glo</label>
-          <label><input type="checkbox" id="brand-ploom"> Ploom</label>
-        </span>
-      </div>
+    </div>
+    <div class="header-right">
+      <div class="badge-live"><span class="live-dot"></span>閲覧中: <span id="onlineCount">1</span>人</div>
+      <div id="lastUpdated" style="color:var(--text-sub);">更新中...</div>
     </div>
   </div>
 
-  <!-- 【AdSense上部広告】 -->
+  <div class="controls-bar">
+    <input type="text" id="searchInput" class="search-input" placeholder="モデル名・型番・JANで検索...">
+    
+    <select id="sortSelect" class="select-control">
+      <option value="official_rate_desc">🍎 Apple公式 損益率が良い順</option>
+      <option value="rakuten_rate_desc">🛒 楽天 損益率が良い順</option>
+      <option value="chome_desc">一丁目 買取価格が高い順</option>
+      <option value="official_diff_desc">Apple公式 差額が大きい順</option>
+      <option value="rakuten_diff_desc">楽天 利益額が大きい順</option>
+    </select>
+
+    <div class="filter-group">
+      <button class="btn-tab active" data-cat="all">すべて</button>
+      <button class="btn-tab" data-cat="iPad">iPad</button>
+      <button class="btn-tab" data-cat="AirPods">AirPods</button>
+      <button class="btn-tab" data-cat="Apple Watch">Watch</button>
+      <button class="btn-tab" data-cat="Mac">Mac</button>
+      <button class="btn-tab" data-cat="アクセサリ">アクセサリ</button>
+    </div>
+  </div>
+</header>
+
+<div class="container">
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -309,22 +403,16 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <div class="table-wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th>商品名（一丁目リンク） / 仕様・メモ</th>
-          <th style="text-align: right;">一丁目買取</th>
-          <th id="th-top3-title">正規店 安値TOP3 (ショップ / 仕入価格 / 見込利益・損失 / リンク)</th>
-        </tr>
-      </thead>
-      <tbody id="table-body">
-        <tr><td colspan="3" style="text-align:center; padding: 40px; color: #6b7280;">データを読み込み中...</td></tr>
-      </tbody>
-    </table>
+  <div class="table-header">
+    <div>商品名（一丁目リンク）/ 仕様・メモ</div>
+    <div>買取価格 / Apple公式比較</div>
+    <div>楽天市場 安値TOP3（ショップ / 仕入価格 / 見込利益・損失 / リンク）</div>
   </div>
 
-  <!-- 【AdSense下部広告】 -->
+  <div id="productList" class="product-list">
+    <div style="text-align:center; padding: 40px; color: var(--text-sub);">最新データを読み込み中...</div>
+  </div>
+
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -334,286 +422,218 @@
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
-
-  <div class="bottom-nav">
-    <a href="../../index.html" class="btn-home" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
-  </div>
 </div>
 
-<!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script src="data.js?t=1"></script>
+
 <script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyDouxwWQCgn-4Sq6wA503XzbPh3FG_MrOo",
-    authDomain: "iphone-tracker-2db9e.firebaseapp.com",
-    databaseURL: "https://iphone-tracker-2db9e-default-rtdb.firebaseio.com",
-    projectId: "iphone-tracker-2db9e",
-    storageBucket: "iphone-tracker-2db9e.firebasestorage.app",
-    messagingSenderId: "138170739435",
-    appId: "1:138170739435:web:d08a229acf17b129452cae"
-  };
   try {
+    const firebaseConfig = { databaseURL: "https://price-tracker-presence-default-rtdb.firebaseio.com" };
     if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
     const db = firebase.database();
-    const presenceRef = db.ref("online_users_tobacco");
-    const userRef = presenceRef.push();
-    db.ref(".info/connected").on("value", (snap) => {
+    const onlineRef = db.ref(".info/connected");
+    const countRef = db.ref("presence/kaden_apple");
+    onlineRef.on("value", (snap) => {
       if (snap.val() === true) {
-        userRef.onDisconnect().remove();
-        userRef.set(true);
+        const con = countRef.push();
+        con.onDisconnect().remove();
+        con.set(true);
       }
     });
-    presenceRef.on("value", (snap) => {
-      const count = snap.numChildren();
-      const el = document.getElementById("online-count");
-      if (el) el.textContent = count > 0 ? count : 1;
+    countRef.on("value", (snap) => {
+      document.getElementById("onlineCount").textContent = snap.numChildren() || 1;
     });
-  } catch(e) {}
-</script>
-
-<script>
-  let rawData = [];
-
-  const tbody = document.getElementById('table-body');
-  const updatedAtElem = document.getElementById('updated-at');
-  const filterInput = document.getElementById('filter-input');
-  const sortSelect = document.getElementById('sort-select');
-  const officialOnly = document.getElementById('official-only');
-  const inStockOnly = document.getElementById('in-stock-only');
-  const brandIqos = document.getElementById('brand-iqos');
-  const brandGlo = document.getElementById('brand-glo');
-  const brandPloom = document.getElementById('brand-ploom');
-  const thTop3Title = document.getElementById('th-top3-title');
-
-  const rankBadges = ['🥇 1位', '🥈 2位', '🥉 3位'];
-  const rankClasses = ['rank-1', 'rank-2', 'rank-3'];
-
-  async function loadData() {
-    let data = null;
-    try {
-      const res = await fetch('./data.json?t=' + Date.now());
-      if (res.ok) data = await res.json();
-    } catch(e) {}
-
-    if (!data && window.TOBACCO_DATA && window.TOBACCO_DATA.length > 0) {
-      data = window.TOBACCO_DATA;
-    }
-
-    if (!data) {
-      await new Promise((resolve) => {
-        const sc = document.createElement('script');
-        sc.src = './data.js?t=' + Date.now();
-        sc.onload = () => {
-          data = window.TOBACCO_DATA || null;
-          resolve();
-        };
-        sc.onerror = () => resolve();
-        document.head.appendChild(sc);
-      });
-    }
-
-    if (data && data.length > 0) {
-      rawData = data;
-      const firstItem = rawData.find(it => it.updated_at);
-      if (firstItem && firstItem.updated_at) {
-        updatedAtElem.textContent = '最終更新: ' + firstItem.updated_at;
-      }
-      render();
-    } else {
-      tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; padding: 40px; color: red;">データが読み込めません。<br>（GitHub Pagesの配信反映待ちか、ファイルを確認してください）<br><button onclick="loadData()" style="margin-top:12px; padding:6px 16px; border:1px solid #ccc; border-radius:6px; cursor:pointer;">再試行 🔄</button></td></tr>`;
-    }
+  } catch(e) {
+    console.warn("Firebase offline mode");
   }
+
+  let rawData = [];
+  let currentCategory = "all";
 
   function createInfeedRowHtml() {
     return `
-      <tr class="infeed-row">
-        <td colspan="3">
-          <span class="infeed-label">― SPONSORED ―</span>
-          <div class="infeed-box">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-9014722014583256"
-                 data-ad-slot="7138671333"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-          </div>
-        </td>
-      </tr>
+      <div class="infeed-ad-row">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-fb+5w+4e-db+86"
+             data-ad-client="ca-pub-9014722014583256"
+             data-ad-slot="8633264562"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
+      </div>
     `;
   }
 
-  function render() {
-    if (!rawData || rawData.length === 0) return;
+  async function loadData() {
+    try {
+      const res = await fetch("data.json?t=" + Date.now());
+      if (!res.ok) throw new Error("JSON fetch failed");
+      rawData = await res.json();
+    } catch(e) {
+      if (window.APPLE_DATA) rawData = window.APPLE_DATA;
+    }
+    render();
+  }
 
-    const isOfficial = officialOnly.checked;
-    const rankLimit = parseInt(document.querySelector('input[name="rank-limit"]:checked').value, 10);
-    const scopeLabel = isOfficial ? '各社公式・正規店' : '市場全体';
-    const limitLabel = rankLimit === 1 ? '最安1位' : '安値TOP3';
-    thTop3Title.textContent = `${scopeLabel} ${limitLabel} (ショップ / 仕入価格 / 見込利益・損失 / リンク)`;
+  function filterAndSortData() {
+    const query = document.getElementById("searchInput").value.toLowerCase().trim();
+    const sortVal = document.getElementById("sortSelect").value;
 
-    const keyword = filterInput.value.toLowerCase().trim();
-    const sortMode = sortSelect.value;
-    const isInStockOnly = inStockOnly.checked;
-
-    const filterIqos = brandIqos.checked;
-    const filterGlo = brandGlo.checked;
-    const filterPloom = brandPloom.checked;
-    const useBrandFilter = filterIqos || filterGlo || filterPloom;
-
-    let items = rawData.filter(it => {
-      const name = (it.name || '').toLowerCase();
-
-      if (useBrandFilter) {
-        let match = false;
-        if (filterIqos && (name.includes('iqos') || name.includes('iluma') || name.includes('アイコス'))) match = true;
-        if (filterGlo && (name.includes('glo') || name.includes('グロー') || name.includes('hyper'))) match = true;
-        if (filterPloom && (name.includes('ploom') || name.includes('プルーム') || name.includes('with'))) match = true;
-        if (!match) return false;
-      }
-
-      const topList = isOfficial ? (it.official_top3 || []) : (it.all_top3 || []);
-      if (isInStockOnly && topList.length === 0) return false;
-
-      if (keyword) {
-        const memo = (it.memo || '').toLowerCase();
-        const jan = (it.jan || '').toLowerCase();
-        const shops = topList.map(t => (t.shop || '').toLowerCase()).join(' ');
-        if (!name.includes(keyword) && !memo.includes(keyword) && !jan.includes(keyword) && !shops.includes(keyword)) {
-          return false;
-        }
+    let filtered = rawData.filter(item => {
+      if (currentCategory !== "all" && !item.memo.includes(currentCategory)) return false;
+      if (query) {
+        const hit = (item.name && item.name.toLowerCase().includes(query)) ||
+                    (item.jan && item.jan.includes(query)) ||
+                    (item.memo && item.memo.toLowerCase().includes(query)) ||
+                    (item.all_top3 && item.all_top3.some(r => r.shop.toLowerCase().includes(query)));
+        if (!hit) return false;
       }
       return true;
     });
 
-    items.sort((a, b) => {
-      const topA_list = isOfficial ? (a.official_top3 || []) : (a.all_top3 || []);
-      const topB_list = isOfficial ? (b.official_top3 || []) : (b.all_top3 || []);
-      const topA = topA_list.length > 0 ? topA_list[0] : null;
-      const topB = topB_list.length > 0 ? topB_list[0] : null;
-      
-      const profitA = topA ? topA.profit : -999999;
-      const profitB = topB ? topB.profit : -999999;
-      const rateA = topA ? topA.profit_rate : -999999;
-      const rateB = topB ? topB.profit_rate : -999999;
+    filtered.sort((a, b) => {
+      const rateA = a.official_price > 0 ? ((a.buy_price - a.official_price) / a.official_price * 100) : -999;
+      const rateB = b.official_price > 0 ? ((b.buy_price - b.official_price) / b.official_price * 100) : -999;
 
-      if (sortMode === 'profit_rate_desc') return rateB - rateA;
-      if (sortMode === 'profit_amount_desc') return profitB - profitA;
-      if (sortMode === 'profit_asc') {
-        if (!topA) return 1;
-        if (!topB) return -1;
-        return profitA - profitB;
+      const rRateA = (a.all_top3 && a.all_top3[0] && a.all_top3[0].profit_rate !== undefined) ? a.all_top3[0].profit_rate : -999;
+      const rRateB = (b.all_top3 && b.all_top3[0] && b.all_top3[0].profit_rate !== undefined) ? b.all_top3[0].profit_rate : -999;
+
+      if (sortVal === "official_rate_desc") {
+        return rateB - rateA;
+      } else if (sortVal === "rakuten_rate_desc") {
+        return rRateB - rRateA;
+      } else if (sortVal === "chome_desc") {
+        return b.buy_price - a.buy_price;
+      } else if (sortVal === "official_diff_desc") {
+        const diffA = a.official_price > 0 ? (a.buy_price - a.official_price) : -999999;
+        const diffB = b.official_price > 0 ? (b.buy_price - b.official_price) : -999999;
+        return diffB - diffA;
+      } else if (sortVal === "rakuten_diff_desc") {
+        const pA = (a.all_top3 && a.all_top3[0]) ? a.all_top3[0].profit : -999999;
+        const pB = (b.all_top3 && b.all_top3[0]) ? b.all_top3[0].profit : -999999;
+        return pB - pA;
       }
-      if (sortMode === 'buy_desc') return (b.buy_price || 0) - (a.buy_price || 0);
       return 0;
     });
 
+    return filtered;
+  }
+
+  function render() {
+    const listElem = document.getElementById("productList");
+    const items = filterAndSortData();
+
+    if (rawData.length > 0 && rawData[0].updated_at) {
+      document.getElementById("lastUpdated").textContent = "最終更新: " + rawData[0].updated_at;
+    }
+
     if (items.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; padding: 30px; color:#6b7280;">表示対象の商品がありません</td></tr>`;
+      listElem.innerHTML = `<div style="text-align:center; padding: 40px; color: var(--text-sub);">該当する商品が見つかりませんでした。</div>`;
       return;
     }
 
-    let rowsHtml = '';
-    items.forEach((it, idx) => {
-      const buyStr = it.buy_price ? '¥' + it.buy_price.toLocaleString() : '-';
-      const fullTopList = isOfficial ? (it.official_top3 || []) : (it.all_top3 || []);
-      const topList = fullTopList.slice(0, rankLimit);
-      const hasStock = topList.length > 0;
-      const memoHtml = it.memo ? `<div class="memo-tag">${it.memo}</div>` : '';
-      
-      const chomeHref = it.chome_url || `https://www.1-chome.com/electricAppliance?category=10801204&keyword=${encodeURIComponent(it.name)}`;
-      const nameHtml = `<a href="${chomeHref}" target="_blank" rel="noopener noreferrer" class="item-name" title="買取一丁目の詳細ページを開く">${it.name}<span class="chome-link-icon">🔗</span></a>`;
+    let html = "";
+    items.forEach((item, idx) => {
+      if (idx === 2 || idx === 5) {
+        html += createInfeedRowHtml();
+      }
 
-      let topHtml = '';
-      if (!hasStock) {
-        topHtml = `<div class="no-stock">${isOfficial ? '公式ストア・正規店での新品在庫が見つかりません' : '楽天市場全体で新品在庫が見つかりません'}</div>`;
-      } else {
-        topHtml = topList.map((shopData, i) => {
-          const postBadge = (shopData.postage_flag === 1)
-            ? `<span class="postage-badge postage-free">無料</span>`
-            : `<span class="postage-badge postage-paid">別⚠️</span>`;
+      // Apple公式定価・差額・損益率
+      let officialLine = "";
+      if (item.official_price > 0) {
+        const diff = item.buy_price - item.official_price;
+        const rate = ((diff / item.official_price) * 100).toFixed(1);
+        const diffText = diff >= 0 ? `+¥${diff.toLocaleString()}` : `-¥${Math.abs(diff).toLocaleString()}`;
+        const rateText = diff >= 0 ? `+${rate}%` : `${rate}%`;
+        const diffClass = diff >= 0 ? "diff-plus" : "diff-minus";
 
-          const typeBadge = shopData.is_official
-            ? `<span class="shop-type-badge type-official">公式/正規</span>`
-            : `<span class="shop-type-badge type-general">一般</span>`;
+        officialLine = `
+          <div class="official-info">
+            定価: ¥${item.official_price.toLocaleString()}<br>
+            <span class="${diffClass}">${diffText} (${rateText})</span>
+          </div>
+        `;
+      }
 
-          const isPlus = shopData.profit > 0;
-          const isZero = shopData.profit === 0;
+      // 楽天市場TOP3
+      let rakutenHtml = "";
+      const topList = item.all_top3 || [];
+      if (topList.length > 0) {
+        rakutenHtml = topList.map((r, rIdx) => {
+          const medal = rIdx === 0 ? "🥇 1位" : rIdx === 1 ? "🥈 2位" : "🥉 3位";
+          const shopTypeBadge = r.is_official 
+            ? '<span class="badge-official">公式</span>' 
+            : '<span class="badge-general">一般</span>';
           
-          let profitText = '';
-          let rateBadge = '';
-          if (isPlus) {
-            profitText = `<span class="profit-line plus"><span style="font-size:0.75rem; color:#6b7280; font-weight:normal;">見込利益: </span>+¥${shopData.profit.toLocaleString()}</span>`;
-            rateBadge = `<span class="rate-badge bg-plus">+${shopData.profit_rate.toFixed(1)}%</span>`;
-          } else if (isZero) {
-            profitText = `<span class="profit-line">¥0</span>`;
-            rateBadge = `<span class="rate-badge">±0.0%</span>`;
-          } else {
-            profitText = `<span class="profit-line minus"><span style="font-size:0.75rem; color:#6b7280; font-weight:normal;">損失: </span>-¥${Math.abs(shopData.profit).toLocaleString()}</span>`;
-            rateBadge = `<span class="rate-badge bg-minus">${shopData.profit_rate.toFixed(1)}%</span>`;
-          }
-            
+          const isProfit = r.profit >= 0;
+          const label = isProfit ? "見込利益:" : "損失:";
+          const diffText = isProfit ? `+¥${r.profit.toLocaleString()}` : `-¥${Math.abs(r.profit).toLocaleString()}`;
+          const rateText = isProfit ? `+${r.profit_rate}%` : `${r.profit_rate}%`;
+          const valColor = isProfit ? "color:var(--green);" : "color:var(--red);";
+
           return `
-            <div class="rank-row ${rankClasses[i] || 'rank-3'}">
-              <div class="rank-left">
-                <span class="rank-badge">${rankBadges[i] || (i+1) + '位'}</span>
-                ${typeBadge}
-                <span class="shop-name">${shopData.shop}${postBadge}</span>
+            <div class="rakuten-item">
+              <div class="rakuten-shop-box">
+                <span style="font-weight:700;">${medal}</span>
+                ${shopTypeBadge}
+                <span title="${r.shop}">${r.shop}</span>
+                ${r.postage_flag === 1 ? '<span class="badge-postage">無料</span>' : ''}
               </div>
-              <div class="rank-center">
-                <span class="price-label">仕入:</span><span class="price-val">¥${shopData.price.toLocaleString()}</span>
+              <div class="rakuten-right">
+                <span class="rakuten-price">仕入: ¥${r.price.toLocaleString()}</span>
+                <span style="font-size:0.75rem; font-weight:700; ${valColor}">
+                  ${label} ${diffText} (${rateText})
+                </span>
+                <a href="${r.url}" target="_blank" rel="noopener" class="btn-buy">購入へ ➔</a>
               </div>
-              <div class="rank-right">
-                ${profitText}
-                ${rateBadge}
-              </div>
-              <a href="${shopData.url}" target="_blank" rel="noopener noreferrer" class="btn-buy">購入へ ➔</a>
             </div>
           `;
-        }).join('');
+        }).join("");
+      } else {
+        rakutenHtml = `<div style="font-size:0.8rem; color:var(--text-sub); padding: 8px 12px;">現在、楽天市場に新品の在庫がありません。</div>`;
       }
 
-      rowsHtml += `
-        <tr>
-          <td class="item-col">
-            ${nameHtml}
-            ${memoHtml}
-            <span class="jan">JAN: ${it.jan || '未登録'}</span>
-          </td>
-          <td class="price-col buy-price">${buyStr}</td>
-          <td class="top3-col">
-            ${topHtml}
-          </td>
-        </tr>
+      const directUrl = item.chome_url || "#";
+
+      html += `
+        <div class="product-row">
+          <div class="col-name">
+            <div class="product-name">
+              <a href="${directUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>
+              <span class="badge-cat">${item.category || 'Apple'}</span>
+            </div>
+            <div class="product-meta">
+              <span>JAN: ${item.jan || '未登録'}</span>
+            </div>
+          </div>
+          <div class="col-price">
+            <div class="val-chome">¥${item.buy_price.toLocaleString()}</div>
+            ${officialLine}
+          </div>
+          <div class="col-rakuten">
+            ${rakutenHtml}
+          </div>
+        </div>
       `;
-
-      // 3件目と6件目の直後にインフィード広告を挿入
-      if (idx === 2 || idx === 5) {
-        rowsHtml += createInfeedRowHtml();
-      }
     });
 
-    tbody.innerHTML = rowsHtml;
-
-    requestAnimationFrame(() => {
-      document.querySelectorAll('.infeed-box ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch(e) {}
-      });
-    });
+    listElem.innerHTML = html;
   }
 
-  ['filter-input', 'sort-select', 'official-only', 'in-stock-only', 'brand-iqos', 'brand-glo', 'brand-ploom'].forEach(id => {
-    document.getElementById(id).addEventListener('change', render);
-    if(id === 'filter-input') document.getElementById(id).addEventListener('input', render);
-  });
+  document.getElementById("searchInput").addEventListener("input", render);
+  document.getElementById("sortSelect").addEventListener("change", render);
 
-  document.querySelectorAll('input[name="rank-limit"]').forEach(r => {
-    r.addEventListener('change', render);
+  document.querySelectorAll(".btn-tab[data-cat]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".btn-tab[data-cat]").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentCategory = btn.dataset.cat;
+      render();
+    });
   });
 
   loadData();
 </script>
+
 </body>
 </html>
