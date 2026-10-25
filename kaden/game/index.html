@@ -35,53 +35,110 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text-main);
-      padding: 24px 16px;
+      padding: 0 16px 24px 16px;
       line-height: 1.5;
     }
     .container { max-width: 1400px; margin: 0 auto; }
-    header { margin-bottom: 16px; border-bottom: 2px solid var(--border); padding-bottom: 14px; display: flex; justify-content: space-between; align-items: flex-end; }
+
+    /* ★ スクロール追従・固定ヘッダーエリア（ポータルボタン＋タイトル＋操作バー） */
+    .sticky-header-container {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      padding-top: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    header {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card-bg);
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
     .header-left { display: flex; align-items: center; gap: 14px; }
-    .btn-home { background: #fff; border: 1px solid var(--border); color: var(--text-sub); text-decoration: none; padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; white-space: nowrap; display: inline-flex; align-items: center; gap: 4px; }
+    .btn-home {
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text-sub);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
     .btn-home:hover { background: #f3f4f6; color: var(--text-main); }
-    h1 { font-size: 1.4rem; font-weight: 700; color: #111827; }
+    h1 { font-size: 1.25rem; font-weight: 700; color: #111827; }
     
-    .header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+    .header-right { display: flex; align-items: center; gap: 12px; }
     
     .live-users-badge {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
+      gap: 6px;
       background: #ecfdf5;
       border: 1px solid #a7f3d0;
       color: #065f46;
-      padding: 4px 12px;
+      padding: 3px 10px;
       border-radius: 20px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 700;
     }
     .live-pulse {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       background-color: #10b981;
       border-radius: 50%;
       animation: pulse-green 2s infinite;
     }
     @keyframes pulse-green {
       0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-      70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      70% { transform: scale(1); box-shadow: 0 0 0 5px rgba(16, 185, 129, 0); }
       100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
     }
-    .live-users-badge b { color: #047857; font-variant-numeric: tabular-nums; font-size: 0.9rem; }
-    .meta-info { font-size: 0.85rem; color: var(--text-sub); }
+    .live-users-badge b { color: #047857; font-variant-numeric: tabular-nums; }
+    .meta-info { font-size: 0.8rem; color: var(--text-sub); }
 
+    /* 操作バー */
+    .controls {
+      display: flex;
+      gap: 12px;
+      background: var(--card-bg);
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .search-box { flex: 1; min-width: 200px; }
+    .sort-box { width: 260px; }
+    input[type="text"], select { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+    .filter-options { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .filter-options label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #374151; }
+    .filter-options .mode-toggle { background: #eff6ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe; color: #1d4ed8; }
+    .view-count-toggle { display: flex; align-items: center; gap: 8px; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
+
+    /* 広告枠 */
     .ad-banner {
-      margin: 16px auto;
+      margin: 14px auto;
       text-align: center;
       max-width: 100%;
       overflow: hidden;
     }
 
-    /* インフィード広告行のスタイル */
+    /* インフィード広告行 */
     .infeed-row td {
       background-color: #f8fafc;
       padding: 18px 16px;
@@ -101,34 +158,7 @@
       margin: 0 auto;
       min-height: 90px;
     }
-
-    /* 操作バー固定（スクロール追従） */
-    .sticky-wrapper {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      padding: 8px 0 12px 0;
-    }
-    
-    .controls {
-      display: flex;
-      gap: 12px;
-      background: var(--card-bg);
-      padding: 10px 14px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .search-box { flex: 1; min-width: 200px; }
-    .sort-box { width: 260px; }
-    input[type="text"], select { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
-    .filter-options { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-    .filter-options label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #374151; }
-    .filter-options .mode-toggle { background: #eff6ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe; color: #1d4ed8; }
-    .view-count-toggle { display: flex; align-items: center; gap: 8px; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
+    .infeed-row:hover td { background-color: #f8fafc; }
     
     .table-wrapper { background: var(--card-bg); border-radius: 8px; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid var(--border); }
     table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
@@ -136,7 +166,6 @@
     td { padding: 16px; border-bottom: 1px solid var(--border); vertical-align: middle; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #f9fafb; }
-    .infeed-row:hover td { background-color: #f8fafc; }
     
     .item-col { min-width: 280px; max-width: 340px; word-break: keep-all; overflow-wrap: break-word; }
     .item-name { font-weight: 600; color: #111827; line-height: 1.4; margin-bottom: 4px; font-size: 0.95rem; text-decoration: none; display: inline-block; }
@@ -190,10 +219,10 @@
     }
 
     @media (max-width: 768px) {
-      body { padding: 12px 8px; }
-      header { flex-direction: column; align-items: flex-start; gap: 10px; }
-      .header-right { width: 100%; flex-direction: row; justify-content: space-between; }
-      .sticky-wrapper { top: 0; padding-top: 4px; }
+      body { padding: 0 8px 16px 8px; }
+      .sticky-header-container { padding-top: 8px; padding-bottom: 8px; }
+      header { flex-direction: column; align-items: flex-start; gap: 8px; padding: 8px 12px; }
+      .header-right { width: 100%; justify-content: space-between; }
       .controls { padding: 8px; gap: 8px; }
       .search-box, .sort-box { width: 100%; min-width: 100%; }
       .view-count-toggle { width: 100%; justify-content: space-around; }
@@ -222,38 +251,26 @@
 <body>
 
 <div class="container">
-  <header>
-    <div class="header-left">
-      <a href="../../index.html" class="btn-home">⬅ ポータル</a>
-      <div>
-        <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
-        <div class="meta-info">買取一丁目 × 楽天市場（正規取扱店 ＋ 優良一般店）</div>
+  <!-- ★ スクロールしても常に画面上に残る固定ブロック（ヘッダー ＋ 操作バー） -->
+  <div class="sticky-header-container">
+    <header>
+      <div class="header-left">
+        <a href="../../index.html" class="btn-home">⬅ ポータル</a>
+        <div>
+          <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
+        </div>
       </div>
-    </div>
-    <div class="header-right">
-      <div class="live-users-badge">
-        <span class="live-pulse"></span>
-        <span>現在 <b id="online-count">1</b> 人が閲覧中</span>
+      <div class="header-right">
+        <div class="live-users-badge">
+          <span class="live-pulse"></span>
+          <span>閲覧中: <b id="online-count">1</b>人</span>
+        </div>
+        <div class="meta-info" id="updated-at">最終更新: -</div>
       </div>
-      <div class="meta-info" id="updated-at">最終更新: -</div>
-    </div>
-  </header>
+    </header>
 
-  <!-- 【AdSense上部広告】 -->
-  <div class="ad-banner">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9014722014583256"
-         data-ad-slot="7138671333"
-         data-ad-format="horizontal"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <!-- スクロール追従バー -->
-  <div class="sticky-wrapper">
+    <!-- 操作バー（不要なポータルボタンは削除しスッキリ配置） -->
     <div class="controls">
-      <a href="../../index.html" class="btn-home" title="ポータルトップへ戻る">⬅ ポータル</a>
       <div class="search-box">
         <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・ショップ名で絞り込み...">
       </div>
@@ -282,6 +299,17 @@
         </span>
       </div>
     </div>
+  </div>
+
+  <!-- 【AdSense上部広告】※規約遵守のためスクロールで自然に流れる位置に配置 -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="7138671333"
+         data-ad-format="horizontal"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <div class="table-wrapper">
@@ -403,7 +431,6 @@
     }
   }
 
-  // ★ インフィード広告 HTML 生成（テーブル行として溶け込ませる）
   function createInfeedRowHtml() {
     return `
       <tr class="infeed-row">
@@ -568,7 +595,6 @@
         </tr>
       `;
 
-      // ★ インフィード広告の挿入（7件目と22件目の直後のみ）
       if (idx === 6 || idx === 21) {
         rowsHtml += createInfeedRowHtml();
       }
@@ -576,7 +602,6 @@
 
     tbody.innerHTML = rowsHtml;
 
-    // ★ 動的に挿入したインフィード広告タグを AdSense に認識・描画させる処理
     requestAnimationFrame(() => {
       document.querySelectorAll('.infeed-box ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
         try {
