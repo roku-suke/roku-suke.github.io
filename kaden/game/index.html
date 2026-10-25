@@ -595,7 +595,8 @@
         </tr>
       `;
 
-      if (idx === 6 || idx === 21) {
+      // 3件目と6件目の直後にインフィード広告を挿入
+      if (idx === 2 || idx === 5) {
         rowsHtml += createInfeedRowHtml();
       }
     });
