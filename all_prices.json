@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/25 10:00:00",
+  "updated_at": "2026/10/25 10:18:39",
   "usd_jpy": 156.84,
   "series": {
     "18promax": [
@@ -122,8 +122,8 @@
             "name": "グレイシャー",
             "chome": 266500,
             "cShift": "up",
-            "ichiban": 267000,
-            "iShift": "up",
+            "ichiban": 266000,
+            "iShift": "down",
             "rakuen": 266500,
             "rShift": "up",
             "rudeya": 266500,
