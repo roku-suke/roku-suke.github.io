@@ -199,9 +199,11 @@ exit /b 0
 - [x] 旧タスクを「無効」にして新環境への移行完了を確認
 
 ### フェーズ3：GitHubディレクトリ再編【← 現在ここ】
-- [ ] GitHubリポジトリ側のフォルダ構成を `keitai/iphone/`、`kaden/game/` 等に移行・整理
-- [ ] スクリプト内のGitHub APIプッシュ先パス（アップロード先URL）を新構成に書き換え
-- [ ] 各HTML側のデータ読み込みパス（fetch先）の修正
+- [x] GitHub上に `kaden/game/` フォルダを作成し `index.html` を配置
+- [x] `scrape_kaden.py` の送信先を `kaden/game/data.json` に変更して自動更新を確認
+- [x] `kaden/game/index.html` の表示修正（ポータルリンク、data.json読み込み、不要タブ整理）完了
+- [ ] 総合ポータル（ルートの `index.html`）に「ゲーム」へのリンクを追加
+- [ ] iPhone用フォルダ（`keitai/iphone/`）の準備と無停止移行（旧URLからのリダイレクト設定）
 
 ### フェーズ4：iPhoneシステムの高度化
 - [ ] `scrape_iphone.py` と 機種設定（`configs/iphone_models.json`）の分離
