@@ -111,49 +111,47 @@
     }
     @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
+    /* 操作バー */
     .controls-bar {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 8px 16px 12px 16px;
+      padding: 10px 16px;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 12px;
       align-items: center;
       border-top: 1px solid #f1f5f9;
+      font-size: 0.85rem;
     }
     .search-input {
-      flex: 1 1 200px;
-      padding: 8px 12px;
+      flex: 1 1 240px;
+      padding: 7px 12px;
       border: 1px solid var(--border);
-      border-radius: 8px;
-      font-size: 0.88rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
     }
     .select-control {
-      padding: 8px 10px;
+      padding: 7px 10px;
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 6px;
       font-size: 0.85rem;
       background: #fff;
     }
-    .filter-group {
-      display: flex;
+    .filter-item-group {
+      display: inline-flex;
+      align-items: center;
       gap: 6px;
-      flex-wrap: wrap;
-    }
-    .btn-tab {
-      padding: 6px 12px;
+      background: #f8fafc;
+      padding: 5px 10px;
       border: 1px solid var(--border);
       border-radius: 6px;
-      background: #fff;
-      font-size: 0.8rem;
-      font-weight: 600;
-      cursor: pointer;
-      color: var(--text-sub);
     }
-    .btn-tab.active {
-      background: var(--blue);
-      color: #fff;
-      border-color: var(--blue);
+    .filter-item-group label {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      user-select: none;
     }
 
     .container {
@@ -168,9 +166,7 @@
       overflow: hidden;
     }
 
-    /* ========================================================
-       PC表示（テーブル・一覧レイアウト）
-       ======================================================== */
+    /* テーブルヘッダー（PC用） */
     .table-header {
       display: grid;
       grid-template-columns: 2.2fr 1fr 3.5fr;
@@ -304,9 +300,7 @@
       white-space: nowrap;
     }
 
-    /* ========================================================
-       スマホ表示（768px以下でカード形式に自動切り替え）
-       ======================================================== */
+    /* スマホ表示（768px以下でカード形式に自動切り替え） */
     @media (max-width: 768px) {
       .table-header { display: none; }
       .product-list {
@@ -371,6 +365,7 @@
     </div>
   </div>
 
+  <!-- 条件フィルター（操作バー） -->
   <div class="controls-bar">
     <input type="text" id="searchInput" class="search-input" placeholder="銘柄・仕様・JAN・ショップ名で絞り込み...">
     
@@ -380,11 +375,24 @@
       <option value="rakuten_diff_desc">楽天 利益額が大きい順</option>
     </select>
 
-    <div class="filter-group">
-      <button class="btn-tab active" data-cat="all">すべて</button>
-      <button class="btn-tab" data-cat="IQOS">IQOS</button>
-      <button class="btn-tab" data-cat="Ploom">Ploom</button>
-      <button class="btn-tab" data-cat="glo">glo</button>
+    <!-- 表示数切替 -->
+    <div class="filter-item-group">
+      <span style="font-weight:700; color:var(--text-sub);">表示数:</span>
+      <label><input type="radio" name="displayCount" value="1"> 1位のみ</label>
+      <label><input type="radio" name="displayCount" value="3" checked> TOP3</label>
+    </div>
+
+    <!-- 正規店のみ / 在庫ありのみ -->
+    <div class="filter-item-group">
+      <label><input type="checkbox" id="officialOnlyCheck"> 各社公式・正規店のみ</label>
+      <label><input type="checkbox" id="inStockOnlyCheck"> 在庫ありのみ</label>
+    </div>
+
+    <!-- 銘柄カテゴリ絞り込み -->
+    <div class="filter-item-group">
+      <label><input type="checkbox" class="cat-check" value="IQOS"> iQOS</label>
+      <label><input type="checkbox" class="cat-check" value="glo"> glo</label>
+      <label><input type="checkbox" class="cat-check" value="Ploom"> Ploom</label>
     </div>
   </div>
 </header>
@@ -403,7 +411,7 @@
   <div class="table-header">
     <div>商品名（一丁目リンク）/ 仕様・メモ</div>
     <div style="text-align:center;">一丁目買取</div>
-    <div>市場全体 安値TOP3（ショップ / 仕入価格 / 見込利益・損失 / リンク）</div>
+    <div id="rakutenHeaderTitle">市場全体 安値TOP3（ショップ / 仕入価格 / 見込利益・損失 / リンク）</div>
   </div>
 
   <div id="productList" class="product-list">
@@ -445,7 +453,6 @@
   }
 
   let rawData = [];
-  let currentCategory = "all";
 
   function createInfeedRowHtml() {
     return `
@@ -472,33 +479,69 @@
     render();
   }
 
+  function getSelectedCategories() {
+    const checked = Array.from(document.querySelectorAll(".cat-check:checked")).map(cb => cb.value.toLowerCase());
+    return checked;
+  }
+
   function filterAndSortData() {
     const query = document.getElementById("searchInput").value.toLowerCase().trim();
     const sortVal = document.getElementById("sortSelect").value;
+    const isOfficialOnly = document.getElementById("officialOnlyCheck").checked;
+    const isInStockOnly = document.getElementById("inStockOnlyCheck").checked;
+    const selectedCats = getSelectedCategories();
+
+    // ヘッダータイトルの連動切り替え
+    const headerTitle = document.getElementById("rakutenHeaderTitle");
+    if (headerTitle) {
+      headerTitle.textContent = isOfficialOnly 
+        ? "正規店 安値TOP3（ショップ / 仕入価格 / 見込利益・損失 / リンク）" 
+        : "市場全体 安値TOP3（ショップ / 仕入価格 / 見込利益・損失 / リンク）";
+    }
 
     let filtered = rawData.filter(item => {
-      if (currentCategory !== "all" && !item.memo.includes(currentCategory)) return false;
+      // 銘柄チェック（未選択時は全表示、選択時は該当する銘柄のみ）
+      if (selectedCats.length > 0) {
+        const itemMemo = (item.memo || "").toLowerCase();
+        const itemName = (item.name || "").toLowerCase();
+        const hitCat = selectedCats.some(cat => itemMemo.includes(cat) || itemName.includes(cat));
+        if (!hitCat) return false;
+      }
+
+      // 対象の楽天リスト（正規店のみONならofficial_top3、OFFならall_top3）
+      const targetTop = isOfficialOnly ? (item.official_top3 || []) : (item.all_top3 || []);
+
+      // 在庫ありのみチェック
+      if (isInStockOnly && targetTop.length === 0) {
+        return false;
+      }
+
+      // 検索ワード
       if (query) {
         const hit = (item.name && item.name.toLowerCase().includes(query)) ||
                     (item.jan && item.jan.includes(query)) ||
                     (item.memo && item.memo.toLowerCase().includes(query)) ||
-                    (item.all_top3 && item.all_top3.some(r => r.shop.toLowerCase().includes(query)));
+                    targetTop.some(r => r.shop.toLowerCase().includes(query));
         if (!hit) return false;
       }
+
       return true;
     });
 
     filtered.sort((a, b) => {
-      const rRateA = (a.all_top3 && a.all_top3[0] && a.all_top3[0].profit_rate !== undefined) ? a.all_top3[0].profit_rate : -999;
-      const rRateB = (b.all_top3 && b.all_top3[0] && b.all_top3[0].profit_rate !== undefined) ? b.all_top3[0].profit_rate : -999;
+      const topA = isOfficialOnly ? (a.official_top3 || []) : (a.all_top3 || []);
+      const topB = isOfficialOnly ? (b.official_top3 || []) : (b.all_top3 || []);
+
+      const rRateA = (topA[0] && topA[0].profit_rate !== undefined) ? topA[0].profit_rate : -999;
+      const rRateB = (topB[0] && topB[0].profit_rate !== undefined) ? topB[0].profit_rate : -999;
 
       if (sortVal === "rakuten_rate_desc") {
         return rRateB - rRateA;
       } else if (sortVal === "chome_desc") {
         return b.buy_price - a.buy_price;
       } else if (sortVal === "rakuten_diff_desc") {
-        const pA = (a.all_top3 && a.all_top3[0]) ? a.all_top3[0].profit : -999999;
-        const pB = (b.all_top3 && b.all_top3[0]) ? b.all_top3[0].profit : -999999;
+        const pA = (topA[0] && topA[0].profit !== undefined) ? topA[0].profit : -999999;
+        const pB = (topB[0] && topB[0].profit !== undefined) ? topB[0].profit : -999999;
         return pB - pA;
       }
       return 0;
@@ -510,6 +553,8 @@
   function render() {
     const listElem = document.getElementById("productList");
     const items = filterAndSortData();
+    const isOfficialOnly = document.getElementById("officialOnlyCheck").checked;
+    const displayCount = parseInt(document.querySelector("input[name='displayCount']:checked").value, 10);
 
     if (rawData.length > 0 && rawData[0].updated_at) {
       document.getElementById("lastUpdated").textContent = "最終更新: " + rawData[0].updated_at;
@@ -526,9 +571,10 @@
         html += createInfeedRowHtml();
       }
 
-      // 楽天市場TOP3
+      const rawList = isOfficialOnly ? (item.official_top3 || []) : (item.all_top3 || []);
+      const topList = rawList.slice(0, displayCount);
+
       let rakutenHtml = "";
-      const topList = item.all_top3 || [];
       if (topList.length > 0) {
         rakutenHtml = topList.map((r, rIdx) => {
           const medal = rIdx === 0 ? "🥇 1位" : rIdx === 1 ? "🥈 2位" : "🥉 3位";
@@ -561,7 +607,8 @@
           `;
         }).join("");
       } else {
-        rakutenHtml = `<div style="font-size:0.8rem; color:var(--text-sub); padding: 8px 12px;">現在、楽天市場に新品の在庫がありません。</div>`;
+        const msg = isOfficialOnly ? "現在、正規店・公式ショップに新品在庫がありません。" : "現在、楽天市場に新品の在庫がありません。";
+        rakutenHtml = `<div style="font-size:0.8rem; color:var(--text-sub); padding: 8px 12px;">${msg}</div>`;
       }
 
       const directUrl = item.chome_url || "#";
@@ -590,16 +637,18 @@
     listElem.innerHTML = html;
   }
 
+  // イベントリスナー
   document.getElementById("searchInput").addEventListener("input", render);
   document.getElementById("sortSelect").addEventListener("change", render);
+  document.getElementById("officialOnlyCheck").addEventListener("change", render);
+  document.getElementById("inStockOnlyCheck").addEventListener("change", render);
 
-  document.querySelectorAll(".btn-tab[data-cat]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".btn-tab[data-cat]").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      currentCategory = btn.dataset.cat;
-      render();
-    });
+  document.querySelectorAll("input[name='displayCount']").forEach(radio => {
+    radio.addEventListener("change", render);
+  });
+
+  document.querySelectorAll(".cat-check").forEach(cb => {
+    cb.addEventListener("change", render);
   });
 
   loadData();
