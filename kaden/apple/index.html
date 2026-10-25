@@ -210,10 +210,9 @@
       gap: 12px;
     }
     @media (min-width: 768px) {
-      .comparison-grid { grid-template-columns: 310px 1fr; }
+      .comparison-grid { grid-template-columns: 320px 1fr; }
     }
 
-    /* 左側：一丁目買取 ＆ Apple公式定価 */
     .box-price {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
@@ -239,7 +238,6 @@
     .diff-plus { color: var(--green); font-weight: 700; }
     .diff-minus { color: var(--red); font-weight: 700; }
 
-    /* 右側：楽天市場TOP3 */
     .box-rakuten {
       background: #fff;
       border: 1px solid #e2e8f0;
@@ -322,7 +320,6 @@
   <div class="controls-bar">
     <input type="text" id="searchInput" class="search-input" placeholder="モデル名・型番・JANで検索...">
     
-    <!-- 損益率順をトップに配置 -->
     <select id="sortSelect" class="select-control">
       <option value="official_rate_desc">🍎 Apple公式 損益率が良い順</option>
       <option value="rakuten_rate_desc">🛒 楽天 損益率が良い順</option>
@@ -435,11 +432,9 @@
     });
 
     filtered.sort((a, b) => {
-      // 公式損益率
       const rateA = a.official_price > 0 ? ((a.buy_price - a.official_price) / a.official_price * 100) : -999;
       const rateB = b.official_price > 0 ? ((b.buy_price - b.official_price) / b.official_price * 100) : -999;
 
-      // 楽天トップ損益率
       const rRateA = (a.all_top3 && a.all_top3[0] && a.all_top3[0].profit_rate !== undefined) ? a.all_top3[0].profit_rate : -999;
       const rRateB = (b.all_top3 && b.all_top3[0] && b.all_top3[0].profit_rate !== undefined) ? b.all_top3[0].profit_rate : -999;
 
@@ -538,11 +533,19 @@
         `;
       }
 
+      // リンク遷移フェイルセーフ（絶対/#を発生させない）
+      const fallbackChomeUrl = item.jan 
+        ? `https://www.1-chome.com/electricAppliance?keyword=${item.jan}` 
+        : `https://www.1-chome.com/electricAppliance?keyword=${encodeURIComponent(item.name)}`;
+      const targetUrl = (item.chome_url && item.chome_url !== '#' && !item.chome_url.endsWith('/#')) 
+        ? item.chome_url 
+        : fallbackChomeUrl;
+
       html += `
         <div class="product-card">
           <div class="card-head">
             <div class="product-name">
-              <a href="${item.chome_url || '#'}" target="_blank" rel="noopener">${item.name} 🔗</a>
+              <a href="${targetUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>
             </div>
             <div class="product-meta">
               <span class="badge-cat">${item.category || 'Apple'}</span>
