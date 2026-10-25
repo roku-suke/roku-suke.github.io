@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>買取価格比較 ポータル</title>
-  <meta name="description" content="主要買取店舗のiPhone・ゲーム機相場を自動比較。最新相場をリアルタイム取得。">
+  <meta name="description" content="主要買取店舗のiPhone・ゲーム機・電子タバコ相場を自動比較。最新相場をリアルタイム取得。">
 
   <!-- Google tag (gtag.js) アクセス解析 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
@@ -29,6 +29,8 @@
       --blue-hover: #1555d8;
       --green: #10b981;
       --green-hover: #059669;
+      --amber: #d97706;
+      --amber-hover: #b45309;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -42,16 +44,8 @@
       min-height: 100vh;
       padding: 32px 16px;
     }
-    .container {
-      max-width: 680px;
-      width: 100%;
-    }
-    .ad-banner {
-      margin: 16px auto;
-      text-align: center;
-      max-width: 100%;
-      overflow: hidden;
-    }
+    .container { max-width: 680px; width: 100%; }
+    .ad-banner { margin: 16px auto; text-align: center; max-width: 100%; overflow: hidden; }
     .portal-card {
       background: var(--card-bg);
       border-radius: 16px;
@@ -93,15 +87,14 @@
       transition: all 0.2s ease;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
     }
-    .btn-genre:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    }
+    .btn-genre:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); }
     .btn-apple { background: var(--blue); color: #ffffff; }
     .btn-apple:hover { background: var(--blue-hover); }
     .btn-game { background: var(--green); color: #ffffff; }
     .btn-game:hover { background: var(--green-hover); }
-    
+    .btn-tobacco { background: var(--amber); color: #ffffff; }
+    .btn-tobacco:hover { background: var(--amber-hover); }
+
     .btn-disabled {
       background: #f1f5f9;
       color: #94a3b8;
@@ -110,33 +103,24 @@
       box-shadow: none;
     }
     .btn-disabled:hover { transform: none; box-shadow: none; }
-
-    .meta-note {
-      font-size: 0.8rem;
-      color: var(--text-sub);
-      margin-bottom: 24px;
+    .badge-prep {
+      font-size: 0.75rem;
+      background: #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: #64748b;
+      margin-left: 6px;
     }
 
-    .footer-links {
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
-      font-size: 0.85rem;
-      color: var(--text-sub);
-    }
-    .footer-links a {
-      color: var(--text-sub);
-      text-decoration: none;
-      margin: 0 8px;
-    }
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
+    .meta-note { font-size: 0.8rem; color: var(--text-sub); margin-bottom: 24px; }
+    .footer-links { border-top: 1px solid var(--border); padding-top: 20px; font-size: 0.85rem; color: var(--text-sub); }
+    .footer-links a { color: var(--text-sub); text-decoration: none; margin: 0 8px; }
+    .footer-links a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- 【AdSense上部広告】 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -150,33 +134,46 @@
   <div class="portal-card">
     <h1>買取価格比較</h1>
     <p class="sub-desc">
-      買取一丁目・モバワン・主要量販店（楽天ブックス・エディオン等）など<br>
+      買取一丁目・モバワン・主要量販店・各社公式ストアなど<br>
       主要店舗の相場・価格情報を定期的に自動更新。
     </p>
 
     <div class="grid-buttons">
-      <!-- iPhone（現行 price.html へリンク） -->
+      <!-- 携帯・iPhone -->
       <a href="keitai/iphone/" class="btn-genre btn-apple">
         <span>📱</span>
         <span>iPhone 18 / Duo 買取価格ダッシュボードを見る</span>
       </a>
 
-      <!-- ゲーム機・ソフト（新ディレクトリへリンク） -->
+      <!-- ゲーム機・ソフト -->
       <a href="kaden/game/" class="btn-genre btn-game">
         <span>🎮</span>
         <span>ゲーム機・ソフト 価格比較ダッシュボードを見る</span>
       </a>
 
-      <!-- 次回予告：電子タバコ -->
-      <div class="btn-genre btn-disabled">
+      <!-- 電子タバコ（正式公開） -->
+      <a href="kaden/tobacco/" class="btn-genre btn-tobacco">
         <span>🚬</span>
-        <span>電子タバコ（iQOS / glo）相場比較</span>
-        <span style="font-size: 0.75rem; background: #e2e8f0; padding: 2px 8px; border-radius: 4px; color: #64748b; margin-left: 6px;">準備中</span>
+        <span>電子タバコ（iQOS / glo / Ploom） 価格比較を見る</span>
+      </a>
+
+      <!-- トレカ（準備中） -->
+      <div class="btn-genre btn-disabled">
+        <span>🃏</span>
+        <span>トレカ（ポケモン・ワンピースカード等）相場比較</span>
+        <span class="badge-prep">準備中</span>
+      </div>
+
+      <!-- お酒（準備中） -->
+      <div class="btn-genre btn-disabled">
+        <span>🥃</span>
+        <span>お酒（ジャパニーズウイスキー・洋酒等）相場比較</span>
+        <span class="badge-prep">準備中</span>
       </div>
     </div>
 
     <div class="meta-note">
-      ※ 毎時0分自動更新 / 最新相場リアルタイム取得
+      ※ 毎日定期自動更新 / 最新相場リアルタイム取得
     </div>
 
     <div class="footer-links">
@@ -184,7 +181,6 @@
     </div>
   </div>
 
-  <!-- 【AdSense下部広告】 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
