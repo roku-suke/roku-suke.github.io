@@ -484,7 +484,7 @@
         const diff = item.buy_price - item.official_price;
         const rate = ((diff / item.official_price) * 100).toFixed(1);
         const diffText = diff >= 0 ? `+¥${diff.toLocaleString()}` : `-¥${Math.abs(diff).toLocaleString()}`;
-        const rateText = diff >= 0 ? `+${rate}%` : `${rate}%`;
+        const rateText = diff >= 0 ? `+${rate}\%` : `${rate}%`;
         const diffClass = diff >= 0 ? "diff-plus" : "diff-minus";
 
         officialLine = `
@@ -533,16 +533,14 @@
         `;
       }
 
-      // 一丁目詳細URL（スクレイパーで取得したURLをそのまま使用）
-      const itemUrl = (item.chome_url && item.chome_url !== '#' && !item.chome_url.endsWith('/#'))
-        ? item.chome_url
-        : `https://www.1-chome.com/electricAppliance?category=20748358`;
+      // 買取一丁目の直接個別ページURL
+      const directUrl = item.chome_url || "#";
 
       html += `
         <div class="product-card">
           <div class="card-head">
             <div class="product-name">
-              <a href="${itemUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>
+              <a href="${directUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>
             </div>
             <div class="product-meta">
               <span class="badge-cat">${item.category || 'Apple'}</span>
@@ -552,8 +550,7 @@
           <div class="comparison-grid">
             <div class="box-price">
               <div class="price-label">買取一丁目 価格</div>
-              <div class="val-chome">¥${item.buy_price.toLocaleString()}</div>
-              ${officialLine}
+              <div class="val-chome">¥${item.buy_price.toLocaleString()}</div>${officialLine}
             </div>
             ${rakutenHtml}
           </div>
