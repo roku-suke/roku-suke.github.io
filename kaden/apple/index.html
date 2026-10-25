@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Apple製品 買取・定価・楽天最安相場比較</title>
-  <meta name="description" content="iPad・AirPods・Apple Watch・Macの買取一丁目相場、Apple公式定価（換金率・損益分岐点）、楽天市場最安値をリアルタイム比較。">
+  <title>Apple製品 買取価格・楽天相場比較</title>
+  <meta name="description" content="iPad・AirPods・Apple Watchなどの買取一丁目価格、Apple公式定価との差額、楽天市場最安値をリアルタイム比較。">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
@@ -29,11 +29,9 @@
       --text-main: #0f172a;
       --text-sub: #64748b;
       --border: #e2e8f0;
-      --apple-blue: #0071e3;
-      --apple-blue-hover: #0077ed;
+      --blue: #1d68ff;
       --green: #10b981;
       --red: #ef4444;
-      --gold: #f59e0b;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -43,14 +41,13 @@
       padding-bottom: 40px;
     }
 
-    /* 上部ヘッダー */
+    /* ヘッダー */
     header {
       background: #ffffff;
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     }
     .header-top {
       max-width: 1200px;
@@ -82,7 +79,6 @@
     .page-title {
       font-size: 1.05rem;
       font-weight: 800;
-      color: var(--text-main);
       display: flex;
       align-items: center;
       gap: 6px;
@@ -155,16 +151,15 @@
       color: var(--text-sub);
     }
     .btn-tab.active {
-      background: var(--apple-blue);
+      background: var(--blue);
       color: #fff;
-      border-color: var(--apple-blue);
+      border-color: var(--blue);
     }
 
- 
-    /* メインコンテナ */
+    /* コンテナ */
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 12px auto;
       padding: 0 12px;
     }
     .ad-banner {
@@ -174,7 +169,7 @@
       overflow: hidden;
     }
 
-    /* 商品カード */
+    /* 商品リスト */
     .product-list {
       display: flex;
       flex-direction: column;
@@ -189,23 +184,18 @@
     }
     .card-head {
       margin-bottom: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 10px;
     }
     .product-name {
       font-size: 0.98rem;
       font-weight: 800;
-      color: var(--text-main);
       line-height: 1.35;
     }
     .product-name a { color: inherit; text-decoration: none; }
-    .product-name a:hover { text-decoration: underline; color: var(--apple-blue); }
+    .product-name a:hover { text-decoration: underline; color: var(--blue); }
     .product-meta {
       font-size: 0.75rem;
       color: var(--text-sub);
-      margin-top: 3px;
+      margin-top: 4px;
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
@@ -218,79 +208,54 @@
       color: #475569;
     }
 
-    /* 比較ブロック */
+    /* 比較ブロック（他画面と共通の2列構成） */
     .comparison-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 12px;
     }
     @media (min-width: 768px) {
-      .comparison-grid { grid-template-columns: 1.1fr 1fr; }
-      .mode-official-only .comparison-grid { grid-template-columns: 1fr; }
+      .comparison-grid { grid-template-columns: 280px 1fr; }
     }
 
-    /* Apple公式定価ブロック */
-    .box-official {
+    /* 左側：一丁目買取 ＆ Apple公式定価 */
+    .box-price {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
       border-radius: 10px;
       padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
     }
-    .box-title {
-      font-size: 0.78rem;
-      font-weight: 700;
+    .price-label { font-size: 0.75rem; color: var(--text-sub); font-weight: 600; }
+    .val-chome { font-size: 1.35rem; font-weight: 800; color: var(--text-main); }
+    .official-info {
+      font-size: 0.8rem;
       color: var(--text-sub);
-      margin-bottom: 8px;
+      border-top: 1px dashed var(--border);
+      padding-top: 6px;
+      margin-top: 2px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .price-summary-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 6px;
-    }
-    .val-chome {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: var(--text-main);
-    }
-    .val-official {
-      font-size: 0.85rem;
-      color: var(--text-sub);
-    }
+    .diff-plus { color: var(--green); font-weight: 700; }
+    .diff-minus { color: var(--red); font-weight: 700; }
 
-    /* 買取率・損益分岐点バー */
-    .rate-bar-container {
-      background: #e2e8f0;
-      border-radius: 6px;
-      height: 10px;
-      overflow: hidden;
-      margin: 8px 0;
-    }
-    .rate-bar-fill {
-      height: 100%;
-      background: var(--apple-blue);
-      border-radius: 6px;
-    }
-    .rate-badges {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.78rem;
-      font-weight: 700;
-    }
-    .badge-rate { color: var(--apple-blue); }
-    .badge-breakeven { color: #d97706; }
-    .diff-loss { font-size: 0.78rem; color: var(--red); font-weight: 700; }
-    .diff-profit { font-size: 0.78rem; color: var(--green); font-weight: 700; }
-
-    /* 楽天市場ブロック */
+    /* 右側：楽天市場TOP3 */
     .box-rakuten {
       background: #fff;
       border: 1px solid #e2e8f0;
       border-radius: 10px;
       padding: 12px;
+    }
+    .rakuten-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-sub);
+      margin-bottom: 8px;
     }
     .rakuten-item {
       display: flex;
@@ -334,7 +299,7 @@
       white-space: nowrap;
     }
 
-    /* インフィード広告カード */
+    /* インフィード広告 */
     .infeed-ad-card {
       background: #ffffff;
       border: 1px dashed var(--border);
@@ -351,7 +316,7 @@
     <div class="header-left">
       <a href="../../index.html" class="btn-back">⬅ ポータル</a>
       <div class="page-title">
-        <span>🍎 Apple製品 相場比較</span>
+        <span>🍎 Apple製品 買取・相場比較</span>
       </div>
     </div>
     <div class="header-right">
@@ -364,10 +329,9 @@
     <input type="text" id="searchInput" class="search-input" placeholder="モデル名・型番・JANで検索...">
     
     <select id="sortSelect" class="select-control">
-      <option value="rate_desc">【定価】買取率が高い順</option>
-      <option value="chome_desc">一丁目 買取価格が高い順</option>
-      <option value="loss_asc">【定価】差額損失が少ない順</option>
-      <option value="rakuten_desc">【楽天】利益が高い順</option>
+      <option value="chome_desc">買取価格が高い順</option>
+      <option value="diff_desc">定価差額が高い順</option>
+      <option value="rakuten_desc">楽天利益が高い順</option>
     </select>
 
     <div class="filter-group">
@@ -376,14 +340,7 @@
       <button class="btn-tab" data-cat="AirPods">AirPods</button>
       <button class="btn-tab" data-cat="Apple Watch">Watch</button>
       <button class="btn-tab" data-cat="Mac">Mac</button>
-      <button class="btn-tab" data-cat="アクセサリ">周辺機器</button>
-    </div>
-
-    <!-- 表示モード切替 -->
-    <div class="filter-group" style="margin-left:auto;">
-      <button class="btn-tab active" id="modeAllBtn">全表示</button>
-      <button class="btn-tab" id="modeOfficialBtn">🍎 定価比較のみ</button>
-      <button class="btn-tab" id="modeRakutenBtn">🛒 楽天比較のみ</button>
+      <button class="btn-tab" data-cat="アクセサリ">アクセサリ</button>
     </div>
   </div>
 </header>
@@ -416,15 +373,12 @@
   </div>
 </div>
 
-<!-- フォールバック用JS -->
 <script src="data.js?t=1"></script>
 
 <script>
-  // Firebase リアルタイム接続監視
+  // Firebase 閲覧人数
   try {
-    const firebaseConfig = {
-      databaseURL: "https://price-tracker-presence-default-rtdb.firebaseio.com"
-    };
+    const firebaseConfig = { databaseURL: "https://price-tracker-presence-default-rtdb.firebaseio.com" };
     if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
     const db = firebase.database();
     const onlineRef = db.ref(".info/connected");
@@ -443,12 +397,10 @@
     console.warn("Firebase offline mode");
   }
 
-  // アプリ本体
   let rawData = [];
   let currentCategory = "all";
-  let displayMode = "all"; // 'all', 'official', 'rakuten'
 
-  // インフィード広告生成HTML
+  // インフィード広告
   function createInfeedRowHtml() {
     return `
       <div class="infeed-ad-card">
@@ -469,9 +421,7 @@
       if (!res.ok) throw new Error("JSON fetch failed");
       rawData = await res.json();
     } catch(e) {
-      if (window.APPLE_DATA) {
-        rawData = window.APPLE_DATA;
-      }
+      if (window.APPLE_DATA) rawData = window.APPLE_DATA;
     }
     render();
   }
@@ -492,14 +442,12 @@
     });
 
     filtered.sort((a, b) => {
-      if (sortVal === "rate_desc") {
-        return (b.kaitori_rate || 0) - (a.kaitori_rate || 0);
-      } else if (sortVal === "chome_desc") {
+      if (sortVal === "chome_desc") {
         return b.buy_price - a.buy_price;
-      } else if (sortVal === "loss_asc") {
-        const diffA = a.official_price ? (a.official_price - a.buy_price) : 999999;
-        const diffB = b.official_price ? (b.official_price - b.buy_price) : 999999;
-        return diffA - diffB;
+      } else if (sortVal === "diff_desc") {
+        const diffA = a.official_price ? (a.buy_price - a.official_price) : -999999;
+        const diffB = b.official_price ? (b.buy_price - b.official_price) : -999999;
+        return diffB - diffA;
       } else if (sortVal === "rakuten_desc") {
         const pA = (a.all_top3 && a.all_top3[0]) ? a.all_top3[0].profit : -999999;
         const pB = (b.all_top3 && b.all_top3[0]) ? b.all_top3[0].profit : -999999;
@@ -526,45 +474,21 @@
 
     let html = "";
     items.forEach((item, idx) => {
-      // 3件目と6件目にインフィード広告を差し込み
+      // 3件目と6件目に広告を挿入（統一仕様）
       if (idx === 2 || idx === 5) {
         html += createInfeedRowHtml();
       }
 
-      // 定価情報の計算
-      let officialHtml = "";
+      // Apple公式定価 & 差額
+      let officialLine = "";
       if (item.official_price > 0) {
         const diff = item.buy_price - item.official_price;
         const diffText = diff >= 0 ? `+¥${diff.toLocaleString()}` : `-¥${Math.abs(diff).toLocaleString()}`;
-        const diffClass = diff >= 0 ? "diff-profit" : "diff-loss";
-
-        officialHtml = `
-          <div class="box-official">
-            <div class="box-title">
-              <span>🍎 Apple公式定価 ➔ 一丁目換金率</span>
-              <span class="${diffClass}">差額: ${diffText}</span>
-            </div>
-            <div class="price-summary-row">
-              <div>一丁目買取: <span class="val-chome">¥${item.buy_price.toLocaleString()}</span></div>
-              <div class="val-official">公式定価: ¥${item.official_price.toLocaleString()}</div>
-            </div>
-            <div class="rate-bar-container">
-              <div class="rate-bar-fill" style="width: ${Math.min(item.kaitori_rate, 100)}%;"></div>
-            </div>
-            <div class="rate-badges">
-              <span class="badge-rate">買取率: ${item.kaitori_rate}%</span>
-              <span class="badge-breakeven">損益分岐点: 要 ${item.break_even_rate}% 還元</span>
-            </div>
-          </div>
-        `;
-      } else {
-        officialHtml = `
-          <div class="box-official">
-            <div class="box-title"><span>🍎 Apple公式定価</span></div>
-            <div style="font-size:0.85rem; color:var(--text-sub); padding:10px 0;">
-              一丁目買取: <span class="val-chome">¥${item.buy_price.toLocaleString()}</span><br>
-              ※ 定価マスタ未登録品（一般店比較を参照）
-            </div>
+        const diffClass = diff >= 0 ? "diff-plus" : "diff-minus";
+        officialLine = `
+          <div class="official-info">
+            <span>Apple定価: ¥${item.official_price.toLocaleString()}</span>
+            <span class="${diffClass}">差額: ${diffText}</span>
           </div>
         `;
       }
@@ -575,7 +499,7 @@
       if (topList.length > 0) {
         rakutenHtml = `
           <div class="box-rakuten">
-            <div class="box-title"><span>🛒 楽天市場 安値TOP3</span></div>
+            <div class="rakuten-title">🛒 楽天市場 安値TOP3</div>
             ${topList.map((r, rIdx) => {
               const medal = rIdx === 0 ? "🥇" : rIdx === 1 ? "🥈" : "🥉";
               const profitText = r.profit > 0 ? `+¥${r.profit.toLocaleString()}` : `-¥${Math.abs(r.profit).toLocaleString()}`;
@@ -600,36 +524,31 @@
       } else {
         rakutenHtml = `
           <div class="box-rakuten">
-            <div class="box-title"><span>🛒 楽天市場 安値TOP3</span></div>
+            <div class="rakuten-title">🛒 楽天市場 安値TOP3</div>
             <div style="font-size:0.8rem; color:var(--text-sub); padding:10px 0;">現在、楽天市場に新品の在庫がありません。</div>
           </div>
         `;
       }
 
-      // 表示モードによるレイアウト制御
-      let gridContent = "";
-      if (displayMode === "official") {
-        gridContent = `<div class="comparison-grid">${officialHtml}</div>`;
-      } else if (displayMode === "rakuten") {
-        gridContent = `<div class="comparison-grid">${rakutenHtml}</div>`;
-      } else {
-        gridContent = `<div class="comparison-grid">${officialHtml}${rakutenHtml}</div>`;
-      }
-
       html += `
         <div class="product-card">
           <div class="card-head">
-            <div>
-              <div class="product-name">
-                <a href="${item.chome_url || '#'}" target="_blank" rel="noopener">${item.name} 🔗</a>
-              </div>
-              <div class="product-meta">
-                <span class="badge-cat">${item.category || 'Apple'}</span>
-                <span>JAN: ${item.jan || '未登録'}</span>
-              </div>
+            <div class="product-name">
+              <a href="${item.chome_url || '#'}" target="_blank" rel="noopener">${item.name} 🔗</a>
+            </div>
+            <div class="product-meta">
+              <span class="badge-cat">${item.category || 'Apple'}</span>
+              <span>JAN: ${item.jan || '未登録'}</span>
             </div>
           </div>
-          ${gridContent}
+          <div class="comparison-grid">
+            <div class="box-price">
+              <div class="price-label">買取一丁目 価格</div>
+              <div class="val-chome">¥${item.buy_price.toLocaleString()}</div>
+              ${officialLine}
+            </div>
+            ${rakutenHtml}
+          </div>
         </div>
       `;
     });
@@ -637,7 +556,7 @@
     listElem.innerHTML = html;
   }
 
-  // イベント設定
+  // イベント
   document.getElementById("searchInput").addEventListener("input", render);
   document.getElementById("sortSelect").addEventListener("change", render);
 
@@ -648,35 +567,6 @@
       currentCategory = btn.dataset.cat;
       render();
     });
-  });
-
-  // 表示モード切替
-  const modeAllBtn = document.getElementById("modeAllBtn");
-  const modeOfficialBtn = document.getElementById("modeOfficialBtn");
-  const modeRakutenBtn = document.getElementById("modeRakutenBtn");
-
-  modeAllBtn.addEventListener("click", () => {
-    modeAllBtn.classList.add("active");
-    modeOfficialBtn.classList.remove("active");
-    modeRakutenBtn.classList.remove("active");
-    displayMode = "all";
-    render();
-  });
-
-  modeOfficialBtn.addEventListener("click", () => {
-    modeOfficialBtn.classList.add("active");
-    modeAllBtn.classList.remove("active");
-    modeRakutenBtn.classList.remove("active");
-    displayMode = "official";
-    render();
-  });
-
-  modeRakutenBtn.addEventListener("click", () => {
-    modeRakutenBtn.classList.add("active");
-    modeAllBtn.classList.remove("active");
-    modeOfficialBtn.classList.remove("active");
-    displayMode = "rakuten";
-    render();
   });
 
   loadData();
