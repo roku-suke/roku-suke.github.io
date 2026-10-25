@@ -533,19 +533,16 @@
         `;
       }
 
-      // リンク遷移フェイルセーフ（絶対/#を発生させない）
-      const fallbackChomeUrl = item.jan 
-        ? `https://www.1-chome.com/electricAppliance?keyword=${item.jan}` 
-        : `https://www.1-chome.com/electricAppliance?keyword=${encodeURIComponent(item.name)}`;
-      const targetUrl = (item.chome_url && item.chome_url !== '#' && !item.chome_url.endsWith('/#')) 
-        ? item.chome_url 
-        : fallbackChomeUrl;
+      // 一丁目詳細URL（スクレイパーで取得したURLをそのまま使用）
+      const itemUrl = (item.chome_url && item.chome_url !== '#' && !item.chome_url.endsWith('/#'))
+        ? item.chome_url
+        : `https://www.1-chome.com/electricAppliance?category=20748358`;
 
       html += `
         <div class="product-card">
           <div class="card-head">
             <div class="product-name">
-              <a href="${targetUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>
+              <a href="${itemUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>
             </div>
             <div class="product-meta">
               <span class="badge-cat">${item.category || 'Apple'}</span>
