@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>家電・ゲーム・電子タバコ 安値TOP3 比較ダッシュボード</title>
+  <title>ゲーム機・ソフト 安値TOP3 比較ダッシュボード</title>
   <style>
     :root {
       --bg: #f4f6f9;
@@ -68,34 +68,6 @@
       z-index: 100;
       background: var(--bg);
       padding-bottom: 12px;
-    }
-
-    /* ジャンル切り替えタブ（iPhone風） */
-    .tab-bar {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 12px;
-    }
-    .tab-btn {
-      background: #fff;
-      border: 1px solid var(--border);
-      padding: 8px 18px;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--text-sub);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s;
-    }
-    .tab-btn:hover { background: #f9fafb; color: var(--text-main); }
-    .tab-btn.active {
-      background: #2563eb;
-      color: #fff;
-      border-color: #2563eb;
-      box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
     }
     
     .controls {
@@ -175,8 +147,6 @@
       header { flex-direction: column; align-items: flex-start; gap: 10px; }
       .header-right { width: 100%; flex-direction: row; justify-content: space-between; }
       .sticky-wrapper { top: 0; }
-      .tab-bar { overflow-x: auto; width: 100%; }
-      .tab-btn { flex: 1; justify-content: center; font-size: 0.85rem; padding: 8px 10px; white-space: nowrap; }
       .controls { padding: 10px; gap: 10px; }
       .search-box, .sort-box { width: 100%; min-width: 100%; }
       .view-count-toggle { width: 100%; justify-content: space-around; }
@@ -205,7 +175,8 @@
 <div class="container">
   <header>
     <div class="header-left">
-      <a href="index.html" class="btn-home">⬅ ポータル</a>
+      <!-- 修正: ルートの index.html に戻るように ../../ を付与 -->
+      <a href="../../index.html" class="btn-home">⬅ ポータル</a>
       <div>
         <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
         <div class="meta-info">買取一丁目 × 楽天市場（正規取扱店 ＋ 優良一般店）</div>
@@ -220,19 +191,7 @@
     </div>
   </header>
 
-  <!-- 上部固定エリア（タブ ＋ 検索・絞り込みバー） -->
   <div class="sticky-wrapper">
-    <!-- ジャンル切り替えタブ -->
-    <div class="tab-bar">
-      <button class="tab-btn active" id="tab-game" onclick="switchCategoryTab('game')">
-        <span>🎮</span> ゲーム機・ソフト
-      </button>
-      <button class="tab-btn" id="tab-tobacco" onclick="switchCategoryTab('tobacco')">
-        <span>🚬</span> 電子タバコ
-      </button>
-    </div>
-
-    <!-- 操作バー -->
     <div class="controls">
       <div class="search-box">
         <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・ショップ名で絞り込み...">
@@ -251,13 +210,11 @@
           <label><input type="radio" name="rank-limit" value="1"> 1位のみ</label>
           <label><input type="radio" name="rank-limit" value="3" checked> TOP3</label>
         </div>
-
         <label class="mode-toggle">
           <input type="checkbox" id="official-only" checked> 正規取扱店のみ
         </label>
         <label><input type="checkbox" id="in-stock-only" checked> 在庫ありのみ</label>
-
-        <!-- ゲーム用チェックボックス群（ゲームタブ選択時のみ表示） -->
+        <!-- ゲーム用チェックボックス -->
         <span id="game-subfilters" style="display: inline-flex; gap: 10px;">
           <label><input type="checkbox" id="cat-console"> 本体のみ</label>
           <label><input type="checkbox" id="cat-soft"> ソフト</label>
@@ -283,7 +240,7 @@
   </div>
 </div>
 
-<!-- Firebase SDK -->
+<!-- Firebase SDK (同時接続数) -->
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 <script>
@@ -317,11 +274,9 @@
 
 <script>
   let rawData = [];
-  let currentTab = 'game'; // 'game' または 'tobacco'
 
   const tbody = document.getElementById('table-body');
   const updatedAtElem = document.getElementById('updated-at');
-  const pageTitle = document.getElementById('page-title');
   const filterInput = document.getElementById('filter-input');
   const sortSelect = document.getElementById('sort-select');
   const officialOnly = document.getElementById('official-only');
@@ -329,13 +284,12 @@
   const catConsole = document.getElementById('cat-console');
   const catSoft = document.getElementById('cat-soft');
   const catController = document.getElementById('cat-controller');
-  const gameSubfilters = document.getElementById('game-subfilters');
   const thTop3Title = document.getElementById('th-top3-title');
 
   const rankBadges = ['🥇 1位', '🥈 2位', '🥉 3位'];
   const rankClasses = ['rank-1', 'rank-2', 'rank-3'];
 
-  // ★ キャッシュバスター付きデータ読み込み（iPhoneと同様の仕組み）
+  // ★ 修正: data.json と data.js を読み込むように変更
   async function loadData() {
     let data = null;
     
@@ -355,11 +309,11 @@
       else if (window.GAME_DATA && window.GAME_DATA.length > 0) data = window.GAME_DATA;
     }
 
-    // 3. JSファイルをキャッシュバスター付きで動的ロード（バックアップ）
+    // 3. JSファイルをキャッシュバスター付きで動的ロード
     if (!data) {
       await new Promise((resolve) => {
         const sc = document.createElement('script');
-        sc.src = './kaden_data.js?t=' + Date.now();
+        sc.src = './data.js?t=' + Date.now();
         sc.onload = () => {
           data = window.KADEN_DATA || window.GAME_DATA || null;
           resolve();
@@ -381,22 +335,6 @@
     }
   }
 
-  function switchCategoryTab(tab) {
-    currentTab = tab;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    
-    if (tab === 'game') {
-      document.getElementById('tab-game').classList.add('active');
-      pageTitle.textContent = 'ゲーム機 正規店＆市場全体 安値TOP3 比較';
-      gameSubfilters.style.display = 'inline-flex';
-    } else {
-      document.getElementById('tab-tobacco').classList.add('active');
-      pageTitle.textContent = '電子タバコ（iQOS/glo等） 正規店＆市場全体 安値TOP3 比較';
-      gameSubfilters.style.display = 'none';
-    }
-    render();
-  }
-
   function render() {
     if (!rawData || rawData.length === 0) return;
 
@@ -413,15 +351,12 @@
     const filterConsole = catConsole.checked;
     const filterSoft = catSoft.checked;
     const filterController = catController.checked;
-    const useGameSubFilter = (currentTab === 'game') && (filterConsole || filterSoft || filterController);
+    const useGameSubFilter = filterConsole || filterSoft || filterController;
 
     let items = rawData.filter(it => {
       const cat = it.category || '';
-      const isTobaccoItem = (cat === '電子タバコ') || /iqos|iluma|glo|ploom|アイコス|グロー/i.test(it.name || '');
-
-      // タブごとのカテゴリ振り分け
-      if (currentTab === 'game' && isTobaccoItem) return false;
-      if (currentTab === 'tobacco' && !isTobaccoItem) return false;
+      // 電子タバコ等を除外（ゲームのみ）
+      if ((cat === '電子タバコ') || /iqos|iluma|glo|ploom|アイコス|グロー/i.test(it.name || '')) return false;
 
       // ゲームサブフィルター
       if (useGameSubFilter) {
