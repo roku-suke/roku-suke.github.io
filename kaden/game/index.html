@@ -74,7 +74,6 @@
     .live-users-badge b { color: #047857; font-variant-numeric: tabular-nums; font-size: 0.9rem; }
     .meta-info { font-size: 0.85rem; color: var(--text-sub); }
 
-    /* 広告枠 */
     .ad-banner {
       margin: 16px auto;
       text-align: center;
@@ -82,30 +81,51 @@
       overflow: hidden;
     }
 
-    /* 操作バー固定 */
+    /* インフィード広告行のスタイル */
+    .infeed-row td {
+      background-color: #f8fafc;
+      padding: 18px 16px;
+      text-align: center;
+      border-top: 1px dashed var(--border);
+      border-bottom: 1px dashed var(--border);
+    }
+    .infeed-label {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .infeed-box {
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: 90px;
+    }
+
+    /* 操作バー固定（スクロール追従） */
     .sticky-wrapper {
       position: sticky;
       top: 0;
       z-index: 100;
       background: var(--bg);
-      padding-bottom: 12px;
+      padding: 8px 0 12px 0;
     }
     
     .controls {
       display: flex;
-      gap: 14px;
+      gap: 12px;
       background: var(--card-bg);
-      padding: 12px 16px;
+      padding: 10px 14px;
       border-radius: 8px;
       border: 1px solid var(--border);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       flex-wrap: wrap;
       align-items: center;
     }
-    .search-box { flex: 1; min-width: 220px; }
-    .sort-box { width: 280px; }
+    .search-box { flex: 1; min-width: 200px; }
+    .sort-box { width: 260px; }
     input[type="text"], select { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
-    .filter-options { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .filter-options { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
     .filter-options label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #374151; }
     .filter-options .mode-toggle { background: #eff6ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe; color: #1d4ed8; }
     .view-count-toggle { display: flex; align-items: center; gap: 8px; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
@@ -116,6 +136,7 @@
     td { padding: 16px; border-bottom: 1px solid var(--border); vertical-align: middle; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #f9fafb; }
+    .infeed-row:hover td { background-color: #f8fafc; }
     
     .item-col { min-width: 280px; max-width: 340px; word-break: keep-all; overflow-wrap: break-word; }
     .item-name { font-weight: 600; color: #111827; line-height: 1.4; margin-bottom: 4px; font-size: 0.95rem; text-decoration: none; display: inline-block; }
@@ -162,20 +183,18 @@
     .btn-buy:hover { background: #990000; }
     .no-stock { text-align: center; color: var(--text-sub); padding: 16px; font-style: italic; }
 
-    /* 下部ナビゲーションエリア */
     .bottom-nav {
       margin-top: 24px;
       display: flex;
       justify-content: center;
     }
 
-    /* モバイル最適化 */
     @media (max-width: 768px) {
       body { padding: 12px 8px; }
       header { flex-direction: column; align-items: flex-start; gap: 10px; }
       .header-right { width: 100%; flex-direction: row; justify-content: space-between; }
-      .sticky-wrapper { top: 0; }
-      .controls { padding: 10px; gap: 10px; }
+      .sticky-wrapper { top: 0; padding-top: 4px; }
+      .controls { padding: 8px; gap: 8px; }
       .search-box, .sort-box { width: 100%; min-width: 100%; }
       .view-count-toggle { width: 100%; justify-content: space-around; }
 
@@ -195,6 +214,8 @@
       .rank-center { display: flex; justify-content: space-between; }
       .rank-right { flex-direction: row; justify-content: space-between; align-items: center; padding-top: 4px; border-top: 1px dashed rgba(0,0,0,0.06); }
       .btn-buy { margin-left: 0; width: 100%; text-align: center; margin-top: 4px; }
+      
+      .infeed-row { padding: 10px !important; margin-bottom: 14px; }
     }
   </style>
 </head>
@@ -229,8 +250,10 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
+  <!-- スクロール追従バー -->
   <div class="sticky-wrapper">
     <div class="controls">
+      <a href="../../index.html" class="btn-home" title="ポータルトップへ戻る">⬅ ポータル</a>
       <div class="search-box">
         <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・ショップ名で絞り込み...">
       </div>
@@ -287,7 +310,6 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <!-- 下部ポータルボタン（上部と同一デザイン） -->
   <div class="bottom-nav">
     <a href="../../index.html" class="btn-home" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
   </div>
@@ -381,6 +403,25 @@
     }
   }
 
+  // ★ インフィード広告 HTML 生成（テーブル行として溶け込ませる）
+  function createInfeedRowHtml() {
+    return `
+      <tr class="infeed-row">
+        <td colspan="3">
+          <span class="infeed-label">― SPONSORED ―</span>
+          <div class="infeed-box">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9014722014583256"
+                 data-ad-slot="7138671333"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div>
+        </td>
+      </tr>
+    `;
+  }
+
   function render() {
     if (!rawData || rawData.length === 0) return;
 
@@ -453,7 +494,8 @@
       return;
     }
 
-    tbody.innerHTML = items.map(it => {
+    let rowsHtml = '';
+    items.forEach((it, idx) => {
       const buyStr = it.buy_price ? '¥' + it.buy_price.toLocaleString() : '-';
       const fullTopList = isOfficial ? (it.official_top3 || []) : (it.all_top3 || []);
       const topList = fullTopList.slice(0, rankLimit);
@@ -512,7 +554,7 @@
         }).join('');
       }
 
-      return `
+      rowsHtml += `
         <tr>
           <td class="item-col">
             ${nameHtml}
@@ -525,7 +567,23 @@
           </td>
         </tr>
       `;
-    }).join('');
+
+      // ★ インフィード広告の挿入（7件目と22件目の直後のみ）
+      if (idx === 6 || idx === 21) {
+        rowsHtml += createInfeedRowHtml();
+      }
+    });
+
+    tbody.innerHTML = rowsHtml;
+
+    // ★ 動的に挿入したインフィード広告タグを AdSense に認識・描画させる処理
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.infeed-box ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch(e) {}
+      });
+    });
   }
 
   ['filter-input', 'sort-select', 'official-only', 'in-stock-only', 'cat-console', 'cat-soft', 'cat-controller'].forEach(id => {
