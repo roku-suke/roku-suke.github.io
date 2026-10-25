@@ -112,28 +112,48 @@ C:\python\price_tracker\             # ★ 本システム専用の完全隔離�
 ### 統合バッチ: `C:\python\price_tracker\run_GetValue.bat`
 ```bat
 @echo off
-chcp 65001 > nul
 cd /d C:\python\price_tracker
+set PYTHONIOENCODING=utf-8
 
+:: 第1引数（%1）を判定
 set TARGET=%1
 
 if /i "%TARGET%"=="keitai_iphone" goto RUN_IPHONE
-if /i "%TARGET%"=="kaden_game"    goto RUN_KADEN_GAME
-if /i "%TARGET%"=="kaden_tobacco" goto RUN_KADEN_TOBACCO
+if /i "%TARGET%"=="iphone"        goto RUN_IPHONE
 
-echo [ERROR] 不正な引数です: %TARGET%
+if /i "%TARGET%"=="kaden_game"    goto RUN_KADEN_GAME
+if /i "%TARGET%"=="game"          goto RUN_KADEN_GAME
+
+if /i "%TARGET%"=="kaden_tobacco" goto RUN_KADEN_TOBACCO
+if /i "%TARGET%"=="tobacco"       goto RUN_KADEN_TOBACCO
+
+echo ========================================================
+echo [ERROR] 不正な引数です: "%TARGET%"
+echo 使用方法: run_GetValue.bat [keitai_iphone ^| kaden_game ^| kaden_tobacco]
+echo ========================================================
 exit /b 1
 
 :RUN_IPHONE
+echo [%date% %time%] iPhone価格取得スクリプトを実行中...
 python scripts\scrape_iphone.py
-exit /b 0
+goto END
 
 :RUN_KADEN_GAME
+echo [%date% %time%] 家電・ゲーム価格取得スクリプトを実行中...
 python scripts\scrape_kaden.py game
-exit /b 0
+goto END
 
 :RUN_KADEN_TOBACCO
-python scripts\scrape_kaden.py tobacco
+echo [%date% %time%] 電子タバコ価格取得スクリプトを実行中...
+if exist scripts\scrape_tobacco.py (
+    python scripts\scrape_tobacco.py
+) else (
+    echo [SKIP] scripts\scrape_tobacco.py はまだ作成されていません。
+)
+goto END
+
+:END
+echo [%date% %time%] 処理が完了しました (対象: %TARGET%)
 exit /b 0
 ```
 
@@ -168,14 +188,15 @@ exit /b 0
 ### フェーズ1：アーキテクチャの定義と基盤安定化
 - [x] スクレイピングのフリーズ問題解決（Selenium `eager`化・画像オフ）
 - [x] GitHub APIによる直接連携の構築
-- [x] 業務環境との完全分離方針の策定・仕様書の更新（本仕様書の作成）
+- [x] 業務環境との完全分離方針の策定・仕様書の更新
 
 ### フェーズ2：隔離ディレクトリの構築・バッチ統合【← 現在ここ】
-- [ ] 業務から隔離した専用ディレクトリ（`C:\python\price_tracker\`）の新規作成
-- [ ] 対象スクリプトのみを安全に専用フォルダへ「コピー」配置（移動ではなくコピーで安全確保）
-- [ ] `run_GetValue.bat` を専用フォルダ内に作成
+- [x] 業務から隔離した専用ディレクトリ（`C:\python\price_tracker\`）の新規作成
+- [x] 対象スクリプトのみを安全に専用フォルダへ「コピー」配置
+- [x] `run_GetValue.bat` を専用フォルダ内に作成
+- [x] 新環境での単体稼働テスト（iPhone・ゲーム共に完全完走を確認）
 - [ ] タスクスケジューラに「`PriceTracker`」フォルダを作成し、引数方式で新タスクを登録
-- [ ] 新環境での単体稼働テスト（問題なければ旧バッチ・旧タスクを安全に停止）
+- [ ] 旧タスクを「無効」にして新環境への移行完了を確認
 
 ### フェーズ3：GitHubディレクトリ再編
 - [ ] リポジトリ側のフォルダ構成を `kaden/game/` 等に移行・整理
