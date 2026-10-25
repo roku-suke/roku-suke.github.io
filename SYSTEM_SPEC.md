@@ -4,16 +4,19 @@
 
 本システムは、「携帯買取（相場比較）」と「家電・ホビー（アービトラージ）」の2つの独立した収集・比較エンジンを統合バッチによって集中管理し、GitHub Pages上にジャンル別のダッシュボードを展開する自動化システムである。
 
+※**サーバー上の業務システムとの完全分離方針**に基づき、業務ファイル群と混在させず専用フォルダ配下に全リソースを隔離して安全に運用する。
+
 ```text
 [ローカルサーバー: Windows Server]
   │ 
-  ├─ run_GetValue.bat (統合トリガー)
-  │    ├─ 引数: keitai_iphone ── [毎時00分] ──> scrape_iphone.py
-  │    ├─ 引数: kaden_game    ── [11:30/17:30] > scrape_kaden.py (game)
-  │    └─ 引数: kaden_tobacco ── [11:40/17:40] > scrape_kaden.py (tobacco)
-  │
-  └─ GitHub API による自動ファイルプッシュ (json / js)
+  └─ 専用隔離環境: C:\python\price_tracker\
+       ├─ run_GetValue.bat (統合トリガー / タスクスケジューラ専用フォルダから呼出)
+       │    ├─ 引数: keitai_iphone ── [毎時00分] ──> scripts\scrape_iphone.py
+       │    ├─ 引数: kaden_game    ── [11:30/17:30] > scripts\scrape_kaden.py (game)
+       │    └─ 引数: kaden_tobacco ── [11:40/17:40] > scripts\scrape_kaden.py (tobacco)
        │
+       └─ GitHub API による自動ファイルプッシュ (json / js)
+            │
 [公開サーバー: GitHub Pages]
   └─ ジャンルごとに独立した HTML / JSON 構造で超軽量・高速表示
 ```
@@ -54,9 +57,11 @@ roku-suke.github.io/
     └── (whisky/ など)
 ```
 
-### ローカルサーバー（`C:\python\`）のディレクトリツリー
+### ローカルサーバー（業務影響防止・専用隔離構成）
+※既存の `C:\python\` 直下の業務スクリプトやデスクトップのバッチには一切干渉しない。
+
 ```text
-C:\python\
+C:\python\price_tracker\             # ★ 本システム専用の完全隔離ルートフォルダ
 │
 ├── run_GetValue.bat                 # 唯一の実行バッチ（引数で内部スクリプトを呼び分け）
 │
@@ -102,13 +107,13 @@ C:\python\
 
 ---
 
-## 4. バッチおよびタスクスケジューラ仕様
+## 4. バッチおよびタスクスケジューラ仕様（業務タスクとの完全分離）
 
-### 統合バッチ: `run_GetValue.bat`
+### 統合バッチ: `C:\python\price_tracker\run_GetValue.bat`
 ```bat
 @echo off
 chcp 65001 > nul
-cd /d C:\python
+cd /d C:\python\price_tracker
 
 set TARGET=%1
 
@@ -132,13 +137,14 @@ python scripts\scrape_kaden.py tobacco
 exit /b 0
 ```
 
-### タスクスケジューラ登録一覧
+### タスクスケジューラ管理方針
+* **タスクスケジューラ ライブラリ直下に専用フォルダ「`PriceTracker`」を作成**し、仕事用タスクとは別の階層に登録する。
 
-| タスク名 | トリガー | 実行プログラム | 引数の追加 |
-| :--- | :--- | :--- | :--- |
-| **Tracker_Keitai_iPhone** | 毎日 毎時00分 | `C:\python\run_GetValue.bat` | `keitai_iphone` |
-| **Tracker_Kaden_Game** | 毎日 11:30, 17:30 | `C:\python\run_GetValue.bat` | `kaden_game` |
-| **Tracker_Kaden_Tobacco** | 毎日 11:40, 17:40 | `C:\python\run_GetValue.bat` | `kaden_tobacco` |
+| 登録先フォルダ | タスク名 | トリガー | 実行プログラム | 引数の追加 |
+| :--- | :--- | :--- | :--- | :--- |
+| **`PriceTracker`** | Tracker_Keitai_iPhone | 毎日 毎時00分 | `C:\python\price_tracker\run_GetValue.bat` | `keitai_iphone` |
+| **`PriceTracker`** | Tracker_Kaden_Game | 毎日 11:30, 17:30 | `C:\python\price_tracker\run_GetValue.bat` | `kaden_game` |
+| **`PriceTracker`** | Tracker_Kaden_Tobacco | 毎日 11:40, 17:40 | `C:\python\price_tracker\run_GetValue.bat` | `kaden_tobacco` |
 
 ---
 
@@ -162,19 +168,23 @@ exit /b 0
 ### フェーズ1：アーキテクチャの定義と基盤安定化
 - [x] スクレイピングのフリーズ問題解決（Selenium `eager`化・画像オフ）
 - [x] GitHub APIによる直接連携の構築
-- [x] 今後の拡張を見据えた仕様・ファイル構成の決定（本仕様書の作成）
+- [x] 業務環境との完全分離方針の策定・仕様書の更新（本仕様書の作成）
 
-### フェーズ2：ディレクトリ構成の再編・バッチ統合【← 現在ここ】
-- [ ] ローカルサーバー（`C:\python`）のフォルダ構成を仕様書通りに整理
-- [ ] `run_GetValue.bat` を作成し、既存の個別バッチを廃止・統合
-- [ ] GitHubリポジトリ側のフォルダ構成を `kaden/game/` 等に移行・整理
-- [ ] タスクスケジューラの設定を引数方式（`keitai_iphone`, `kaden_game`）へ変更
+### フェーズ2：隔離ディレクトリの構築・バッチ統合【← 現在ここ】
+- [ ] 業務から隔離した専用ディレクトリ（`C:\python\price_tracker\`）の新規作成
+- [ ] 対象スクリプトのみを安全に専用フォルダへ「コピー」配置（移動ではなくコピーで安全確保）
+- [ ] `run_GetValue.bat` を専用フォルダ内に作成
+- [ ] タスクスケジューラに「`PriceTracker`」フォルダを作成し、引数方式で新タスクを登録
+- [ ] 新環境での単体稼働テスト（問題なければ旧バッチ・旧タスクを安全に停止）
 
-### フェーズ3：iPhoneシステムの高度化
-- [ ] `scrape_iphone.py` と 機種設定（`config_iphone.json`）の分離
+### フェーズ3：GitHubディレクトリ再編
+- [ ] リポジトリ側のフォルダ構成を `kaden/game/` 等に移行・整理
+
+### フェーズ4：iPhoneシステムの高度化
+- [ ] `scrape_iphone.py` と 機種設定（`configs/iphone_models.json`）の分離
 - [ ] iPhoneのデータ出力を `current_data.json` と `history_archive.json` に分離するロジック実装
 - [ ] iPhone画面（HTML）に年間推移グラフ描画機能を追加
 
-### フェーズ4：家電アービトラージの横展開
+### フェーズ5：家電アービトラージの横展開
 - [ ] 電子タバコ（`kaden_tobacco`）のスクリプト実装と画面追加
 - [ ] トレカ（`toreca`）のスクリプト実装と画面追加
