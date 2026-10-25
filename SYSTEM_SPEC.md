@@ -32,17 +32,19 @@
 roku-suke.github.io/
 │
 ├── index.html                       # 総合ポータル（各ジャンルへのリンクハブ）
+├── price.html                       # 旧iPhone画面（keitai/iphone/ への自動転送メタタグ）
 │
 ├── keitai/                          # 【大カテゴリ: 携帯】
 │   └── iphone/                      # URL: .../keitai/iphone/
 │       ├── index.html               # iPhone価格比較ダッシュボード本体
-│       ├── current_data.json        # リアルタイム最新相場 ＋ 30日動向（毎時更新・50KB）
-│       └── history_archive.json     # 長期推移グラフ用アーカイブ（日次最高値のみ・遅延読込）
+│       ├── all_prices.json          # 最新相場データ（フェーズ4で current_data.json へ移行）
+│       └── all_prices.js            # フォールバック用JSデータ
 │
 ├── kaden/                           # 【大カテゴリ: 家電】
 │   ├── game/                        # URL: .../kaden/game/
 │   │   ├── index.html               # ゲーム機・ソフト比較画面
-│   │   └── data.json                # ゲーム相場・楽天安値TOP3データ
+│   │   ├── data.json                # ゲーム相場・楽天安値TOP3データ
+│   │   └── data.js                  # フォールバック用JSデータ
 │   │
 │   ├── tobacco/                     # URL: .../kaden/tobacco/ (次回実装)
 │   │   ├── index.html               # 電子タバコ比較画面
@@ -61,12 +63,12 @@ roku-suke.github.io/
 ※既存の `C:\python\` 直下の業務スクリプトやデスクトップのバッチには一切干渉しない。
 
 ```text
-C:\python\price_tracker\             # ★ 本システム専用の完全隔離ルートフォルダ
+C:\python\price_tracker\             # 専用完全隔離ルートフォルダ
 │
 ├── run_GetValue.bat                 # 唯一の実行バッチ（引数で内部スクリプトを呼び分け）
 │
 ├── configs/
-│   └── iphone_models.json           # 毎年9月に新機種・定価のみを更新する設定ファイル
+│   └── iphone_models.json           # 毎年9月に新機種・定価のみを更新する設定ファイル（フェーズ4準備）
 │
 ├── scripts/
 │   ├── scrape_iphone.py             # iPhone専用スクレイピングスクリプト
@@ -102,8 +104,8 @@ C:\python\price_tracker\             # ★ 本システム専用の完全隔離�
   * **トレカ**（85件）：所要時間 約1.5分（ロードマップ）
   * **お酒**（25件）：所要時間 約30秒（ロードマップ）
 * **画面表示ルール**:
-  * 1つのページに詰め込まず、サブカテゴリごとにページ（`kaden/game/index.html` 等）を分離。
-  * 各ページの上部にジャンル特有の絞り込みバー（ゲームなら「本体」「ソフト」、タバコなら「本体」「スティック」等）を画面上部に固定配置。
+  * サブカテゴリごとにページ（`kaden/game/index.html` 等）を分離。
+  * ヘッダーおよび操作バーを上部追従固定し、インフィード広告（7件目・22件目）を組み込み収益性を確保。
 
 ---
 
@@ -115,7 +117,6 @@ C:\python\price_tracker\             # ★ 本システム専用の完全隔離�
 cd /d C:\python\price_tracker
 set PYTHONIOENCODING=utf-8
 
-:: 第1引数（%1）を判定
 set TARGET=%1
 
 if /i "%TARGET%"=="keitai_iphone" goto RUN_IPHONE
@@ -158,7 +159,7 @@ exit /b 0
 ```
 
 ### タスクスケジューラ管理方針
-* **タスクスケジューラ ライブラリ直下に専用フォルダ「`PriceTracker`」を作成**し、仕事用タスクとは別の階層に登録する。
+* **タスクスケジューラ ライブラリ直下に専用フォルダ「`PriceTracker`」を作成**し、仕事用タスクとは別の階層に登録。
 
 | 登録先フォルダ | タスク名 | トリガー | 実行プログラム | 引数の追加 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -175,9 +176,9 @@ exit /b 0
    * `imagesEnabled = false`（画像ダウンロード物理遮断による超高速化）
    * `driver.set_page_load_timeout(15)`（外部通信ブロック時の強制タイムアウト）
 2. **GitHub API直接連携**:
-   * ローカルGitコマンド（`git push`）の競合や失敗を回避するため、Pythonから `requests.put` でBase64エンコードデータを直接GitHub API経由でリポジトリへ反映。
+   * ローカルGitコマンドの競合を回避し、Pythonから `requests.put` でBase64エンコードデータを直接GitHub API経由でリポジトリへ反映。
 3. **ブラウザキャッシュ対策**:
-   * 画面側のfetch処理に `?t=Date.now()` を付与し、常にCDN・ブラウザのキャッシュをバイパスして最新データを取得。
+   * 画面側のfetch処理に `?t=Date.now()` を付与し、常に最新データを取得。
 4. **リアルタイム同時接続計測**:
    * Firebase Realtime Database によるプレゼンス監視を行い、各画面のヘッダーに現在の閲覧人数をリアルタイム表示。
 
@@ -198,18 +199,11 @@ exit /b 0
 - [x] タスクスケジューラに「`PriceTracker`」フォルダを作成し、引数方式で新タスクを登録
 - [x] 旧タスクを「無効」にして新環境への移行完了を確認
 
-### フェーズ3：GitHubディレクトリ再編【← 現在ここ】
+### フェーズ3：GitHubディレクトリ再編・無停止移行
 - [x] GitHub上に `kaden/game/` フォルダを作成し `index.html` を配置
 - [x] `scrape_kaden.py` の送信先を `kaden/game/data.json` に変更して自動更新を確認
-- [x] `kaden/game/index.html` の表示修正（ポータルリンク、data.json読み込み、不要タブ整理）完了
-- [ ] 総合ポータル（ルートの `index.html`）に「ゲーム」へのリンクを追加
-- [ ] iPhone用フォルダ（`keitai/iphone/`）の準備と無停止移行（旧URLからのリダイレクト設定）
-
-### フェーズ4：iPhoneシステムの高度化
-- [ ] `scrape_iphone.py` と 機種設定（`configs/iphone_models.json`）の分離
-- [ ] iPhoneのデータ出力を `current_data.json` と `history_archive.json` に分離するロジック実装
-- [ ] iPhone画面（HTML）に年間推移グラフ描画機能を追加
-
-### フェーズ5：家電アービトラージの横展開
-- [ ] 電子タバコ（`kaden_tobacco`）のスクリプト実装と画面追加
-- [ ] トレカ（`toreca`）のスクリプト実装と画面追加
+- [x] `kaden/game/index.html` の表示修正（固定ヘッダー・AdSense・インフィード広告）完了
+- [x] GitHub上に `keitai/iphone/index.html` を配置し、デザイン・固定UIを統一
+- [x] `scrape_iphone.py` の送信先を `keitai/iphone/` に変更して自動更新を確認
+- [x] 旧 `price.html` に新URLへの自動転送（リダイレクト）を設定
+- [x] 総合ポータル（ルートの `index.html
