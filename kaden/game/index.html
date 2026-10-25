@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ゲーム機・ソフト 安値TOP3 比較ダッシュボード</title>
+
+  <!-- Google tag (gtag.js) アクセス解析 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9X38Q03YBN');
+  </script>
+
+  <!-- Google AdSense 共通スクリプト -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
+
   <style>
     :root {
       --bg: #f4f6f9;
@@ -28,7 +41,7 @@
     .container { max-width: 1400px; margin: 0 auto; }
     header { margin-bottom: 16px; border-bottom: 2px solid var(--border); padding-bottom: 14px; display: flex; justify-content: space-between; align-items: flex-end; }
     .header-left { display: flex; align-items: center; gap: 14px; }
-    .btn-home { background: #fff; border: 1px solid var(--border); color: var(--text-sub); text-decoration: none; padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; white-space: nowrap; }
+    .btn-home { background: #fff; border: 1px solid var(--border); color: var(--text-sub); text-decoration: none; padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; white-space: nowrap; display: inline-flex; align-items: center; gap: 4px; }
     .btn-home:hover { background: #f3f4f6; color: var(--text-main); }
     h1 { font-size: 1.4rem; font-weight: 700; color: #111827; }
     
@@ -60,6 +73,14 @@
     }
     .live-users-badge b { color: #047857; font-variant-numeric: tabular-nums; font-size: 0.9rem; }
     .meta-info { font-size: 0.85rem; color: var(--text-sub); }
+
+    /* 広告枠 */
+    .ad-banner {
+      margin: 16px auto;
+      text-align: center;
+      max-width: 100%;
+      overflow: hidden;
+    }
 
     /* 操作バー固定 */
     .sticky-wrapper {
@@ -141,6 +162,13 @@
     .btn-buy:hover { background: #990000; }
     .no-stock { text-align: center; color: var(--text-sub); padding: 16px; font-style: italic; }
 
+    /* 下部ナビゲーションエリア */
+    .bottom-nav {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
     /* モバイル最適化 */
     @media (max-width: 768px) {
       body { padding: 12px 8px; }
@@ -175,7 +203,6 @@
 <div class="container">
   <header>
     <div class="header-left">
-      <!-- 修正: ルートの index.html に戻るように ../../ を付与 -->
       <a href="../../index.html" class="btn-home">⬅ ポータル</a>
       <div>
         <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
@@ -190,6 +217,17 @@
       <div class="meta-info" id="updated-at">最終更新: -</div>
     </div>
   </header>
+
+  <!-- 【AdSense上部広告】 -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="7138671333"
+         data-ad-format="horizontal"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
   <div class="sticky-wrapper">
     <div class="controls">
@@ -214,7 +252,6 @@
           <input type="checkbox" id="official-only" checked> 正規取扱店のみ
         </label>
         <label><input type="checkbox" id="in-stock-only" checked> 在庫ありのみ</label>
-        <!-- ゲーム用チェックボックス -->
         <span id="game-subfilters" style="display: inline-flex; gap: 10px;">
           <label><input type="checkbox" id="cat-console"> 本体のみ</label>
           <label><input type="checkbox" id="cat-soft"> ソフト</label>
@@ -238,9 +275,25 @@
       </tbody>
     </table>
   </div>
+
+  <!-- 【AdSense下部広告】 -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="8633264562"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 下部ポータルボタン（上部と同一デザイン） -->
+  <div class="bottom-nav">
+    <a href="../../index.html" class="btn-home" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
+  </div>
 </div>
 
-<!-- Firebase SDK (同時接続数) -->
+<!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 <script>
@@ -289,27 +342,20 @@
   const rankBadges = ['🥇 1位', '🥈 2位', '🥉 3位'];
   const rankClasses = ['rank-1', 'rank-2', 'rank-3'];
 
-  // ★ 修正: data.json と data.js を読み込むように変更
   async function loadData() {
     let data = null;
-    
-    // 1. JSON ファイルを直接 fetch
     try {
       const res = await fetch('./data.json?t=' + Date.now());
-      if (res.ok) {
-        data = await res.json();
-      }
+      if (res.ok) data = await res.json();
     } catch(e) {
       console.log("JSON fetch error:", e);
     }
 
-    // 2. JS グローバル変数からのフォールバック
     if (!data) {
       if (window.KADEN_DATA && window.KADEN_DATA.length > 0) data = window.KADEN_DATA;
       else if (window.GAME_DATA && window.GAME_DATA.length > 0) data = window.GAME_DATA;
     }
 
-    // 3. JSファイルをキャッシュバスター付きで動的ロード
     if (!data) {
       await new Promise((resolve) => {
         const sc = document.createElement('script');
@@ -355,10 +401,8 @@
 
     let items = rawData.filter(it => {
       const cat = it.category || '';
-      // 電子タバコ等を除外（ゲームのみ）
       if ((cat === '電子タバコ') || /iqos|iluma|glo|ploom|アイコス|グロー/i.test(it.name || '')) return false;
 
-      // ゲームサブフィルター
       if (useGameSubFilter) {
         let match = false;
         if (filterConsole && (cat === 'ゲーム機本体' || /switch|playstation|xbox|ps5/i.test(it.name || ''))) match = true;
