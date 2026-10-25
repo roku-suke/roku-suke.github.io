@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone買取価格一覧表 | 主要店舗比較ダッシュボード</title>
+  <meta name="description" content="iPhoneの買取価格を主要店舗ごとに一覧で比較。最新情報を定期更新。iPhone 18 Pro Max, Duoまで対応。">
+
+  <!-- Google tag (gtag.js) アクセス解析 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9X38Q03YBN');
+  </script>
+
+  <!-- Google AdSense 共通スクリプト -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
+
+  <!-- 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "iPhone買取価格一覧表",
+    "description": "主要な買取店舗のiPhone価格を一覧で比較。最新相場を自動取得・更新。"
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #f4f6f9;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --text-sub: #64748b;
+      --red: #dc2626;
+      --blue: #2563eb;
+      --red-bg: #fee2e2;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0 16px 24px 16px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1480px;
+      margin: 0 auto;
+    }
+
+    /* 上部固定ブロック（ヘッダー ＋ タブバー） */
+    .sticky-header-container {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      padding-top: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    header {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card-bg);
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-home {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--text-sub);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-home:hover { background: #f1f5f9; color: var(--text); }
+
+    h1 {
+      font-size: 1.25rem;
+      margin: 0;
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .info-bar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      color: #1e40af;
+      font-weight: 500;
+    }
+
+    .online-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      padding: 3px 9px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .online-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #10b981;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .refresh-btn {
+      background: #ffffff;
+      border: 1px solid #93c5fd;
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .refresh-btn:hover { background: #dbeafe; }
+
+    /* シリーズ切り替えタブバー */
+    .tab-bar {
+      display: flex;
+      gap: 8px;
+      background: var(--card-bg);
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      overflow-x: auto;
+    }
+    .tab-btn {
+      background: none;
+      border: 1px solid transparent;
+      padding: 6px 16px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-sub);
+      cursor: pointer;
+      border-radius: 6px;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover { background: #f8fafc; color: var(--text); }
+    .tab-btn.active {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      color: var(--primary);
+    }
+
+    .ad-banner {
+      margin: 14px auto;
+      text-align: center;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    /* PCテーブルスタイル */
+    .pc-table-view {
+      display: block;
+      overflow-x: auto;
+      background: var(--card-bg);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; }
+    th, td { padding: 9px 8px; border: 1px solid var(--border); vertical-align: middle; white-space: nowrap; }
+    th { background-color: #f8fafc; color: #334155; font-weight: 600; text-align: center; }
+    th.metric-th { background-color: #fefce8; color: #854d0e; }
+    .model-header { background-color: #f8fafc; font-weight: 700; color: #0f172a; }
+    .price-num { font-family: Consolas, Monaco, monospace; }
+    .price-cell { text-align: right; font-family: Consolas, Monaco, monospace; }
+    .best-cell { background-color: #fef2f2; font-weight: 700; color: var(--red); text-align: right; font-family: Consolas, Monaco, monospace; }
+
+    .shift-up { color: var(--red) !important; font-weight: 800 !important; }
+    .shift-down { color: var(--blue) !important; font-weight: 800 !important; }
+    .shift-none { color: #1e293b !important; font-weight: 400 !important; }
+    .best-price { background-color: var(--red-bg); padding: 2px 6px; border-radius: 4px; display: inline-block; }
+    .profit-plus { color: var(--red); font-weight: 600; }
+    .profit-minus { color: var(--blue); font-weight: 600; }
+    .trend-up { color: var(--red); font-weight: 700; }
+    .trend-down { color: var(--blue); font-weight: 700; }
+    .trend-flat { color: var(--text-sub); font-weight: 600; }
+    .trend-none { color: #94a3b8; font-weight: 500; }
+
+    .color-badge { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 0.78rem; font-weight: 600; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; }
+    .c-バーガンディ { background: #ffe4e6; color: #9f1239; border-color: #fecdd3; }
+    .c-ブラック { background: #e2e8f0; color: #1e293b; border-color: #cbd5e1; }
+    .c-シルバー { background: #f1f5f9; color: #475569; border-color: #cbd5e1; }
+    .c-グレイシャー { background: #e0f2fe; color: #0369a1; border-color: #bae6fd; }
+    .c-スターホワイト { background: #ffffff; color: #1e293b; border-color: #94a3b8; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    .c-ナイトスカイ { background: #0f172a; color: #f8fafc; border-color: #020617; }
+
+    th a { color: inherit !important; text-decoration: none !important; }
+    th a:hover { text-decoration: underline !important; }
+
+    /* スマホカードビュー */
+    .mobile-card-view { display: none; flex-direction: column; gap: 12px; }
+
+    .bottom-nav {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 860px) {
+      body { padding: 0 8px 16px 8px; }
+      .sticky-header-container { padding-top: 8px; padding-bottom: 8px; }
+      header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .header-right { width: 100%; justify-content: space-between; }
+      .info-bar { width: 100%; justify-content: space-between; font-size: 0.75rem; }
+      .pc-table-view { display: none; }
+      .mobile-card-view { display: flex; }
+    }
+
+    .m-card { background: #ffffff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.03); }
+    .m-card-header { padding: 12px; background: #f8fafc; border-bottom: 1px solid var(--border); cursor: pointer; }
+    .m-card-title-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .m-model-name { font-size: 0.95rem; font-weight: 700; color: #0f172a; }
+    .m-card-metrics { display: flex; justify-content: space-between; align-items: baseline; }
+    .m-best-box { font-size: 1.05rem; font-weight: 800; color: var(--red); }
+    .m-toggle-hint { font-size: 0.72rem; color: var(--text-sub); text-align: right; margin-top: 4px; }
+    .m-card-body { display: none; padding: 10px; background: #ffffff; }
+    .m-card.open .m-card-body { display: block; }
+    .m-color-item { border: 1px solid var(--border); border-radius: 6px; padding: 8px; margin-bottom: 8px; background: #fafafa; }
+    .m-color-item:last-child { margin-bottom: 0; }
+    .m-color-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; font-size: 0.82rem; }
+    .m-shop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-size: 0.78rem; }
+    .m-shop-box { background: #ffffff; padding: 5px 6px; border-radius: 4px; border: 1px solid #edf2f7; }
+    .m-shop-name { font-size: 0.7rem; color: var(--text-sub); display: block; }
+  </style>
+
+  <script id="scraped-data-script" src="./all_prices.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <!-- 固定ヘッダー（ポータルボタン＋タイトル＋タブ） -->
+  <div class="sticky-header-container">
+    <header>
+      <div class="header-left">
+        <!-- 2階層上に戻るため ../../index.html -->
+        <a href="../../index.html" class="btn-home">⬅ ポータル</a>
+        <div>
+          <h1>iPhone買取価格一覧表</h1>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="online-badge">
+          <span class="online-dot"></span>
+          <span>閲覧中: <b id="online-count">1</b>人</span>
+        </span>
+        <div class="info-bar">
+          <span id="usd-jpy">USD/JPY: -</span>
+          <span id="updated-at">取得中...</span>
+          <button class="refresh-btn" id="refresh-button" onclick="manualRefresh()">🔄 更新</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchSeries('18promax', this)">iPhone 18 Pro Max</button>
+      <button class="tab-btn" onclick="switchSeries('18pro', this)">iPhone 18 Pro</button>
+      <button class="tab-btn" onclick="switchSeries('duo', this)">iPhone Duo</button>
+    </div>
+  </div>
+
+  <!-- 【AdSense上部広告】 -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="7138671333"
+         data-ad-format="horizontal"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="pc-table-view">
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">機種・容量</th>
+          <th rowspan="2">定価</th>
+          <th rowspan="2">カラー</th>
+          <th colspan="6" class="shop-th">各店舗買取価格 (赤字:48h上昇 / 青字:48h下落 / 黒字:48h変化なし)</th>
+          <th colspan="4" class="metric-th">損益指標（最高買取額ベース）</th>
+          <th rowspan="2">動向</th>
+        </tr>
+        <tr>
+          <th><a href="https://www.1-chome.com/" target="_blank" rel="noopener">買取一丁目</a></th>
+          <th><a href="https://www.mobile-ichiban.com/" target="_blank" rel="noopener">モバイル一番</a></th>
+          <th><a href="https://www.keitairakuen.com/" target="_blank" rel="noopener">買取楽園</a></th>
+          <th><a href="https://kaitori-rudeya.com/" target="_blank" rel="noopener">買取ルデヤ</a></th>
+          <th><a href="https://mobile-mix.jp/" target="_blank" rel="noopener">MobileMix</a></th>
+          <th><a href="https://pastec.net/" target="_blank" rel="noopener">モバステ</a></th>
+          <th class="metric-th">最高買取額</th>
+          <th class="metric-th">差額</th>
+          <th class="metric-th">損益率</th>
+          <th class="metric-th">50k損益</th>
+        </tr>
+      </thead>
+      <tbody id="pc-table-body">
+        <tr><td colspan="14" style="text-align:center; padding:30px; color:#64748b;">データを読み込んでいます...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mobile-card-view" id="mobile-card-body"></div>
+
+  <!-- 【AdSense下部広告】 -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="8633264562"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="../../index.html" class="btn-home" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
+  </div>
+</div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDouxwWQCgn-4Sq6wA503XzbPh3FG_MrOo",
+    authDomain: "iphone-tracker-2db9e.firebaseapp.com",
+    databaseURL: "https://iphone-tracker-2db9e-default-rtdb.firebaseio.com",
+    projectId: "iphone-tracker-2db9e",
+    storageBucket: "iphone-tracker-2db9e.firebasestorage.app",
+    messagingSenderId: "138170739435",
+    appId: "1:138170739435:web:d08a229acf17b129452cae"
+  };
+
+  try {
+    if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    const presenceRef = db.ref("online_users");
+    const userRef = presenceRef.push();
+
+    db.ref(".info/connected").on("value", (snap) => {
+      if (snap.val() === true) {
+        userRef.onDisconnect().remove();
+        userRef.set(true);
+      }
+    });
+
+    presenceRef.on("value", (snap) => {
+      const count = snap.numChildren();
+      const el = document.getElementById("online-count");
+      if (el) el.textContent = count > 0 ? count : 1;
+    });
+  } catch (err) {}
+
+  let currentSeries = '18promax';
+  let cachedData = null;
+
+  function getTrendClass(trend) {
+    if (!trend || trend === '-') return 'trend-none';
+    if (trend.includes('↑')) return 'trend-up';
+    if (trend.includes('↓')) return 'trend-down';
+    return 'trend-flat';
+  }
+
+  function switchSeries(seriesKey, btn) {
+    currentSeries = seriesKey;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderCurrentSeries();
+  }
+
+  function renderCurrentSeries() {
+    if (!cachedData) return;
+    const models = (cachedData.series && cachedData.series[currentSeries]) ? cachedData.series[currentSeries] : [];
+    renderPcTable(models);
+    renderMobileCards(models);
+  }
+
+  function renderPcTable(models) {
+    const tbody = document.getElementById('pc-table-body');
+    tbody.innerHTML = '';
+
+    if (!models || models.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="14" style="text-align:center; padding:20px; color:#64748b;">データがありません</td></tr>';
+      return;
+    }
+
+    models.forEach(item => {
+      item.colors.forEach((c, idx) => {
+        const tr = document.createElement('tr');
+
+        if (idx === 0) {
+          const tdM = document.createElement('td');
+          tdM.className = 'model-header';
+          tdM.rowSpan = item.colors.length;
+          tdM.innerHTML = item.model;
+          tr.appendChild(tdM);
+
+          const tdP = document.createElement('td');
+          tdP.className = 'price-cell';
+          tdP.style.fontWeight = '600';
+          tdP.rowSpan = item.colors.length;
+          tdP.innerHTML = '¥' + item.listPrice.toLocaleString();
+          tr.appendChild(tdP);
+        }
+
+        const tdC = document.createElement('td');
+        tdC.style.textAlign = 'center';
+        tdC.innerHTML = `<span class="color-badge c-${c.name}">${c.name}</span>`;
+        tr.appendChild(tdC);
+
+        const shopPrices = [c.chome, c.ichiban, c.rakuen, c.rudeya, c.mobilemix, c.mobaste];
+        const validPrices = shopPrices.filter(p => typeof p === 'number');
+        const maxPrice = validPrices.length ? Math.max(...validPrices) : 0;
+
+        const appendShopTd = (p, s) => {
+          const td = document.createElement('td');
+          td.className = 'price-cell';
+          if (typeof p === 'number') {
+            const isBest = p === maxPrice ? 'best-price' : '';
+            const sClass = s === 'up' ? 'shift-up' : (s === 'down' ? 'shift-down' : 'shift-none');
+            td.innerHTML = `<span class="${isBest} ${sClass}">¥${p.toLocaleString()}</span>`;
+          } else {
+            td.innerHTML = `<span style="color:#94a3b8;">-</span>`;
+          }
+          tr.appendChild(td);
+        };
+
+        appendShopTd(c.chome, c.cShift);
+        appendShopTd(c.ichiban, c.iShift);
+        appendShopTd(c.rakuen, c.rShift);
+        appendShopTd(c.rudeya, '');
+        appendShopTd(c.mobilemix, c.mShift);
+        appendShopTd(c.mobaste, c.sShift);
+
+        const diff = maxPrice > 0 ? maxPrice - item.listPrice : 0;
+        const rate = (maxPrice > 0 && item.listPrice > 0) ? (diff / item.listPrice) * 100 : 0;
+        const pClass = diff >= 0 ? 'profit-plus' : 'profit-minus';
+        const sign = diff > 0 ? '+' : '';
+
+        tr.innerHTML += `
+          <td class="best-cell">${maxPrice > 0 ? '¥' + maxPrice.toLocaleString() : '-'}</td>
+          <td class="price-cell ${pClass}">${maxPrice > 0 ? `${sign}¥${diff.toLocaleString()}` : '-'}</td>
+          <td class="price-cell ${pClass}">${maxPrice > 0 ? `${sign}${rate.toFixed(2)}%` : '-'}</td>
+          <td class="price-cell ${pClass}">${maxPrice > 0 ? `${sign}¥${Math.round((diff/item.listPrice)*50000).toLocaleString()}` : '-'}</td>
+          <td style="text-align:center;"><span class="${getTrendClass(c.trend)}">${c.trend || '-'}</span></td>
+        `;
+
+        tbody.appendChild(tr);
+      });
+    });
+  }
+
+  function renderMobileCards(models) {
+    const container = document.getElementById('mobile-card-body');
+    container.innerHTML = '';
+
+    if (!models || models.length === 0) {
+      container.innerHTML = '<div style="text-align:center; padding:20px; color:#64748b;">データがありません</div>';
+      return;
+    }
+
+    models.forEach(item => {
+      let overallMax = 0;
+      item.colors.forEach(c => {
+        const pList = [c.chome, c.ichiban, c.rakuen, c.rudeya, c.mobilemix, c.mobaste].filter(p => typeof p === 'number');
+        if (pList.length) overallMax = Math.max(overallMax, ...pList);
+      });
+
+      const diff = overallMax > 0 ? overallMax - item.listPrice : 0;
+      const rate = (overallMax > 0 && item.listPrice > 0) ? (diff / item.listPrice) * 100 : 0;
+      const pClass = diff >= 0 ? 'profit-plus' : 'profit-minus';
+      const sign = diff > 0 ? '+' : '';
+
+      const card = document.createElement('div');
+      card.className = 'm-card';
+
+      let colorsHtml = item.colors.map(c => {
+        const prices = [c.chome, c.ichiban, c.rakuen, c.rudeya, c.mobilemix, c.mobaste].filter(p => typeof p === 'number');
+        const cMax = prices.length ? Math.max(...prices) : 0;
+        const cDiff = cMax > 0 ? cMax - item.listPrice : 0;
+
+        const fmtShop = (name, p, s) => {
+          if (typeof p !== 'number') return `<div class="m-shop-box"><span class="m-shop-name">${name}</span>-</div>`;
+          const isBest = p === cMax ? 'best-price' : '';
+          const sClass = s === 'up' ? 'shift-up' : (s === 'down' ? 'shift-down' : 'shift-none');
+          return `
+            <div class="m-shop-box">
+              <span class="m-shop-name">${name}</span>
+              <span class="price-num ${isBest} ${sClass}">¥${p.toLocaleString()}</span>
+            </div>
+          `;
+        };
+
+        const trendLabel = (c.trend && c.trend !== '-') ? `<span class="${getTrendClass(c.trend)}" style="margin-left:4px;">${c.trend}</span>` : '';
+
+        return `
+          <div class="m-color-item">
+            <div class="m-color-header">
+              <div>
+                <span class="color-badge c-${c.name}">${c.name}</span>
+                <span style="margin-left:6px; font-weight:700; color:var(--red);">${cMax > 0 ? '最高 ¥' + cMax.toLocaleString() : '-'}</span>
+              </div>
+              <div>
+                ${cMax > 0 ? `<span class="${cDiff>=0?'profit-plus':'profit-minus'}">${cDiff>0?'+':''}¥${cDiff.toLocaleString()}</span>` : ''}
+                ${trendLabel}
+              </div>
+            </div>
+            <div class="m-shop-grid">
+              ${fmtShop('一丁目', c.chome, c.cShift)}
+              ${fmtShop('一番', c.ichiban, c.iShift)}
+              ${fmtShop('楽園', c.rakuen, c.rShift)}
+              ${fmtShop('ルデヤ', c.rudeya, '')}
+              ${fmtShop('Mix', c.mobilemix, c.mShift)}
+              ${fmtShop('モバステ', c.mobaste, c.sShift)}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      card.innerHTML = `
+        <div class="m-card-header" onclick="this.parentElement.classList.toggle('open')">
+          <div class="m-card-title-row">
+            <span class="m-model-name">${item.model}</span>
+            <span style="font-size:0.75rem; color:var(--text-sub);">定価: ¥${item.listPrice.toLocaleString()}</span>
+          </div>
+          <div class="m-card-metrics">
+            <div>
+              <span style="font-size:0.75rem; color:var(--text-sub); display:block;">最高買取額</span>
+              <span class="m-best-box">${overallMax > 0 ? '¥' + overallMax.toLocaleString() : '-'}</span>
+            </div>
+            <div style="text-align:right;">
+              ${overallMax > 0 ? `<span class="m-diff-box ${pClass}">${sign}¥${diff.toLocaleString()} (${sign}${rate.toFixed(1)}%)</span>` : ''}
+              <div class="m-toggle-hint">▼ タップで詳細</div>
+            </div>
+          </div>
+        </div>
+        <div class="m-card-body">
+          ${colorsHtml}
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  }
+
+  function reloadLocalScript() {
+    return new Promise((resolve) => {
+      const oldScript = document.getElementById('scraped-data-script');
+      if (oldScript) oldScript.remove();
+
+      const newScript = document.createElement('script');
+      newScript.id = 'scraped-data-script';
+      newScript.src = './all_prices.js?t=' + Date.now();
+      newScript.onload = () => {
+        if (window.SCRAPED_PRICES_DATA) cachedData = window.SCRAPED_PRICES_DATA;
+        resolve(true);
+      };
+      newScript.onerror = () => resolve(false);
+      document.head.appendChild(newScript);
+    });
+  }
+
+  async function fetchLiveExchangeRate() {
+    try {
+      const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+      const data = await res.json();
+      document.getElementById('usd-jpy').textContent = `USD/JPY: ${data.rates.JPY.toFixed(2)}`;
+    } catch(e) {}
+  }
+
+  async function loadData() {
+    fetchLiveExchangeRate();
+    await reloadLocalScript();
+
+    try {
+      const res = await fetch('./all_prices.json?t=' + Date.now());
+      if (res.ok) cachedData = await res.json();
+    } catch(e) {}
+
+    if (cachedData) {
+      document.getElementById('updated-at').textContent = cachedData.updated_at + ' 取得';
+      document.getElementById('usd-jpy').textContent = 'USD/JPY: ' + Number(cachedData.usd_jpy).toFixed(2);
+      renderCurrentSeries();
+    }
+  }
+
+  async function manualRefresh() {
+    const btn = document.getElementById('refresh-button');
+    btn.disabled = true;
+    btn.textContent = '🔄 読込中...';
+    await loadData();
+    btn.textContent = '✅ 完了!';
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.textContent = '🔄 更新';
+    }, 1000);
+  }
+
+  loadData();
+  setInterval(loadData, 300000);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') loadData();
+  });
+</script>
+
+</body>
+</html>
