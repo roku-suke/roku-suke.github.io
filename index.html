@@ -2,164 +2,168 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>iPhone買取価格比較・リアルタイム相場ダッシュボード</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="iPhone 18 Pro Max、18 Pro、iPhone Duoの主要店舗買取価格を一覧で比較。1時間ごとに自動更新。">
-  <meta name="keywords" content="iPhone買取, iPhone価格比較, スマホ買取, 買取相場, iPhone18, iPhone Duo">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9X38Q03YBN');
-  </script>
-
-  <!-- 構造化データ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "iPhone買取価格比較",
-    "url": "https://value.hi-rokusuke.net/",
-    "description": "主要買取店舗のiPhone最新相場を自動集計・比較。"
-  }
-  </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>買取価格比較</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      padding: 40px 16px;
-      background: #f8fafc;
-      color: #1e293b;
-      margin: 0;
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-sub: #64748b;
+      --border: #e2e8f0;
+      --blue: #1d68ff;
+      --blue-hover: #1555d8;
+      --green: #10b981;
+      --green-hover: #059669;
     }
-    .wrapper {
-      max-width: 640px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 32px 24px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 32px 16px;
+    }
+    .portal-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      border: 1px solid var(--border);
+      max-width: 620px;
+      width: 100%;
+      padding: 44px 32px;
       text-align: center;
     }
     h1 {
-      font-size: 1.5rem;
-      margin-top: 0;
-      color: #0f172a;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--text-main);
+      margin-bottom: 14px;
     }
-    .lead-text {
-      font-size: 0.92rem;
-      color: #64748b;
-      line-height: 1.6;
-      margin-bottom: 28px;
+    .sub-desc {
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 32px;
     }
-    .main-btn {
-      display: block;
-      background: #2563eb;
-      color: #ffffff;
-      font-size: 1.1rem;
-      font-weight: 700;
-      text-decoration: none;
-      padding: 16px 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
-      transition: all 0.2s ease;
-      margin: 0 auto 12px;
-    }
-    .main-btn:hover {
-      background: #1d4ed8;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
-    }
-    .sub-note {
-      font-size: 0.8rem;
-      color: #94a3b8;
+    .grid-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
       margin-bottom: 24px;
     }
-    .adsbygoogle { display: block; margin: 24px auto; }
-    footer {
-      margin-top: 32px;
-      font-size: 0.85rem;
-      color: #64748b;
-      border-top: 1px solid #f1f5f9;
-      padding-top: 16px;
+    .btn-genre {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
     }
-    footer a { color: #64748b; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+    .btn-genre:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-apple {
+      background: var(--blue);
+      color: #ffffff;
+    }
+    .btn-apple:hover {
+      background: var(--blue-hover);
+    }
+    
+    .btn-game {
+      background: var(--green);
+      color: #ffffff;
+    }
+    .btn-game:hover {
+      background: var(--green-hover);
+    }
+    
+    /* 次回予告・準備中ボタン */
+    .btn-disabled {
+      background: #f1f5f9;
+      color: #94a3b8;
+      cursor: not-allowed;
+      border: 1px dashed #cbd5e1;
+      box-shadow: none;
+    }
+    .btn-disabled:hover {
+      transform: none;
+      box-shadow: none;
+    }
 
-    @media screen and (max-width: 767px) {
-      #scroll-ad { display: none !important; }
+    .meta-note {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      margin-bottom: 24px;
+    }
+
+    .footer-links {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+    .footer-links a {
+      color: var(--text-sub);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
     }
   </style>
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="wrapper">
-  <h1>iPhone買取価格比較</h1>
-  <p class="lead-text">
-    買取一丁目・モバイル一番・買取楽園・MobileMixなど<br>
-    主要買取店舗の相場・損益指標を1時間ごとに自動更新。
+<div class="portal-card">
+  <h1>買取価格比較</h1>
+  <p class="sub-desc">
+    買取一丁目・モバワン・主要量販店（楽天ブックス・エディオン等）など<br>
+    主要店舗の相場・価格情報を定期的に自動更新。
   </p>
 
-  <!-- index_top_ad -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-9014722014583256"
-       data-ad-slot="2859680821"
-       data-ad-format="horizontal"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <div class="grid-buttons">
+    <!-- iPhone（フェーズ4移行完了時に keitai/iphone/ へ更新） -->
+    <a href="price.html" class="btn-genre btn-apple">
+      <span>📱</span>
+      <span>iPhone 18 / Duo 買取価格ダッシュボードを見る</span>
+    </a>
 
-  <!-- メインダッシュボードへの直接ボタン -->
-  <a href="price.html" class="main-btn">
-    📱 iPhone 18 / Duo 買取価格ダッシュボードを見る
-  </a>
-  <div class="sub-note">※ 毎時0分自動更新 / USD/JPY為替リアルタイム取得</div>
+    <!-- ゲーム機・ソフト（新ディレクトリへ接続） -->
+    <a href="kaden/game/" class="btn-genre btn-game">
+      <span>🎮</span>
+      <span>ゲーム機・ソフト 価格比較ダッシュボードを見る</span>
+    </a>
 
-  <!-- index_footer_ad2 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-9014722014583256"
-       data-ad-slot="2067856210"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <!-- 次回予告：電子タバコ（準備中） -->
+    <div class="btn-genre btn-disabled">
+      <span>🚬</span>
+      <span>電子タバコ（iQOS / glo）相場比較</span>
+      <span style="font-size: 0.75rem; background: #e2e8f0; padding: 2px 8px; border-radius: 4px; color: #64748b; margin-left: 6px;">準備中</span>
+    </div>
+  </div>
 
-  <footer>
-    <p><a href="about.html">運営者情報</a> ｜ <a href="privacy.html">プライバシーポリシー</a></p>
-  </footer>
+  <div class="meta-note">
+    ※ 毎時0分自動更新 / 最新相場リアルタイム取得
+  </div>
+
+  <div class="footer-links">
+    <a href="#">運営者情報</a> | <a href="#">プライバシーポリシー</a>
+  </div>
 </div>
-
-<!-- サイド追従広告（PCのみ） -->
-<div id="scroll-ad" style="
-  position:fixed;
-  right:0;
-  bottom:100px;
-  width:160px;
-  height:600px;
-  z-index:9999;
-  display:none;">
-  <ins class="adsbygoogle"
-       style="display:inline-block;width:160px;height:600px"
-       data-ad-client="ca-pub-9014722014583256"
-       data-ad-slot="6003244134"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-
-<script>
-  window.addEventListener('scroll', function() {
-    const ad = document.getElementById('scroll-ad');
-    if (window.scrollY > 300 && window.innerWidth >= 900) {
-      ad.style.display = 'block';
-    } else {
-      ad.style.display = 'none';
-    }
-  });
-</script>
 
 </body>
 </html>
