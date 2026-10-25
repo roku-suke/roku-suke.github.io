@@ -1,0 +1,1 @@
+window.TOBACCO_DATA = [];
