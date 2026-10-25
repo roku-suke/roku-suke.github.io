@@ -77,12 +77,17 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
-    /* 広告枠コンテナ用スタイル */
-    .ad-banner {
-      margin: 20px auto;
-      text-align: center;
-      max-width: 100%;
-      overflow: hidden;
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--card-bg);
+      margin: -24px -24px 16px -24px;
+      padding: 20px 24px 6px 24px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
     .top-bar {
@@ -91,8 +96,35 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
+
+    .top-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-home {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--text-sub);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: all 0.2s;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-home:hover {
+      background: #f1f5f9;
+      color: var(--text);
+    }
+
     h1 {
       font-size: 1.35rem;
       margin: 0;
@@ -114,7 +146,6 @@
       font-weight: 500;
     }
 
-    /* 閲覧中ユーザー数バッジ */
     .online-badge {
       display: inline-flex;
       align-items: center;
@@ -150,13 +181,10 @@
     .refresh-btn:hover { background: #dbeafe; }
     .refresh-btn:disabled { opacity: 0.6; cursor: not-allowed; }
 
-    /* 3シリーズ切り替えタブ */
     .tab-container {
       display: flex;
       gap: 8px;
-      margin-bottom: 20px;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 8px;
+      margin-bottom: 6px;
       overflow-x: auto;
     }
     .tab-btn {
@@ -176,15 +204,26 @@
       color: var(--primary);
     }
 
+    .ad-banner {
+      margin: 16px auto;
+      text-align: center;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .bottom-nav {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
     .price-num { font-family: Consolas, Monaco, monospace; }
     .price-cell { text-align: right; font-family: Consolas, Monaco, monospace; }
 
-    /* 文字色・太さルール */
     .shift-up { color: var(--red) !important; font-weight: 800 !important; }
     .shift-down { color: var(--blue) !important; font-weight: 800 !important; }
     .shift-none { color: #1e293b !important; font-weight: 400 !important; }
 
-    /* 最高値バッジ */
     .best-price {
       background-color: var(--red-bg);
       padding: 2px 6px;
@@ -199,7 +238,6 @@
     .trend-flat { color: var(--text-sub); font-weight: 600; }
     .trend-none { color: #94a3b8; font-weight: 500; }
 
-    /* カラーバッジ */
     .color-badge {
       display: inline-block;
       padding: 2px 7px;
@@ -217,7 +255,6 @@
     .c-スターホワイト { background: #ffffff; color: #1e293b; border-color: #94a3b8; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
     .c-ナイトスカイ { background: #0f172a; color: #f8fafc; border-color: #020617; }
 
-    /* PCワイドテーブル */
     .pc-table-view { display: block; overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.85rem; }
     th, td { padding: 9px 8px; border: 1px solid var(--border); vertical-align: middle; white-space: nowrap; }
@@ -227,12 +264,23 @@
     .model-header { background-color: #f8fafc; font-weight: 700; color: #0f172a; }
     .best-cell { background-color: #fef2f2; font-weight: 700; color: var(--red); text-align: right; font-family: Consolas, Monaco, monospace; }
 
-    /* スマホカードビュー */
+    th a { color: inherit !important; text-decoration: none !important; }
+    th a:hover { text-decoration: underline !important; }
+
     .mobile-card-view { display: none; flex-direction: column; gap: 12px; }
 
     @media (max-width: 860px) {
       body { padding: 8px; }
       .container { padding: 12px; }
+      .sticky-header {
+        margin: -12px -12px 12px -12px;
+        padding: 12px 12px 4px 12px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      .top-bar-left { width: 100%; gap: 10px; }
+      h1 { font-size: 1.15rem; }
+      .info-bar { width: 100%; justify-content: space-between; font-size: 0.78rem; padding: 6px 10px; }
       .pc-table-view { display: none; }
       .mobile-card-view { display: flex; }
     }
@@ -252,18 +300,6 @@
     .m-shop-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-size: 0.78rem; }
     .m-shop-box { background: #ffffff; padding: 5px 6px; border-radius: 4px; border: 1px solid #edf2f7; }
     .m-shop-name { font-size: 0.7rem; color: var(--text-sub); display: block; }
-
-    footer { text-align: center; margin-top: 24px; padding: 20px; font-size: 0.9rem; }
-    footer a { color: #0077cc; text-decoration: none; font-weight: bold; }
-
-    /* 店舗リンクのスタイル（青文字・下線消去） */
-    th a {
-      color: inherit !important;
-      text-decoration: none !important;
-    }
-    th a:hover {
-      text-decoration: underline !important;
-    }
   </style>
 
   <script id="scraped-data-script" src="./all_prices.js"></script>
@@ -271,21 +307,31 @@
 <body>
 
 <div class="container">
-  <div class="top-bar">
-    <div>
-      <h1>iPhone買取価格一覧表</h1>
-      <p style="margin: 4px 0 0 14px; font-size: 0.85rem; color: #64748b;">主要店舗の比較と最新相場ダッシュボード</p>
+  <div class="sticky-header">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <a href="index.html" class="btn-home">⬅ ポータル</a>
+        <div>
+          <h1>iPhone買取価格一覧表</h1>
+          <p style="margin: 4px 0 0 12px; font-size: 0.82rem; color: #64748b;">主要店舗の比較と最新相場ダッシュボード</p>
+        </div>
+      </div>
+      <div class="info-bar">
+        <span class="online-badge">
+          <span class="online-dot"></span>
+          <span>閲覧中: <strong id="online-count">1</strong>人</span>
+        </span>
+        <span><strong>＜参考値＞</strong></span>
+        <span id="usd-jpy">USD/JPY: 取得中...</span>
+        <span id="updated-at">取得中...</span>
+        <button class="refresh-btn" id="refresh-button" onclick="manualRefresh()">🔄 更新</button>
+      </div>
     </div>
-    <div class="info-bar">
-      <!-- 閲覧中バッジ -->
-      <span class="online-badge">
-        <span class="online-dot"></span>
-        <span>閲覧中: <strong id="online-count">1</strong>人</span>
-      </span>
-      <span><strong>＜参考値＞</strong></span>
-      <span id="usd-jpy">USD/JPY: 取得中...</span>
-      <span id="updated-at">取得中...</span>
-      <button class="refresh-btn" id="refresh-button" onclick="manualRefresh()">🔄 更新</button>
+
+    <div class="tab-container">
+      <button class="tab-btn active" onclick="switchSeries('18promax', this)">iPhone 18 Pro Max</button>
+      <button class="tab-btn" onclick="switchSeries('18pro', this)">iPhone 18 Pro</button>
+      <button class="tab-btn" onclick="switchSeries('duo', this)">iPhone Duo</button>
     </div>
   </div>
 
@@ -298,12 +344,6 @@
          data-ad-format="horizontal"
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
-  <div class="tab-container">
-    <button class="tab-btn active" onclick="switchSeries('18promax', this)">iPhone 18 Pro Max</button>
-    <button class="tab-btn" onclick="switchSeries('18pro', this)">iPhone 18 Pro</button>
-    <button class="tab-btn" onclick="switchSeries('duo', this)">iPhone Duo</button>
   </div>
 
   <div class="pc-table-view">
@@ -348,20 +388,18 @@
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
+
+  <!-- 下部ポータルボタン（上部と同一デザイン） -->
+  <div class="bottom-nav">
+    <a href="index.html" class="btn-home" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
+  </div>
 </div>
 
-<footer>
-  <a href="index.html">🏠 ホームに戻る</a>
-</footer>
-
-<!-- Firebase SDK（リアルタイム閲覧者数集計） -->
+<!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 
 <script>
-  // ==========================================
-  // 1. Firebase 閲覧中ユーザー監視設定
-  // ==========================================
   const firebaseConfig = {
     apiKey: "AIzaSyDouxwWQCgn-4Sq6wA503XzbPh3FG_MrOo",
     authDomain: "iphone-tracker-2db9e.firebaseapp.com",
@@ -373,21 +411,18 @@
   };
 
   try {
-    firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
     const db = firebase.database();
     const presenceRef = db.ref("online_users");
     const userRef = presenceRef.push();
 
-    // 接続・切断の自動監視
     db.ref(".info/connected").on("value", (snap) => {
       if (snap.val() === true) {
-        // タブを閉じたり離脱した時に自動でデータベースから削除
         userRef.onDisconnect().remove();
         userRef.set(true);
       }
     });
 
-    // リアルタイム人数カウントの反映
     presenceRef.on("value", (snap) => {
       const count = snap.numChildren();
       const el = document.getElementById("online-count");
@@ -397,9 +432,6 @@
     console.log("Firebase error:", err);
   }
 
-  // ==========================================
-  // 2. 価格表データ描画ロジック
-  // ==========================================
   let currentSeries = '18promax';
   let cachedData = null;
 
@@ -601,9 +633,7 @@
       newScript.id = 'scraped-data-script';
       newScript.src = './all_prices.js?t=' + Date.now();
       newScript.onload = () => {
-        if (window.SCRAPED_PRICES_DATA) {
-          cachedData = window.SCRAPED_PRICES_DATA;
-        }
+        if (window.SCRAPED_PRICES_DATA) cachedData = window.SCRAPED_PRICES_DATA;
         resolve(true);
       };
       newScript.onerror = () => resolve(false);
@@ -625,9 +655,7 @@
 
     try {
       const res = await fetch('./all_prices.json?t=' + Date.now());
-      if (res.ok) {
-        cachedData = await res.json();
-      }
+      if (res.ok) cachedData = await res.json();
     } catch(e) {}
 
     if (cachedData) {
@@ -641,9 +669,7 @@
     const btn = document.getElementById('refresh-button');
     btn.disabled = true;
     btn.textContent = '🔄 読込中...';
-
     await loadData();
-
     btn.textContent = '✅ 完了!';
     setTimeout(() => {
       btn.disabled = false;
