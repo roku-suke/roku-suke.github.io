@@ -4,274 +4,373 @@ window.TOBACCO_DATA = [
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834380",
-    "buy_price": 37980,
+    "buy_price": 7800,
     "chome_url": "https://www.1-chome.com/wineDetail/5655/5655",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i PRIME ブリーズブルー",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834465",
-    "buy_price": 6000,
+    "buy_price": 7600,
     "chome_url": "https://www.1-chome.com/wineDetail/5647/5647",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i PRIME ガーネットレッド限定モデル",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834540",
-    "buy_price": 9980,
+    "buy_price": 9200,
     "chome_url": "https://www.1-chome.com/wineDetail/5662/5662",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i PRIME アスペングリーン",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834502",
-    "buy_price": 9980,
+    "buy_price": 9300,
     "chome_url": "https://www.1-chome.com/wineDetail/5855/5855",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i PRIME ミネラ モデル",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100547464",
-    "buy_price": 9980,
+    "buy_price": 10000,
     "chome_url": "https://www.1-chome.com/wineDetail/6845/6845",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i PRIME リミックス",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100548454",
-    "buy_price": 11980,
+    "buy_price": 14000,
     "chome_url": "https://www.1-chome.com/wineDetail/9367/9367",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i PRIME セレッティ モデル",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100547952",
+    "buy_price": 19000,
+    "chome_url": "https://www.1-chome.com/wineDetail/7298/7298",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i PRIME サウンドソリアル モデル",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100549284",
-    "buy_price": 15980,
+    "buy_price": 20000,
     "chome_url": "https://www.1-chome.com/wineDetail/10786/10786",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i PRIME エレクトリックパープル",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100548270",
+    "buy_price": 8000,
+    "chome_url": "https://www.1-chome.com/wineDetail/8218/8218",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i PRIME 銀座限定モデルセット",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100549260",
-    "buy_price": 11980,
+    "buy_price": 17000,
     "chome_url": "https://www.1-chome.com/wineDetail/10576/10576",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i PRIME アニバーサリーモデル（錫セット）",
     "memo": "IQOS | （錫セット）",
     "category": "IQOS",
     "jan": "7622100546993",
-    "buy_price": 10980,
+    "buy_price": 12000,
     "chome_url": "https://www.1-chome.com/wineDetail/6123/6123",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ミッドナイトブラック",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834526",
-    "buy_price": 6980,
+    "buy_price": 4500,
     "chome_url": "https://www.1-chome.com/wineDetail/5656/5656",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ブリーズブルー",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834564",
-    "buy_price": 6980,
+    "buy_price": 4300,
     "chome_url": "https://www.1-chome.com/wineDetail/5648/5648",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ビビッドテラコッタ",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834588",
-    "buy_price": 6980,
+    "buy_price": 5800,
     "chome_url": "https://www.1-chome.com/wineDetail/5657/5657",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i デジタルバイオレット",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834625",
-    "buy_price": 6980,
+    "buy_price": 4800,
     "chome_url": "https://www.1-chome.com/wineDetail/5658/5658",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i リーフグリーン",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834601",
-    "buy_price": 6980,
+    "buy_price": 4800,
     "chome_url": "https://www.1-chome.com/wineDetail/5856/5856",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ミネラ モデル",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100547488",
-    "buy_price": 6980,
+    "buy_price": 6200,
     "chome_url": "https://www.1-chome.com/wineDetail/6846/6846",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i リミックス",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100548478",
-    "buy_price": 7980,
+    "buy_price": 7100,
     "chome_url": "https://www.1-chome.com/wineDetail/9368/9368",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i セレッティ モデル",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100547976",
+    "buy_price": 11000,
+    "chome_url": "https://www.1-chome.com/wineDetail/7299/7299",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i ボールドルビー",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100549062",
+    "buy_price": 4800,
+    "chome_url": "https://www.1-chome.com/wineDetail/10747/10747",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i ギャラクシーブルー",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100548096",
+    "buy_price": 5500,
+    "chome_url": "https://www.1-chome.com/wineDetail/7791/7791",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i エレクトリックパープル",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100548263",
+    "buy_price": 4800,
+    "chome_url": "https://www.1-chome.com/wineDetail/8219/8219",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i アニバーサリーモデル（錫セット）",
     "memo": "IQOS | （錫セット）",
     "category": "IQOS",
     "jan": "7622100547044",
-    "buy_price": 7980,
+    "buy_price": 7000,
     "chome_url": "https://www.1-chome.com/wineDetail/6124/6124",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ONE ミッドナイトブラック",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834649",
-    "buy_price": 3980,
+    "buy_price": 2000,
     "chome_url": "https://www.1-chome.com/wineDetail/5661/5661",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ONE ブリーズブルー",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834663",
-    "buy_price": 3980,
+    "buy_price": 1800,
     "chome_url": "https://www.1-chome.com/wineDetail/5649/5649",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ONE デジタルバイオレット",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834724",
-    "buy_price": 3980,
+    "buy_price": 2800,
     "chome_url": "https://www.1-chome.com/wineDetail/5660/5660",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ONE ビビッドテラコッタ",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834687",
-    "buy_price": 3980,
+    "buy_price": 2800,
     "chome_url": "https://www.1-chome.com/wineDetail/5659/5659",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ONE リーフグリーン",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100834717",
-    "buy_price": 3980,
+    "buy_price": 2800,
     "chome_url": "https://www.1-chome.com/wineDetail/5857/5857",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ONE ミネラ モデル",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100547525",
-    "buy_price": 3980,
+    "buy_price": 4400,
     "chome_url": "https://www.1-chome.com/wineDetail/6847/6847",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ONE リミックス",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100548492",
-    "buy_price": 4980,
+    "buy_price": 5400,
     "chome_url": "https://www.1-chome.com/wineDetail/9369/9369",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i ONE セレッティ モデル",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100547938",
+    "buy_price": 7000,
+    "chome_url": "https://www.1-chome.com/wineDetail/7300/7300",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i ONE ボールドルビー",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100549222",
+    "buy_price": 3300,
+    "chome_url": "https://www.1-chome.com/wineDetail/10746/10746",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
   },
   {
     "name": "IQOS ILUMA i ONE アニバーサリーモデル",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100547020",
-    "buy_price": 3980,
+    "buy_price": 5300,
     "chome_url": "https://www.1-chome.com/wineDetail/6125/6125",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 11:09:01"
+    "updated_at": "2026-10-26 11:19:22"
+  },
+  {
+    "name": "IQOS ILUMA i ONE エレクトリックパープル",
+    "memo": "IQOS",
+    "category": "IQOS",
+    "jan": "7622100548232",
+    "buy_price": 2800,
+    "chome_url": "https://www.1-chome.com/wineDetail/8220/8220",
+    "official_top3": [],
+    "all_top3": [],
+    "updated_at": "2026-10-26 11:19:22"
   }
 ];
