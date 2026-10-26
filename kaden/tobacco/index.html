@@ -165,7 +165,6 @@
       overflow: hidden;
     }
 
-    /* PCテーブル表示 */
     .table-header {
       display: grid;
       grid-template-columns: 2.2fr 1fr 3.5fr;
@@ -299,7 +298,6 @@
       white-space: nowrap;
     }
 
-    /* スマホカード表示（768px以下） */
     @media (max-width: 768px) {
       .table-header { display: none; }
       .product-list {
@@ -364,7 +362,6 @@
     </div>
   </div>
 
-  <!-- 操作バー（銘柄選択は削除） -->
   <div class="controls-bar">
     <input type="text" id="searchInput" class="search-input" placeholder="銘柄・仕様・JAN・ショップ名で絞り込み...">
     
@@ -381,7 +378,7 @@
     </div>
 
     <div class="filter-item-group">
-      <label><input type="checkbox" id="officialOnlyCheck"> 各社公式・正規店のみ</label>
+      <label><input type="checkbox" id="officialOnlyCheck" checked> 各社公式・正規店のみ</label>
       <label><input type="checkbox" id="inStockOnlyCheck"> 在庫ありのみ</label>
     </div>
   </div>
@@ -401,7 +398,7 @@
   <div class="table-header">
     <div>商品名（一丁目リンク）/ 仕様・メモ</div>
     <div style="text-align:center;">一丁目買取</div>
-    <div id="rakutenHeaderTitle">市場全体 安値TOP3（ショップ / 仕入価格 / 見込利益・損失 / リンク）</div>
+    <div id="rakutenHeaderTitle">正規店 安値TOP3（ショップ / 仕入価格 / 見込利益・損失 / リンク）</div>
   </div>
 
   <div id="productList" class="product-list">
@@ -581,10 +578,10 @@
         rakutenHtml = `<div style="font-size:0.8rem; color:var(--text-sub); padding: 8px 12px;">${msg}</div>`;
       }
 
-      // 取得された正規のwineDetail URLへ遷移（未取得時も自ページの/#にはしない安全弁）
-      const directUrl = (item.chome_url && item.chome_url !== '#' && !item.chome_url.endsWith('/#'))
+      // 取得された正規の wineDetail URLへ直行
+      const directUrl = (item.chome_url && item.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
         ? item.chome_url
-        : `https://www.1-chome.com/electricAppliance?category=10801204`;
+        : '#';
 
       html += `
         <div class="product-row">
@@ -610,7 +607,6 @@
     listElem.innerHTML = html;
   }
 
-  // イベントリスナー
   document.getElementById("searchInput").addEventListener("input", render);
   document.getElementById("sortSelect").addEventListener("change", render);
   document.getElementById("officialOnlyCheck").addEventListener("change", render);
