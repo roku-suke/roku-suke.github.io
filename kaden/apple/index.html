@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Apple製品 買取価格・相場比較</title>
-  <meta name="description" content="iPad・AirPods・Apple Watchなどの買取一丁目価格、Apple公式定価・楽天市場との損益率・差額をリアルタイム比較。">
+  <meta name="description" content="AirPods・Apple Pencil・AirTagなどの買取一丁目価格、Apple公式定価・楽天市場との損益率・差額をリアルタイム比較。">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
@@ -168,9 +168,6 @@
       overflow: hidden;
     }
 
-    /* ========================================================
-       PC表示（テーブル・一覧レイアウト）
-       ======================================================== */
     .table-header {
       display: grid;
       grid-template-columns: 2fr 1.3fr 3.5fr;
@@ -313,9 +310,6 @@
       white-space: nowrap;
     }
 
-    /* ========================================================
-       スマホ表示（768px以下でカード形式に自動切り替え）
-       ======================================================== */
     @media (max-width: 768px) {
       .table-header { display: none; }
       .product-list {
@@ -383,11 +377,11 @@
 
     <div class="filter-group">
       <button class="btn-tab active" data-cat="all">すべて</button>
-      <button class="btn-tab" data-cat="iPad">iPad</button>
-      <button class="btn-tab" data-cat="AirPods">AirPods</button>
-      <button class="btn-tab" data-cat="Apple Watch">Watch</button>
-      <button class="btn-tab" data-cat="Mac">Mac</button>
-      <button class="btn-tab" data-cat="アクセサリ">アクセサリ</button>
+      <button class="btn-tab" data-cat="AirPods">AirPods / 音響</button>
+      <button class="btn-tab" data-cat="Pencil">Pencil / 入力</button>
+      <button class="btn-tab" data-cat="充電">充電・アダプタ</button>
+      <button class="btn-tab" data-cat="AirTag">AirTag</button>
+      <button class="btn-tab" data-cat="Apple TV">Apple TV</button>
     </div>
   </div>
 </header>
@@ -480,7 +474,14 @@
     const sortVal = document.getElementById("sortSelect").value;
 
     let filtered = rawData.filter(item => {
-      if (currentCategory !== "all" && !item.memo.includes(currentCategory)) return false;
+      if (currentCategory !== "all") {
+        const cat = item.category || "";
+        const memo = item.memo || "";
+        if (!cat.includes(currentCategory) && !memo.includes(currentCategory)) {
+          return false;
+        }
+      }
+
       if (query) {
         const hit = (item.name && item.name.toLowerCase().includes(query)) ||
                     (item.jan && item.jan.includes(query)) ||
@@ -538,13 +539,12 @@
         html += createInfeedRowHtml();
       }
 
-      // Apple公式定価・差額・損益率
       let officialLine = "";
       if (item.official_price > 0) {
         const diff = item.buy_price - item.official_price;
         const rate = ((diff / item.official_price) * 100).toFixed(1);
         const diffText = diff >= 0 ? `+¥${diff.toLocaleString()}` : `-¥${Math.abs(diff).toLocaleString()}`;
-        const rateText = diff >= 0 ? `+${rate}%` : `${rate}%`;
+        const rateText = diff >= 0 ? `+${rate}\%` : `${rate}%`;
         const diffClass = diff >= 0 ? "diff-plus" : "diff-minus";
 
         officialLine = `
@@ -555,11 +555,14 @@
         `;
       }
 
-      // 楽天市場TOP3
+      // 楽天市場TOP3（公式在庫があれば優先、無ければ市場最安店を表示）
       let rakutenHtml = "";
-      const topList = item.all_top3 || [];
-      if (topList.length > 0) {
-        rakutenHtml = topList.map((r, rIdx) => {
+      const rawList = (item.official_top3 && item.official_top3.length > 0) 
+        ? item.official_top3 
+        : (item.all_top3 || []);
+
+      if (rawList.length > 0) {
+        rakutenHtml = rawList.slice(0, 3).map((r, rIdx) => {
           const medal = rIdx === 0 ? "🥇 1位" : rIdx === 1 ? "🥈 2位" : "🥉 3位";
           const shopTypeBadge = r.is_official 
             ? '<span class="badge-official">公式</span>' 
@@ -568,16 +571,14 @@
           const isProfit = r.profit >= 0;
           const label = isProfit ? "見込利益:" : "損失:";
           const diffText = isProfit ? `+¥${r.profit.toLocaleString()}` : `-¥${Math.abs(r.profit).toLocaleString()}`;
-          const rateText = isProfit ? `+${r.profit_rate}%` : `${r.profit_rate}%`;
+          const rateText = isProfit ? `+${r.profit_rate}\%` : `${r.profit_rate}%`;
           const valColor = isProfit ? "color:var(--green);" : "color:var(--red);";
 
           return `
             <div class="rakuten-item">
               <div class="rakuten-shop-box">
-                <span style="font-weight:700;">${medal}</span>
-                ${shopTypeBadge}
-                <span title="${r.shop}">${r.shop}</span>
-                ${r.postage_flag === 1 ? '<span class="badge-postage">無料</span>' : ''}
+                <span style="font-weight:700;">${medal}</span>${shopTypeBadge}
+                <span title="${r.shop}">${r.shop}</span>${r.postage_flag === 1 ? '<span class="badge-postage">無料</span>' : ''}
               </div>
               <div class="rakuten-right">
                 <span class="rakuten-price">仕入: ¥${r.price.toLocaleString()}</span>
@@ -593,7 +594,9 @@
         rakutenHtml = `<div style="font-size:0.8rem; color:var(--text-sub); padding: 8px 12px;">現在、楽天市場に新品の在庫がありません。</div>`;
       }
 
-      const directUrl = item.chome_url || "#";
+      const directUrl = (item.chome_url && item.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
+        ? item.chome_url
+        : `https://www.1-chome.com/electricAppliance?category=20748358`;
 
       html += `
         <div class="product-row">
@@ -607,8 +610,7 @@
             </div>
           </div>
           <div class="col-price">
-            <div class="val-chome">¥${item.buy_price.toLocaleString()}</div>
-            ${officialLine}
+            <div class="val-chome">¥${item.buy_price.toLocaleString()}</div>${officialLine}
           </div>
           <div class="col-rakuten">
             ${rakutenHtml}
