@@ -8,7 +8,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5655/5655",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i PRIME ブリーズブルー",
@@ -19,7 +19,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5647/5647",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i PRIME ガーネットレッド限定モデル",
@@ -30,7 +30,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5662/5662",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i PRIME アスペングリーン",
@@ -41,7 +41,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5855/5855",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i PRIME ミネラ モデル",
@@ -52,7 +52,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6845/6845",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i PRIME リミックス",
@@ -63,7 +63,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/9367/9367",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i PRIME サウンドソリアル モデル",
@@ -74,7 +74,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/10786/10786",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i PRIME 銀座限定モデルセット",
@@ -85,7 +85,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/10576/10576",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i PRIME アニバーサリーモデル（錫セット）",
@@ -96,7 +96,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6123/6123",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ミッドナイトブラック",
@@ -107,7 +107,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5656/5656",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ブリーズブルー",
@@ -118,7 +118,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5648/5648",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ビビッドテラコッタ",
@@ -129,7 +129,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5657/5657",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i デジタルバイオレット",
@@ -140,7 +140,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5658/5658",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i リーフグリーン",
@@ -151,7 +151,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5856/5856",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ミネラ モデル",
@@ -162,7 +162,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6846/6846",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i リミックス",
@@ -173,7 +173,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/9368/9368",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i アニバーサリーモデル（錫セット）",
@@ -184,7 +184,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6124/6124",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ONE ミッドナイトブラック",
@@ -195,7 +195,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5661/5661",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ONE ブリーズブルー",
@@ -206,7 +206,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5649/5649",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ONE デジタルバイオレット",
@@ -217,7 +217,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5660/5660",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ONE ビビッドテラコッタ",
@@ -228,7 +228,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5659/5659",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ONE リーフグリーン",
@@ -239,7 +239,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5857/5857",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ONE ミネラ モデル",
@@ -250,7 +250,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6847/6847",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ONE リミックス",
@@ -261,7 +261,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/9369/9369",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   },
   {
     "name": "IQOS ILUMA i ONE アニバーサリーモデル",
@@ -272,6 +272,6 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6125/6125",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 10:58:22"
+    "updated_at": "2026-10-26 11:09:01"
   }
 ];
