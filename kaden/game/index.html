@@ -206,7 +206,7 @@
     
     .btn-buy { background: #bf0000; color: #fff; text-decoration: none; padding: 7px 16px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; margin-left: 14px; transition: background 0.2s; white-space: nowrap; }
     .btn-buy:hover { background: #990000; }
-    .no-stock { text-align: center; color: var(--text-sub); padding: 16px; font-style: italic; }
+    .no-stock { text-align: center; color: var(--text-sub); padding: 16px; font-style: italic; font-size: 0.85rem; }
 
     .bottom-nav {
       margin-top: 24px;
@@ -448,7 +448,7 @@
     const rankLimit = parseInt(document.querySelector('input[name="rank-limit"]:checked').value, 10);
     const scopeLabel = isOfficial ? '正規取扱店' : '市場全体';
     const limitLabel = rankLimit === 1 ? '最安1位' : '安値TOP3';
-    thTop3Title.textContent = `${scopeLabel}${limitLabel} (ショップ / 仕入価格 / 見込利益・損失 / リンク)`;
+    thTop3Title.textContent = `${scopeLabel} ${limitLabel} (ショップ / 仕入価格 / 見込利益・損失 / リンク)`;
 
     const keyword = filterInput.value.toLowerCase().trim();
     const sortMode = sortSelect.value;
@@ -471,7 +471,7 @@
         if (!match) return false;
       }
 
-      // 正規店のみONの場合：公式在庫があればそれを、無ければ一般在庫をフォールバック参照
+      // 正規店のみON時は公式在庫を優先、なければ市場最安店をフォールバック
       let targetTop = [];
       if (isOfficial) {
         targetTop = (it.official_top3 && it.official_top3.length > 0) ? it.official_top3 : (it.all_top3 || []);
@@ -529,7 +529,7 @@
     items.forEach((it, idx) => {
       const buyStr = it.buy_price ? '¥' + it.buy_price.toLocaleString() : '-';
       
-      // 正規店のみONの時：公式在庫があれば公式を優先、無ければ一般在庫を提示
+      // ★ 正規店のみONの時：公式在庫があればそれを優先、完売時のみ市場最安店をフォールバック提示
       let fullTopList = [];
       let isFallbackToGeneral = false;
       if (isOfficial) {
@@ -547,7 +547,6 @@
       const hasStock = topList.length > 0;
       const memoHtml = it.memo ? `<div class="memo-tag">${it.memo}</div>` : '';
       
-      // 正規直リンクURL（wineDetail）へ遷移
       const chomeHref = (it.chome_url && it.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
         ? it.chome_url
         : `https://www.1-chome.com/electricAppliance?category=10000005`;
@@ -594,7 +593,8 @@
                 <span class="price-label">仕入:</span><span class="price-val">¥${shopData.price.toLocaleString()}</span>
               </div>
               <div class="rank-right">
-                ${profitText}${rateBadge}
+                ${profitText}
+                ${rateBadge}
               </div>
               <a href="${shopData.url}" target="_blank" rel="noopener noreferrer" class="btn-buy">購入へ ➔</a>
             </div>
@@ -602,14 +602,15 @@
         }).join('');
 
         if (isFallbackToGeneral) {
-          topHtml = `<div style="font-size:0.72rem; color:#b45309; padding: 2px 4px;">※公式在庫なしのため市場最安店を表示中</div>` + topHtml;
+          topHtml = `<div style="font-size:0.75rem; color:#b45309; background:#fffbeb; border:1px solid #fef3c7; padding:4px 8px; border-radius:4px; margin-bottom:6px; font-weight:600;">※正規取扱店に在庫がないため、市場最安店を表示中</div>` + topHtml;
         }
       }
 
       rowsHtml += `
         <tr>
           <td class="item-col">
-            ${nameHtml}${memoHtml}
+            ${nameHtml}
+            ${memoHtml}
             <span class="jan">JAN: ${it.jan || '未登録'}</span>
           </td>
           <td class="price-col buy-price">${buyStr}</td>
