@@ -8,7 +8,7 @@ window.APPLE_DATA = [
     "official_price": 39800,
     "kaitori_rate": 83.4,
     "break_even_rate": 16.6,
-    "chome_url": "https://www.1-chome.com/wineDetail/7470/7470",
+    "chome_url": "https://www.1-chome.com/wineDetail/7470/7500",
     "official_top3": [
       {
         "shop": "楽天モバイル公式",
@@ -49,7 +49,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4549995635232%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10008768%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods 5 MKFT4J/A 【ワイヤレス充電ケース付き】",
@@ -60,7 +60,7 @@ window.APPLE_DATA = [
     "official_price": 29800,
     "kaitori_rate": 75.5,
     "break_even_rate": 24.5,
-    "chome_url": "https://www.1-chome.com/wineDetail/10644/10644",
+    "chome_url": "https://www.1-chome.com/wineDetail/10644/10680",
     "official_top3": [
       {
         "shop": "楽天モバイル公式",
@@ -101,7 +101,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tof9o.mmy99f34.g00tof9o.mmy9ae54/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakutenmobile-store%2Fapple-rm2609007%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakutenmobile-store%2Fi%2F10001994%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods 5 MKFW4J/A",
@@ -112,7 +112,7 @@ window.APPLE_DATA = [
     "official_price": 21800,
     "kaitori_rate": 87.2,
     "break_even_rate": 12.8,
-    "chome_url": "https://www.1-chome.com/wineDetail/10643/10643",
+    "chome_url": "https://www.1-chome.com/wineDetail/10643/10679",
     "official_top3": [
       {
         "shop": "楽天モバイル公式",
@@ -153,7 +153,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2Fo549995725049%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10012475%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods Max 2 ミッドナイト MHWK4ZA/A",
@@ -164,7 +164,7 @@ window.APPLE_DATA = [
     "official_price": 84800,
     "kaitori_rate": 69.6,
     "break_even_rate": 30.4,
-    "chome_url": "https://www.1-chome.com/wineDetail/8465/8465",
+    "chome_url": "https://www.1-chome.com/wineDetail/8465/8495",
     "official_top3": [],
     "all_top3": [
       {
@@ -195,7 +195,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00o.mmy99ced.g00rd00o.mmy9a93c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000975959%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19797796%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods Max 2 スターライト MHWL4ZA/A",
@@ -206,7 +206,7 @@ window.APPLE_DATA = [
     "official_price": 84800,
     "kaitori_rate": 69.6,
     "break_even_rate": 30.4,
-    "chome_url": "https://www.1-chome.com/wineDetail/8466/8466",
+    "chome_url": "https://www.1-chome.com/wineDetail/8466/8496",
     "official_top3": [],
     "all_top3": [
       {
@@ -219,6 +219,15 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00trgdo.mmy99dc5.g00trgdo.mmy9ad26/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ficockaden%2Fmhwl4zaa%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ficockaden%2Fi%2F10006271%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
+        "shop": "MoriMoriStor",
+        "price": 73369,
+        "profit": -14369,
+        "profit_rate": -19.58,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4549995687156%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10195050%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "電子問屋 2号店",
         "price": 73370,
         "profit": -14370,
@@ -226,18 +235,9 @@ window.APPLE_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4549995687156%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10010140%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "電子問屋ワールドいち",
-        "price": 73370,
-        "profit": -14370,
-        "profit_rate": -19.59,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4549995687156%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10033793%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods Max 2 ブルー MHWM4ZA/A",
@@ -248,7 +248,7 @@ window.APPLE_DATA = [
     "official_price": 84800,
     "kaitori_rate": 69.6,
     "break_even_rate": 30.4,
-    "chome_url": "https://www.1-chome.com/wineDetail/8467/8467",
+    "chome_url": "https://www.1-chome.com/wineDetail/8467/8497",
     "official_top3": [],
     "all_top3": [
       {
@@ -279,7 +279,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8so.mmy99b4f.g00tw8so.mmy9a740/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F225036049-225%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10872868%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods Max 2 オレンジ MHWN4ZA/A",
@@ -290,7 +290,7 @@ window.APPLE_DATA = [
     "official_price": 84800,
     "kaitori_rate": 69.6,
     "break_even_rate": 30.4,
-    "chome_url": "https://www.1-chome.com/wineDetail/8468/8468",
+    "chome_url": "https://www.1-chome.com/wineDetail/8468/8498",
     "official_top3": [],
     "all_top3": [
       {
@@ -321,7 +321,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4549995687170%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10010419%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods Max 2 パープル MHWP4ZA/A",
@@ -332,7 +332,7 @@ window.APPLE_DATA = [
     "official_price": 84800,
     "kaitori_rate": 69.6,
     "break_even_rate": 30.4,
-    "chome_url": "https://www.1-chome.com/wineDetail/8469/8469",
+    "chome_url": "https://www.1-chome.com/wineDetail/8469/8499",
     "official_top3": [],
     "all_top3": [
       {
@@ -363,7 +363,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rdkso.mmy99095.g00rdkso.mmy9ae78/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdigimart-shop%2Faa00193%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdigimart-shop%2Fi%2F10006595%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple HomePod 第2世代（本体）ミッドナイト MDEW4J/A",
@@ -374,10 +374,10 @@ window.APPLE_DATA = [
     "official_price": 44800,
     "kaitori_rate": 93.8,
     "break_even_rate": 6.2,
-    "chome_url": "https://www.1-chome.com/wineDetail/7891/7891",
+    "chome_url": "https://www.1-chome.com/wineDetail/7891/7921",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple HomePod 第2世代（本体）ホワイト MDEY4J/A",
@@ -388,10 +388,10 @@ window.APPLE_DATA = [
     "official_price": 44800,
     "kaitori_rate": 93.8,
     "break_even_rate": 6.2,
-    "chome_url": "https://www.1-chome.com/wineDetail/7892/7892",
+    "chome_url": "https://www.1-chome.com/wineDetail/7892/7922",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirTag (第2世代) (1パック) MFE94ZP/A",
@@ -402,7 +402,7 @@ window.APPLE_DATA = [
     "official_price": 4980,
     "kaitori_rate": 60.2,
     "break_even_rate": 39.8,
-    "chome_url": "https://www.1-chome.com/wineDetail/8172/8172",
+    "chome_url": "https://www.1-chome.com/wineDetail/8172/8202",
     "official_top3": [
       {
         "shop": "楽天モバイル公式",
@@ -425,15 +425,6 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8so.mmy99b4f.g00tw8so.mmy9a740/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F69282079-69%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10907758%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "らいぶshop",
-        "price": 5059,
-        "profit": -2059,
-        "profit_rate": -40.7,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10020273%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020175%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "カラフルスター",
         "price": 5060,
         "profit": -2060,
@@ -441,9 +432,18 @@ window.APPLE_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u9gwo.mmy99193.g00u9gwo.mmy9a2c6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcolorfulstar%2F4549995682199%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcolorfulstar%2Fi%2F10002716%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "家電問屋 楽天市場店",
+        "price": 5400,
+        "profit": -2400,
+        "profit_rate": -44.44,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00trgdo.mmy99dc5.g00trgdo.mmy9ad26/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ficockaden%2Fmfe94zpa%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ficockaden%2Fi%2F10006278%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirTag (第2世代) (4パック) MFEA4ZP/A",
@@ -454,7 +454,7 @@ window.APPLE_DATA = [
     "official_price": 16980,
     "kaitori_rate": 70.7,
     "break_even_rate": 29.3,
-    "chome_url": "https://www.1-chome.com/wineDetail/8173/8173",
+    "chome_url": "https://www.1-chome.com/wineDetail/8173/8203",
     "official_top3": [
       {
         "shop": "楽天モバイル公式",
@@ -495,7 +495,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00psjvo.mmy99e14.g00psjvo.mmy9aae2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftry3%2F4549995682588%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftry3%2Fi%2F10037368%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods 4 MXP63J/A",
@@ -547,7 +547,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tof9o.mmy99f34.g00tof9o.mmy9ae54/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakutenmobile-store%2Fapple-rm2409011%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakutenmobile-store%2Fi%2F10001618%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "AirPods 4 MXP93J/A 【アクティブノイズキャンセリング搭載】",
@@ -599,7 +599,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8so.mmy99b4f.g00tw8so.mmy9a740/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F91050132-222%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10866082%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple AirPods Pro 第2世代 MTJV3J/A USB-Cコネクタ",
@@ -641,7 +641,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qet1o.mmy997a4.g00qet1o.mmy9a0f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecjoy%2F20413214%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecjoy%2Fi%2F92540536%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "HomePod mini ブルー MJ2C3J/A",
@@ -674,7 +674,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qj7mo.mmy99b27.g00qj7mo.mmy9a23b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-rise%2Fp000000775632%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-rise%2Fi%2F23261973%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "HomePod mini オレンジ MJ2D3J/A",
@@ -688,7 +688,7 @@ window.APPLE_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/2032/2032",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "HomePod mini イエロー MJ2E3J/A",
@@ -702,7 +702,7 @@ window.APPLE_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/3853/3853",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "HomePod mini スペースグレイ MY5G2J/A",
@@ -716,7 +716,7 @@ window.APPLE_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/1549/1549",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "HomePod mini ホワイト MY5H2J/A",
@@ -740,7 +740,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8so.mmy99b4f.g00tw8so.mmy9a740/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F224011280-224%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10904042%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple Pencil Pro MX2D3ZA/A",
@@ -782,7 +782,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rdkso.mmy99095.g00rdkso.mmy9ae78/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdigimart-shop%2Faa00189%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdigimart-shop%2Fi%2F10006511%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple Pencil USB-C MUWA3ZA/A",
@@ -806,7 +806,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8so.mmy99b4f.g00tw8so.mmy9a740/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F219074745-40%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10879159%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple Pencil(第2世代) MXN43J/A",
@@ -817,7 +817,7 @@ window.APPLE_DATA = [
     "official_price": 21800,
     "kaitori_rate": 22.9,
     "break_even_rate": 77.1,
-    "chome_url": "https://www.1-chome.com/wineDetail/6932/6932",
+    "chome_url": "https://www.1-chome.com/wineDetail/6932/6962",
     "official_top3": [],
     "all_top3": [
       {
@@ -830,7 +830,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uqj5o.mmy990a9.g00uqj5o.mmy9ac8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjetts%2F4549995520040%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjetts%2Fi%2F10001020%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple Magic Mouse 2 MRME2J/A [スペースグレイ]",
@@ -844,7 +844,7 @@ window.APPLE_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/933/933",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple Magic Mouse MK2E3J/A [ホワイト]",
@@ -877,7 +877,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8so.mmy99b4f.g00tw8so.mmy9a740/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F65331493-61%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10906765%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple MagSafe充電器 MHXH3AM/A",
@@ -929,7 +929,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qet1o.mmy997a4.g00qet1o.mmy9a0f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecjoy%2F20880121%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecjoy%2Fi%2F92650419%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple USB-C Digital AV Multiportアダプタ MUF82ZA/A",
@@ -971,7 +971,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3u1o.mmy99c41.g00t3u1o.mmy9a98d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonedayonestyle%2Fmuf82zaa%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fonedayonestyle%2Fi%2F10001680%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple USB-C VGA Multiportアダプタ MJ1L2AM/A",
@@ -987,15 +987,15 @@ window.APPLE_DATA = [
     "all_top3": [
       {
         "shop": "らいぶshop",
-        "price": 8100,
-        "profit": -2100,
-        "profit_rate": -25.93,
+        "price": 8094,
+        "profit": -2094,
+        "profit_rate": -25.87,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10014676%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10014636%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple デュアルUSB-Cポート搭載35Wコンパクト電源アダプタ MNWM3AM/A",
@@ -1037,7 +1037,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4549995354157%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10002018%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple デュアルUSB-Cポート搭載35W電源アダプタ MNWP3AM/A",
@@ -1051,7 +1051,7 @@ window.APPLE_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5419/5419",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple Magic Trackpad MK2D3ZA/A",
@@ -1065,7 +1065,7 @@ window.APPLE_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5850/5850",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple MW2P3AM/A",
@@ -1076,7 +1076,7 @@ window.APPLE_DATA = [
     "official_price": 4800,
     "kaitori_rate": 104.2,
     "break_even_rate": -4.2,
-    "chome_url": "https://www.1-chome.com/wineDetail/8719/8719",
+    "chome_url": "https://www.1-chome.com/wineDetail/8719/8751",
     "official_top3": [],
     "all_top3": [
       {
@@ -1107,7 +1107,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t8m2o.mmy990b2.g00t8m2o.mmy9a7ed/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnnbay%2Fmd826am-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnnbay%2Fi%2F10000178%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple TV 4K Wi-Fiモデル 64GB MN873J/A",
@@ -1118,7 +1118,7 @@ window.APPLE_DATA = [
     "official_price": 19800,
     "kaitori_rate": 101.0,
     "break_even_rate": -1.0,
-    "chome_url": "https://www.1-chome.com/wineDetail/7803/7803",
+    "chome_url": "https://www.1-chome.com/wineDetail/7803/7833",
     "official_top3": [],
     "all_top3": [
       {
@@ -1131,7 +1131,7 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00twmvo.mmy9926f.g00twmvo.mmy9a8c9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fselectkoh%2Fwho954%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fselectkoh%2Fi%2F10001119%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple TV 4K Wi-Fi + Ethernetモデル 128GB MN893J/A",
@@ -1142,10 +1142,10 @@ window.APPLE_DATA = [
     "official_price": 22800,
     "kaitori_rate": 96.5,
     "break_even_rate": 3.5,
-    "chome_url": "https://www.1-chome.com/wineDetail/8510/8510",
+    "chome_url": "https://www.1-chome.com/wineDetail/8510/8541",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   },
   {
     "name": "Apple USB-C Digital AV Multiportアダプタ MW5M3ZA/A",
@@ -1178,6 +1178,6 @@ window.APPLE_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uo14o.mmy99c5c.g00uo14o.mmy9a8da/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhanamaru-shouten%2F20250506064209_105%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhanamaru-shouten%2Fi%2F10028333%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-26 13:32:38"
+    "updated_at": "2026-10-26 15:11:56"
   }
 ];
