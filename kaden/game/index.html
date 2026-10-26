@@ -40,7 +40,6 @@
     }
     .container { max-width: 1400px; margin: 0 auto; }
 
-    /* ★ スクロール追従・固定ヘッダーエリア（ポータルボタン＋タイトル＋操作バー） */
     .sticky-header-container {
       position: sticky;
       top: 0;
@@ -110,7 +109,6 @@
     .live-users-badge b { color: #047857; font-variant-numeric: tabular-nums; }
     .meta-info { font-size: 0.8rem; color: var(--text-sub); }
 
-    /* 操作バー */
     .controls {
       display: flex;
       gap: 12px;
@@ -130,7 +128,6 @@
     .filter-options .mode-toggle { background: #eff6ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe; color: #1d4ed8; }
     .view-count-toggle { display: flex; align-items: center; gap: 8px; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
 
-    /* 広告枠 */
     .ad-banner {
       margin: 14px auto;
       text-align: center;
@@ -138,7 +135,6 @@
       overflow: hidden;
     }
 
-    /* インフィード広告行 */
     .infeed-row td {
       background-color: #f8fafc;
       padding: 18px 16px;
@@ -251,7 +247,6 @@
 <body>
 
 <div class="container">
-  <!-- ★ スクロールしても常に画面上に残る固定ブロック（ヘッダー ＋ 操作バー） -->
   <div class="sticky-header-container">
     <header>
       <div class="header-left">
@@ -269,7 +264,6 @@
       </div>
     </header>
 
-    <!-- 操作バー（不要なポータルボタンは削除しスッキリ配置） -->
     <div class="controls">
       <div class="search-box">
         <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・ショップ名で絞り込み...">
@@ -291,7 +285,7 @@
         <label class="mode-toggle">
           <input type="checkbox" id="official-only" checked> 正規取扱店のみ
         </label>
-        <label><input type="checkbox" id="in-stock-only" checked> 在庫ありのみ</label>
+        <label><input type="checkbox" id="in-stock-only"> 在庫ありのみ</label>
         <span id="game-subfilters" style="display: inline-flex; gap: 10px;">
           <label><input type="checkbox" id="cat-console"> 本体のみ</label>
           <label><input type="checkbox" id="cat-soft"> ソフト</label>
@@ -301,7 +295,6 @@
     </div>
   </div>
 
-  <!-- 【AdSense上部広告】※規約遵守のためスクロールで自然に流れる位置に配置 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -327,7 +320,6 @@
     </table>
   </div>
 
-  <!-- 【AdSense下部広告】 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -456,7 +448,7 @@
     const rankLimit = parseInt(document.querySelector('input[name="rank-limit"]:checked').value, 10);
     const scopeLabel = isOfficial ? '正規取扱店' : '市場全体';
     const limitLabel = rankLimit === 1 ? '最安1位' : '安値TOP3';
-    thTop3Title.textContent = `${scopeLabel} ${limitLabel} (ショップ / 仕入価格 / 見込利益・損失 / リンク)`;
+    thTop3Title.textContent = `${scopeLabel}${limitLabel} (ショップ / 仕入価格 / 見込利益・損失 / リンク)`;
 
     const keyword = filterInput.value.toLowerCase().trim();
     const sortMode = sortSelect.value;
@@ -479,14 +471,21 @@
         if (!match) return false;
       }
 
-      const topList = isOfficial ? (it.official_top3 || []) : (it.all_top3 || []);
-      if (isInStockOnly && topList.length === 0) return false;
+      // 正規店のみONの場合：公式在庫があればそれを、無ければ一般在庫をフォールバック参照
+      let targetTop = [];
+      if (isOfficial) {
+        targetTop = (it.official_top3 && it.official_top3.length > 0) ? it.official_top3 : (it.all_top3 || []);
+      } else {
+        targetTop = it.all_top3 || [];
+      }
+
+      if (isInStockOnly && targetTop.length === 0) return false;
 
       if (keyword) {
         const name = (it.name || '').toLowerCase();
         const memo = (it.memo || '').toLowerCase();
         const jan = (it.jan || '').toLowerCase();
-        const shops = topList.map(t => (t.shop || '').toLowerCase()).join(' ');
+        const shops = targetTop.map(t => (t.shop || '').toLowerCase()).join(' ');
         if (!name.includes(keyword) && !memo.includes(keyword) && !jan.includes(keyword) && !shops.includes(keyword)) {
           return false;
         }
@@ -495,8 +494,13 @@
     });
 
     items.sort((a, b) => {
-      const topA_list = isOfficial ? (a.official_top3 || []) : (a.all_top3 || []);
-      const topB_list = isOfficial ? (b.official_top3 || []) : (b.all_top3 || []);
+      const topA_list = isOfficial 
+        ? ((a.official_top3 && a.official_top3.length > 0) ? a.official_top3 : (a.all_top3 || []))
+        : (a.all_top3 || []);
+      const topB_list = isOfficial 
+        ? ((b.official_top3 && b.official_top3.length > 0) ? b.official_top3 : (b.all_top3 || []))
+        : (b.all_top3 || []);
+
       const topA = topA_list.length > 0 ? topA_list[0] : null;
       const topB = topB_list.length > 0 ? topB_list[0] : null;
       
@@ -524,17 +528,35 @@
     let rowsHtml = '';
     items.forEach((it, idx) => {
       const buyStr = it.buy_price ? '¥' + it.buy_price.toLocaleString() : '-';
-      const fullTopList = isOfficial ? (it.official_top3 || []) : (it.all_top3 || []);
+      
+      // 正規店のみONの時：公式在庫があれば公式を優先、無ければ一般在庫を提示
+      let fullTopList = [];
+      let isFallbackToGeneral = false;
+      if (isOfficial) {
+        if (it.official_top3 && it.official_top3.length > 0) {
+          fullTopList = it.official_top3;
+        } else if (it.all_top3 && it.all_top3.length > 0) {
+          fullTopList = it.all_top3;
+          isFallbackToGeneral = true;
+        }
+      } else {
+        fullTopList = it.all_top3 || [];
+      }
+
       const topList = fullTopList.slice(0, rankLimit);
       const hasStock = topList.length > 0;
       const memoHtml = it.memo ? `<div class="memo-tag">${it.memo}</div>` : '';
       
-      const chomeHref = it.chome_url || `https://www.1-chome.com/electricAppliance?category=10000005&keyword=${encodeURIComponent(it.name)}`;
+      // 正規直リンクURL（wineDetail）へ遷移
+      const chomeHref = (it.chome_url && it.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
+        ? it.chome_url
+        : `https://www.1-chome.com/electricAppliance?category=10000005`;
+
       const nameHtml = `<a href="${chomeHref}" target="_blank" rel="noopener noreferrer" class="item-name" title="買取一丁目の詳細ページを開く">${it.name}<span class="chome-link-icon">🔗</span></a>`;
 
       let topHtml = '';
       if (!hasStock) {
-        topHtml = `<div class="no-stock">${isOfficial ? '正規取扱店での新品在庫が見つかりません' : '楽天市場全体で新品在庫が見つかりません'}</div>`;
+        topHtml = `<div class="no-stock">現在、楽天市場に新品の在庫が見つかりません</div>`;
       } else {
         topHtml = topList.map((shopData, i) => {
           const postBadge = (shopData.postage_flag === 1)
@@ -572,20 +594,22 @@
                 <span class="price-label">仕入:</span><span class="price-val">¥${shopData.price.toLocaleString()}</span>
               </div>
               <div class="rank-right">
-                ${profitText}
-                ${rateBadge}
+                ${profitText}${rateBadge}
               </div>
               <a href="${shopData.url}" target="_blank" rel="noopener noreferrer" class="btn-buy">購入へ ➔</a>
             </div>
           `;
         }).join('');
+
+        if (isFallbackToGeneral) {
+          topHtml = `<div style="font-size:0.72rem; color:#b45309; padding: 2px 4px;">※公式在庫なしのため市場最安店を表示中</div>` + topHtml;
+        }
       }
 
       rowsHtml += `
         <tr>
           <td class="item-col">
-            ${nameHtml}
-            ${memoHtml}
+            ${nameHtml}${memoHtml}
             <span class="jan">JAN: ${it.jan || '未登録'}</span>
           </td>
           <td class="price-col buy-price">${buyStr}</td>
@@ -595,7 +619,6 @@
         </tr>
       `;
 
-      // 3件目と6件目の直後にインフィード広告を挿入
       if (idx === 2 || idx === 5) {
         rowsHtml += createInfeedRowHtml();
       }
