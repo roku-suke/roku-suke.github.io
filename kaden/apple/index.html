@@ -350,14 +350,30 @@
         padding-bottom: 6px;
         border-bottom: 1px dashed var(--border);
       }
+      .col-price::before {
+        content: "一丁目買取:";
+        font-size: 0.8rem;
+        color: var(--text-sub);
+        font-weight: 700;
+        margin-bottom: 2px;
+        display: block;
+      }
       .rakuten-shop-box { max-width: 40%; }
     }
 
+    /* 共通インフィード広告スタイル */
     .infeed-ad-row {
       background: #ffffff;
       border-bottom: 1px solid var(--border);
-      padding: 16px;
+      padding: 16px 12px;
       text-align: center;
+    }
+    .infeed-label {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+      display: block;
     }
     .infeed-box {
       max-width: 800px;
@@ -369,6 +385,12 @@
         border: 1px dashed var(--border);
         border-radius: 10px;
       }
+    }
+
+    .bottom-nav {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
@@ -413,8 +435,8 @@
     <div class="filter-group-tabs">
       <button class="btn-tab active" data-cat="all">すべて</button>
       <button class="btn-tab" data-cat="AirPods">AirPods / 音響</button>
-      <button class="btn-tab" data-cat="Pencil">Pencil / 入力</button>
-      <button class="btn-tab" data-cat="充電">充電・アダプタ</button>
+      <button class="btn-tab" data-cat="Input">Pencil / 入力</button>
+      <button class="btn-tab" data-cat="Power">充電・アダプタ</button>
       <button class="btn-tab" data-cat="AirTag">AirTag</button>
       <button class="btn-tab" data-cat="Apple TV">Apple TV</button>
     </div>
@@ -422,6 +444,7 @@
 </header>
 
 <div class="container">
+  <!-- 上部バナー広告 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -442,6 +465,7 @@
     <div style="text-align:center; padding: 40px; color: var(--text-sub);">最新データを読み込み中...</div>
   </div>
 
+  <!-- 下部バナー広告 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -450,6 +474,10 @@
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="../../index.html" class="btn-back" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
   </div>
 </div>
 
@@ -479,10 +507,11 @@
   let rawData = [];
   let currentCategory = "all";
 
-  // ★ 広告行（AdSenseタグ）
+  // ★ 共通インフィード広告生成（規約準拠 SPONSORED ラベル付与）
   function createInfeedRowHtml() {
     return `
       <div class="infeed-ad-row">
+        <span class="infeed-label">― SPONSORED ―</span>
         <div class="infeed-box">
           <ins class="adsbygoogle"
                style="display:block"
@@ -520,12 +549,18 @@
     }
 
     let filtered = rawData.filter(item => {
+      // ★ カテゴリタブ判定の修復（入力機器・充電器の完全網羅）
       if (currentCategory !== "all") {
-        const cat = item.category || "";
-        const memo = item.memo || "";
-        if (!cat.includes(currentCategory) && !memo.includes(currentCategory)) {
-          return false;
-        }
+        const cat = (item.category || "").toLowerCase();
+        const memo = (item.memo || "").toLowerCase();
+        const name = (item.name || "").toLowerCase();
+        const combined = `${cat} ${memo} ${name}`;
+
+        if (currentCategory === "AirPods" && !combined.includes("airpods") && !combined.includes("homepod")) return false;
+        if (currentCategory === "Input" && !combined.includes("pencil") && !combined.includes("mouse") && !combined.includes("trackpad") && !combined.includes("keyboard")) return false;
+        if (currentCategory === "Power" && !combined.includes("充電") && !combined.includes("アダプタ") && !combined.includes("magsafe") && !combined.includes("ケーブル")) return false;
+        if (currentCategory === "AirTag" && !combined.includes("airtag")) return false;
+        if (currentCategory === "Apple TV" && !combined.includes("apple tv") && !combined.includes("tv 4k")) return false;
       }
 
       // 正規店のみON時は公式在庫を優先、完売時のみ市場最安店を参照
@@ -569,7 +604,7 @@
         const rRateB = (topB[0] && topB[0].profit_rate !== undefined) ? topB[0].profit_rate : -999;
         return rRateB - rRateA;
       } else if (sortVal === "chome_desc") {
-        return b.buy_price - a.buy_price;
+        return (b.buy_price || 0) - (a.buy_price || 0);
       } else if (sortVal === "official_diff_desc") {
         const diffA = a.official_price > 0 ? (a.buy_price - a.official_price) : -999999;
         const diffB = b.official_price > 0 ? (b.buy_price - b.official_price) : -999999;
@@ -602,7 +637,7 @@
 
     let html = "";
     items.forEach((item, idx) => {
-      // ★ ルール厳守：3件目（インデックス2）と 11件目（インデックス10）の直後に広告を差し込み
+      // ★ 共通ルール：3件目（idx === 2）と 11件目（idx === 10）の直後に限定配置
       if (idx === 2 || idx === 10) {
         html += createInfeedRowHtml();
       }
@@ -623,7 +658,6 @@
         `;
       }
 
-      // 正規店のみON時は公式在庫を優先、完売時のみ市場最安店をフォールバック表示
       let rawList = [];
       let isFallbackToGeneral = false;
       if (isOfficialOnly) {
@@ -679,16 +713,20 @@
         rakutenHtml = `<div style="font-size:0.8rem; color:var(--text-sub); padding: 8px 12px;">現在、楽天市場に新品の在庫がありません。</div>`;
       }
 
-      // 実測テストで証明された正規URL
+      // ★ 仕様書厳守：カテゴリトップURLへの不正フォールバックを排除
       const directUrl = (item.chome_url && item.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
         ? item.chome_url
-        : `https://www.1-chome.com/electricAppliance?category=20748358`;
+        : '#';
+
+      const nameHtml = (directUrl !== '#')
+        ? `<a href="${directUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>`
+        : `<span>${item.name}</span>`;
 
       html += `
         <div class="product-row">
           <div class="col-name">
             <div class="product-name">
-              <a href="${directUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>
+              ${nameHtml}
               <span class="badge-cat">${item.category || 'Apple'}</span>
             </div>
             <div class="product-meta">
@@ -696,7 +734,7 @@
             </div>
           </div>
           <div class="col-price">
-            <div class="val-chome">¥${item.buy_price.toLocaleString()}</div>
+            <div class="val-chome">¥${(item.buy_price || 0).toLocaleString()}</div>
             ${officialLine}
           </div>
           <div class="col-rakuten">
@@ -708,7 +746,7 @@
 
     listElem.innerHTML = html;
 
-    // ★ レンダリング完了後に AdSense 描画を確実に発火
+    // ★ 未描画広告のみを対象に安全初期化（多重呼び出しエラーを防止）
     requestAnimationFrame(() => {
       document.querySelectorAll('.infeed-box ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
         try {
