@@ -40,18 +40,16 @@
     }
     .container { max-width: 1400px; margin: 0 auto; }
 
-    .sticky-header-container {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--bg);
-      padding-top: 16px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    .ad-banner {
+      margin: 12px auto;
+      text-align: center;
+      max-width: 100%;
+      overflow: hidden;
     }
 
+    /* 通常ヘッダー（スクロールで上へ抜ける） */
     header {
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -81,7 +79,6 @@
     h1 { font-size: 1.25rem; font-weight: 700; color: #111827; }
     
     .header-right { display: flex; align-items: center; gap: 12px; }
-    
     .live-users-badge {
       display: inline-flex;
       align-items: center;
@@ -109,59 +106,64 @@
     .live-users-badge b { color: #047857; font-variant-numeric: tabular-nums; }
     .meta-info { font-size: 0.8rem; color: var(--text-sub); }
 
+    /* ★ 画面最上部に吸着固定する操作バーコンテナ (top: 0) */
+    .controls-container {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      padding-top: 4px;
+      padding-bottom: 6px;
+    }
     .controls {
       display: flex;
       gap: 12px;
       background: var(--card-bg);
-      padding: 10px 14px;
+      padding: 8px 14px;
       border-radius: 8px;
       border: 1px solid var(--border);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
       flex-wrap: wrap;
       align-items: center;
     }
     .search-box { flex: 1; min-width: 200px; }
     .sort-box { width: 260px; }
-    input[type="text"], select { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+    input[type="text"], select { width: 100%; padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.88rem; }
     .filter-options { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
     .filter-options label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #374151; }
     .filter-options .mode-toggle { background: #eff6ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe; color: #1d4ed8; }
     .view-count-toggle { display: flex; align-items: center; gap: 8px; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
 
-    .ad-banner {
-      margin: 14px auto;
-      text-align: center;
-      max-width: 100%;
-      overflow: hidden;
+    /* ★ PCテーブルビュー ＆ 見出し（題目）操作バー直下ドッキング固定 */
+    .table-wrapper {
+      background: var(--card-bg);
+      border-radius: 8px;
+      overflow-x: visible;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+      margin-top: 2px;
     }
-
-    .infeed-row td {
-      background-color: #f8fafc;
-      padding: 18px 16px;
-      text-align: center;
-      border-top: 1px dashed var(--border);
-      border-bottom: 1px dashed var(--border);
-    }
-    .infeed-label {
-      font-size: 0.72rem;
-      color: #94a3b8;
-      letter-spacing: 0.05em;
-      margin-bottom: 6px;
-      display: block;
-    }
-    .infeed-box {
-      max-width: 800px;
-      margin: 0 auto;
-      min-height: 90px;
-    }
-    .infeed-row:hover td { background-color: #f8fafc; }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; text-align: left; font-size: 0.9rem; }
     
-    .table-wrapper { background: var(--card-bg); border-radius: 8px; overflow-x: auto; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid var(--border); }
-    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; }
-    th { background: #f9fafb; padding: 12px 16px; font-weight: 600; color: #4b5563; border-bottom: 1px solid var(--border); }
-    td { padding: 16px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    /* 操作バー直下（top: 56px）に題目ヘッダーが吸着 */
+    th {
+      position: sticky;
+      top: 56px;
+      z-index: 90;
+      background: #f8fafc;
+      padding: 10px 16px;
+      font-weight: 700;
+      color: #334155;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      box-shadow: inset 0 -1px 0 var(--border), 0 2px 4px rgba(0,0,0,0.04);
+    }
+    th:last-child { border-right: none; }
+    
+    td { padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); vertical-align: middle; }
+    td:last-child { border-right: none; }
     tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #f9fafb; }
+    tr:hover td { background: #fbfcfe; }
     
     .item-col { min-width: 280px; max-width: 340px; word-break: keep-all; overflow-wrap: break-word; }
     .item-name { font-weight: 600; color: #111827; line-height: 1.4; margin-bottom: 4px; font-size: 0.95rem; text-decoration: none; display: inline-block; }
@@ -174,7 +176,7 @@
     .buy-price { color: #111827; font-size: 1.15rem; }
     
     .top3-col { min-width: 680px; }
-    .rank-row { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border-radius: 6px; margin-bottom: 6px; border: 1px solid transparent; }
+    .rank-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 12px; border-radius: 6px; margin-bottom: 6px; border: 1px solid transparent; }
     .rank-row:last-child { margin-bottom: 0; }
     .rank-row.rank-1 { background-color: #fefce8; border-color: #fef08a; }
     .rank-row.rank-2 { background-color: #f3f4f6; border-color: #e5e7eb; }
@@ -204,9 +206,31 @@
     .minus { color: var(--profit-minus); }
     .bg-minus { background-color: var(--profit-minus-bg); color: var(--profit-minus); }
     
-    .btn-buy { background: #bf0000; color: #fff; text-decoration: none; padding: 7px 16px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; margin-left: 14px; transition: background 0.2s; white-space: nowrap; }
+    .btn-buy { background: #bf0000; color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; margin-left: 14px; transition: background 0.2s; white-space: nowrap; }
     .btn-buy:hover { background: #990000; }
     .no-stock { text-align: center; color: var(--text-sub); padding: 16px; font-style: italic; font-size: 0.85rem; }
+
+    /* 共通インフィード広告スタイル */
+    .infeed-row td {
+      background-color: #f8fafc;
+      padding: 16px;
+      text-align: center;
+      border-top: 1px dashed var(--border);
+      border-bottom: 1px dashed var(--border);
+    }
+    .infeed-label {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .infeed-box {
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: 90px;
+    }
+    .infeed-row:hover td { background-color: #f8fafc; }
 
     .bottom-nav {
       margin-top: 24px;
@@ -216,9 +240,9 @@
 
     @media (max-width: 768px) {
       body { padding: 0 8px 16px 8px; }
-      .sticky-header-container { padding-top: 8px; padding-bottom: 8px; }
-      header { flex-direction: column; align-items: flex-start; gap: 8px; padding: 8px 12px; }
+      header { flex-direction: column; align-items: flex-start; gap: 8px; }
       .header-right { width: 100%; justify-content: space-between; }
+      .controls-container { top: 0; padding-top: 4px; padding-bottom: 6px; }
       .controls { padding: 8px; gap: 8px; }
       .search-box, .sort-box { width: 100%; min-width: 100%; }
       .view-count-toggle { width: 100%; justify-content: space-around; }
@@ -247,23 +271,36 @@
 <body>
 
 <div class="container">
-  <div class="sticky-header-container">
-    <header>
-      <div class="header-left">
-        <a href="../../index.html" class="btn-home">⬅ ポータル</a>
-        <div>
-          <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
-        </div>
-      </div>
-      <div class="header-right">
-        <div class="live-users-badge">
-          <span class="live-pulse"></span>
-          <span>閲覧中: <b id="online-count">1</b>人</span>
-        </div>
-        <div class="meta-info" id="updated-at">最終更新: -</div>
-      </div>
-    </header>
+  <!-- 【AdSense最上部広告】（スクロールで自然に上へ抜ける） -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="7138671333"
+         data-ad-format="horizontal"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
+  <!-- 通常ヘッダー（スクロールで上へ抜ける） -->
+  <header>
+    <div class="header-left">
+      <a href="../../index.html" class="btn-home">⬅ ポータル</a>
+      <div>
+        <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="live-users-badge">
+        <span class="live-pulse"></span>
+        <span>閲覧中: <b id="online-count">1</b>人</span>
+      </div>
+      <div class="meta-info" id="updated-at">最終更新: -</div>
+    </div>
+  </header>
+
+  <!-- ★ 画面上部に吸着固定する操作バー (top: 0) -->
+  <div class="controls-container">
     <div class="controls">
       <div class="search-box">
         <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・ショップ名で絞り込み...">
@@ -283,7 +320,7 @@
           <label><input type="radio" name="rank-limit" value="3" checked> TOP3</label>
         </div>
         <label class="mode-toggle">
-          <input type="checkbox" id="official-only" checked> 正規取扱店のみ
+          <input type="checkbox" id="officialOnlyCheck" checked> 正規取扱店のみ
         </label>
         <label><input type="checkbox" id="in-stock-only"> 在庫ありのみ</label>
         <span id="game-subfilters" style="display: inline-flex; gap: 10px;">
@@ -295,16 +332,7 @@
     </div>
   </div>
 
-  <div class="ad-banner">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9014722014583256"
-         data-ad-slot="7138671333"
-         data-ad-format="horizontal"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
+  <!-- ★ テーブル題目も操作バー直下に吸着固定（top: 56px） -->
   <div class="table-wrapper">
     <table>
       <thead>
@@ -320,6 +348,7 @@
     </table>
   </div>
 
+  <!-- 【AdSense下部広告】 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -374,7 +403,7 @@
   const updatedAtElem = document.getElementById('updated-at');
   const filterInput = document.getElementById('filter-input');
   const sortSelect = document.getElementById('sort-select');
-  const officialOnly = document.getElementById('official-only');
+  const officialOnly = document.getElementById('officialOnlyCheck');
   const inStockOnly = document.getElementById('in-stock-only');
   const catConsole = document.getElementById('cat-console');
   const catSoft = document.getElementById('cat-soft');
@@ -432,7 +461,7 @@
             <ins class="adsbygoogle"
                  style="display:block"
                  data-ad-client="ca-pub-9014722014583256"
-                 data-ad-slot="7138671333"
+                 data-ad-slot="8633264562"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
           </div>
@@ -463,7 +492,6 @@
       const cat = it.category || '';
       if ((cat === '電子タバコ') || /iqos|iluma|glo|ploom|アイコス|グロー/i.test(it.name || '')) return false;
 
-      // ★ サブフィルター判定の厳密化（タイトル部分一致の誤爆を排除し、カテゴリタグのみを参照）
       if (useGameSubFilter) {
         let match = false;
         if (filterConsole && cat === 'ゲーム機本体') match = true;
@@ -472,7 +500,6 @@
         if (!match) return false;
       }
 
-      // 正規店のみON時は公式在庫を優先、なければ市場最安店をフォールバック
       let targetTop = [];
       if (isOfficial) {
         targetTop = (it.official_top3 && it.official_top3.length > 0) ? it.official_top3 : (it.all_top3 || []);
@@ -622,7 +649,6 @@
         </tr>
       `;
 
-      // ★ 仕様書厳守：インフィード広告は3件目（idx===2）と11件目（idx===10）の直後に限定配置
       if (idx === 2 || idx === 10) {
         rowsHtml += createInfeedRowHtml();
       }
@@ -639,7 +665,7 @@
     });
   }
 
-  ['filter-input', 'sort-select', 'official-only', 'in-stock-only', 'cat-console', 'cat-soft', 'cat-controller'].forEach(id => {
+  ['filter-input', 'sort-select', 'officialOnlyCheck', 'in-stock-only', 'cat-console', 'cat-soft', 'cat-controller'].forEach(id => {
     document.getElementById(id).addEventListener('change', render);
     if(id === 'filter-input') document.getElementById(id).addEventListener('input', render);
   });
