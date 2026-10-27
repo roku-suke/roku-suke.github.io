@@ -40,19 +40,30 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text-main);
-      padding-bottom: 40px;
+      padding: 0 16px 40px 16px;
+      line-height: 1.5;
     }
-
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-top {
+    .container {
       max-width: 1280px;
       margin: 0 auto;
+    }
+
+    .ad-banner {
+      margin: 12px auto;
+      text-align: center;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    /* 通常ヘッダー（スクロールで上へ抜ける） */
+    header {
+      margin-bottom: 8px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .header-top {
       padding: 10px 16px;
       display: flex;
       align-items: center;
@@ -63,19 +74,6 @@
       display: flex;
       align-items: center;
       gap: 12px;
-    }
-    .btn-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 6px 12px;
-      background: #f1f5f9;
-      color: var(--text-main);
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      white-space: nowrap;
     }
     .page-title {
       font-size: 1.05rem;
@@ -111,19 +109,49 @@
     }
     @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
+    /* ★ 画面最上部に吸着固定する操作バーコンテナ (top: 0) */
+    .controls-container {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      padding-top: 4px;
+      padding-bottom: 6px;
+    }
     .controls-bar {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 10px 16px;
+      background: var(--card-bg);
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       align-items: center;
-      border-top: 1px solid #f1f5f9;
       font-size: 0.85rem;
     }
+
+    /* 常駐ポータルボタン */
+    .btn-portal-sticky {
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      color: var(--text-sub);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .btn-portal-sticky:hover { background: #e2e8f0; color: var(--text-main); }
+
     .search-input {
-      flex: 1 1 240px;
+      flex: 1 1 200px;
       padding: 7px 12px;
       border: 1px solid var(--border);
       border-radius: 6px;
@@ -153,18 +181,7 @@
       user-select: none;
     }
 
-    .container {
-      max-width: 1280px;
-      margin: 12px auto;
-      padding: 0 12px;
-    }
-    .ad-banner {
-      margin: 12px auto;
-      text-align: center;
-      max-width: 100%;
-      overflow: hidden;
-    }
-
+    /* ★ PCテーブル題目 操作バー直下ドッキング固定 (top: 54px) */
     .table-header {
       display: grid;
       grid-template-columns: 2.2fr 1fr 3.5fr;
@@ -176,6 +193,11 @@
       border-radius: 8px 8px 0 0;
       border: 1px solid var(--border);
       border-bottom: none;
+      position: sticky;
+      top: 54px;
+      z-index: 90;
+      box-shadow: inset 0 -1px 0 var(--border), 0 2px 4px rgba(0,0,0,0.04);
+      margin-top: 2px;
     }
     .product-list {
       display: flex;
@@ -298,7 +320,42 @@
       white-space: nowrap;
     }
 
+    /* 共通インフィード広告スタイル */
+    .infeed-ad-row {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      padding: 16px 12px;
+      text-align: center;
+    }
+    .infeed-label {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .infeed-box {
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: 90px;
+    }
+
+    .bottom-nav {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
     @media (max-width: 768px) {
+      body { padding: 0 8px 24px 8px; }
+      header { margin-top: 8px; }
+      .header-top { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .header-right { width: 100%; justify-content: space-between; }
+      .controls-container { top: 0; padding-top: 4px; padding-bottom: 6px; }
+      .controls-bar { gap: 8px; }
+      .search-input, .select-control { width: 100%; flex: 1 1 100%; }
+      .filter-item-group { width: 100%; justify-content: space-around; }
+
       .table-header { display: none; }
       .product-list {
         border: none;
@@ -330,15 +387,6 @@
         font-weight: 700;
       }
       .rakuten-shop-box { max-width: 40%; }
-    }
-
-    .infeed-ad-row {
-      background: #ffffff;
-      border-bottom: 1px solid var(--border);
-      padding: 12px 16px;
-      text-align: center;
-    }
-    @media (max-width: 768px) {
       .infeed-ad-row {
         border: 1px dashed var(--border);
         border-radius: 10px;
@@ -348,43 +396,8 @@
 </head>
 <body>
 
-<header>
-  <div class="header-top">
-    <div class="header-left">
-      <a href="../../index.html" class="btn-back">⬅ ポータル</a>
-      <div class="page-title">
-        <span>🚬 電子タバコ 正規店＆市場全体 安値TOP3 比較</span>
-      </div>
-    </div>
-    <div class="header-right">
-      <div class="badge-live"><span class="live-dot"></span>閲覧中: <span id="onlineCount">1</span>人</div>
-      <div id="lastUpdated" style="color:var(--text-sub);">更新中...</div>
-    </div>
-  </div>
-
-  <div class="controls-bar">
-    <input type="text" id="searchInput" class="search-input" placeholder="銘柄・仕様・JAN・ショップ名で絞り込み...">
-    
-    <select id="sortSelect" class="select-control">
-      <option value="rakuten_rate_desc">【最安店】の利益(率)が高い順</option>
-      <option value="chome_desc">一丁目 買取価格が高い順</option>
-      <option value="rakuten_diff_desc">楽天 利益額が大きい順</option>
-    </select>
-
-    <div class="filter-item-group">
-      <span style="font-weight:700; color:var(--text-sub);">表示数:</span>
-      <label><input type="radio" name="displayCount" value="1"> 1位のみ</label>
-      <label><input type="radio" name="displayCount" value="3" checked> TOP3</label>
-    </div>
-
-    <div class="filter-item-group">
-      <label><input type="checkbox" id="officialOnlyCheck" checked> 各社公式・正規店のみ</label>
-      <label><input type="checkbox" id="inStockOnlyCheck"> 在庫ありのみ</label>
-    </div>
-  </div>
-</header>
-
 <div class="container">
+  <!-- 【AdSense最上部広告】（スクロールで自然に上へ抜ける） -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -395,6 +408,48 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
+  <!-- 通常ヘッダー（スクロールで上へ抜ける） -->
+  <header>
+    <div class="header-top">
+      <div class="header-left">
+        <div class="page-title">
+          <span>🚬 電子タバコ 正規店＆市場全体 安値TOP3 比較</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="badge-live"><span class="live-dot"></span>閲覧中: <span id="onlineCount">1</span>人</div>
+        <div id="lastUpdated" style="color:var(--text-sub);">更新中...</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ★ 画面上部に吸着固定する操作バー (top: 0 / 左端にポータルボタン常駐) -->
+  <div class="controls-container">
+    <div class="controls-bar">
+      <a href="../../index.html" class="btn-portal-sticky">⬅ ポータル</a>
+
+      <input type="text" id="searchInput" class="search-input" placeholder="銘柄・仕様・JAN・ショップ名で絞り込み...">
+      
+      <select id="sortSelect" class="select-control">
+        <option value="rakuten_rate_desc">【最安店】の利益(率)が高い順</option>
+        <option value="chome_desc">一丁目 買取価格が高い順</option>
+        <option value="rakuten_diff_desc">楽天 利益額が大きい順</option>
+      </select>
+
+      <div class="filter-item-group">
+        <span style="font-weight:700; color:var(--text-sub);">表示数:</span>
+        <label><input type="radio" name="displayCount" value="1"> 1位のみ</label>
+        <label><input type="radio" name="displayCount" value="3" checked> TOP3</label>
+      </div>
+
+      <div class="filter-item-group">
+        <label><input type="checkbox" id="officialOnlyCheck" checked> 各社公式・正規店のみ</label>
+        <label><input type="checkbox" id="inStockOnlyCheck"> 在庫ありのみ</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ★ テーブル題目も操作バー直下に吸着固定（top: 54px） -->
   <div class="table-header">
     <div>商品名（一丁目リンク）/ 仕様・メモ</div>
     <div style="text-align:center;">一丁目買取</div>
@@ -405,6 +460,7 @@
     <div style="text-align:center; padding: 40px; color: var(--text-sub);">最新データを読み込み中...</div>
   </div>
 
+  <!-- 【AdSense下部広告】 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -413,6 +469,10 @@
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="../../index.html" class="btn-portal-sticky" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
   </div>
 </div>
 
@@ -444,13 +504,15 @@
   function createInfeedRowHtml() {
     return `
       <div class="infeed-ad-row">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-format="fluid"
-             data-ad-layout-key="-fb+5w+4e-db+86"
-             data-ad-client="ca-pub-9014722014583256"
-             data-ad-slot="8633264562"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
+        <span class="infeed-label">― SPONSORED ―</span>
+        <div class="infeed-box">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-format="fluid"
+               data-ad-layout-key="-fb+5w+4e-db+86"
+               data-ad-client="ca-pub-9014722014583256"
+               data-ad-slot="8633264562"></ins>
+        </div>
       </div>
     `;
   }
@@ -547,7 +609,6 @@
 
     let html = "";
     items.forEach((item, idx) => {
-      // ★ 仕様書厳守：インフィード広告は3件目（idx===2）と11件目（idx===10）の直後に限定配置
       if (idx === 2 || idx === 10) {
         html += createInfeedRowHtml();
       }
@@ -635,6 +696,14 @@
     });
 
     listElem.innerHTML = html;
+
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.infeed-box ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch(e) {}
+      });
+    });
   }
 
   document.getElementById("searchInput").addEventListener("input", render);
