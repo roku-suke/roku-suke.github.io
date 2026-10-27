@@ -263,7 +263,11 @@
     .m-model-name { font-size: 0.95rem; font-weight: 700; color: #0f172a; }
     .m-card-metrics { display: flex; justify-content: space-between; align-items: baseline; }
     .m-best-box { font-size: 1.05rem; font-weight: 800; color: var(--red); }
+    
     .m-toggle-hint { font-size: 0.72rem; color: var(--text-sub); text-align: right; margin-top: 4px; }
+    .m-card.open .m-toggle-hint::before { content: "▲ 閉じる"; }
+    .m-card:not(.open) .m-toggle-hint::before { content: "▼ タップで詳細"; }
+
     .m-card-body { display: none; padding: 10px; background: #ffffff; }
     .m-card.open .m-card-body { display: block; }
     .m-color-item { border: 1px solid var(--border); border-radius: 6px; padding: 8px; margin-bottom: 8px; background: #fafafa; }
@@ -283,7 +287,6 @@
   <div class="sticky-header-container">
     <header>
       <div class="header-left">
-        <!-- 2階層上に戻るため ../../index.html -->
         <a href="../../index.html" class="btn-home">⬅ ポータル</a>
         <div>
           <h1>iPhone買取価格一覧表</h1>
@@ -451,7 +454,7 @@
           tdP.className = 'price-cell';
           tdP.style.fontWeight = '600';
           tdP.rowSpan = item.colors.length;
-          tdP.innerHTML = '¥' + item.listPrice.toLocaleString();
+          tdP.innerHTML = item.listPrice > 0 ? '¥' + item.listPrice.toLocaleString() : '-';
           tr.appendChild(tdP);
         }
 
@@ -480,20 +483,23 @@
         appendShopTd(c.chome, c.cShift);
         appendShopTd(c.ichiban, c.iShift);
         appendShopTd(c.rakuen, c.rShift);
-        appendShopTd(c.rudeya, '');
+        // ★ ルデヤの48h変動判定（uShift）を正常に連動
+        appendShopTd(c.rudeya, c.uShift || '');
         appendShopTd(c.mobilemix, c.mShift);
         appendShopTd(c.mobaste, c.sShift);
 
-        const diff = maxPrice > 0 ? maxPrice - item.listPrice : 0;
-        const rate = (maxPrice > 0 && item.listPrice > 0) ? (diff / item.listPrice) * 100 : 0;
+        const hasValidListPrice = item.listPrice > 0;
+        const diff = (maxPrice > 0 && hasValidListPrice) ? maxPrice - item.listPrice : 0;
+        const rate = (maxPrice > 0 && hasValidListPrice) ? (diff / item.listPrice) * 100 : 0;
         const pClass = diff >= 0 ? 'profit-plus' : 'profit-minus';
         const sign = diff > 0 ? '+' : '';
+        const loss50k = (maxPrice > 0 && hasValidListPrice) ? `${sign}¥${Math.round((diff / item.listPrice) * 50000).toLocaleString()}` : '-';
 
         tr.innerHTML += `
           <td class="best-cell">${maxPrice > 0 ? '¥' + maxPrice.toLocaleString() : '-'}</td>
-          <td class="price-cell ${pClass}">${maxPrice > 0 ? `${sign}¥${diff.toLocaleString()}` : '-'}</td>
-          <td class="price-cell ${pClass}">${maxPrice > 0 ? `${sign}${rate.toFixed(2)}%` : '-'}</td>
-          <td class="price-cell ${pClass}">${maxPrice > 0 ? `${sign}¥${Math.round((diff/item.listPrice)*50000).toLocaleString()}` : '-'}</td>
+          <td class="price-cell ${pClass}">${(maxPrice > 0 && hasValidListPrice) ? `${sign}¥${diff.toLocaleString()}` : '-'}</td>
+          <td class="price-cell ${pClass}">${(maxPrice > 0 && hasValidListPrice) ? `${sign}${rate.toFixed(2)}%` : '-'}</td>
+          <td class="price-cell ${pClass}">${loss50k}</td>
           <td style="text-align:center;"><span class="${getTrendClass(c.trend)}">${c.trend || '-'}</span></td>
         `;
 
@@ -518,8 +524,9 @@
         if (pList.length) overallMax = Math.max(overallMax, ...pList);
       });
 
-      const diff = overallMax > 0 ? overallMax - item.listPrice : 0;
-      const rate = (overallMax > 0 && item.listPrice > 0) ? (diff / item.listPrice) * 100 : 0;
+      const hasValidListPrice = item.listPrice > 0;
+      const diff = (overallMax > 0 && hasValidListPrice) ? overallMax - item.listPrice : 0;
+      const rate = (overallMax > 0 && hasValidListPrice) ? (diff / item.listPrice) * 100 : 0;
       const pClass = diff >= 0 ? 'profit-plus' : 'profit-minus';
       const sign = diff > 0 ? '+' : '';
 
@@ -529,7 +536,7 @@
       let colorsHtml = item.colors.map(c => {
         const prices = [c.chome, c.ichiban, c.rakuen, c.rudeya, c.mobilemix, c.mobaste].filter(p => typeof p === 'number');
         const cMax = prices.length ? Math.max(...prices) : 0;
-        const cDiff = cMax > 0 ? cMax - item.listPrice : 0;
+        const cDiff = (cMax > 0 && hasValidListPrice) ? cMax - item.listPrice : 0;
 
         const fmtShop = (name, p, s) => {
           if (typeof p !== 'number') return `<div class="m-shop-box"><span class="m-shop-name">${name}</span>-</div>`;
@@ -553,7 +560,7 @@
                 <span style="margin-left:6px; font-weight:700; color:var(--red);">${cMax > 0 ? '最高 ¥' + cMax.toLocaleString() : '-'}</span>
               </div>
               <div>
-                ${cMax > 0 ? `<span class="${cDiff>=0?'profit-plus':'profit-minus'}">${cDiff>0?'+':''}¥${cDiff.toLocaleString()}</span>` : ''}
+                ${(cMax > 0 && hasValidListPrice) ? `<span class="${cDiff>=0?'profit-plus':'profit-minus'}">${cDiff>0?'+':''}¥${cDiff.toLocaleString()}</span>` : ''}
                 ${trendLabel}
               </div>
             </div>
@@ -561,7 +568,7 @@
               ${fmtShop('一丁目', c.chome, c.cShift)}
               ${fmtShop('一番', c.ichiban, c.iShift)}
               ${fmtShop('楽園', c.rakuen, c.rShift)}
-              ${fmtShop('ルデヤ', c.rudeya, '')}
+              ${fmtShop('ルデヤ', c.rudeya, c.uShift || '')}
               ${fmtShop('Mix', c.mobilemix, c.mShift)}
               ${fmtShop('モバステ', c.mobaste, c.sShift)}
             </div>
@@ -573,7 +580,7 @@
         <div class="m-card-header" onclick="this.parentElement.classList.toggle('open')">
           <div class="m-card-title-row">
             <span class="m-model-name">${item.model}</span>
-            <span style="font-size:0.75rem; color:var(--text-sub);">定価: ¥${item.listPrice.toLocaleString()}</span>
+            <span style="font-size:0.75rem; color:var(--text-sub);">定価: ${item.listPrice > 0 ? '¥' + item.listPrice.toLocaleString() : '-'}</span>
           </div>
           <div class="m-card-metrics">
             <div>
@@ -581,8 +588,8 @@
               <span class="m-best-box">${overallMax > 0 ? '¥' + overallMax.toLocaleString() : '-'}</span>
             </div>
             <div style="text-align:right;">
-              ${overallMax > 0 ? `<span class="m-diff-box ${pClass}">${sign}¥${diff.toLocaleString()} (${sign}${rate.toFixed(1)}%)</span>` : ''}
-              <div class="m-toggle-hint">▼ タップで詳細</div>
+              ${(overallMax > 0 && hasValidListPrice) ? `<span class="m-diff-box ${pClass}">${sign}¥${diff.toLocaleString()} (${sign}${rate.toFixed(1)}%)</span>` : ''}
+              <div class="m-toggle-hint"></div>
             </div>
           </div>
         </div>
@@ -612,16 +619,7 @@
     });
   }
 
-  async function fetchLiveExchangeRate() {
-    try {
-      const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
-      const data = await res.json();
-      document.getElementById('usd-jpy').textContent = `USD/JPY: ${data.rates.JPY.toFixed(2)}`;
-    } catch(e) {}
-  }
-
   async function loadData() {
-    fetchLiveExchangeRate();
     await reloadLocalScript();
 
     try {
@@ -631,8 +629,17 @@
 
     if (cachedData) {
       document.getElementById('updated-at').textContent = cachedData.updated_at + ' 取得';
-      document.getElementById('usd-jpy').textContent = 'USD/JPY: ' + Number(cachedData.usd_jpy).toFixed(2);
+      if (cachedData.usd_jpy) {
+        document.getElementById('usd-jpy').textContent = 'USD/JPY: ' + Number(cachedData.usd_jpy).toFixed(2);
+      }
       renderCurrentSeries();
+    } else {
+      // ローカルJSON未取得時のみリアルタイム為替レートへフォールバック
+      try {
+        const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+        const data = await res.json();
+        document.getElementById('usd-jpy').textContent = `USD/JPY: ${data.rates.JPY.toFixed(2)}`;
+      } catch(e) {}
     }
   }
 
