@@ -547,7 +547,8 @@
 
     let html = "";
     items.forEach((item, idx) => {
-      if (idx === 2 || idx === 5) {
+      // ★ 仕様書厳守：インフィード広告は3件目（idx===2）と11件目（idx===10）の直後に限定配置
+      if (idx === 2 || idx === 10) {
         html += createInfeedRowHtml();
       }
 
@@ -577,7 +578,7 @@
           const isProfit = r.profit >= 0;
           const label = isProfit ? "見込利益:" : "損失:";
           const diffText = isProfit ? `+¥${r.profit.toLocaleString()}` : `-¥${Math.abs(r.profit).toLocaleString()}`;
-          const rateText = isProfit ? `+${r.profit_rate}\%` : `${r.profit_rate}%`;
+          const rateText = isProfit ? `+${r.profit_rate}%` : `${r.profit_rate}%`;
           const valColor = isProfit ? "color:var(--green);" : "color:var(--red);";
 
           return `
@@ -608,11 +609,15 @@
         ? item.chome_url
         : '#';
 
+      const linkHtml = (directUrl !== '#')
+        ? `<a href="${directUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>`
+        : `<span>${item.name}</span>`;
+
       html += `
         <div class="product-row">
           <div class="col-name">
             <div class="product-name">
-              <a href="${directUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>
+              ${linkHtml}
               <span class="badge-cat">${item.category || '電子タバコ'}</span>
             </div>
             <div class="product-meta">
