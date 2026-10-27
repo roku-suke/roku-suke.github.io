@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>買取価格比較 ポータル</title>
-  <meta name="description" content="主要買取店舗のiPhone・ゲーム機・電子タバコ相場を自動比較。最新相場をリアルタイム取得。">
+  <meta name="description" content="主要買取店舗のiPhone・ゲーム機・電子タバコ・Apple製品相場を自動比較。最新相場をリアルタイム取得。">
 
   <!-- Google tag (gtag.js) アクセス解析 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
@@ -138,6 +138,8 @@
 
     .btn-game { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
     .btn-tobacco { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
+    /* Apple製品（洗練されたダークスレート調） */
+    .btn-apple { background: linear-gradient(135deg, #475569 0%, #1e293b 100%); }
 
     /* 準備中カード */
     .btn-disabled {
@@ -226,13 +228,12 @@
         <span class="sub">iQOS / glo / Ploom</span>
       </a>
 
-      <!-- Apple製品（準備中） -->
-      <div class="btn-genre card-item btn-disabled">
-        <span class="badge-prep">近日公開</span>
+      <!-- Apple製品（正式公開） -->
+      <a href="kaden/apple/" class="btn-genre card-item btn-apple">
         <span class="icon">🍎</span>
         <span class="title">Apple製品</span>
-        <span class="sub">iPad / Watch / Mac</span>
-      </div>
+        <span class="sub">AirPods / Pencil 等</span>
+      </a>
 
       <!-- カメラ・PC（準備中） -->
       <div class="btn-genre card-item btn-disabled">
