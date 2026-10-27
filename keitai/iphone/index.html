@@ -62,7 +62,7 @@
       overflow: hidden;
     }
 
-    /* 通常スクロールで上へ流れる通常ヘッダー */
+    /* 通常ヘッダー（スクロールで上へ抜ける） */
     header {
       margin-bottom: 8px;
       display: flex;
@@ -78,25 +78,8 @@
     .header-left {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
     }
-
-    .btn-home {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      color: var(--text-sub);
-      text-decoration: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      transition: all 0.2s;
-      white-space: nowrap;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .btn-home:hover { background: #f1f5f9; color: var(--text); }
 
     h1 {
       font-size: 1.25rem;
@@ -158,7 +141,7 @@
     }
     .refresh-btn:hover { background: #dbeafe; }
 
-    /* ★ 画面最上部に吸着するシリーズ切り替えタブバー (top: 0) */
+    /* ★ 画面最上部に吸着固定するタブバー (top: 0) */
     .tab-bar-container {
       position: sticky;
       top: 0;
@@ -176,9 +159,29 @@
       border: 1px solid var(--border);
       box-shadow: 0 2px 4px rgba(0,0,0,0.04);
       overflow-x: auto;
-      height: 42px;
+      height: 44px;
       align-items: center;
     }
+
+    /* 常駐ポータルボタン */
+    .btn-portal-sticky {
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      color: var(--text-sub);
+      text-decoration: none;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .btn-portal-sticky:hover { background: #e2e8f0; color: var(--text); }
+
     .tab-btn {
       background: none;
       border: 1px solid transparent;
@@ -323,10 +326,7 @@
   <!-- 通常ヘッダー（スクロールで自然に上へ抜ける） -->
   <header>
     <div class="header-left">
-      <a href="../../index.html" class="btn-home">⬅ ポータル</a>
-      <div>
-        <h1>iPhone買取価格一覧表</h1>
-      </div>
+      <h1>iPhone買取価格一覧表</h1>
     </div>
     <div class="header-right">
       <span class="online-badge">
@@ -341,9 +341,10 @@
     </div>
   </header>
 
-  <!-- ★ 画面上部に吸着固定するタブバー（top: 0） -->
+  <!-- ★ 画面上部に吸着固定するタブバー（top: 0 / 左端にポータルボタン常駐） -->
   <div class="tab-bar-container">
     <div class="tab-bar">
+      <a href="../../index.html" class="btn-portal-sticky">⬅ ポータル</a>
       <button class="tab-btn active" onclick="switchSeries('18promax', this)">iPhone 18 Pro Max</button>
       <button class="tab-btn" onclick="switchSeries('18pro', this)">iPhone 18 Pro</button>
       <button class="tab-btn" onclick="switchSeries('duo', this)">iPhone Duo</button>
@@ -395,7 +396,7 @@
   </div>
 
   <div class="bottom-nav">
-    <a href="../../index.html" class="btn-home" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
+    <a href="../../index.html" class="btn-portal-sticky" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
   </div>
 </div>
 
