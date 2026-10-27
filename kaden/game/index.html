@@ -60,22 +60,6 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     }
     .header-left { display: flex; align-items: center; gap: 14px; }
-    .btn-home {
-      background: #fff;
-      border: 1px solid var(--border);
-      color: var(--text-sub);
-      text-decoration: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      transition: all 0.2s;
-      white-space: nowrap;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .btn-home:hover { background: #f3f4f6; color: var(--text-main); }
     h1 { font-size: 1.25rem; font-weight: 700; color: #111827; }
     
     .header-right { display: flex; align-items: center; gap: 12px; }
@@ -117,7 +101,7 @@
     }
     .controls {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       background: var(--card-bg);
       padding: 8px 14px;
       border-radius: 8px;
@@ -126,8 +110,28 @@
       flex-wrap: wrap;
       align-items: center;
     }
-    .search-box { flex: 1; min-width: 200px; }
-    .sort-box { width: 260px; }
+
+    /* 常駐ポータルボタン */
+    .btn-portal-sticky {
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      color: var(--text-sub);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    .btn-portal-sticky:hover { background: #e2e8f0; color: var(--text-main); }
+
+    .search-box { flex: 1; min-width: 180px; }
+    .sort-box { width: 250px; }
     input[type="text"], select { width: 100%; padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.88rem; }
     .filter-options { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
     .filter-options label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #374151; }
@@ -285,10 +289,7 @@
   <!-- 通常ヘッダー（スクロールで上へ抜ける） -->
   <header>
     <div class="header-left">
-      <a href="../../index.html" class="btn-home">⬅ ポータル</a>
-      <div>
-        <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
-      </div>
+      <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
     </div>
     <div class="header-right">
       <div class="live-users-badge">
@@ -299,9 +300,11 @@
     </div>
   </header>
 
-  <!-- ★ 画面上部に吸着固定する操作バー (top: 0) -->
+  <!-- ★ 画面上部に吸着固定する操作バー (top: 0 / 左端にポータルボタン常駐) -->
   <div class="controls-container">
     <div class="controls">
+      <a href="../../index.html" class="btn-portal-sticky">⬅ ポータル</a>
+
       <div class="search-box">
         <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・ショップ名で絞り込み...">
       </div>
@@ -360,7 +363,7 @@
   </div>
 
   <div class="bottom-nav">
-    <a href="../../index.html" class="btn-home" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
+    <a href="../../index.html" class="btn-portal-sticky" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
   </div>
 </div>
 
