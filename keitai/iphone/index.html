@@ -39,8 +39,6 @@
       --red: #dc2626;
       --blue: #2563eb;
       --red-bg: #fee2e2;
-      --tab-h: 46px;      /* タブバーの高さ */
-      --th1-h: 34px;      /* テーブル題目1行目の高さ */
     }
 
     * { box-sizing: border-box; }
@@ -57,10 +55,16 @@
       margin: 0 auto;
     }
 
+    .ad-banner {
+      margin: 12px auto;
+      text-align: center;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
     /* 通常スクロールで上へ流れる通常ヘッダー */
     header {
-      margin-top: 14px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -154,31 +158,31 @@
     }
     .refresh-btn:hover { background: #dbeafe; }
 
-    /* ★ 画面最上部に吸着するシリーズ切り替えタブバー */
+    /* ★ 画面最上部に吸着するシリーズ切り替えタブバー (top: 0) */
     .tab-bar-container {
       position: sticky;
       top: 0;
       z-index: 100;
       background: var(--bg);
-      padding-top: 6px;
-      padding-bottom: 8px;
+      padding-top: 4px;
+      padding-bottom: 6px;
     }
     .tab-bar {
       display: flex;
       gap: 8px;
       background: var(--card-bg);
-      padding: 6px 12px;
+      padding: 5px 10px;
       border-radius: 8px;
       border: 1px solid var(--border);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
       overflow-x: auto;
-      height: var(--tab-h);
+      height: 42px;
       align-items: center;
     }
     .tab-btn {
       background: none;
       border: 1px solid transparent;
-      padding: 5px 16px;
+      padding: 4px 14px;
       font-size: 0.88rem;
       font-weight: 700;
       color: var(--text-sub);
@@ -194,14 +198,7 @@
       color: var(--primary);
     }
 
-    .ad-banner {
-      margin: 12px auto;
-      text-align: center;
-      max-width: 100%;
-      overflow: hidden;
-    }
-
-    /* ★ PCテーブルビュー ＆ 題目（見出し）吸着固定 */
+    /* ★ PCテーブルビュー ＆ 題目（見出し）吸着固定（タブ直下に隙間なくドッキング） */
     .pc-table-view {
       display: block;
       overflow-x: visible;
@@ -209,16 +206,17 @@
       border-radius: 8px;
       border: 1px solid var(--border);
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      margin-top: 2px;
     }
     table { width: 100%; border-collapse: separate; border-spacing: 0; text-align: left; font-size: 0.85rem; }
     th, td { padding: 8px 8px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); vertical-align: middle; white-space: nowrap; }
     th:first-child, td:first-child { border-left: none; }
     th:last-child, td:last-child { border-right: none; }
 
-    /* 題目1行目の固定（タブバー直下の top: 60px に吸着） */
+    /* 題目1行目（タブバー直下の top: 48px に完全吸着） */
     thead tr:nth-child(1) th {
       position: sticky;
-      top: 60px;
+      top: 48px;
       z-index: 80;
       background-color: #f1f5f9;
       color: #1e293b;
@@ -226,10 +224,10 @@
       text-align: center;
       box-shadow: inset 0 -1px 0 var(--border), 0 1px 2px rgba(0,0,0,0.03);
     }
-    /* 題目2行目の固定（1行目直下の top: 94px に吸着） */
+    /* 題目2行目（1行目直下の top: 82px に完全吸着） */
     thead tr:nth-child(2) th {
       position: sticky;
-      top: 94px;
+      top: 82px;
       z-index: 80;
       background-color: #f8fafc;
       color: #334155;
@@ -267,7 +265,7 @@
     th a:hover { text-decoration: underline !important; }
 
     /* スマホカードビュー */
-    .mobile-card-view { display: none; flex-direction: column; gap: 12px; }
+    .mobile-card-view { display: none; flex-direction: column; gap: 12px; margin-top: 8px; }
 
     .bottom-nav {
       margin-top: 24px;
@@ -277,7 +275,7 @@
 
     @media (max-width: 860px) {
       body { padding: 0 8px 16px 8px; }
-      header { flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 8px; }
+      header { flex-direction: column; align-items: flex-start; gap: 8px; }
       .header-right { width: 100%; justify-content: space-between; }
       .info-bar { width: 100%; justify-content: space-between; font-size: 0.75rem; }
       .tab-bar-container { top: 0; padding-top: 4px; padding-bottom: 6px; }
@@ -311,7 +309,18 @@
 <body>
 
 <div class="container">
-  <!-- 通常ヘッダー（スクロールで上へ流れる） -->
+  <!-- 【AdSense最上部広告】（スクロールで自然に上へ抜ける） -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="7138671333"
+         data-ad-format="horizontal"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 通常ヘッダー（スクロールで自然に上へ抜ける） -->
   <header>
     <div class="header-left">
       <a href="../../index.html" class="btn-home">⬅ ポータル</a>
@@ -332,17 +341,6 @@
     </div>
   </header>
 
-  <!-- 【AdSense上部広告】 -->
-  <div class="ad-banner">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9014722014583256"
-         data-ad-slot="7138671333"
-         data-ad-format="horizontal"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-
   <!-- ★ 画面上部に吸着固定するタブバー（top: 0） -->
   <div class="tab-bar-container">
     <div class="tab-bar">
@@ -352,7 +350,7 @@
     </div>
   </div>
 
-  <!-- ★ テーブル題目もタブ直下に吸着固定（top: 60px / 94px） -->
+  <!-- ★ テーブル題目もタブ直下に直結・吸着固定（top: 48px / 82px） -->
   <div class="pc-table-view">
     <table>
       <thead>
