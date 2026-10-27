@@ -463,11 +463,12 @@
       const cat = it.category || '';
       if ((cat === '電子タバコ') || /iqos|iluma|glo|ploom|アイコス|グロー/i.test(it.name || '')) return false;
 
+      // ★ サブフィルター判定の厳密化（タイトル部分一致の誤爆を排除し、カテゴリタグのみを参照）
       if (useGameSubFilter) {
         let match = false;
-        if (filterConsole && (cat === 'ゲーム機本体' || /switch|playstation|xbox|ps5/i.test(it.name || ''))) match = true;
+        if (filterConsole && cat === 'ゲーム機本体') match = true;
         if (filterSoft && cat === 'ゲームソフト') match = true;
-        if (filterController && (cat === 'コントローラー' || /joy-con|dualsense/i.test(it.name || ''))) match = true;
+        if (filterController && (cat === 'コントローラー' || cat === '周辺機器')) match = true;
         if (!match) return false;
       }
 
@@ -529,7 +530,6 @@
     items.forEach((it, idx) => {
       const buyStr = it.buy_price ? '¥' + it.buy_price.toLocaleString() : '-';
       
-      // ★ 正規店のみONの時：公式在庫があればそれを優先、完売時のみ市場最安店をフォールバック提示
       let fullTopList = [];
       let isFallbackToGeneral = false;
       if (isOfficial) {
@@ -549,9 +549,11 @@
       
       const chomeHref = (it.chome_url && it.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
         ? it.chome_url
-        : `https://www.1-chome.com/electricAppliance?category=10000005`;
+        : '#';
 
-      const nameHtml = `<a href="${chomeHref}" target="_blank" rel="noopener noreferrer" class="item-name" title="買取一丁目の詳細ページを開く">${it.name}<span class="chome-link-icon">🔗</span></a>`;
+      const nameHtml = (chomeHref !== '#')
+        ? `<a href="${chomeHref}" target="_blank" rel="noopener noreferrer" class="item-name" title="買取一丁目の詳細ページを開く">${it.name}<span class="chome-link-icon">🔗</span></a>`
+        : `<span class="item-name">${it.name}</span>`;
 
       let topHtml = '';
       if (!hasStock) {
@@ -620,7 +622,8 @@
         </tr>
       `;
 
-      if (idx === 2 || idx === 5) {
+      // ★ 仕様書厳守：インフィード広告は3件目（idx===2）と11件目（idx===10）の直後に限定配置
+      if (idx === 2 || idx === 10) {
         rowsHtml += createInfeedRowHtml();
       }
     });
