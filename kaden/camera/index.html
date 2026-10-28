@@ -3,14 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>買取価格比較ポータル | 主要買取店 × 楽天市場 最安値リアルタイム比較</title>
-  <meta name="description" content="買取一丁目などの主要買取店舗と楽天市場の安値相場を自動突合。iPhone・ゲーム機・電子タバコ・Apple製品・カメラの価格差や損益率をリアルタイム比較。">
-
-  <!-- OGP / SNS共有設定 -->
-  <meta property="og:title" content="買取価格比較ポータル | 主要買取店 × 楽天市場 最安値リアルタイム比較">
-  <meta property="og:description" content="主要買取店舗と楽天市場の安値TOP3相場を自動突合。価格差・損益率をリアルタイムに可視化。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://roku-suke.github.io/">
+  <title>カメラ・光学機器 安値TOP3 比較ダッシュボード</title>
+  <meta name="description" content="一眼レフ・ミラーレス・レンズ・アクションカメラなどの買取一丁目価格、楽天市場最安値・損益率・差額をリアルタイム比較。">
 
   <!-- Google tag (gtag.js) アクセス解析 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
@@ -26,254 +20,278 @@
 
   <style>
     :root {
-      --bg: #f8fafc;
+      --bg: #f4f6f9;
       --card-bg: #ffffff;
-      --text-main: #0f172a;
-      --text-sub: #64748b;
-      --border: #e2e8f0;
-      --blue: #1d68ff;
-      --green: #10b981;
-      --amber: #d97706;
-      --slate: #475569;
-      --sky: #0284c7;
+      --text-main: #1f2937;
+      --text-sub: #6b7280;
+      --border: #e5e7eb;
+      --accent: #0284c7;
+      --accent-hover: #0369a1;
+      --profit-plus: #15803d;
+      --profit-plus-bg: #dcfce7;
+      --profit-minus: #b91c1c;
+      --profit-minus-bg: #fee2e2;
+      --controls-height: 56px; /* JSで動的更新 */
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text-main);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding: 16px 12px 32px 12px;
+      padding: 0 16px 24px 16px;
       line-height: 1.5;
     }
-    .container { max-width: 640px; width: 100%; }
+    .container { max-width: 1400px; margin: 0 auto; }
 
-    /* CLS対策済みの広告バナー枠 */
+    /* CLS対策済みの広告バナー枠（min-height確保） */
     .ad-banner {
-      margin: 10px auto 16px auto;
+      margin: 12px auto;
       text-align: center;
       max-width: 100%;
       min-height: 90px;
       overflow: hidden;
     }
 
-    .portal-card {
+    /* 通常ヘッダー（スクロールで上へ抜ける） */
+    header {
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background: var(--card-bg);
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      padding: 10px 16px;
+      border-radius: 8px;
       border: 1px solid var(--border);
-      width: 100%;
-      padding: 24px 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     }
-
-    .header-area {
-      text-align: center;
-      margin-bottom: 22px;
-    }
-    h1 {
-      font-size: 1.55rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--text-main);
-      margin-bottom: 6px;
-    }
-    .sub-desc {
-      color: var(--text-sub);
-      font-size: 0.85rem;
-      line-height: 1.5;
-    }
-
-    /* セクション題目 */
-    .section-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--text-sub);
-      margin: 18px 0 8px 4px;
-      display: flex;
+    .header-left { display: flex; align-items: center; gap: 14px; }
+    h1 { font-size: 1.25rem; font-weight: 700; color: #111827; }
+    
+    .header-right { display: flex; align-items: center; gap: 12px; }
+    .live-users-badge {
+      display: inline-flex;
       align-items: center;
       gap: 6px;
-      letter-spacing: 0.03em;
-    }
-
-    /* グリッドレイアウト */
-    .grid-full {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .grid-2col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-
-    /* ボタンカード共通 */
-    .btn-genre {
-      display: flex;
-      align-items: center;
-      padding: 14px 12px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-      position: relative;
-    }
-    .btn-genre:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .btn-genre:active {
-      transform: scale(0.98);
-    }
-
-    /* 全幅カード（iPhone主力） */
-    .btn-featured {
-      background: linear-gradient(135deg, #1d68ff 0%, #2563eb 100%);
-      color: #ffffff;
-      gap: 12px;
-      padding: 16px 14px;
-    }
-    .btn-featured .icon { font-size: 1.8rem; }
-    .btn-featured .info { flex: 1; }
-    .btn-featured .title { font-size: 1.05rem; display: block; line-height: 1.3; }
-    .btn-featured .desc { font-size: 0.78rem; opacity: 0.92; font-weight: 400; margin-top: 3px; }
-    .btn-featured .arrow { font-size: 1.1rem; opacity: 0.8; }
-
-    /* 2列カード */
-    .card-item {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 6px;
-      min-height: 88px;
-      color: #ffffff;
-    }
-    .card-item .icon { font-size: 1.5rem; line-height: 1; }
-    .card-item .title { font-size: 0.95rem; line-height: 1.3; font-weight: 700; }
-    .card-item .sub {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      color: #065f46;
+      padding: 3px 10px;
+      border-radius: 20px;
       font-size: 0.78rem;
-      opacity: 0.95;
-      font-weight: 500;
-    }
-
-    .btn-game { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
-    .btn-tobacco { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
-    .btn-apple { background: linear-gradient(135deg, #475569 0%, #1e293b 100%); }
-    .btn-camera { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); }
-
-    /* 準備中カード（押し込み無効化） */
-    .btn-disabled {
-      background: #f8fafc;
-      color: #94a3b8;
-      border: 1px dashed #cbd5e1;
-      box-shadow: none;
-      cursor: default;
-    }
-    .btn-disabled:active {
-      transform: none; /* 誤認防止 */
-    }
-    .btn-disabled .sub { color: #94a3b8; opacity: 1; }
-    .badge-prep {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      font-size: 0.65rem;
-      background: #e2e8f0;
-      padding: 1px 6px;
-      border-radius: 4px;
-      color: #64748b;
-      font-weight: 600;
-    }
-
-    .meta-note {
-      text-align: center;
-      font-size: 0.75rem;
-      color: var(--text-sub);
-      margin: 24px 0 16px 0;
-    }
-
-    /* フッター */
-    .footer-links {
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
-      font-size: 0.8rem;
-      color: var(--text-sub);
-      text-align: center;
-    }
-    .footer-links button {
-      background: none;
-      border: none;
-      color: var(--text-sub);
-      text-decoration: underline;
-      cursor: pointer;
-      font-size: 0.8rem;
-      padding: 4px 8px;
-    }
-    .footer-links button:hover {
-      color: var(--text-main);
-    }
-
-    /* モーダル（プライバシーポリシー・運営者情報） */
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(15, 23, 42, 0.6);
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-      padding: 16px;
-    }
-    .modal-box {
-      background: #ffffff;
-      max-width: 540px;
-      width: 100%;
-      max-height: 85vh;
-      overflow-y: auto;
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    }
-    .modal-box h2 {
-      font-size: 1.15rem;
       font-weight: 700;
-      margin-bottom: 12px;
-      color: var(--text-main);
     }
-    .modal-box p, .modal-box ul {
-      font-size: 0.82rem;
-      color: #334155;
-      line-height: 1.6;
-      margin-bottom: 12px;
+    .live-pulse {
+      width: 7px;
+      height: 7px;
+      background-color: #10b981;
+      border-radius: 50%;
+      animation: pulse-green 2s infinite;
     }
-    .modal-box ul {
-      padding-left: 18px;
+    @keyframes pulse-green {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 5px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
     }
-    .btn-close-modal {
-      display: block;
-      width: 100%;
-      padding: 10px 0;
+    .live-users-badge b { color: #047857; font-variant-numeric: tabular-nums; }
+    .meta-info { font-size: 0.8rem; color: var(--text-sub); }
+
+    /* ★ 画面最上部に吸着固定する操作バーコンテナ (top: 0) */
+    .controls-container {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      padding-top: 4px;
+      padding-bottom: 6px;
+    }
+    .controls {
+      display: flex;
+      gap: 10px;
+      background: var(--card-bg);
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    /* 常駐ポータルボタン */
+    .btn-portal-sticky {
       background: #f1f5f9;
       border: 1px solid var(--border);
+      color: var(--text-sub);
+      text-decoration: none;
+      padding: 6px 12px;
       border-radius: 6px;
+      font-size: 0.82rem;
       font-weight: 700;
-      color: var(--text-main);
-      cursor: pointer;
-      margin-top: 16px;
-      text-align: center;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+      flex-shrink: 0;
     }
-    .btn-close-modal:hover {
-      background: #e2e8f0;
+    .btn-portal-sticky:hover { background: #e2e8f0; color: var(--text-main); }
+
+    .search-box { flex: 1; min-width: 180px; }
+    .sort-box { width: 250px; }
+    input[type="text"], select { width: 100%; padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.88rem; }
+    .filter-options { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .filter-options label { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; color: #374151; }
+    .filter-options .mode-toggle { background: #eff6ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe; color: #1d4ed8; }
+    .view-count-toggle { display: flex; align-items: center; gap: 8px; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
+
+    /* ★ PCテーブルビュー ＆ 見出し（題目）の高さ自動連動ドッキング固定 */
+    .table-wrapper {
+      background: var(--card-bg);
+      border-radius: 8px;
+      overflow-x: visible;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+      margin-top: 2px;
+    }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; text-align: left; font-size: 0.9rem; }
+    
+    /* 操作バーが折り返して高くなっても背面に潜り込まないよう動的追従 */
+    th {
+      position: sticky;
+      top: var(--controls-height);
+      z-index: 90;
+      background: #f8fafc;
+      padding: 10px 16px;
+      font-weight: 700;
+      color: #334155;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      box-shadow: inset 0 -1px 0 var(--border), 0 2px 4px rgba(0,0,0,0.04);
+    }
+    th:last-child { border-right: none; }
+    
+    td { padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); vertical-align: middle; }
+    td:last-child { border-right: none; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fbfcfe; }
+    
+    .item-col { min-width: 280px; max-width: 340px; word-break: keep-all; overflow-wrap: break-word; }
+    .item-name { font-weight: 600; color: #111827; line-height: 1.4; margin-bottom: 4px; font-size: 0.95rem; text-decoration: none; display: inline-block; }
+    .item-name:hover { color: var(--accent); text-decoration: underline; }
+    .chome-link-icon { font-size: 0.75rem; color: #9ca3af; margin-left: 4px; text-decoration: none; }
+    .memo-tag { display: inline-block; background: #eff6ff; color: #1d4ed8; border: 1px solid #dbeafe; padding: 2px 7px; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
+    .jan { font-size: 0.75rem; color: var(--text-sub); display: block; margin-top: 4px; font-family: monospace; }
+    
+    .badge-cat {
+      display: inline-block;
+      margin-top: 6px;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.68rem;
+    }
+
+    .price-col { min-width: 120px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+    .buy-price { color: #111827; font-size: 1.15rem; }
+    
+    .top3-col { min-width: 680px; }
+    .rank-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 12px; border-radius: 6px; margin-bottom: 6px; border: 1px solid transparent; }
+    .rank-row:last-child { margin-bottom: 0; }
+    .rank-row.rank-1 { background-color: #fefce8; border-color: #fef08a; }
+    .rank-row.rank-2 { background-color: #f3f4f6; border-color: #e5e7eb; }
+    .rank-row.rank-3 { background-color: #fff7ed; border-color: #ffedd5; }
+    
+    .rank-left { display: flex; align-items: center; gap: 8px; min-width: 210px; }
+    .rank-badge { font-size: 1.1rem; min-width: 24px; text-align: center; }
+    .shop-type-badge { font-size: 0.65rem; font-weight: 700; padding: 1px 4px; border-radius: 3px; }
+    .type-official { background: #dbeafe; color: #1e40af; }
+    .type-general { background: #f3f4f6; color: #4b5563; }
+    
+    .shop-name { font-weight: 600; font-size: 0.9rem; color: #374151; }
+    .postage-badge { font-size: 0.7rem; font-weight: 700; margin-left: 4px; padding: 2px 6px; border-radius: 3px; }
+    .postage-free { background: #dcfce7; color: #166534; }
+    .postage-paid { background: #fee2e2; color: #991b1b; }
+    
+    .rank-center { font-size: 0.95rem; font-variant-numeric: tabular-nums; font-weight: 600; min-width: 140px; }
+    .price-label { font-size: 0.75rem; color: var(--text-sub); margin-right: 4px; }
+    .price-val { font-size: 1.05rem; color: #111827; }
+    
+    .rank-right { min-width: 170px; text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+    .profit-line { font-weight: 700; font-size: 1rem; }
+    .rate-badge { font-size: 0.75rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-top: 2px; }
+    
+    .plus { color: var(--profit-plus); }
+    .bg-plus { background-color: var(--profit-plus-bg); color: var(--profit-plus); }
+    .minus { color: var(--profit-minus); }
+    .bg-minus { background-color: var(--profit-minus-bg); color: var(--profit-minus); }
+    
+    .btn-buy { background: #bf0000; color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; margin-left: 14px; transition: background 0.2s; white-space: nowrap; }
+    .btn-buy:hover { background: #990000; }
+    .no-stock { text-align: center; color: var(--text-sub); padding: 16px; font-style: italic; font-size: 0.85rem; }
+
+    /* 共通インフィード広告スタイル */
+    .infeed-row td {
+      background-color: #f8fafc;
+      padding: 16px;
+      text-align: center;
+      border-top: 1px dashed var(--border);
+      border-bottom: 1px dashed var(--border);
+    }
+    .infeed-label {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .infeed-box {
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: 90px;
+    }
+    .infeed-row:hover td { background-color: #f8fafc; }
+
+    .bottom-nav {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 0 8px 16px 8px; }
+      header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .header-right { width: 100%; justify-content: space-between; }
+      .controls-container { top: 0; padding-top: 4px; padding-bottom: 6px; }
+      .controls { padding: 8px; gap: 8px; }
+      .search-box, .sort-box { width: 100%; min-width: 100%; }
+      .view-count-toggle { width: 100%; justify-content: space-around; }
+
+      .table-wrapper { background: transparent; border: none; box-shadow: none; overflow-x: visible; }
+      table, thead, tbody, th, td, tr { display: block; }
+      thead { display: none; }
+      tr { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 14px; padding: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03); }
+      td { padding: 0; border: none; }
+      .item-col { max-width: 100%; margin-bottom: 10px; }
+      .price-col {
+        text-align: left; display: flex; align-items: baseline; justify-content: space-between;
+        background: #f8fafc; padding: 8px 12px; border-radius: 6px; margin-bottom: 10px;
+      }
+      .price-col::before { content: "一丁目買取相場"; font-size: 0.8rem; color: var(--text-sub); font-weight: 700; }
+      .top3-col { min-width: 100%; }
+      .rank-row { flex-direction: column; align-items: stretch; gap: 6px; padding: 8px 10px; margin-bottom: 8px; }
+      .rank-center { display: flex; justify-content: space-between; }
+      .rank-right { flex-direction: row; justify-content: space-between; align-items: center; padding-top: 4px; border-top: 1px dashed rgba(0,0,0,0.06); }
+      .btn-buy { margin-left: 0; width: 100%; text-align: center; margin-top: 4px; }
+      
+      .infeed-row { padding: 10px !important; margin-bottom: 14px; }
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- 上部広告（CLS対策：min-height確保） -->
+  <!-- 【AdSense最上部広告】（CLS対策：min-height確保） -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -284,89 +302,73 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <main class="portal-card">
-    <div class="header-area">
-      <h1>買取価格比較 ポータル</h1>
-      <p class="sub-desc">主要買取店舗 × 楽天市場の相場をリアルタイム自動突合</p>
+  <!-- 通常ヘッダー（スクロールで上へ抜ける） -->
+  <header>
+    <div class="header-left">
+      <h1 id="page-title">📷 カメラ・光学機器 安値TOP3 比較</h1>
     </div>
+    <div class="header-right">
+      <div class="live-users-badge">
+        <span class="live-pulse"></span>
+        <span>閲覧中: <b id="online-count">1</b>人</span>
+      </div>
+      <div class="meta-info" id="updated-at">最終更新: -</div>
+    </div>
+  </header>
 
-    <!-- 携帯セクション（主力を最上段に全幅配置） -->
-    <div class="section-title">📱 携帯・スマートフォン</div>
-    <div class="grid-full">
-      <a href="keitai/iphone/" class="btn-genre btn-featured">
-        <span class="icon">📱</span>
-        <div class="info">
-          <span class="title">iPhone 買取価格比較</span>
-          <span class="desc">主要買取店舗の相場・Apple公式定価との差額を一括確認</span>
+  <!-- ★ 画面上部に吸着固定する操作バー (top: 0) -->
+  <div class="controls-container" id="controlsContainer">
+    <div class="controls">
+      <a href="../../index.html" class="btn-portal-sticky">⬅ ポータル</a>
+
+      <div class="search-box">
+        <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・ショップ名で絞り込み...">
+      </div>
+      <div class="sort-box">
+        <select id="sort-select">
+          <option value="profit_rate_desc" selected>【最安店】の利益(率)が高い順</option>
+          <option value="profit_amount_desc">【最安店】の見込利益(額)が大きい順</option>
+          <option value="profit_asc">【最安店】の損失額順 (損切り・赤字確認)</option>
+          <option value="buy_desc">一丁目買取価格が高い順</option>
+        </select>
+      </div>
+      <div class="filter-options">
+        <div class="view-count-toggle">
+          <span>表示数:</span>
+          <label><input type="radio" name="rank-limit" value="1"> 1位のみ</label>
+          <label><input type="radio" name="rank-limit" value="3" checked> TOP3</label>
         </div>
-        <span class="arrow">➔</span>
-      </a>
-    </div>
-
-    <!-- 家電・デジタルセクション（スマホ2列配置） -->
-    <div class="section-title">⚡ 家電・デジタル製品</div>
-    <div class="grid-2col">
-      <!-- ゲーム -->
-      <a href="kaden/game/" class="btn-genre card-item btn-game">
-        <span class="icon">🎮</span>
-        <span class="title">ゲーム機・ソフト</span>
-        <span class="sub">Switch / PS5 等</span>
-      </a>
-
-      <!-- 電子タバコ -->
-      <a href="kaden/tobacco/" class="btn-genre card-item btn-tobacco">
-        <span class="icon">🚬</span>
-        <span class="title">電子タバコ</span>
-        <span class="sub">iQOS / glo / Ploom</span>
-      </a>
-
-      <!-- Apple製品 -->
-      <a href="kaden/apple/" class="btn-genre card-item btn-apple">
-        <span class="icon">🍎</span>
-        <span class="title">Apple製品</span>
-        <span class="sub">AirPods / Pencil 等</span>
-      </a>
-
-      <!-- カメラ・光学機器（正式公開） -->
-      <a href="kaden/camera/" class="btn-genre card-item btn-camera">
-        <span class="icon">📷</span>
-        <span class="title">カメラ・光学機器</span>
-        <span class="sub">一眼・レンズ・GoPro</span>
-      </a>
-    </div>
-
-    <!-- ホビー・その他セクション（スマホ2列配置） -->
-    <div class="section-title">🃏 ホビー・嗜好品</div>
-    <div class="grid-2col">
-      <!-- トレカ（準備中） -->
-      <div class="btn-genre card-item btn-disabled" aria-disabled="true">
-        <span class="badge-prep">準備中</span>
-        <span class="icon">🃏</span>
-        <span class="title">トレカ</span>
-        <span class="sub">ポケカ / ワンピース</span>
-      </div>
-
-      <!-- お酒（準備中） -->
-      <div class="btn-genre card-item btn-disabled" aria-disabled="true">
-        <span class="badge-prep">準備中</span>
-        <span class="icon">🥃</span>
-        <span class="title">お酒・洋酒</span>
-        <span class="sub">山崎 / 白州 / 響 等</span>
+        <label class="mode-toggle">
+          <input type="checkbox" id="officialOnlyCheck" checked> マップ/キタムラ等 正規取扱店のみ
+        </label>
+        <label><input type="checkbox" id="in-stock-only"> 在庫ありのみ</label>
+        <span id="subfilters" style="display: inline-flex; gap: 8px;">
+          <label><input type="checkbox" id="cat-mirrorless"> 一眼・ミラーレス</label>
+          <label><input type="checkbox" id="cat-compact"> コンデジ・アクション</label>
+          <label><input type="checkbox" id="cat-lens"> レンズ</label>
+          <label><input type="checkbox" id="cat-other"> その他</label>
+        </span>
       </div>
     </div>
+  </div>
 
-    <div class="meta-note">
-      ※ 毎日定期自動更新 / 最新相場リアルタイム取得
-    </div>
+  <!-- ★ テーブル題目（操作バー直下に自動吸着） -->
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>商品名（一丁目リンク） / 仕様・メモ</th>
+          <th style="text-align: right;">一丁目買取</th>
+          <th id="th-top3-title">正規取扱店 安値TOP3 (ショップ / 仕入価格 / 見込利益・損失 / リンク)</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr><td colspan="3" style="text-align:center; padding: 40px; color: #6b7280;">データを読み込み中...</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-    <!-- AdSense規約準拠フッター -->
-    <div class="footer-links">
-      <button type="button" onclick="openModal('modal-info')">運営者情報</button> | 
-      <button type="button" onclick="openModal('modal-privacy')">プライバシーポリシー</button>
-    </div>
-  </main>
-
-  <!-- 下部広告（CLS対策：min-height確保） -->
+  <!-- 【AdSense下部広告】（CLS対策：min-height確保） -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -376,50 +378,348 @@
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
-</div>
 
-<!-- 運営者情報モーダル -->
-<div id="modal-info" class="modal-overlay" onclick="closeModalOnOverlay(event, 'modal-info')">
-  <div class="modal-box">
-    <h2>運営者情報</h2>
-    <p><strong>サイト名:</strong> 買取価格比較ポータル</p>
-    <p><strong>運営者:</strong> PriceTracker 管理事務局</p>
-    <p><strong>サイトURL:</strong> https://roku-suke.github.io/</p>
-    <p><strong>お問い合わせ:</strong> GitHub リポジトリ（roku-suke/roku-suke.github.io）の Issue よりお問い合わせください。</p>
-    <p><strong>免責事項:</strong> 当サイトに掲載している買取価格および市場価格情報は、定期的な自動取得プログラムにより収集された参考情報です。各店舗における実際の取引価格や在庫状況を保証するものではありません。お取引の際は必ず各店舗の公式ページをご確認ください。</p>
-    <button type="button" class="btn-close-modal" onclick="closeModal('modal-info')">閉じる</button>
+  <div class="bottom-nav">
+    <a href="../../index.html" class="btn-portal-sticky" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
   </div>
 </div>
 
-<!-- AdSense完全準拠 プライバシーポリシーモーダル -->
-<div id="modal-privacy" class="modal-overlay" onclick="closeModalOnOverlay(event, 'modal-privacy')">
-  <div class="modal-box">
-    <h2>プライバシーポリシー</h2>
-    <p><strong>広告の配信について</strong><br>
-    当サイトでは、第三者配信事業者（Google AdSense）による広告サービスを利用しています。広告配信事業者は、利用者の興味に応じた広告を表示するためにCookie（クッキー）を使用することがあります。Cookieを使用することで、当サイトや他のウェブサイトへのアクセス情報に基づいた適切な広告が配信されます。</p>
-    
-    <p>パーソナライズ広告に使用されるCookieを無効にする方法については、<a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google広告設定</a>をご確認ください。また、<a href="https://www.aboutads.info/" target="_blank" rel="noopener noreferrer">aboutads.info</a> にアクセスすることで、第三者配信事業者がパーソナライズ広告に使用するCookieを無効にすることができます。</p>
-
-    <p><strong>アクセス解析ツールについて</strong><br>
-    当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。この機能はCookieを無効にすることで収集を拒否することができますので、お使いのブラウザの設定をご確認ください。</p>
-
-    <button type="button" class="btn-close-modal" onclick="closeModal('modal-privacy')">閉じる</button>
-  </div>
-</div>
-
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 <script>
-  function openModal(id) {
-    const m = document.getElementById(id);
-    if (m) m.style.display = 'flex';
-  }
-  function closeModal(id) {
-    const m = document.getElementById(id);
-    if (m) m.style.display = 'none';
-  }
-  function closeModalOnOverlay(e, id) {
-    if (e.target.id === id) closeModal(id);
-  }
+  const firebaseConfig = {
+    apiKey: "AIzaSyDouxwWQCgn-4Sq6wA503XzbPh3FG_MrOo",
+    authDomain: "iphone-tracker-2db9e.firebaseapp.com",
+    databaseURL: "https://iphone-tracker-2db9e-default-rtdb.firebaseio.com",
+    projectId: "iphone-tracker-2db9e",
+    storageBucket: "iphone-tracker-2db9e.firebasestorage.app",
+    messagingSenderId: "138170739435",
+    appId: "1:138170739435:web:d08a229acf17b129452cae"
+  };
+  try {
+    if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    const presenceRef = db.ref("presence/kaden_camera");
+    const userRef = presenceRef.push();
+    db.ref(".info/connected").on("value", (snap) => {
+      if (snap.val() === true) {
+        userRef.onDisconnect().remove();
+        userRef.set(true);
+      }
+    });
+    presenceRef.on("value", (snap) => {
+      const count = snap.numChildren();
+      const el = document.getElementById("online-count");
+      if (el) el.textContent = count > 0 ? count : 1;
+    });
+  } catch(e) {}
 </script>
 
+<script>
+  let rawData = [];
+
+  const tbody = document.getElementById('table-body');
+  const updatedAtElem = document.getElementById('updated-at');
+  const filterInput = document.getElementById('filter-input');
+  const sortSelect = document.getElementById('sort-select');
+  const officialOnly = document.getElementById('officialOnlyCheck');
+  const inStockOnly = document.getElementById('in-stock-only');
+  const catMirrorless = document.getElementById('cat-mirrorless');
+  const catCompact = document.getElementById('cat-compact');
+  const catLens = document.getElementById('cat-lens');
+  const catOther = document.getElementById('cat-other');
+  const thTop3Title = document.getElementById('th-top3-title');
+  const controlsContainer = document.getElementById('controlsContainer');
+
+  const rankBadges = ['🥇 1位', '🥈 2位', '🥉 3位'];
+  const rankClasses = ['rank-1', 'rank-2', 'rank-3'];
+
+  // ★ 操作バーの高さを即時反映＆ResizeObserverでリアルタイム連動
+  function updateControlsHeight() {
+    if (controlsContainer) {
+      const h = controlsContainer.offsetHeight;
+      document.documentElement.style.setProperty('--controls-height', h + 'px');
+    }
+  }
+  updateControlsHeight();
+
+  if (window.ResizeObserver && controlsContainer) {
+    const ro = new ResizeObserver(() => {
+      updateControlsHeight();
+    });
+    ro.observe(controlsContainer);
+  }
+
+  async function loadData() {
+    let data = null;
+    try {
+      const res = await fetch('./data.json?t=' + Date.now());
+      if (res.ok) data = await res.json();
+    } catch(e) {}
+
+    if ((!data || data.length === 0) && window.CAMERA_DATA) {
+      data = window.CAMERA_DATA;
+    }
+
+    if (!data || data.length === 0) {
+      await new Promise((resolve) => {
+        const sc = document.createElement('script');
+        sc.src = './data.js?t=' + Date.now();
+        sc.onload = () => {
+          data = window.CAMERA_DATA || null;
+          resolve();
+        };
+        sc.onerror = () => resolve();
+        document.head.appendChild(sc);
+      });
+    }
+
+    if (data && data.length > 0) {
+      rawData = data;
+      const firstItem = rawData.find(it => it.updated_at);
+      if (firstItem && firstItem.updated_at) {
+        updatedAtElem.textContent = '最終更新: ' + firstItem.updated_at;
+      }
+      render();
+    } else {
+      tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; padding: 40px; color: red;">データを読み込めません。</td></tr>`;
+    }
+  }
+
+  function createInfeedRowHtml() {
+    return `
+      <tr class="infeed-row">
+        <td colspan="3">
+          <span class="infeed-label">― SPONSORED ―</span>
+          <div class="infeed-box">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9014722014583256"
+                 data-ad-slot="8633264562"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div>
+        </td>
+      </tr>
+    `;
+  }
+
+  function render() {
+    if (!rawData || rawData.length === 0) return;
+
+    const isOfficial = officialOnly.checked;
+    const rankLimit = parseInt(document.querySelector('input[name="rank-limit"]:checked').value, 10);
+    const scopeLabel = isOfficial ? '正規取扱店' : '市場全体';
+    const limitLabel = rankLimit === 1 ? '最安1位' : '安値TOP3';
+    thTop3Title.textContent = `${scopeLabel} ${limitLabel} (ショップ / 仕入価格 / 見込利益・損失 / リンク)`;
+
+    const keyword = filterInput.value.toLowerCase().trim();
+    const sortMode = sortSelect.value;
+    const isInStockOnly = inStockOnly.checked;
+
+    const fMirrorless = catMirrorless.checked;
+    const fCompact = catCompact.checked;
+    const fLens = catLens.checked;
+    const fOther = catOther.checked;
+    const useSubFilter = fMirrorless || fCompact || fLens || fOther;
+
+    let items = rawData.filter(it => {
+      const cat = it.category || '';
+      
+      if (useSubFilter) {
+        let match = false;
+        if (fMirrorless && cat === '一眼・ミラーレス') match = true;
+        if (fCompact && cat === 'コンデジ・アクション') match = true;
+        if (fLens && cat === 'レンズ') match = true;
+        if (fOther && cat === 'その他カメラ') match = true;
+        if (!match) return false;
+      }
+
+      let targetTop = [];
+      if (isOfficial) {
+        targetTop = (it.official_top3 && it.official_top3.length > 0) ? it.official_top3 : (it.all_top3 || []);
+      } else {
+        targetTop = it.all_top3 || [];
+      }
+
+      if (isInStockOnly && targetTop.length === 0) return false;
+
+      if (keyword) {
+        const name = (it.name || '').toLowerCase();
+        const memo = (it.memo || '').toLowerCase();
+        const jan = (it.jan || '').toLowerCase();
+        const shops = targetTop.map(t => (t.shop || '').toLowerCase()).join(' ');
+        if (!name.includes(keyword) && !memo.includes(keyword) && !jan.includes(keyword) && !shops.includes(keyword)) {
+          return false;
+        }
+      }
+      return true;
+    });
+
+    items.sort((a, b) => {
+      const topA_list = isOfficial 
+        ? ((a.official_top3 && a.official_top3.length > 0) ? a.official_top3 : (a.all_top3 || []))
+        : (a.all_top3 || []);
+      const topB_list = isOfficial 
+        ? ((b.official_top3 && b.official_top3.length > 0) ? b.official_top3 : (b.all_top3 || []))
+        : (b.all_top3 || []);
+
+      const topA = topA_list.length > 0 ? topA_list[0] : null;
+      const topB = topB_list.length > 0 ? topB_list[0] : null;
+      
+      // 【バグ修正】在庫なし同士による NaN 順位破綻を完全防止
+      if (!topA && !topB) return 0;
+      if (!topA) return 1;
+      if (!topB) return -1;
+
+      if (sortMode === 'profit_rate_desc') return topB.profit_rate - topA.profit_rate;
+      if (sortMode === 'profit_amount_desc') return topB.profit - topA.profit;
+      if (sortMode === 'profit_asc') return topA.profit - topB.profit;
+      if (sortMode === 'buy_desc') return (b.buy_price || 0) - (a.buy_price || 0);
+      return 0;
+    });
+
+    if (items.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; padding: 30px; color:#6b7280;">表示対象の商品がありません</td></tr>`;
+      return;
+    }
+
+    let rowsHtml = '';
+    items.forEach((it, idx) => {
+      const buyStr = it.buy_price ? '¥' + it.buy_price.toLocaleString() : '-';
+      
+      let fullTopList = [];
+      let isFallbackToGeneral = false;
+      if (isOfficial) {
+        if (it.official_top3 && it.official_top3.length > 0) {
+          fullTopList = it.official_top3;
+        } else if (it.all_top3 && it.all_top3.length > 0) {
+          fullTopList = it.all_top3;
+          isFallbackToGeneral = true;
+        }
+      } else {
+        fullTopList = it.all_top3 || [];
+      }
+
+      const topList = fullTopList.slice(0, rankLimit);
+      const hasStock = topList.length > 0;
+      const memoHtml = it.memo ? `<div class="memo-tag">${it.memo}</div>` : '';
+      
+      const chomeHref = (it.chome_url && it.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
+        ? it.chome_url
+        : '#';
+
+      const nameHtml = (chomeHref !== '#')
+        ? `<a href="${chomeHref}" target="_blank" rel="noopener noreferrer" class="item-name" title="買取一丁目の詳細ページを開く">${it.name}<span class="chome-link-icon">🔗</span></a>`
+        : `<span class="item-name">${it.name}</span>`;
+
+      const catBadge = it.category ? `<span class="badge-cat">${it.category}</span>` : '';
+
+      let topHtml = '';
+      if (!hasStock) {
+        topHtml = `<div class="no-stock">現在、楽天市場に新品の在庫が見つかりません</div>`;
+      } else {
+        topHtml = topList.map((shopData, i) => {
+          const postBadge = (shopData.postage_flag === 1)
+            ? `<span class="postage-badge postage-free">無料</span>`
+            : `<span class="postage-badge postage-paid">別⚠️</span>`;
+
+          const typeBadge = shopData.is_official
+            ? `<span class="shop-type-badge type-official">正規</span>`
+            : `<span class="shop-type-badge type-general">一般</span>`;
+
+          const isPlus = shopData.profit > 0;
+          const isZero = shopData.profit === 0;
+          
+          let profitText = '';
+          let rateBadge = '';
+          if (isPlus) {
+            profitText = `<span class="profit-line plus"><span style="font-size:0.75rem; color:#6b7280; font-weight:normal;">見込利益: </span>+¥${shopData.profit.toLocaleString()}</span>`;
+            rateBadge = `<span class="rate-badge bg-plus">+${shopData.profit_rate.toFixed(1)}%</span>`;
+          } else if (isZero) {
+            profitText = `<span class="profit-line">¥0</span>`;
+            rateBadge = `<span class="rate-badge">±0.0%</span>`;
+          } else {
+            profitText = `<span class="profit-line minus"><span style="font-size:0.75rem; color:#6b7280; font-weight:normal;">損失: </span>-¥${Math.abs(shopData.profit).toLocaleString()}</span>`;
+            rateBadge = `<span class="rate-badge bg-minus">${shopData.profit_rate.toFixed(1)}%</span>`;
+          }
+            
+          return `
+            <div class="rank-row ${rankClasses[i] || 'rank-3'}">
+              <div class="rank-left">
+                <span class="rank-badge">${rankBadges[i] || (i+1) + '位'}</span>
+                ${typeBadge}
+                <span class="shop-name">${shopData.shop}${postBadge}</span>
+              </div>
+              <div class="rank-center">
+                <span class="price-label">仕入:</span><span class="price-val">¥${shopData.price.toLocaleString()}</span>
+              </div>
+              <div class="rank-right">
+                ${profitText}
+                ${rateBadge}
+              </div>
+              <a href="${shopData.url}" target="_blank" rel="noopener noreferrer" class="btn-buy">購入へ ➔</a>
+            </div>
+          `;
+        }).join('');
+
+        if (isFallbackToGeneral) {
+          topHtml = `<div style="font-size:0.75rem; color:#b45309; background:#fffbeb; border:1px solid #fef3c7; padding:4px 8px; border-radius:4px; margin-bottom:6px; font-weight:600;">※正規取扱店に在庫がないため、市場最安店を表示中</div>` + topHtml;
+        }
+      }
+
+      rowsHtml += `
+        <tr>
+          <td class="item-col">
+            ${nameHtml}
+            ${memoHtml}
+            <div>${catBadge} <span class="jan" style="display:inline-block; margin-left:6px;">JAN: ${it.jan || '未登録'}</span></div>
+          </td>
+          <td class="price-col buy-price">${buyStr}</td>
+          <td class="top3-col">
+            ${topHtml}
+          </td>
+        </tr>
+      `;
+
+      if (idx === 2 || idx === 10) {
+        rowsHtml += createInfeedRowHtml();
+      }
+    });
+
+    tbody.innerHTML = rowsHtml;
+
+    // 【仕様書 3.③ 準拠】未描画枠のみを安全に push
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.infeed-box ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch(e) {}
+      });
+    });
+  }
+
+  // ★ 300ms Debounce処理の実装（構文エラー・引数渡しを完全是正）
+  function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  }
+
+  filterInput.addEventListener('input', debounce(render, 300));
+
+  ['sort-select', 'officialOnlyCheck', 'in-stock-only', 'cat-mirrorless', 'cat-compact', 'cat-lens', 'cat-other'].forEach(id => {
+    document.getElementById(id).addEventListener('change', render);
+  });
+
+  document.querySelectorAll('input[name="rank-limit"]').forEach(r => {
+    r.addEventListener('change', render);
+  });
+
+  loadData();
+</script>
 </body>
 </html>
