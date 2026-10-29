@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/29 16:00:00",
+  "updated_at": "2026/10/29 17:00:00",
   "usd_jpy": 157.91,
   "series": {
     "18promax": [
@@ -573,8 +573,8 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 375000,
-            "cShift": "up",
+            "chome": 365000,
+            "cShift": "down",
             "ichiban": 363000,
             "iShift": "up",
             "rakuen": 365000,
@@ -583,14 +583,14 @@
             "uShift": "up",
             "mobilemix": 385000,
             "mShift": "up",
-            "mobaste": 368000,
-            "sShift": "up",
+            "mobaste": 363000,
+            "sShift": "down",
             "trend": "-"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 385000,
-            "cShift": "up",
+            "chome": 380000,
+            "cShift": "down",
             "ichiban": 380000,
             "iShift": "up",
             "rakuen": 380000,
@@ -599,8 +599,8 @@
             "uShift": "up",
             "mobilemix": 385000,
             "mShift": "up",
-            "mobaste": 385000,
-            "sShift": "up",
+            "mobaste": 380000,
+            "sShift": "down",
             "trend": "-"
           }
         ]
@@ -611,8 +611,8 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 418000,
-            "cShift": "up",
+            "chome": 413000,
+            "cShift": "down",
             "ichiban": 401000,
             "iShift": "up",
             "rakuen": 410000,
@@ -621,14 +621,14 @@
             "uShift": "up",
             "mobilemix": 425000,
             "mShift": "up",
-            "mobaste": 418000,
-            "sShift": "up",
+            "mobaste": 413000,
+            "sShift": "down",
             "trend": "-"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 425000,
-            "cShift": "up",
+            "chome": 420000,
+            "cShift": "down",
             "ichiban": 408000,
             "iShift": "up",
             "rakuen": 420000,
@@ -637,8 +637,8 @@
             "uShift": "up",
             "mobilemix": 425000,
             "mShift": "up",
-            "mobaste": 425000,
-            "sShift": "up",
+            "mobaste": 420000,
+            "sShift": "down",
             "trend": "-"
           }
         ]
