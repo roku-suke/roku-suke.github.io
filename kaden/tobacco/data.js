@@ -46,7 +46,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u5t8o.mmy99d8e.g00u5t8o.mmy9a6f0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fange2022%2Fiqosilumaiprime%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fange2022%2Fi%2F10000195%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME ブリーズブルー",
@@ -78,9 +78,9 @@ window.TOBACCO_DATA = [
       },
       {
         "shop": "らいぶshop",
-        "price": 9104,
-        "profit": -1704,
-        "profit_rate": -18.72,
+        "price": 9103,
+        "profit": -1703,
+        "profit_rate": -18.71,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015079%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015022%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -95,7 +95,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhg7o.mmy99bf0.g00uhg7o.mmy9aa3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiqos%2F6046%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiqos%2Fi%2F10000029%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME ガーネットレッド限定モデル",
@@ -144,7 +144,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F7622100834540%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10187526%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME アスペングリーン",
@@ -155,7 +155,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5855/5855",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME ミネラ モデル",
@@ -166,7 +166,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6845/6875",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME リミックス",
@@ -177,7 +177,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/9367/9400",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME セレッティ モデル",
@@ -188,7 +188,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/7298/7328",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME サウンドソリアル モデル",
@@ -199,7 +199,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/10786/10822",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME エレクトリックパープル",
@@ -239,7 +239,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10020408%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020307%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME 銀座限定モデルセット",
@@ -249,8 +249,18 @@ window.TOBACCO_DATA = [
     "buy_price": 17000,
     "chome_url": "https://www.1-chome.com/wineDetail/10576/10612",
     "official_top3": [],
-    "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "all_top3": [
+      {
+        "shop": "らいぶshop",
+        "price": 30000,
+        "profit": -13000,
+        "profit_rate": -43.33,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021434%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021314%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      }
+    ],
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i PRIME アニバーサリーモデル（錫セット）",
@@ -261,7 +271,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6123/6123",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ミッドナイトブラック",
@@ -293,9 +303,9 @@ window.TOBACCO_DATA = [
       },
       {
         "shop": "らいぶshop",
-        "price": 6386,
-        "profit": -1886,
-        "profit_rate": -29.53,
+        "price": 6383,
+        "profit": -1883,
+        "profit_rate": -29.5,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015078%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015020%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -310,7 +320,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhg7o.mmy99bf0.g00uhg7o.mmy9aa3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiqos%2F6050%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiqos%2Fi%2F10000032%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ブリーズブルー",
@@ -342,9 +352,9 @@ window.TOBACCO_DATA = [
       },
       {
         "shop": "らいぶshop",
-        "price": 5978,
-        "profit": -1678,
-        "profit_rate": -28.07,
+        "price": 5975,
+        "profit": -1675,
+        "profit_rate": -28.03,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015065%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015009%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -359,7 +369,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhg7o.mmy99bf0.g00uhg7o.mmy9aa3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiqos%2F6049%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiqos%2Fi%2F10000031%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ビビッドテラコッタ",
@@ -370,7 +380,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5657/5657",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i デジタルバイオレット",
@@ -401,25 +411,25 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhg7o.mmy99bf0.g00uhg7o.mmy9aa3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiqos%2F6052%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiqos%2Fi%2F10000034%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "らいぶshop",
-        "price": 8448,
-        "profit": -3648,
-        "profit_rate": -43.18,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015077%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015019%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "MoriMoriStor",
-        "price": 8449,
-        "profit": -3649,
-        "profit_rate": -43.19,
+        "price": 8421,
+        "profit": -3621,
+        "profit_rate": -43.0,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F7622100834625%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10187508%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "らいぶshop",
+        "price": 8422,
+        "profit": -3622,
+        "profit_rate": -43.01,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015077%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015019%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i リーフグリーン",
@@ -468,7 +478,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015798%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015748%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ミネラ モデル",
@@ -498,7 +508,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uqj5o.mmy990a9.g00uqj5o.mmy9ac8c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjetts%2F7622100547488%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjetts%2Fi%2F10001053%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i リミックス",
@@ -529,25 +539,25 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhg7o.mmy99bf0.g00uhg7o.mmy9aa3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiqos%2F7896%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiqos%2Fi%2F10000101%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "ノア商社 楽天市場店",
-        "price": 9387,
-        "profit": -2287,
-        "profit_rate": -24.36,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F7622100548478%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004173%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "MoriMoriStor",
-        "price": 9388,
-        "profit": -2288,
-        "profit_rate": -24.37,
+        "price": 9372,
+        "profit": -2272,
+        "profit_rate": -24.24,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F7622100548478%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10195434%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "ノア商社 楽天市場店",
+        "price": 9373,
+        "profit": -2273,
+        "profit_rate": -24.25,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F7622100548478%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004173%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i セレッティ モデル",
@@ -558,7 +568,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/7299/7329",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ボールドルビー",
@@ -598,7 +608,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021519%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021396%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ギャラクシーブルー",
@@ -628,7 +638,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ui14o.mmy997db.g00ui14o.mmy9a553/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fears%2F7622100548096%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fears%2Fi%2F10003406%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i エレクトリックパープル",
@@ -677,7 +687,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10020340%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020238%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i アニバーサリーモデル（錫セット）",
@@ -688,7 +698,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6124/6124",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE ミッドナイトブラック",
@@ -737,7 +747,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00urlbo.mmy99e9a.g00urlbo.mmy9af66/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftechin01%2F7622100834649%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftechin01%2Fi%2F10003217%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE ブリーズブルー",
@@ -778,15 +788,15 @@ window.TOBACCO_DATA = [
       },
       {
         "shop": "らいぶshop",
-        "price": 3367,
-        "profit": -1667,
-        "profit_rate": -49.51,
+        "price": 3366,
+        "profit": -1666,
+        "profit_rate": -49.49,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015081%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015024%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE デジタルバイオレット",
@@ -796,18 +806,8 @@ window.TOBACCO_DATA = [
     "buy_price": 2800,
     "chome_url": "https://www.1-chome.com/wineDetail/5660/5660",
     "official_top3": [],
-    "all_top3": [
-      {
-        "shop": "らいぶshop",
-        "price": 7779,
-        "profit": -4979,
-        "profit_rate": -64.01,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015216%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015158%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      }
-    ],
-    "updated_at": "2026-10-28 17:40:00"
+    "all_top3": [],
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE ビビッドテラコッタ",
@@ -818,7 +818,7 @@ window.TOBACCO_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5659/5659",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE リーフグリーン",
@@ -848,7 +848,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015797%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015747%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE ミネラ モデル",
@@ -887,7 +887,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00utfto.mmy99728.g00utfto.mmy9a291/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokai-online-shop21%2Fcompass1764150541%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftokai-online-shop21%2Fi%2F10000025%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE リミックス",
@@ -926,7 +926,7 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021104%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021000%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE セレッティ モデル",
@@ -938,6 +938,15 @@ window.TOBACCO_DATA = [
     "official_top3": [],
     "all_top3": [
       {
+        "shop": "MoriMoriStor",
+        "price": 19799,
+        "profit": -12799,
+        "profit_rate": -64.64,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F7622100547938%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10193490%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "トレンドオフィス 楽天市",
         "price": 19800,
         "profit": -12800,
@@ -947,21 +956,21 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ui14o.mmy997db.g00ui14o.mmy9a553/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fears%2F7622100547938%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fears%2Fi%2F10001497%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE ボールドルビー",
     "memo": "IQOS",
     "category": "IQOS",
     "jan": "7622100549222",
-    "buy_price": 3300,
+    "buy_price": 3200,
     "chome_url": "https://www.1-chome.com/wineDetail/10746/10782",
     "official_top3": [
       {
         "shop": "IQOS公式",
         "price": 3980,
-        "profit": -680,
-        "profit_rate": -17.09,
+        "profit": -780,
+        "profit_rate": -19.6,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhg7o.mmy99bf0.g00uhg7o.mmy9aa3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiqos%2F8302%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiqos%2Fi%2F10000106%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -971,8 +980,8 @@ window.TOBACCO_DATA = [
       {
         "shop": "IQOS公式",
         "price": 3980,
-        "profit": -680,
-        "profit_rate": -17.09,
+        "profit": -780,
+        "profit_rate": -19.6,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhg7o.mmy99bf0.g00uhg7o.mmy9aa3b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiqos%2F8302%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiqos%2Fi%2F10000106%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -980,14 +989,14 @@ window.TOBACCO_DATA = [
       {
         "shop": "らいぶshop",
         "price": 7579,
-        "profit": -4279,
-        "profit_rate": -56.46,
+        "profit": -4379,
+        "profit_rate": -57.78,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021518%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021394%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE アニバーサリーモデル",
@@ -997,8 +1006,18 @@ window.TOBACCO_DATA = [
     "buy_price": 5300,
     "chome_url": "https://www.1-chome.com/wineDetail/6125/6125",
     "official_top3": [],
-    "all_top3": [],
-    "updated_at": "2026-10-28 17:40:00"
+    "all_top3": [
+      {
+        "shop": "東海オンラインショップ",
+        "price": 9980,
+        "profit": -4680,
+        "profit_rate": -46.89,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00utfto.mmy99728.g00utfto.mmy9a291/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokai-online-shop21%2F4157-000036%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftokai-online-shop21%2Fi%2F10000017%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      }
+    ],
+    "updated_at": "2026-10-29 17:40:00"
   },
   {
     "name": "IQOS ILUMA i ONE エレクトリックパープル",
@@ -1047,6 +1066,6 @@ window.TOBACCO_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10020343%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020241%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-10-28 17:40:00"
+    "updated_at": "2026-10-29 17:40:00"
   }
 ];
