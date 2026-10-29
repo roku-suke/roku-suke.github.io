@@ -57,18 +57,21 @@
       margin: 0 auto;
     }
 
-    /* 【CLS防止】広告コンテナの最小高さを確保 */
+    /* 【CLS防止 & AdSense幅認識担保】display:block で横幅を確実に認識させる */
     .ad-banner {
       margin: 12px auto;
       text-align: center;
+      width: 100%;
       max-width: 100%;
       min-height: 90px;
       overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: block;
       background: rgba(0, 0, 0, 0.01);
       border-radius: 6px;
+    }
+    .ad-banner ins {
+      display: block !important;
+      margin: 0 auto;
     }
 
     /* 通常ヘッダー（スクロールで自然に上へ抜ける） */
@@ -323,7 +326,7 @@
 <body>
 
 <div class="container">
-  <!-- 【AdSense最上部広告】（min-heightでCLS完全防止） -->
+  <!-- 【AdSense最上部広告】（display:block + インライン初期化で確実に表示） -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -331,6 +334,9 @@
          data-ad-slot="7138671333"
          data-ad-format="horizontal"
          data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
 
   <!-- 通常ヘッダー（スクロールで自然に上へ抜ける） -->
@@ -394,7 +400,7 @@
 
   <div class="mobile-card-view" id="mobile-card-body"></div>
 
-  <!-- 【AdSense下部広告】 -->
+  <!-- 【AdSense下部広告】（インライン初期化で確実に表示） -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -402,6 +408,9 @@
          data-ad-slot="8633264562"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
 
   <div class="bottom-nav">
@@ -414,7 +423,7 @@
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 
 <script>
-  // 【AdSense安全初期化】二重発火・白抜け防止
+  // 【AdSense安全再初期化】タブ切り替えやデータ更新時の白抜け防止
   function renderAds() {
     requestAnimationFrame(() => {
       document.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
@@ -434,7 +443,6 @@
       if (barH > 0) {
         document.documentElement.style.setProperty('--controls-height', barH + 'px');
       }
-      // 【バグ修正①】スマホ表示時（display:none）に offsetHeight = 0 で上書きされるのを完全に防止
       if (th1Cell && th1Cell.offsetHeight > 0) {
         document.documentElement.style.setProperty('--th1-height', th1Cell.offsetHeight + 'px');
       }
@@ -718,7 +726,6 @@
 
   // 【SWR即時描画 ＆ 二重フォールバック保護】
   async function loadData() {
-    // 【改善②】プリロード済みデータが存在すれば、待たずに0秒で即時描画（チラつき完全根絶）
     if (window.SCRAPED_PRICES_DATA && window.SCRAPED_PRICES_DATA.series && !cachedData) {
       cachedData = window.SCRAPED_PRICES_DATA;
       document.getElementById('updated-at').textContent = cachedData.updated_at + ' 取得';
@@ -728,7 +735,6 @@
       renderCurrentSeries();
     }
 
-    // バックグラウンドで最新JS/JSONを並行取得
     await reloadLocalScript();
 
     try {
@@ -743,7 +749,6 @@
 
     if (cachedData) {
       document.getElementById('updated-at').textContent = cachedData.updated_at + ' 取得';
-      // 【改善③】為替が0または欠損している場合は外部APIで確実に救済
       if (cachedData.usd_jpy && Number(cachedData.usd_jpy) > 0) {
         document.getElementById('usd-jpy').textContent = 'USD/JPY: ' + Number(cachedData.usd_jpy).toFixed(2);
       } else {
