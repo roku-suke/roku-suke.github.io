@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/29 17:00:00",
+  "updated_at": "2026/10/29 18:00:00",
   "usd_jpy": 157.91,
   "series": {
     "18promax": [
@@ -611,7 +611,7 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 413000,
+            "chome": 410000,
             "cShift": "down",
             "ichiban": 401000,
             "iShift": "up",
@@ -649,8 +649,8 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 500000,
-            "cShift": "up",
+            "chome": 490000,
+            "cShift": "down",
             "ichiban": 481000,
             "iShift": "up",
             "rakuen": 495000,
@@ -659,14 +659,14 @@
             "uShift": "up",
             "mobilemix": 505000,
             "mShift": "up",
-            "mobaste": 503000,
-            "sShift": "up",
+            "mobaste": 493000,
+            "sShift": "down",
             "trend": "-"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 505000,
-            "cShift": "up",
+            "chome": 495000,
+            "cShift": "down",
             "ichiban": 486000,
             "iShift": "up",
             "rakuen": 495000,
@@ -675,8 +675,8 @@
             "uShift": "up",
             "mobilemix": 505000,
             "mShift": "up",
-            "mobaste": 505000,
-            "sShift": "up",
+            "mobaste": 495000,
+            "sShift": "down",
             "trend": "-"
           }
         ]
