@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/31 00:00:00",
+  "updated_at": "2026/10/31 01:00:00",
   "usd_jpy": 157.88,
   "series": {
     "18promax": [
@@ -32,7 +32,7 @@
             "rakuen": 227000,
             "rShift": "up",
             "rudeya": 228500,
-            "uShift": "up",
+            "uShift": "",
             "mobilemix": 228000,
             "mShift": "up",
             "mobaste": 225000,
