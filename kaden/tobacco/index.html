@@ -2,9 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- 【仕様書 3.④ 準拠】ピンチズームを許可（WCAG 2.1 アクセシビリティ完全準拠） -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>電子タバコ 正規店＆市場全体 安値TOP3 比較</title>
   <meta name="description" content="IQOS・Ploom・gloなどの買取一丁目価格、楽天市場最安値・損益率・差額をリアルタイム比較。">
+
+  <!-- 【仕様書 3.⑤ 準拠】SWR方式：キャッシュデータをheadで先行ロードし0秒即時描画 -->
+  <script src="data.js?t=1"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
@@ -18,7 +22,7 @@
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
 
-  <!-- Firebase (閲覧人数リアルタイム表示) -->
+  <!-- Firebase (全画面共通 閲覧人数リアルタイム同期) -->
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
 
@@ -34,6 +38,7 @@
       --red: #ef4444;
       --rakuten-bg: #fffdf5;
       --rakuten-border: #fef08a;
+      --controls-height: 54px; /* 動的追従デフォルト値 */
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -48,11 +53,15 @@
       margin: 0 auto;
     }
 
+    /* 【仕様書 3.③ 準拠】Flexbox禁止・ブロック配置・CLS防止min-height確保 */
     .ad-banner {
+      display: block;
+      width: 100%;
       margin: 12px auto;
       text-align: center;
       max-width: 100%;
       overflow: hidden;
+      min-height: 90px;
     }
 
     /* 通常ヘッダー（スクロールで上へ抜ける） */
@@ -131,7 +140,7 @@
       font-size: 0.85rem;
     }
 
-    /* 常駐ポータルボタン */
+    /* 【仕様書 3.② 準拠】常駐ポータル復帰ボタン */
     .btn-portal-sticky {
       background: #f1f5f9;
       border: 1px solid var(--border);
@@ -181,7 +190,7 @@
       user-select: none;
     }
 
-    /* ★ PCテーブル題目 操作バー直下ドッキング固定 (top: 54px) */
+    /* ★ 【仕様書 3.② 準拠】操作バー直下動的ドッキング吸着固定 */
     .table-header {
       display: grid;
       grid-template-columns: 2.2fr 1fr 3.5fr;
@@ -194,10 +203,11 @@
       border: 1px solid var(--border);
       border-bottom: none;
       position: sticky;
-      top: 54px;
+      top: var(--controls-height, 54px);
       z-index: 90;
       box-shadow: inset 0 -1px 0 var(--border), 0 2px 4px rgba(0,0,0,0.04);
       margin-top: 2px;
+      transition: top 0.1s ease-out;
     }
     .product-list {
       display: flex;
@@ -245,6 +255,14 @@
       border-radius: 4px;
       font-weight: 700;
       font-size: 0.68rem;
+    }
+    .badge-memo {
+      background: #f1f5f9;
+      color: #475569;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.7rem;
     }
 
     .col-price {
@@ -320,7 +338,7 @@
       white-space: nowrap;
     }
 
-    /* 共通インフィード広告スタイル */
+    /* 【仕様書 3.③ 準拠】インフィード広告スタイル */
     .infeed-ad-row {
       background: #ffffff;
       border-bottom: 1px solid var(--border);
@@ -340,14 +358,57 @@
       min-height: 90px;
     }
 
-    .bottom-nav {
-      margin-top: 24px;
+    /* 【仕様書 3.④ 準拠】AdSenseポリシー準拠フッタースタイル */
+    .page-footer {
+      margin-top: 40px;
+      padding: 24px 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-sub);
+    }
+    .footer-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .disclaimer {
+      font-size: 0.76rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+    .footer-links {
       display: flex;
       justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: var(--text-sub);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+      color: var(--blue);
+    }
+    .footer-sep {
+      color: var(--border);
+    }
+    .copyright {
+      font-size: 0.72rem;
+      color: #94a3b8;
     }
 
+    /* 【仕様書 3.② 準拠】スマホ表示時（max-width: 768px）レスポンシブスタイル */
     @media (max-width: 768px) {
       body { padding: 0 8px 24px 8px; }
+      .ad-banner { min-height: 60px; }
       header { margin-top: 8px; }
       .header-top { flex-direction: column; align-items: flex-start; gap: 8px; }
       .header-right { width: 100%; justify-content: space-between; }
@@ -386,10 +447,32 @@
         color: var(--text-sub);
         font-weight: 700;
       }
-      .rakuten-shop-box { max-width: 40%; }
+
+      /* スマホ表示時は縦積み2段組にして横はみ出し・文字潰れを完全解消 */
+      .rakuten-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 8px 10px;
+      }
+      .rakuten-shop-box {
+        max-width: 100%;
+        justify-content: space-between;
+      }
+      .rakuten-right {
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
       .infeed-ad-row {
         border: 1px dashed var(--border);
         border-radius: 10px;
+      }
+      /* 【仕様書 3.③ 準拠】スマホ時のインフィード広告高さを60pxに完全同期（CLS防止） */
+      .infeed-box {
+        min-height: 60px;
       }
     }
   </style>
@@ -397,7 +480,7 @@
 <body>
 
 <div class="container">
-  <!-- 【AdSense最上部広告】（スクロールで自然に上へ抜ける） -->
+  <!-- 【AdSense最上部広告】 -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -424,7 +507,7 @@
   </header>
 
   <!-- ★ 画面上部に吸着固定する操作バー (top: 0 / 左端にポータルボタン常駐) -->
-  <div class="controls-container">
+  <div id="controlsContainer" class="controls-container">
     <div class="controls-bar">
       <a href="../../index.html" class="btn-portal-sticky">⬅ ポータル</a>
 
@@ -449,7 +532,7 @@
     </div>
   </div>
 
-  <!-- ★ テーブル題目も操作バー直下に吸着固定（top: 54px） -->
+  <!-- ★ テーブル題目（操作バー直下動的ドッキング） -->
   <div class="table-header">
     <div>商品名（一丁目リンク）/ 仕様・メモ</div>
     <div style="text-align:center;">一丁目買取</div>
@@ -471,16 +554,26 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <div class="bottom-nav">
-    <a href="../../index.html" class="btn-portal-sticky" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
-  </div>
+  <!-- 【仕様書 3.④ 準拠】フッター（免責事項・プライバシーポリシー常設） -->
+  <footer class="page-footer">
+    <div class="footer-content">
+      <p class="disclaimer">
+        【免責事項】当サイトに掲載されている買取価格および楽天市場の販売価格は、各サイトから自動収集された参考情報です。最新の買取価格・減額条件や在庫状況・ポイント倍率はリンク先の各店舗ページにて必ずご確認ください。当サイトの情報を利用したことによるいかなる損害についても運営者は一切の責任を負いません。
+      </p>
+      <div class="footer-links">
+        <a href="../../index.html">⬅ ポータルトップへ戻る</a>
+        <span class="footer-sep">|</span>
+        <a href="../../index.html#privacy">プライバシーポリシー・運営者情報</a>
+      </div>
+      <p class="copyright">&copy; 2026 Price Tracker All Rights Reserved.</p>
+    </div>
+  </footer>
 </div>
 
-<script src="data.js?t=1"></script>
-
 <script>
+  // 【仕様書 3.⑤ 準拠】全画面共通 Firebase Realtime Database プレゼンス同期
   try {
-    const firebaseConfig = { databaseURL: "https://price-tracker-presence-default-rtdb.firebaseio.com" };
+    const firebaseConfig = { databaseURL: "https://iphone-tracker-2db9e-default-rtdb.firebaseio.com" };
     if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
     const db = firebase.database();
     const onlineRef = db.ref(".info/connected");
@@ -499,7 +592,34 @@
     console.warn("Firebase offline mode");
   }
 
-  let rawData = [];
+  // 【仕様書 3.⑤ 準拠】SWR方式：head先行ロードのキャッシュから0秒即時描画
+  let rawData = (window.TOBACCO_DATA && window.TOBACCO_DATA.length > 0) ? window.TOBACCO_DATA : [];
+
+  // 【仕様書 3.② 準拠】Sticky高さ動的連動（被り・隙間開き防止）
+  function updateStickyPositions() {
+    const controls = document.getElementById("controlsContainer");
+    if (controls && controls.offsetHeight > 0) {
+      document.documentElement.style.setProperty("--controls-height", `${controls.offsetHeight}px`);
+    }
+  }
+
+  window.addEventListener("resize", updateStickyPositions);
+  if (window.ResizeObserver) {
+    new ResizeObserver(updateStickyPositions).observe(document.getElementById("controlsContainer"));
+  }
+
+  // 【仕様書 3.① 準拠】300ms Debounce 実装
+  function debounce(func, wait) {
+    let timeout;
+    return function() {
+      const context = this;
+      const args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        func.apply(context, args);
+      }, wait);
+    };
+  }
 
   function createInfeedRowHtml() {
     return `
@@ -517,13 +637,21 @@
     `;
   }
 
+  // 【仕様書 3.⑤ 準拠】非同期フェッチ・二重フォールバック
   async function loadData() {
     try {
       const res = await fetch("data.json?t=" + Date.now());
       if (!res.ok) throw new Error("JSON fetch failed");
-      rawData = await res.json();
+      const json = await res.json();
+      if (Array.isArray(json) && json.length > 0) {
+        rawData = json;
+      } else if (window.TOBACCO_DATA && window.TOBACCO_DATA.length > 0) {
+        rawData = window.TOBACCO_DATA;
+      }
     } catch(e) {
-      if (window.TOBACCO_DATA) rawData = window.TOBACCO_DATA;
+      if (window.TOBACCO_DATA && window.TOBACCO_DATA.length > 0) {
+        rawData = window.TOBACCO_DATA;
+      }
     }
     render();
   }
@@ -556,16 +684,19 @@
       }
 
       if (query) {
+        // 【改善②】検索対象に category も明示追加し、絞り込み漏れを完全排除
         const hit = (item.name && item.name.toLowerCase().includes(query)) ||
+                    (item.category && item.category.toLowerCase().includes(query)) ||
                     (item.jan && item.jan.includes(query)) ||
                     (item.memo && item.memo.toLowerCase().includes(query)) ||
-                    targetTop.some(r => r.shop.toLowerCase().includes(query));
+                    targetTop.some(r => r.shop && r.shop.toLowerCase().includes(query));
         if (!hit) return false;
       }
 
       return true;
     });
 
+    // 【仕様書 3.① 準拠】ソート崩壊防止先行判定 ＆ ゼロガード
     filtered.sort((a, b) => {
       const topA = isOfficialOnly 
         ? ((a.official_top3 && a.official_top3.length > 0) ? a.official_top3 : (a.all_top3 || []))
@@ -574,13 +705,21 @@
         ? ((b.official_top3 && b.official_top3.length > 0) ? b.official_top3 : (b.all_top3 || []))
         : (b.all_top3 || []);
 
-      const rRateA = (topA[0] && topA[0].profit_rate !== undefined) ? topA[0].profit_rate : -999;
-      const rRateB = (topB[0] && topB[0].profit_rate !== undefined) ? topB[0].profit_rate : -999;
+      if (sortVal === "chome_desc") {
+        return (b.buy_price || 0) - (a.buy_price || 0);
+      }
+
+      // 在庫有無の先行判定（ソート順ランダム崩壊を根絶）
+      const hasA = topA.length > 0;
+      const hasB = topB.length > 0;
+      if (!hasA && !hasB) return 0;
+      if (!hasA) return 1;
+      if (!hasB) return -1;
 
       if (sortVal === "rakuten_rate_desc") {
+        const rRateA = (topA[0] && topA[0].profit_rate !== undefined) ? topA[0].profit_rate : -999;
+        const rRateB = (topB[0] && topB[0].profit_rate !== undefined) ? topB[0].profit_rate : -999;
         return rRateB - rRateA;
-      } else if (sortVal === "chome_desc") {
-        return b.buy_price - a.buy_price;
       } else if (sortVal === "rakuten_diff_desc") {
         const pA = (topA[0] && topA[0].profit !== undefined) ? topA[0].profit : -999999;
         const pB = (topB[0] && topB[0].profit !== undefined) ? topB[0].profit : -999999;
@@ -604,11 +743,13 @@
 
     if (items.length === 0) {
       listElem.innerHTML = `<div style="text-align:center; padding: 40px; color: var(--text-sub);">該当する商品が見つかりませんでした。</div>`;
+      updateStickyPositions();
       return;
     }
 
     let html = "";
     items.forEach((item, idx) => {
+      // 【仕様書 3.③ 準拠】インフィード広告は3件目直後(idx 2)と11件目直後(idx 10)のみ配置
       if (idx === 2 || idx === 10) {
         html += createInfeedRowHtml();
       }
@@ -660,19 +801,26 @@
         }).join("");
 
         if (isFallbackToGeneral) {
-          rakutenHtml = `<div style="font-size:0.72rem; color:#b45309; padding: 2px 4px;">※公式在庫なしのため市場最安店を表示中</div>` + rakutenHtml;
+          rakutenHtml = `<div style="font-size:0.72rem; color:#b45309; padding: 2px 4px;">※正規取扱店に在庫がないため、市場最安店を表示中</div>` + rakutenHtml;
         }
       } else {
         rakutenHtml = `<div style="font-size:0.8rem; color:var(--text-sub); padding: 8px 12px;">現在、楽天市場に新品の在庫がありません。</div>`;
       }
 
+      // 【改善③】ダミー値 '#' を完全に排除し、安全な条件分岐を確立
       const directUrl = (item.chome_url && item.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
         ? item.chome_url
-        : '#';
+        : '';
 
-      const linkHtml = (directUrl !== '#')
+      const linkHtml = directUrl
         ? `<a href="${directUrl}" target="_blank" rel="noopener">${item.name} 🔗</a>`
         : `<span>${item.name}</span>`;
+
+      // 【改善①】純粋文字列スライスにより、正規表現エラーリスクを完全排除して二重表記を防止
+      let cleanMemo = (item.memo || "").trim();
+      if (item.category && cleanMemo.toLowerCase().startsWith(item.category.toLowerCase())) {
+        cleanMemo = cleanMemo.slice(item.category.length).replace(/^[\s|]+/, '').trim();
+      }
 
       html += `
         <div class="product-row">
@@ -683,10 +831,11 @@
             </div>
             <div class="product-meta">
               <span>JAN: ${item.jan || '未登録'}</span>
+              ${cleanMemo ? `<span class="badge-memo">${cleanMemo}</span>` : ''}
             </div>
           </div>
           <div class="col-price">
-            <div class="val-chome">¥${item.buy_price.toLocaleString()}</div>
+            <div class="val-chome">¥${(item.buy_price || 0).toLocaleString()}</div>
           </div>
           <div class="col-rakuten">
             ${rakutenHtml}
@@ -696,7 +845,9 @@
     });
 
     listElem.innerHTML = html;
+    updateStickyPositions();
 
+    // 【仕様書 3.③ 準拠】未初期化インフィード枠のみ安全にプッシュ
     requestAnimationFrame(() => {
       document.querySelectorAll('.infeed-box ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
         try {
@@ -706,7 +857,8 @@
     });
   }
 
-  document.getElementById("searchInput").addEventListener("input", render);
+  // イベントリスナーの配備（検索は300ms Debounce）
+  document.getElementById("searchInput").addEventListener("input", debounce(render, 300));
   document.getElementById("sortSelect").addEventListener("change", render);
   document.getElementById("officialOnlyCheck").addEventListener("change", render);
   document.getElementById("inStockOnlyCheck").addEventListener("change", render);
@@ -715,6 +867,19 @@
     radio.addEventListener("change", render);
   });
 
+  // 【仕様書 3.⑤ 準拠】5分間隔定期自動更新 ＆ ブラウザタブ復帰時更新
+  setInterval(loadData, 300000);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") {
+      loadData();
+    }
+  });
+
+  // 初期化：キャッシュがあれば0秒即時描画し、裏で最新フェッチ
+  updateStickyPositions();
+  if (rawData.length > 0) {
+    render();
+  }
   loadData();
 </script>
 
