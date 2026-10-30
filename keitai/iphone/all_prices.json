@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/31 04:00:00",
+  "updated_at": "2026/10/31 05:00:00",
   "usd_jpy": 157.88,
   "series": {
     "18promax": [
@@ -220,7 +220,7 @@
           {
             "name": "バーガンディ",
             "chome": 400000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 395000,
             "iShift": "",
             "rakuen": 390000,
