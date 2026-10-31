@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/10/31 14:00:00",
+  "updated_at": "2026/10/31 15:00:00",
   "usd_jpy": 157.49,
   "series": {
     "18promax": [
@@ -219,8 +219,8 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 400000,
-            "cShift": "",
+            "chome": 395000,
+            "cShift": "down",
             "ichiban": 395000,
             "iShift": "",
             "rakuen": 390000,
@@ -229,14 +229,14 @@
             "uShift": "",
             "mobilemix": 400000,
             "mShift": "",
-            "mobaste": 400000,
-            "sShift": "",
+            "mobaste": 395000,
+            "sShift": "down",
             "trend": "横ばい→"
           },
           {
             "name": "ブラック",
-            "chome": 386000,
-            "cShift": "",
+            "chome": 385000,
+            "cShift": "down",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 380000,
@@ -245,14 +245,14 @@
             "uShift": "",
             "mobilemix": 386000,
             "mShift": "",
-            "mobaste": 386000,
-            "sShift": "",
+            "mobaste": 381000,
+            "sShift": "down",
             "trend": "横ばい→"
           },
           {
             "name": "シルバー",
-            "chome": 386000,
-            "cShift": "",
+            "chome": 385000,
+            "cShift": "down",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 380000,
@@ -261,14 +261,14 @@
             "uShift": "",
             "mobilemix": 386000,
             "mShift": "",
-            "mobaste": 386000,
-            "sShift": "",
+            "mobaste": 381000,
+            "sShift": "down",
             "trend": "横ばい→"
           },
           {
             "name": "グレイシャー",
-            "chome": 386000,
-            "cShift": "",
+            "chome": 385000,
+            "cShift": "down",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 380000,
@@ -277,8 +277,8 @@
             "uShift": "",
             "mobilemix": null,
             "mShift": "",
-            "mobaste": 386000,
-            "sShift": "",
+            "mobaste": 381000,
+            "sShift": "down",
             "trend": "横ばい→"
           }
         ]
@@ -361,7 +361,7 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 238000,
+            "chome": 237000,
             "cShift": "down",
             "ichiban": 240000,
             "iShift": "down",
@@ -377,11 +377,11 @@
           },
           {
             "name": "ブラック",
-            "chome": 231000,
+            "chome": 230000,
             "cShift": "down",
             "ichiban": 233000,
             "iShift": "",
-            "rakuen": 231000,
+            "rakuen": 230000,
             "rShift": "down",
             "rudeya": 233500,
             "uShift": "",
@@ -393,11 +393,11 @@
           },
           {
             "name": "シルバー",
-            "chome": 227000,
+            "chome": 226000,
             "cShift": "down",
             "ichiban": 229000,
             "iShift": "",
-            "rakuen": 227000,
+            "rakuen": 226000,
             "rShift": "down",
             "rudeya": 229500,
             "uShift": "",
@@ -409,11 +409,11 @@
           },
           {
             "name": "グレイシャー",
-            "chome": 231000,
+            "chome": 230000,
             "cShift": "down",
             "ichiban": 233000,
             "iShift": "",
-            "rakuen": 231000,
+            "rakuen": 230000,
             "rShift": "down",
             "rudeya": 233500,
             "uShift": "",
@@ -431,8 +431,8 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 310000,
-            "cShift": "",
+            "chome": 308000,
+            "cShift": "down",
             "ichiban": 310000,
             "iShift": "",
             "rakuen": 310000,
@@ -447,8 +447,8 @@
           },
           {
             "name": "ブラック",
-            "chome": 296000,
-            "cShift": "",
+            "chome": 294000,
+            "cShift": "down",
             "ichiban": 296000,
             "iShift": "",
             "rakuen": 296000,
@@ -463,8 +463,8 @@
           },
           {
             "name": "シルバー",
-            "chome": 296000,
-            "cShift": "",
+            "chome": 294000,
+            "cShift": "down",
             "ichiban": 296000,
             "iShift": "",
             "rakuen": 296000,
@@ -479,8 +479,8 @@
           },
           {
             "name": "グレイシャー",
-            "chome": 296000,
-            "cShift": "",
+            "chome": 294000,
+            "cShift": "down",
             "ichiban": 296000,
             "iShift": "",
             "rakuen": 296000,
