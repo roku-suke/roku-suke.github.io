@@ -2,98 +2,211 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>プライバシーポリシー</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー | 買取価格比較ポータル</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="買取価格比較ポータルのプライバシーポリシー。Cookieの利用、広告配信（Google AdSense・アフィリエイト）、アクセス解析、免責事項、個人情報の保護方針について明記しています。">
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) アクセス解析 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-9X38Q03YBN');
   </script>
 
+  <!-- Google AdSense 共通スクリプト -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
 
-  
   <style>
+    :root {
+      --bg: #f9f9f9;
+      --card-bg: #ffffff;
+      --text-main: #333333;
+      --text-sub: #666666;
+      --border: #e2e8f0;
+      --link: #0077cc;
+      --link-hover: #005599;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Roboto', 'Open Sans', 'Helvetica', sans-serif;
-      padding: 40px;
-      background: #f9f9f9;
-      line-height: 1.6;
-      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      padding: 32px 16px;
+      background-color: var(--bg);
+      line-height: 1.7;
+      color: var(--text-main);
+      overflow-wrap: break-word;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .content-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 32px 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
     h1 {
+      font-size: 1.5rem;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+      color: #111827;
+      letter-spacing: -0.01em;
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin: 24px 0 10px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      color: #1f2937;
     }
     p {
-      max-width: 700px;
-      margin: 0 auto 20px;
+      font-size: 0.92rem;
+      margin-bottom: 14px;
+      color: #374151;
+    }
+    ul {
+      margin: 0 0 16px 20px;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+    li {
+      margin-bottom: 6px;
     }
     a {
-      color: #0077cc;
+      color: var(--link);
       text-decoration: none;
+      word-break: break-all;
     }
     a:hover {
       text-decoration: underline;
+      color: var(--link-hover);
     }
+
+    /* SYSTEM_SPEC準拠: display:block, width:100%, min-heightによるCLS防止 */
+    .ad-banner {
+      display: block;
+      width: 100%;
+      min-height: 90px;
+      margin: 20px auto;
+      text-align: center;
+      overflow: hidden;
+    }
+    @media (max-width: 640px) {
+      body { padding: 20px 12px; }
+      .content-card { padding: 24px 16px; }
+      .ad-banner { min-height: 60px; }
+    }
+
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 32px;
       padding-top: 20px;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-sub);
     }
-    .adsbygoogle {
-      display: block;
-      margin: 40px auto;
+    .footer-links a {
+      display: inline-block;
+      padding: 4px 8px;
+      margin: 0 4px;
+      color: var(--text-sub);
+      word-break: normal;
+    }
+    .footer-links a:hover {
+      color: var(--link);
+    }
+    .date-info {
+      text-align: right;
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      margin-top: 24px;
+      border-top: 1px dashed var(--border);
+      padding-top: 12px;
     }
   </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>プライバシーポリシー</h1>
+<div class="container">
 
-  <!-- primary_top_ad -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-9014722014583256"
-       data-ad-slot="2481241028"
-       data-ad-format="horizontal"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <!-- 上部広告 -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="2481241028"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
-  <p>当サイトでは、第三者配信の広告サービス（Google AdSense）を利用しています。<br>
-    広告配信事業者は、ユーザーの興味に応じた広告を表示するために Cookie を使用することがあります。</p>
+  <div class="content-card">
+    <h1>プライバシーポリシー</h1>
 
-  <p>Googleが広告Cookieを使用することで、ユーザーが当サイトや他のサイトにアクセスした際の情報に基づいて、適切な広告を表示しています。<br>
-    ユーザーは <a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank">Googleの広告とコンテンツネットワークに関するプライバシーポリシー</a> をご確認いただくことで、パーソナライズ広告を無効にすることができます。</p>
+    <h2>1. 広告の配信について</h2>
+    <p>当サイトでは、第三者配信の広告サービス（Google AdSense等）を利用しています。</p>
+    <p>Googleなどの第三者配信事業者は、Cookieを使用して、ユーザーが当サイトや他のウェブサイトに過去にアクセスした際の情報に基づいて適切な広告を配信します。</p>
+    <p>Cookieを使用することにより、Googleやそのパートナーはユーザーの興味・関心に応じたパーソナライズ広告を表示することが可能となります。ユーザーは、<a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google 広告設定</a>にてパーソナライズ広告を無効化（オプトアウト）することができます。また、<a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>にアクセスすることで、第三者配信事業者がパーソナライズ広告の掲載で使用するCookieを一括して無効化することも可能です。</p>
+    <p>Google AdSenseに関する詳細およびポリシーの詳細は、<a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank" rel="noopener noreferrer">Googleの広告に関するポリシーと規約</a>をご確認ください。</p>
 
-  <p>当サイトでは、アクセス解析のために Google Analytics を利用する場合があります。<br>
-    Google Analytics はトラフィックデータの収集のために Cookie を使用していますが、個人を特定する情報は含まれていません。</p>
+    <h2>2. アフィリエイトプログラムについて</h2>
+    <p>当サイトは、楽天市場をはじめとする各種アフィリエイトプログラムに参加しています。当サイト内のリンクを経由して商品が購入されたりサービスが申し込まれたりした場合に、当サイトが紹介料・成果報酬を得ることがあります。</p>
+    <p>なお、当サイトに掲載している買取価格、販売価格、損益・利ざや計算等の各種比較データは、プログラムの報酬有無に関わらず、独自の収集ロジックおよび提携先APIから客観的かつ中立的に自動収集・算出された情報に基づいています。</p>
 
-  <p>これらの情報収集は、サイトの改善や利便性向上のために活用されます。<br>
-    Cookieの使用を望まない場合は、ブラウザの設定から拒否することも可能です。</p>
+    <h2>3. アクセス解析ツールについて</h2>
+    <p>当サイトでは、サイト利用状況の把握および利便性向上のために「Google Analytics」を利用しています。Google Analyticsはトラフィックデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定する情報は含まれていません。</p>
+    <p>ユーザーはブラウザの設定でCookieを無効にすることにより、これらのトラフィックデータの収集を拒否することが可能です。Googleによるデータの収集および処理の仕組みについての詳細は、<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">ユーザーが Google パートナーのサイトやアプリを使用する際の Google によるデータ使用</a>をご確認ください。</p>
 
-  <!-- privacy_footer_ad2 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-9014722014583256"
-       data-ad-slot="1617990574"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  
+    <h2>4. 個人情報の利用目的と安全管理</h2>
+    <p>当サイトでは、利用者からのお問い合わせ等を通じて、氏名、メールアドレス等の個人情報をご提供いただく場合があります。お預かりした個人情報は、以下の目的以外には利用いたしません。</p>
+    <ul>
+      <li>お問い合わせに対する回答や必要な情報をご連絡するため</li>
+      <li>サービスの向上や不正利用・障害調査に対応するため</li>
+    </ul>
+    <p>お預かりした個人情報は適切に管理し、法令に基づく場合を除き、ご本人の同意を得ることなく第三者に開示・提供することはありません。</p>
+
+    <h2>5. 免責事項</h2>
+    <p>当サイトに掲載している買取価格、販売価格、損益・利ざや計算等の各種比較データは、各店舗・提携先APIから定期的に自動収集・算出された情報に基づいています。</p>
+    <ul>
+      <li>価格・在庫状況・買取条件は常に変動するため、各情報の正確性、完全性、最新性を保証するものではありません。</li>
+      <li>実際のお取引・売買にあたっては、必ずリンク先の各公式店舗・サービスにて最新の条件や注意事項をご確認ください。</li>
+      <li>当サイトの掲載情報やリンク先のご利用によって生じたいかなる損害・損失等についても、当サイトおよび運営者は一切の責任を負いかねますのであらかじめご了承ください。</li>
+    </ul>
+
+    <h2>6. 著作権・商標について</h2>
+    <p>当サイトに掲載されているコンテンツ（文章、デザイン、構成、スクリプト等）の著作権は当サイトに帰属します。無断転載・複製を禁じます。</p>
+    <p>サイト内に記載されている製品名、会社名、ロゴ等は、各権利所有者の登録商標または商標です。</p>
+
+    <h2>7. お問い合わせ窓口</h2>
+    <p>本プライバシーポリシーや個人情報の取り扱いに関するご質問・ご意見につきましては、<a href="about.html">運営者情報ページ</a>に記載の連絡先よりお問い合わせください。</p>
+
+    <div class="date-info">
+      制定日: 2024年4月1日<br>
+      最終改定日: 2026年11月1日
+    </div>
+  </div>
+
+  <!-- 下部広告 -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="1617990574"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
   <footer>
-    <a href="index.html">🏠 ホームに戻る</a>
+    <div class="footer-links">
+      <a href="index.html">🏠 ポータルに戻る</a> | <a href="about.html">ℹ️ 運営者情報</a>
+    </div>
   </footer>
+
+</div>
 
 </body>
 </html>
