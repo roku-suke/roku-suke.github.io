@@ -2,130 +2,220 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>運営者情報</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>運営者情報 | 買取価格比較ポータル</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="買取価格比較ポータルの運営者情報。サイトの運用趣旨、データ収集方針、取り扱いカテゴリ、システム概要およびお問い合わせ窓口について掲載しています。">
 
-
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) アクセス解析 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X38Q03YBN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-9X38Q03YBN');
   </script>
 
+  <!-- Google AdSense 共通スクリプト -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
 
-  
   <style>
+    :root {
+      --bg: #f9f9f9;
+      --card-bg: #ffffff;
+      --text-main: #333333;
+      --text-sub: #666666;
+      --border: #e2e8f0;
+      --link: #0077cc;
+      --link-hover: #005599;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Roboto', 'Open Sans', 'Helvetica', sans-serif;
-      padding: 40px;
-      background: #f9f9f9;
-      line-height: 1.6;
-      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      padding: 32px 16px;
+      background-color: var(--bg);
+      line-height: 1.7;
+      color: var(--text-main);
+      overflow-wrap: break-word;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .content-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 32px 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
     h1 {
+      font-size: 1.5rem;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+      color: #111827;
+      letter-spacing: -0.01em;
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin: 24px 0 10px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      color: #1f2937;
     }
     p {
-      max-width: 600px;
-      margin: 0 auto 20px;
+      font-size: 0.92rem;
+      margin-bottom: 14px;
+      color: #374151;
+    }
+    .profile-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 0.92rem;
+      line-height: 1.8;
+    }
+    .profile-box strong {
+      color: #1e293b;
+    }
+    ul {
+      margin: 0 0 16px 20px;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+    li {
+      margin-bottom: 6px;
     }
     a {
-      color: #0077cc;
+      color: var(--link);
       text-decoration: none;
+      word-break: break-all;
     }
     a:hover {
       text-decoration: underline;
+      color: var(--link-hover);
     }
+
+    /* SYSTEM_SPEC準拠: display:block, width:100%, min-heightによるCLS防止 */
+    .ad-banner {
+      display: block;
+      width: 100%;
+      min-height: 90px;
+      margin: 20px auto;
+      text-align: center;
+      overflow: hidden;
+    }
+    @media (max-width: 640px) {
+      body { padding: 20px 12px; }
+      .content-card { padding: 24px 16px; }
+      .ad-banner { min-height: 60px; }
+    }
+
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 32px;
       padding-top: 20px;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-sub);
     }
-    .adsbygoogle {
-      display: block;
-      margin: 40px auto;
+    .footer-links a {
+      display: inline-block;
+      padding: 4px 8px;
+      margin: 0 4px;
+      color: var(--text-sub);
+      word-break: normal;
     }
-    @media screen and (max-width: 767px) {
-      #scroll-ad {
-        display: none !important;
-      }
+    .footer-links a:hover {
+      color: var(--link);
+    }
+    .date-info {
+      text-align: right;
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      margin-top: 24px;
+      border-top: 1px dashed var(--border);
+      padding-top: 12px;
     }
   </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>運営者情報</h1>
+<div class="container">
 
-  <!-- about_top_ad -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-9014722014583256"
-       data-ad-slot="3007854637"
-       data-ad-format="horizontal"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-
-  <p>このサイト「iPhone買取価格比較」は、気になった買取価格をざっくり比較できるように作ったものです。</p>
-
-  <p>運営者：ろくすけ<br>
-     所在地：埼玉県を中心に放浪中<br>
-     職業：ギターを背負って酒場を渡り歩く自由人</p>
-
-  <p>iPhoneの買取価格を店舗ごとに並べたり、過去の価格推移をグラフにしたり、ご意見を集めたりしています。</p>
-
-  <p>「なんとなく気になる」を「ちょっと納得」に変えられたらうれしいです。</p>
-
-  <p>ご意見・ご要望は <a href="feedback.html">こちらのページ</a> からお寄せください。</p>
-
-  <!-- about_footer_ad2 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-9014722014583256"
-       data-ad-slot="8441692874"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
-  <footer>
-    <p><a href="index.html">🏠 ホームに戻る</a></p>
-  </footer>
-
-  <!-- about_scroll_ad -->
-  <div id="scroll-ad" style="
-    position:fixed;
-    right:0;
-    bottom:100px;
-    width:160px;
-    height:600px;
-    z-index:9999;
-    display:none;">
+  <!-- 上部広告 -->
+  <div class="ad-banner">
     <ins class="adsbygoogle"
-         style="display:inline-block;width:160px;height:600px"
+         style="display:block"
          data-ad-client="ca-pub-9014722014583256"
-         data-ad-slot="5680644659"></ins>
+         data-ad-slot="3007854637"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <script>
-    window.addEventListener('scroll', function() {
-      const ad = document.getElementById('scroll-ad');
-      if (window.scrollY > 500 && window.innerWidth >= 768) {
-        ad.style.display = 'block';
-      } else {
-        ad.style.display = 'none';
-      }
-    });
-  </script>
+  <div class="content-card">
+    <h1>運営者情報</h1>
+
+    <h2>1. サイトの概要</h2>
+    <p>当サイト「買取価格比較 ポータル」は、主要買取専門店が提示する買取相場と、楽天市場をはじめとするECモールの実勢販売価格を自動突合し、価格差および損益率を一覧表示する価格比較情報サイトです。</p>
+    <p>各流通チャネルに分散している相場データを機械的に集約・可視化し、客観的な比較数値を提示することを主たる目的として運用しています。</p>
+
+    <h2>2. データ収集と更新方針</h2>
+    <p>当サイトに掲載している各種相場情報は、以下の仕様に基づいて自動収集・更新されています。</p>
+    <ul>
+      <li><strong>定時バッチ処理</strong>: 定期スケジュールに基づき、専用スクレイパーおよび公式API（楽天市場API等）から機械的に最新データを取得。</li>
+      <li><strong>新品価格の抽出</strong>: 買取価格は減額条件（外箱損傷・欠品等）のない最高額上限を目安として取得・算出。</li>
+      <li><strong>表示のタイムラグ</strong>: 相場・在庫状況は変動するため、実際の売買時にはリンク先の各店舗・サービスにおける現行条件の確認を前提としています。</li>
+    </ul>
+
+    <h2>3. 取り扱いカテゴリ</h2>
+    <p>現在、以下のカテゴリについてデータ収集・公開を行っています。</p>
+    <ul>
+      <li><strong>スマートフォン</strong>: iPhone 各モデル（主要買取6店舗の横並び相場・Apple公式定価比較）</li>
+      <li><strong>家電・デジタル</strong>: ゲーム機本体・ソフト（Switch / PS5 等）、電子タバコ（iQOS / glo / Ploom）、Apple製品（AirPods / Pencil 等）、カメラ本体・周辺機器</li>
+    </ul>
+
+    <h2>4. 運営者</h2>
+    <div class="profile-box">
+      <strong>運営者名</strong>: ろくすけ<br>
+      <strong>拠点</strong>: 埼玉県<br>
+      <strong>運用方針</strong>: 機械的かつ中立的なデータ集約と、視認性を優先した比較UIの提供・保守
+    </div>
+
+    <h2>5. お問い合わせ窓口</h2>
+    <p>掲載データの誤り、システムの不具合、その他お問い合わせにつきましては、以下のいずれかの窓口よりご連絡ください。</p>
+    <ul>
+      <li><strong>GitHub Issues</strong>: <a href="https://github.com/roku-suke/roku-suke.github.io/issues" target="_blank" rel="noopener noreferrer">roku-suke.github.io/issues</a></li>
+      <li><strong>連絡用メール</strong>: roku.suke.dev[at]gmail.com（※スパム防止のため [at] を @ に置き換えて送信してください）</li>
+    </ul>
+    <p>※ 受信したお問い合わせには順次確認のうえ対応いたします。内容によっては返信を差し控えさせていただく場合がありますのであらかじめご了承ください。</p>
+
+    <div class="date-info">
+      制定日: 2024年4月1日<br>
+      最終更新日: 2026年11月1日
+    </div>
+  </div>
+
+  <!-- 下部広告 -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9014722014583256"
+         data-ad-slot="8441692874"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">🏠 ポータルに戻る</a> | <a href="privacy.html">📋 プライバシーポリシー</a>
+    </div>
+  </footer>
+
+</div>
 
 </body>
 </html>
