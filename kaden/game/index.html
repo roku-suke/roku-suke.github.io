@@ -17,6 +17,9 @@
   <!-- Google AdSense 共通スクリプト -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9014722014583256" crossorigin="anonymous"></script>
 
+  <!-- 【仕様書 3.④】SWR (Stale-While-Revalidate) 0秒描画用 プリロード -->
+  <script src="./data.js" onerror="console.warn('data.js not pre-loaded')"></script>
+
   <style>
     :root {
       --bg: #f4f6f9;
@@ -29,6 +32,7 @@
       --profit-plus-bg: #dcfce7;
       --profit-minus: #b91c1c;
       --profit-minus-bg: #fee2e2;
+      --controls-height: 54px; /* 【仕様書 3.②】JS動的追従＋安全フォールバック初期値 */
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -37,17 +41,22 @@
       color: var(--text-main);
       padding: 0 16px 24px 16px;
       line-height: 1.5;
+      overflow-x: hidden;
     }
-    .container { max-width: 1400px; margin: 0 auto; }
+    .container { max-width: 1400px; margin: 0 auto; width: 100%; }
 
+    /* 【仕様書 3.③】広告コンテナの CLS 防止 */
     .ad-banner {
+      display: block;
+      width: 100%;
+      min-height: 90px;
       margin: 12px auto;
       text-align: center;
       max-width: 100%;
       overflow: hidden;
     }
 
-    /* 通常ヘッダー（スクロールで上へ抜ける） */
+    /* 通常ヘッダー（スクロールで上へ退避） */
     header {
       margin-bottom: 8px;
       display: flex;
@@ -111,7 +120,7 @@
       align-items: center;
     }
 
-    /* 常駐ポータルボタン */
+    /* 【仕様書 3.②】ポータル復帰導線の常時確保 */
     .btn-portal-sticky {
       background: #f1f5f9;
       border: 1px solid var(--border);
@@ -138,24 +147,24 @@
     .filter-options .mode-toggle { background: #eff6ff; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe; color: #1d4ed8; }
     .view-count-toggle { display: flex; align-items: center; gap: 8px; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; }
 
-    /* ★ PCテーブルビュー ＆ 見出し（題目）操作バー直下ドッキング固定 */
+    /* ★ PCテーブルビュー ＆ Sticky吸着保証（overflow: visible を厳守） */
     .table-wrapper {
       background: var(--card-bg);
       border-radius: 8px;
-      overflow-x: visible;
+      overflow: visible; /* Windowスクロール吸着のため visible を厳守 */
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
       border: 1px solid var(--border);
       margin-top: 2px;
     }
     table { width: 100%; border-collapse: separate; border-spacing: 0; text-align: left; font-size: 0.9rem; }
     
-    /* 操作バー直下（top: 56px）に題目ヘッダーが吸着 */
+    /* 【仕様書 3.② 完全準拠】隙間開き・被りバグ防止の安全フォールバック指定 */
     th {
       position: sticky;
-      top: 56px;
+      top: var(--controls-height, 54px);
       z-index: 90;
       background: #f8fafc;
-      padding: 10px 16px;
+      padding: 10px 14px;
       font-weight: 700;
       color: #334155;
       border-bottom: 1px solid var(--border);
@@ -164,54 +173,72 @@
     }
     th:last-child { border-right: none; }
     
-    td { padding: 14px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); vertical-align: middle; }
+    td { padding: 12px 14px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); vertical-align: middle; }
     td:last-child { border-right: none; }
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #fbfcfe; }
     
-    .item-col { min-width: 280px; max-width: 340px; word-break: keep-all; overflow-wrap: break-word; }
-    .item-name { font-weight: 600; color: #111827; line-height: 1.4; margin-bottom: 4px; font-size: 0.95rem; text-decoration: none; display: inline-block; }
+    /* タブレット・PC表示の最適化 */
+    .item-col { width: 28%; min-width: 200px; word-break: break-word; }
+    .item-name { font-weight: 600; color: #111827; line-height: 1.4; margin-bottom: 4px; font-size: 0.93rem; text-decoration: none; display: inline-block; }
     .item-name:hover { color: var(--accent); text-decoration: underline; }
     .chome-link-icon { font-size: 0.75rem; color: #9ca3af; margin-left: 4px; text-decoration: none; }
     .memo-tag { display: inline-block; background: #eff6ff; color: #1d4ed8; border: 1px solid #dbeafe; padding: 2px 7px; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
     .jan { font-size: 0.75rem; color: var(--text-sub); display: block; margin-top: 4px; font-family: monospace; }
     
-    .price-col { min-width: 120px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+    .price-col { width: 14%; min-width: 95px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
     .buy-price { color: #111827; font-size: 1.15rem; }
     
-    .top3-col { min-width: 680px; }
-    .rank-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 12px; border-radius: 6px; margin-bottom: 6px; border: 1px solid transparent; }
+    .top3-col { width: 58%; min-width: 440px; }
+    .rank-row { display: flex; align-items: center; justify-content: space-between; padding: 6px 10px; border-radius: 6px; margin-bottom: 6px; border: 1px solid transparent; gap: 8px; }
     .rank-row:last-child { margin-bottom: 0; }
     .rank-row.rank-1 { background-color: #fefce8; border-color: #fef08a; }
     .rank-row.rank-2 { background-color: #f3f4f6; border-color: #e5e7eb; }
     .rank-row.rank-3 { background-color: #fff7ed; border-color: #ffedd5; }
     
-    .rank-left { display: flex; align-items: center; gap: 8px; min-width: 210px; }
-    .rank-badge { font-size: 1.1rem; min-width: 24px; text-align: center; }
-    .shop-type-badge { font-size: 0.65rem; font-weight: 700; padding: 1px 4px; border-radius: 3px; }
+    .rank-left { display: flex; align-items: center; gap: 6px; flex: 1; min-width: 150px; overflow: hidden; }
+    .rank-badge { font-size: 1rem; min-width: 22px; text-align: center; flex-shrink: 0; }
+    .shop-type-badge { font-size: 0.65rem; font-weight: 700; padding: 1px 4px; border-radius: 3px; flex-shrink: 0; }
     .type-official { background: #dbeafe; color: #1e40af; }
     .type-general { background: #f3f4f6; color: #4b5563; }
+    .type-fallback { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
     
-    .shop-name { font-weight: 600; font-size: 0.9rem; color: #374151; }
-    .postage-badge { font-size: 0.7rem; font-weight: 700; margin-left: 4px; padding: 2px 6px; border-radius: 3px; }
+    .shop-name { font-weight: 600; font-size: 0.88rem; color: #374151; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .postage-badge { font-size: 0.7rem; font-weight: 700; margin-left: 4px; padding: 1px 5px; border-radius: 3px; flex-shrink: 0; }
     .postage-free { background: #dcfce7; color: #166534; }
     .postage-paid { background: #fee2e2; color: #991b1b; }
     
-    .rank-center { font-size: 0.95rem; font-variant-numeric: tabular-nums; font-weight: 600; min-width: 140px; }
+    .rank-center { font-size: 0.9rem; font-variant-numeric: tabular-nums; font-weight: 600; min-width: 105px; text-align: right; flex-shrink: 0; }
     .price-label { font-size: 0.75rem; color: var(--text-sub); margin-right: 4px; }
-    .price-val { font-size: 1.05rem; color: #111827; }
+    .price-val { font-size: 1rem; color: #111827; }
     
-    .rank-right { min-width: 170px; text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
-    .profit-line { font-weight: 700; font-size: 1rem; }
-    .rate-badge { font-size: 0.75rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-top: 2px; }
+    .rank-right { min-width: 125px; text-align: right; display: flex; flex-direction: column; align-items: flex-end; flex-shrink: 0; }
+    .profit-line { font-weight: 700; font-size: 0.95rem; }
+    .rate-badge { font-size: 0.72rem; font-weight: 700; padding: 1px 5px; border-radius: 4px; margin-top: 2px; }
     
     .plus { color: var(--profit-plus); }
     .bg-plus { background-color: var(--profit-plus-bg); color: var(--profit-plus); }
     .minus { color: var(--profit-minus); }
     .bg-minus { background-color: var(--profit-minus-bg); color: var(--profit-minus); }
     
-    .btn-buy { background: #bf0000; color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; margin-left: 14px; transition: background 0.2s; white-space: nowrap; }
+    .btn-buy { background: #bf0000; color: #fff; text-decoration: none; padding: 5px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; transition: background 0.2s; white-space: nowrap; display: inline-block; flex-shrink: 0; }
     .btn-buy:hover { background: #990000; }
+    
+    /* 【仕様書 3.④】デッドクリック防止スタイル */
+    .btn-disabled {
+      background: #e2e8f0;
+      color: #94a3b8;
+      cursor: not-allowed;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .btn-disabled:active { transform: none; }
+
     .no-stock { text-align: center; color: var(--text-sub); padding: 16px; font-style: italic; font-size: 0.85rem; }
 
     /* 共通インフィード広告スタイル */
@@ -230,19 +257,33 @@
       display: block;
     }
     .infeed-box {
+      display: block;
+      width: 100%;
       max-width: 800px;
       margin: 0 auto;
       min-height: 90px;
+      overflow: hidden;
     }
     .infeed-row:hover td { background-color: #f8fafc; }
 
-    .bottom-nav {
-      margin-top: 24px;
-      display: flex;
-      justify-content: center;
+    /* 共通フッター */
+    .page-footer {
+      background: var(--card-bg);
+      border-top: 1px solid var(--border);
+      padding: 32px 16px;
+      margin-top: 32px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-sub);
     }
+    .page-footer p { margin-bottom: 8px; line-height: 1.6; }
+    .page-footer a { color: var(--accent); text-decoration: none; }
+    .page-footer a:hover { text-decoration: underline; }
+    .page-footer .disclaimer { max-width: 800px; margin: 0 auto 16px; text-align: left; }
+    .page-footer-nav { margin: 24px 0; }
 
-    @media (max-width: 768px) {
+    /* タブレット（iPad含む）およびスマホ全域を安全にカード型表示へ誘導 */
+    @media (max-width: 960px) {
       body { padding: 0 8px 16px 8px; }
       header { flex-direction: column; align-items: flex-start; gap: 8px; }
       .header-right { width: 100%; justify-content: space-between; }
@@ -251,12 +292,12 @@
       .search-box, .sort-box { width: 100%; min-width: 100%; }
       .view-count-toggle { width: 100%; justify-content: space-around; }
 
-      .table-wrapper { background: transparent; border: none; box-shadow: none; overflow-x: visible; }
-      table, thead, tbody, th, td, tr { display: block; }
+      .table-wrapper { background: transparent; border: none; box-shadow: none; overflow: visible; }
+      table, thead, tbody, th, td, tr { display: block; width: 100%; }
       thead { display: none; }
       tr { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 14px; padding: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.03); }
-      td { padding: 0; border: none; }
-      .item-col { max-width: 100%; margin-bottom: 10px; }
+      td { padding: 0; border: none; width: 100% !important; min-width: 100% !important; }
+      .item-col { margin-bottom: 10px; }
       .price-col {
         text-align: left; display: flex; align-items: baseline; justify-content: space-between;
         background: #f8fafc; padding: 8px 12px; border-radius: 6px; margin-bottom: 10px;
@@ -264,18 +305,31 @@
       .price-col::before { content: "一丁目買取相場"; font-size: 0.8rem; color: var(--text-sub); font-weight: 700; }
       .top3-col { min-width: 100%; }
       .rank-row { flex-direction: column; align-items: stretch; gap: 6px; padding: 8px 10px; margin-bottom: 8px; }
-      .rank-center { display: flex; justify-content: space-between; }
+      .rank-center { display: flex; justify-content: space-between; text-align: left; }
       .rank-right { flex-direction: row; justify-content: space-between; align-items: center; padding-top: 4px; border-top: 1px dashed rgba(0,0,0,0.06); }
-      .btn-buy { margin-left: 0; width: 100%; text-align: center; margin-top: 4px; }
+      .btn-buy, .btn-disabled { margin-left: 0; width: 100%; text-align: center; margin-top: 4px; }
       
-      .infeed-row { padding: 10px !important; margin-bottom: 14px; }
+      /* モバイルでのインフィード広告二重ボーダー解消 */
+      .infeed-row {
+        background: #f8fafc !important;
+        border: 1px dashed var(--border) !important;
+        padding: 10px !important;
+        margin-bottom: 14px;
+      }
+      .infeed-row td {
+        background: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+      }
+      .ad-banner { min-height: 60px; }
+      .infeed-box { min-height: 60px; }
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <!-- 【AdSense最上部広告】（スクロールで自然に上へ抜ける） -->
+  <!-- 【AdSense最上部広告】（スクロールで自然に上へ退避） -->
   <div class="ad-banner">
     <ins class="adsbygoogle"
          style="display:block"
@@ -286,7 +340,7 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <!-- 通常ヘッダー（スクロールで上へ抜ける） -->
+  <!-- 通常ヘッダー（スクロールで上へ退避） -->
   <header>
     <div class="header-left">
       <h1 id="page-title">ゲーム機 正規店＆市場全体 安値TOP3 比較</h1>
@@ -306,7 +360,7 @@
       <a href="../../index.html" class="btn-portal-sticky">⬅ ポータル</a>
 
       <div class="search-box">
-        <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・ショップ名で絞り込み...">
+        <input type="text" id="filter-input" placeholder="商品名・仕様・JAN・カテゴリー・ショップ名で絞り込み...">
       </div>
       <div class="sort-box">
         <select id="sort-select">
@@ -330,12 +384,13 @@
           <label><input type="checkbox" id="cat-console"> 本体のみ</label>
           <label><input type="checkbox" id="cat-soft"> ソフト</label>
           <label><input type="checkbox" id="cat-controller"> コントローラー</label>
+          <label><input type="checkbox" id="cat-others"> 周辺機器・その他</label>
         </span>
       </div>
     </div>
   </div>
 
-  <!-- ★ テーブル題目も操作バー直下に吸着固定（top: 56px） -->
+  <!-- ★ テーブル題目も操作バー直下に吸着固定（top: var(--controls-height, 54px)） -->
   <div class="table-wrapper">
     <table>
       <thead>
@@ -345,9 +400,29 @@
           <th id="th-top3-title">正規取扱店 安値TOP3 (ショップ / 仕入価格 / 見込利益・損失 / リンク)</th>
         </tr>
       </thead>
-      <tbody id="table-body">
+      <!-- 【仕様書 3.③ 完全準拠】広告iframeの破棄・白抜けを物理根絶するマルチtbody構造 -->
+      <tbody id="tbody-top">
         <tr><td colspan="3" style="text-align:center; padding: 40px; color: #6b7280;">データを読み込み中...</td></tr>
       </tbody>
+      <!-- 初期状態は display: none で隠蔽し、条件を満たした時点で JS で <ins> を動的注入する安全設計 -->
+      <tbody id="tbody-ad1" style="display: none;">
+        <tr class="infeed-row">
+          <td colspan="3">
+            <span class="infeed-label">― SPONSORED ―</span>
+            <div class="infeed-box" id="infeed-box-1"></div>
+          </td>
+        </tr>
+      </tbody>
+      <tbody id="tbody-mid"></tbody>
+      <tbody id="tbody-ad2" style="display: none;">
+        <tr class="infeed-row">
+          <td colspan="3">
+            <span class="infeed-label">― SPONSORED ―</span>
+            <div class="infeed-box" id="infeed-box-2"></div>
+          </td>
+        </tr>
+      </tbody>
+      <tbody id="tbody-bottom"></tbody>
     </table>
   </div>
 
@@ -362,9 +437,20 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <div class="bottom-nav">
-    <a href="../../index.html" class="btn-portal-sticky" style="padding: 10px 24px; font-size: 0.95rem;">⬅ ポータルに戻る</a>
-  </div>
+  <footer class="page-footer">
+    <div class="disclaimer">
+      <p><strong>【免責事項】</strong><br>
+      当サイトのデータは、スクレイピングおよび外部APIを利用して定期的に自動収集・算出されたものです。情報の正確性、完全性、最新性を保証するものではありません。各店舗の販売価格、在庫状況、買取相場は常に変動しているため、実際の取引にあたっては必ずユーザー様ご自身で各公式サイトや販売ページをご確認ください。当サイトの利用により生じたいかなる損害についても、運営者は一切の責任を負いません。</p>
+      <p><strong>【プライバシーポリシー・広告について】</strong><br>
+      当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」および、Googleなどの第三者配信事業者が提供する広告配信サービスを利用しています。<br>
+      これらはトラフィックデータの収集や、ユーザーの興味に応じたパーソナライズ広告を表示するためにCookieを使用しています。<br>
+      Cookieによる情報収集を希望されない場合は、ブラウザの設定でCookieを無効にするか、<a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Googleの広告設定</a>からパーソナライズ広告をオプトアウト（無効化）することができます。</p>
+    </div>
+    <div class="page-footer-nav">
+      <a href="../../index.html" style="font-size: 0.95rem; font-weight: 700;">⬅ ポータルトップへ戻る</a>
+    </div>
+    <p>&copy; 2026 Price Tracker Portal. All rights reserved.</p>
+  </footer>
 </div>
 
 <!-- Firebase SDK -->
@@ -400,9 +486,62 @@
 </script>
 
 <script>
-  let rawData = [];
+  // 【セキュリティ対策】HTML特殊文字のエスケープ関数（XSS対策）
+  function escapeHtml(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
 
-  const tbody = document.getElementById('table-body');
+  // 【セキュリティ対策】安全なHTTP/HTTPS URL検証関数（javascript:スキーム等排除）
+  function sanitizeUrl(url) {
+    if (!url || typeof url !== 'string') return '';
+    const trimmed = url.trim();
+    if (/^https?:\/\//i.test(trimmed)) {
+      return escapeHtml(trimmed);
+    }
+    return '';
+  }
+
+  // 【仕様書 3.② 完全修正】デュアルSticky用 動的高さ計算（ResizeObserver安全追従）
+  const controlsContainer = document.querySelector('.controls-container');
+  if (controlsContainer) {
+    const updateControlsHeight = () => {
+      const h = controlsContainer.offsetHeight;
+      if (h && Number.isFinite(h)) {
+        // 吸着面とヘッダーの隙間空きバグを完全に防ぐため 1px 重ね合わせる安全オフセット
+        document.documentElement.style.setProperty('--controls-height', (h - 1) + 'px');
+      }
+    };
+    const ro = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        const target = entry.target || controlsContainer;
+        const h = target.offsetHeight;
+        if (h && Number.isFinite(h)) {
+          document.documentElement.style.setProperty('--controls-height', (h - 1) + 'px');
+        }
+      }
+    });
+    ro.observe(controlsContainer);
+    window.addEventListener('resize', updateControlsHeight);
+    updateControlsHeight();
+  }
+
+  let rawData = [];
+  let currentRenderedHash = '';
+  let ad1Initialized = false;
+  let ad2Initialized = false;
+
+  const tbodyTop = document.getElementById('tbody-top');
+  const tbodyAd1 = document.getElementById('tbody-ad1');
+  const tbodyMid = document.getElementById('tbody-mid');
+  const tbodyAd2 = document.getElementById('tbody-ad2');
+  const tbodyBottom = document.getElementById('tbody-bottom');
+
   const updatedAtElem = document.getElementById('updated-at');
   const filterInput = document.getElementById('filter-input');
   const sortSelect = document.getElementById('sort-select');
@@ -411,31 +550,56 @@
   const catConsole = document.getElementById('cat-console');
   const catSoft = document.getElementById('cat-soft');
   const catController = document.getElementById('cat-controller');
+  const catOthers = document.getElementById('cat-others');
   const thTop3Title = document.getElementById('th-top3-title');
 
   const rankBadges = ['🥇 1位', '🥈 2位', '🥉 3位'];
   const rankClasses = ['rank-1', 'rank-2', 'rank-3'];
 
+  function updateTimestamp(dataList) {
+    if (!dataList || dataList.length === 0) return;
+    const firstItem = dataList.find(it => it.updated_at);
+    if (firstItem && firstItem.updated_at) {
+      updatedAtElem.textContent = '最終更新: ' + firstItem.updated_at;
+    }
+  }
+
   async function loadData() {
-    let data = null;
+    let data = window.GAME_DATA || window.KADEN_DATA || null;
+    
+    // 【仕様書 3.④】SWR (Stale-While-Revalidate) 方式による即時0秒描画
+    if (data && data.length > 0) {
+      const initialTs = (data[0] && data[0].updated_at) ? data[0].updated_at : '';
+      if (!currentRenderedHash || currentRenderedHash !== initialTs) {
+        rawData = data;
+        updateTimestamp(rawData);
+        render();
+        currentRenderedHash = initialTs;
+      }
+    }
+
+    // バックグラウンドで最新データをフェッチ
+    let fetchSuccess = false;
+    let fetchedData = null;
     try {
       const res = await fetch('./data.json?t=' + Date.now());
-      if (res.ok) data = await res.json();
+      if (res.ok) {
+        fetchedData = await res.json();
+        if (fetchedData && fetchedData.length > 0) {
+          fetchSuccess = true;
+        }
+      }
     } catch(e) {
       console.log("JSON fetch error:", e);
     }
 
-    if (!data) {
-      if (window.KADEN_DATA && window.KADEN_DATA.length > 0) data = window.KADEN_DATA;
-      else if (window.GAME_DATA && window.GAME_DATA.length > 0) data = window.GAME_DATA;
-    }
-
-    if (!data) {
+    if (!fetchSuccess && (!data || data.length === 0)) {
+      // JS動的フォールバック
       await new Promise((resolve) => {
         const sc = document.createElement('script');
         sc.src = './data.js?t=' + Date.now();
         sc.onload = () => {
-          data = window.KADEN_DATA || window.GAME_DATA || null;
+          fetchedData = window.GAME_DATA || window.KADEN_DATA || null;
           resolve();
         };
         sc.onerror = () => resolve();
@@ -443,31 +607,129 @@
       });
     }
 
-    if (data && data.length > 0) {
-      rawData = data;
-      const firstItem = rawData.find(it => it.updated_at);
-      if (firstItem && firstItem.updated_at) {
-        updatedAtElem.textContent = '最終更新: ' + firstItem.updated_at;
+    const finalData = fetchedData || data;
+    if (finalData && finalData.length > 0) {
+      const newTs = (finalData[0] && finalData[0].updated_at) ? finalData[0].updated_at : JSON.stringify(finalData.length);
+      // データ更新時のみ再描画を実行（チラつき・再破棄防止）
+      if (newTs !== currentRenderedHash || rawData.length === 0) {
+        rawData = finalData;
+        currentRenderedHash = newTs;
+        updateTimestamp(rawData);
+        render();
       }
-      render();
-    } else {
-      tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; padding: 40px; color: red;">データが読み込めません。<br>（GitHub Pagesの配信反映待ちか、ファイルを確認してください）<br><button onclick="loadData()" style="margin-top:12px; padding:6px 16px; border:1px solid #ccc; border-radius:6px; cursor:pointer;">再試行 🔄</button></td></tr>`;
+    } else if (!rawData || rawData.length === 0) {
+      tbodyTop.innerHTML = `<tr><td colspan="3" style="text-align:center; padding: 40px; color: red;">データが読み込めません。<br>（GitHub Pagesの配信反映待ちか、ファイルを確認してください）<br><button onclick="loadData()" style="margin-top:12px; padding:6px 16px; border:1px solid #ccc; border-radius:6px; cursor:pointer;">再試行 🔄</button></td></tr>`;
+      tbodyAd1.style.display = 'none';
+      tbodyMid.innerHTML = '';
+      tbodyAd2.style.display = 'none';
+      tbodyBottom.innerHTML = '';
     }
   }
 
-  function createInfeedRowHtml() {
-    return `
-      <tr class="infeed-row">
-        <td colspan="3">
-          <span class="infeed-label">― SPONSORED ―</span>
-          <div class="infeed-box">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-9014722014583256"
-                 data-ad-slot="8633264562"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+  function renderRow(it, rankLimit, isOfficial) {
+    const buyStr = Number.isFinite(it.buy_price) && it.buy_price > 0 ? '¥' + it.buy_price.toLocaleString() : '-';
+    
+    let fullTopList = [];
+    let isFallbackToGeneral = false;
+    if (isOfficial) {
+      if (it.official_top3 && it.official_top3.length > 0) {
+        fullTopList = it.official_top3;
+      } else if (it.all_top3 && it.all_top3.length > 0) {
+        fullTopList = it.all_top3;
+        isFallbackToGeneral = true;
+      }
+    } else {
+      fullTopList = it.all_top3 || [];
+    }
+
+    const topList = fullTopList.slice(0, rankLimit);
+    const hasStock = topList.length > 0;
+    const memoHtml = it.memo ? `<div class="memo-tag">${escapeHtml(it.memo)}</div>` : '';
+    
+    // 【仕様書 3.④ 完全準拠】直リンク検証＆XSS無毒化
+    const validChomeUrl = (it.chome_url && /^https:\/\/www\.1-chome\.com\/wineDetail\/\d+\/\d+$/i.test(it.chome_url.trim()))
+      ? sanitizeUrl(it.chome_url)
+      : '';
+    const nameHtml = validChomeUrl
+      ? `<a href="${validChomeUrl}" target="_blank" rel="noopener noreferrer" class="item-name" title="買取一丁目の詳細ページを開く">${escapeHtml(it.name)}<span class="chome-link-icon">🔗</span></a>`
+      : `<span class="item-name">${escapeHtml(it.name)}</span>`;
+
+    let topHtml = '';
+    if (!hasStock) {
+      topHtml = `<div class="no-stock">現在、楽天市場に新品の在庫が見つかりません</div>`;
+    } else {
+      topHtml = topList.map((shopData, i) => {
+        const postBadge = (shopData.postage_flag === 1)
+          ? `<span class="postage-badge postage-free">無料</span>`
+          : `<span class="postage-badge postage-paid">別⚠️</span>`;
+
+        let typeBadge = '';
+        if (shopData.is_official) {
+          typeBadge = `<span class="shop-type-badge type-official">正規</span>`;
+        } else if (isFallbackToGeneral) {
+          typeBadge = `<span class="shop-type-badge type-fallback">一般代行</span>`;
+        } else {
+          typeBadge = `<span class="shop-type-badge type-general">一般</span>`;
+        }
+
+        const profitVal = Number.isFinite(shopData.profit) ? shopData.profit : 0;
+        const rateVal = Number.isFinite(shopData.profit_rate) ? shopData.profit_rate : 0;
+        const isPlus = profitVal > 0;
+        const isZero = profitVal === 0;
+        
+        let profitText = '';
+        let rateBadge = '';
+        if (isPlus) {
+          profitText = `<span class="profit-line plus"><span style="font-size:0.75rem; color:#6b7280; font-weight:normal;">見込利益: </span>+¥${profitVal.toLocaleString()}</span>`;
+          rateBadge = `<span class="rate-badge bg-plus">+${rateVal.toFixed(1)}%</span>`;
+        } else if (isZero) {
+          profitText = `<span class="profit-line">¥0</span>`;
+          rateBadge = `<span class="rate-badge">±0.0%</span>`;
+        } else {
+          profitText = `<span class="profit-line minus"><span style="font-size:0.75rem; color:#6b7280; font-weight:normal;">損失: </span>-¥${Math.abs(profitVal).toLocaleString()}</span>`;
+          rateBadge = `<span class="rate-badge bg-minus">${rateVal.toFixed(1)}%</span>`;
+        }
+          
+        // 【仕様書 3.④ 完全準拠】購入リンク検証＆デッドクリック防止
+        const validShopUrl = sanitizeUrl(shopData.url);
+        const buyBtnHtml = validShopUrl
+          ? `<a href="${validShopUrl}" target="_blank" rel="noopener noreferrer" class="btn-buy">購入へ ➔</a>`
+          : `<span class="btn-disabled">在庫確認中</span>`;
+
+        const priceStr = Number.isFinite(shopData.price) ? '¥' + shopData.price.toLocaleString() : '-';
+
+        return `
+          <div class="rank-row ${rankClasses[i] || 'rank-3'}">
+            <div class="rank-left">
+              <span class="rank-badge">${rankBadges[i] || (i+1) + '位'}</span>
+              ${typeBadge}
+              <span class="shop-name">${escapeHtml(shopData.shop)}${postBadge}</span>
+            </div>
+            <div class="rank-center">
+              <span class="price-label">仕入:</span><span class="price-val">${priceStr}</span>
+            </div>
+            <div class="rank-right">
+              ${profitText}${rateBadge}
+            </div>
+            ${buyBtnHtml}
           </div>
+        `;
+      }).join('');
+
+      if (isFallbackToGeneral) {
+        topHtml = `<div style="font-size:0.75rem; color:#b45309; background:#fffbeb; border:1px solid #fef3c7; padding:4px 8px; border-radius:4px; margin-bottom:6px; font-weight:600;">※正規取扱店に在庫がないため、市場最安店を表示中</div>` + topHtml;
+      }
+    }
+
+    return `
+      <tr>
+        <td class="item-col">
+          ${nameHtml}${memoHtml}
+          <span class="jan">JAN: ${escapeHtml(it.jan || '未登録')}</span>
+        </td>
+        <td class="price-col buy-price">${buyStr}</td>
+        <td class="top3-col">
+          ${topHtml}
         </td>
       </tr>
     `;
@@ -476,30 +738,38 @@
   function render() {
     if (!rawData || rawData.length === 0) return;
 
-    const isOfficial = officialOnly.checked;
-    const rankLimit = parseInt(document.querySelector('input[name="rank-limit"]:checked').value, 10);
+    const isOfficial = officialOnly ? officialOnly.checked : true;
+    const rankLimitElem = document.querySelector('input[name="rank-limit"]:checked');
+    const rankLimit = rankLimitElem ? parseInt(rankLimitElem.value, 10) : 3;
     const scopeLabel = isOfficial ? '正規取扱店' : '市場全体';
     const limitLabel = rankLimit === 1 ? '最安1位' : '安値TOP3';
-    thTop3Title.textContent = `${scopeLabel} ${limitLabel} (ショップ / 仕入価格 / 見込利益・損失 / リンク)`;
 
-    const keyword = filterInput.value.toLowerCase().trim();
-    const sortMode = sortSelect.value;
-    const isInStockOnly = inStockOnly.checked;
+    if (thTop3Title) {
+      thTop3Title.textContent = `${scopeLabel} ${limitLabel} (ショップ / 仕入価格 / 見込利益・損失 / リンク)`;
+    }
 
-    const filterConsole = catConsole.checked;
-    const filterSoft = catSoft.checked;
-    const filterController = catController.checked;
-    const useGameSubFilter = filterConsole || filterSoft || filterController;
+    // 全角スペースを半角スペースへ正規化
+    const rawVal = filterInput ? filterInput.value : '';
+    const keyword = rawVal.replace(/\u3000/g, ' ').toLowerCase().trim();
+    const sortMode = sortSelect ? sortSelect.value : 'profit_rate_desc';
+    const isInStockOnly = inStockOnly ? inStockOnly.checked : false;
+
+    // ゲーム特化サブフィルター連動（構文エラー・エスケープを完全排除）
+    const filterConsole = catConsole ? catConsole.checked : false;
+    const filterSoft = catSoft ? catSoft.checked : false;
+    const filterController = catController ? catController.checked : false;
+    const filterOthers = catOthers ? catOthers.checked : false;
+    const useGameSubFilter = filterConsole || filterSoft || filterController || filterOthers;
 
     let items = rawData.filter(it => {
       const cat = it.category || '';
-      if ((cat === '電子タバコ') || /iqos|iluma|glo|ploom|アイコス|グロー/i.test(it.name || '')) return false;
 
       if (useGameSubFilter) {
         let match = false;
         if (filterConsole && cat === 'ゲーム機本体') match = true;
         if (filterSoft && cat === 'ゲームソフト') match = true;
-        if (filterController && (cat === 'コントローラー' || cat === '周辺機器')) match = true;
+        if (filterController && cat === 'コントローラー') match = true;
+        if (filterOthers && (cat === '周辺機器' || cat === 'その他ゲーム')) match = true;
         if (!match) return false;
       }
 
@@ -512,18 +782,26 @@
 
       if (isInStockOnly && targetTop.length === 0) return false;
 
+      // 【仕様書 3.① 1. 完全準拠】全フィールドリアルタイム絞り込み（スペース区切り完全健全化）
       if (keyword) {
         const name = (it.name || '').toLowerCase();
         const memo = (it.memo || '').toLowerCase();
         const jan = (it.jan || '').toLowerCase();
-        const shops = targetTop.map(t => (t.shop || '').toLowerCase()).join(' ');
-        if (!name.includes(keyword) && !memo.includes(keyword) && !jan.includes(keyword) && !shops.includes(keyword)) {
+        const category = cat.toLowerCase();
+        const shops = [...(it.official_top3 || []), ...(it.all_top3 || [])]
+          .map(t => (t.shop || '').toLowerCase())
+          .join(' ');
+
+        const searchTarget = `${name} ${memo} ${jan} ${category} ${shops}`;
+        const terms = keyword.split(/\s+/).filter(Boolean);
+        if (!terms.every(term => searchTarget.includes(term))) {
           return false;
         }
       }
       return true;
     });
 
+    // 【仕様書 3.① 2. 完全準拠】全モード在庫なし最背面ゼロガード付き決定論的ソートエンジン
     items.sort((a, b) => {
       const topA_list = isOfficial 
         ? ((a.official_top3 && a.official_top3.length > 0) ? a.official_top3 : (a.all_top3 || []))
@@ -534,143 +812,124 @@
 
       const topA = topA_list.length > 0 ? topA_list[0] : null;
       const topB = topB_list.length > 0 ? topB_list[0] : null;
-      
-      const profitA = topA ? topA.profit : -999999;
-      const profitB = topB ? topB.profit : -999999;
-      const rateA = topA ? topA.profit_rate : -999999;
-      const rateB = topB ? topB.profit_rate : -999999;
 
-      if (sortMode === 'profit_rate_desc') return rateB - rateA;
-      if (sortMode === 'profit_amount_desc') return profitB - profitA;
-      if (sortMode === 'profit_asc') {
-        if (!topA) return 1;
-        if (!topB) return -1;
-        return profitA - profitB;
+      const hasA = !!topA;
+      const hasB = !!topB;
+
+      // 在庫有無の差がある場合、在庫ありを優先（在庫なしを最背面に送る）
+      if (hasA !== hasB) {
+        return hasA ? -1 : 1;
       }
-      if (sortMode === 'buy_desc') return (b.buy_price || 0) - (a.buy_price || 0);
-      return 0;
+
+      // 両者在庫あり、または両者在庫なしの場合の数値ソート（未定品・赤字品ガード）
+      const profitA = (topA && Number.isFinite(topA.profit)) ? topA.profit : -Infinity;
+      const profitB = (topB && Number.isFinite(topB.profit)) ? topB.profit : -Infinity;
+      const rateA = (topA && Number.isFinite(topA.profit_rate)) ? topA.profit_rate : -Infinity;
+      const rateB = (topB && Number.isFinite(topB.profit_rate)) ? topB.profit_rate : -Infinity;
+      const buyA = Number.isFinite(a.buy_price) ? a.buy_price : 0;
+      const buyB = Number.isFinite(b.buy_price) ? b.buy_price : 0;
+
+      let diff = 0;
+      if (sortMode === 'profit_rate_desc') diff = rateB - rateA;
+      else if (sortMode === 'profit_amount_desc') diff = profitB - profitA;
+      else if (sortMode === 'profit_asc') diff = profitA - profitB;
+      else if (sortMode === 'buy_desc') diff = buyB - buyA;
+
+      if (diff !== 0 && !isNaN(diff)) return diff;
+      // 同率時の決定論的ソート（JANコードまたは商品名で表示順の揺らぎを根絶）
+      return (a.jan || a.name || '').localeCompare(b.jan || b.name || '');
     });
 
     if (items.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; padding: 30px; color:#6b7280;">表示対象の商品がありません</td></tr>`;
+      tbodyTop.innerHTML = `<tr><td colspan="3" style="text-align:center; padding: 30px; color:#6b7280;">表示対象の商品がありません</td></tr>`;
+      tbodyAd1.style.display = 'none';
+      tbodyMid.innerHTML = '';
+      tbodyAd2.style.display = 'none';
+      tbodyBottom.innerHTML = '';
       return;
     }
 
-    let rowsHtml = '';
-    items.forEach((it, idx) => {
-      const buyStr = it.buy_price ? '¥' + it.buy_price.toLocaleString() : '-';
-      
-      let fullTopList = [];
-      let isFallbackToGeneral = false;
-      if (isOfficial) {
-        if (it.official_top3 && it.official_top3.length > 0) {
-          fullTopList = it.official_top3;
-        } else if (it.all_top3 && it.all_top3.length > 0) {
-          fullTopList = it.all_top3;
-          isFallbackToGeneral = true;
-        }
-      } else {
-        fullTopList = it.all_top3 || [];
-      }
+    // 【仕様書 3.③ 完全準拠】3件目・11件目直後スライス分割（マルチtbodyによる広告DOM永続化＆遅延安全初期化）
+    const topItems = items.slice(0, 3);
+    const midItems = items.slice(3, 11);
+    const bottomItems = items.slice(11);
 
-      const topList = fullTopList.slice(0, rankLimit);
-      const hasStock = topList.length > 0;
-      const memoHtml = it.memo ? `<div class="memo-tag">${it.memo}</div>` : '';
-      
-      const chomeHref = (it.chome_url && it.chome_url.startsWith('https://www.1-chome.com/wineDetail/'))
-        ? it.chome_url
-        : '#';
+    tbodyTop.innerHTML = topItems.map(it => renderRow(it, rankLimit, isOfficial)).join('');
 
-      const nameHtml = (chomeHref !== '#')
-        ? `<a href="${chomeHref}" target="_blank" rel="noopener noreferrer" class="item-name" title="買取一丁目の詳細ページを開く">${it.name}<span class="chome-link-icon">🔗</span></a>`
-        : `<span class="item-name">${it.name}</span>`;
-
-      let topHtml = '';
-      if (!hasStock) {
-        topHtml = `<div class="no-stock">現在、楽天市場に新品の在庫が見つかりません</div>`;
-      } else {
-        topHtml = topList.map((shopData, i) => {
-          const postBadge = (shopData.postage_flag === 1)
-            ? `<span class="postage-badge postage-free">無料</span>`
-            : `<span class="postage-badge postage-paid">別⚠️</span>`;
-
-          const typeBadge = shopData.is_official
-            ? `<span class="shop-type-badge type-official">正規</span>`
-            : `<span class="shop-type-badge type-general">一般</span>`;
-
-          const isPlus = shopData.profit > 0;
-          const isZero = shopData.profit === 0;
-          
-          let profitText = '';
-          let rateBadge = '';
-          if (isPlus) {
-            profitText = `<span class="profit-line plus"><span style="font-size:0.75rem; color:#6b7280; font-weight:normal;">見込利益: </span>+¥${shopData.profit.toLocaleString()}</span>`;
-            rateBadge = `<span class="rate-badge bg-plus">+${shopData.profit_rate.toFixed(1)}%</span>`;
-          } else if (isZero) {
-            profitText = `<span class="profit-line">¥0</span>`;
-            rateBadge = `<span class="rate-badge">±0.0%</span>`;
-          } else {
-            profitText = `<span class="profit-line minus"><span style="font-size:0.75rem; color:#6b7280; font-weight:normal;">損失: </span>-¥${Math.abs(shopData.profit).toLocaleString()}</span>`;
-            rateBadge = `<span class="rate-badge bg-minus">${shopData.profit_rate.toFixed(1)}%</span>`;
-          }
-            
-          return `
-            <div class="rank-row ${rankClasses[i] || 'rank-3'}">
-              <div class="rank-left">
-                <span class="rank-badge">${rankBadges[i] || (i+1) + '位'}</span>
-                ${typeBadge}
-                <span class="shop-name">${shopData.shop}${postBadge}</span>
-              </div>
-              <div class="rank-center">
-                <span class="price-label">仕入:</span><span class="price-val">¥${shopData.price.toLocaleString()}</span>
-              </div>
-              <div class="rank-right">
-                ${profitText}
-                ${rateBadge}
-              </div>
-              <a href="${shopData.url}" target="_blank" rel="noopener noreferrer" class="btn-buy">購入へ ➔</a>
-            </div>
+    // 表示条件を満たして可視化された直後にのみ、安全に <ins> を注入して1度だけ push 実行
+    if (items.length >= 3) {
+      tbodyAd1.style.display = '';
+      if (!ad1Initialized) {
+        ad1Initialized = true;
+        const box1 = document.getElementById('infeed-box-1');
+        if (box1) {
+          box1.innerHTML = `
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9014722014583256"
+                 data-ad-slot="8633264562"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
           `;
-        }).join('');
-
-        if (isFallbackToGeneral) {
-          topHtml = `<div style="font-size:0.75rem; color:#b45309; background:#fffbeb; border:1px solid #fef3c7; padding:4px 8px; border-radius:4px; margin-bottom:6px; font-weight:600;">※正規取扱店に在庫がないため、市場最安店を表示中</div>` + topHtml;
+          requestAnimationFrame(() => {
+            try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+          });
         }
       }
+    } else {
+      tbodyAd1.style.display = 'none';
+    }
 
-      rowsHtml += `
-        <tr>
-          <td class="item-col">
-            ${nameHtml}
-            ${memoHtml}
-            <span class="jan">JAN: ${it.jan || '未登録'}</span>
-          </td>
-          <td class="price-col buy-price">${buyStr}</td>
-          <td class="top3-col">
-            ${topHtml}
-          </td>
-        </tr>
-      `;
+    tbodyMid.innerHTML = midItems.map(it => renderRow(it, rankLimit, isOfficial)).join('');
 
-      if (idx === 2 || idx === 10) {
-        rowsHtml += createInfeedRowHtml();
+    if (items.length >= 11) {
+      tbodyAd2.style.display = '';
+      if (!ad2Initialized) {
+        ad2Initialized = true;
+        const box2 = document.getElementById('infeed-box-2');
+        if (box2) {
+          box2.innerHTML = `
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9014722014583256"
+                 data-ad-slot="8633264562"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          `;
+          requestAnimationFrame(() => {
+            try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+          });
+        }
       }
-    });
+    } else {
+      tbodyAd2.style.display = 'none';
+    }
 
-    tbody.innerHTML = rowsHtml;
-
-    requestAnimationFrame(() => {
-      document.querySelectorAll('.infeed-box ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(el => {
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch(e) {}
-      });
-    });
+    tbodyBottom.innerHTML = bottomItems.map(it => renderRow(it, rankLimit, isOfficial)).join('');
   }
 
-  ['filter-input', 'sort-select', 'officialOnlyCheck', 'in-stock-only', 'cat-console', 'cat-soft', 'cat-controller'].forEach(id => {
-    document.getElementById(id).addEventListener('change', render);
-    if(id === 'filter-input') document.getElementById(id).addEventListener('input', render);
+  // 【仕様書 3.① 完全準拠】300ms Debounce 実装
+  function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+      const context = this;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        func.apply(context, args);
+      }, wait);
+    };
+  }
+
+  const debouncedRender = debounce(render, 300);
+
+  ['filter-input', 'sort-select', 'officialOnlyCheck', 'in-stock-only', 'cat-console', 'cat-soft', 'cat-controller', 'cat-others'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (id === 'filter-input') {
+      el.addEventListener('input', debouncedRender);
+    } else {
+      el.addEventListener('change', render);
+    }
   });
 
   document.querySelectorAll('input[name="rank-limit"]').forEach(r => {
@@ -678,6 +937,14 @@
   });
 
   loadData();
+
+  // 定期自動更新・タブ復帰更新（5分間隔）
+  setInterval(loadData, 300000);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      loadData();
+    }
+  });
 </script>
 </body>
 </html>
