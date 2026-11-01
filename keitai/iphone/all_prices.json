@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/01 16:00:00",
+  "updated_at": "2026/11/01 17:00:00",
   "usd_jpy": 157.5,
   "series": {
     "18promax": [
@@ -20,7 +20,7 @@
             "mobilemix": 235000,
             "mShift": "down",
             "mobaste": 235000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "上昇↑"
           },
           {
