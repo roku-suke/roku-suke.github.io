@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/01 08:00:00",
+  "updated_at": "2026/11/01 09:00:00",
   "usd_jpy": 157.49,
   "series": {
     "18promax": [
@@ -308,9 +308,9 @@
           {
             "name": "ブラック",
             "chome": 197000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 197000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 196000,
             "rShift": "down",
             "rudeya": 197500,
@@ -340,9 +340,9 @@
           {
             "name": "グレイシャー",
             "chome": 197000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 197000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 196000,
             "rShift": "down",
             "rudeya": 197500,
