@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/04 03:00:00",
+  "updated_at": "2026/11/04 04:00:00",
   "usd_jpy": 157.9,
   "series": {
     "18promax": [
@@ -699,7 +699,7 @@
             "mShift": "down",
             "mobaste": 604000,
             "sShift": "up",
-            "trend": "上昇↑"
+            "trend": "横ばい→"
           },
           {
             "name": "ナイトスカイ",
