@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/03 22:00:00",
+  "updated_at": "2026/11/03 23:00:00",
   "usd_jpy": 157.9,
   "series": {
     "18promax": [
@@ -69,7 +69,7 @@
             "mShift": "up",
             "mobaste": 224000,
             "sShift": "up",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           }
         ]
       },
