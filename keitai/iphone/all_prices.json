@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/03 15:00:00",
+  "updated_at": "2026/11/03 16:00:00",
   "usd_jpy": 157.9,
   "series": {
     "18promax": [
@@ -291,8 +291,8 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 203000,
-            "cShift": "",
+            "chome": 202000,
+            "cShift": "down",
             "ichiban": 202000,
             "iShift": "down",
             "rakuen": 203000,
@@ -301,14 +301,14 @@
             "uShift": "down",
             "mobilemix": 203000,
             "mShift": "",
-            "mobaste": 202000,
+            "mobaste": 201000,
             "sShift": "down",
             "trend": "下降↓"
           },
           {
             "name": "ブラック",
-            "chome": 197000,
-            "cShift": "",
+            "chome": 196000,
+            "cShift": "down",
             "ichiban": 196000,
             "iShift": "down",
             "rakuen": 197000,
@@ -317,14 +317,14 @@
             "uShift": "",
             "mobilemix": 197000,
             "mShift": "",
-            "mobaste": 196000,
+            "mobaste": 195000,
             "sShift": "down",
             "trend": "上昇↑"
           },
           {
             "name": "シルバー",
-            "chome": 192000,
-            "cShift": "",
+            "chome": 191000,
+            "cShift": "down",
             "ichiban": 191000,
             "iShift": "down",
             "rakuen": 192000,
@@ -333,14 +333,14 @@
             "uShift": "down",
             "mobilemix": 192000,
             "mShift": "",
-            "mobaste": 191000,
+            "mobaste": 190000,
             "sShift": "down",
             "trend": "横ばい→"
           },
           {
             "name": "グレイシャー",
-            "chome": 197000,
-            "cShift": "",
+            "chome": 196000,
+            "cShift": "down",
             "ichiban": 196000,
             "iShift": "down",
             "rakuen": 197000,
@@ -349,7 +349,7 @@
             "uShift": "",
             "mobilemix": 197000,
             "mShift": "",
-            "mobaste": 196000,
+            "mobaste": 195000,
             "sShift": "down",
             "trend": "上昇↑"
           }
