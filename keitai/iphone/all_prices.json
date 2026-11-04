@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/04 14:00:00",
+  "updated_at": "2026/11/04 15:00:00",
   "usd_jpy": 158.4,
   "series": {
     "18promax": [
@@ -139,7 +139,7 @@
             "mShift": "up",
             "mobaste": 259000,
             "sShift": "down",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           }
         ]
       },
@@ -365,8 +365,8 @@
             "cShift": "down",
             "ichiban": 238000,
             "iShift": "down",
-            "rakuen": 239000,
-            "rShift": "up",
+            "rakuen": 238000,
+            "rShift": "down",
             "rudeya": 238000,
             "uShift": "down",
             "mobilemix": 240000,
@@ -649,7 +649,7 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 496000,
+            "chome": 498000,
             "cShift": "up",
             "ichiban": 496000,
             "iShift": "up",
@@ -657,15 +657,15 @@
             "rShift": "up",
             "rudeya": 496000,
             "uShift": "up",
-            "mobilemix": 498000,
+            "mobilemix": 499000,
             "mShift": "up",
-            "mobaste": 497000,
+            "mobaste": 499000,
             "sShift": "up",
             "trend": "下降↓"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 496000,
+            "chome": 498000,
             "cShift": "up",
             "ichiban": 496000,
             "iShift": "up",
@@ -673,9 +673,9 @@
             "rShift": "up",
             "rudeya": 496000,
             "uShift": "up",
-            "mobilemix": 498000,
+            "mobilemix": 499000,
             "mShift": "up",
-            "mobaste": 497000,
+            "mobaste": 499000,
             "sShift": "up",
             "trend": "下降↓"
           }
@@ -687,7 +687,7 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 606000,
+            "chome": 609000,
             "cShift": "up",
             "ichiban": 606000,
             "iShift": "up",
@@ -695,15 +695,15 @@
             "rShift": "up",
             "rudeya": 590000,
             "uShift": "up",
-            "mobilemix": 609000,
+            "mobilemix": 610000,
             "mShift": "up",
-            "mobaste": 607000,
+            "mobaste": 610000,
             "sShift": "up",
             "trend": "横ばい→"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 606000,
+            "chome": 609000,
             "cShift": "up",
             "ichiban": 606000,
             "iShift": "up",
@@ -711,9 +711,9 @@
             "rShift": "up",
             "rudeya": 590000,
             "uShift": "up",
-            "mobilemix": 609000,
+            "mobilemix": 610000,
             "mShift": "up",
-            "mobaste": 607000,
+            "mobaste": 610000,
             "sShift": "up",
             "trend": "横ばい→"
           }
