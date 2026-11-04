@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/04 21:00:00",
+  "updated_at": "2026/11/04 22:00:00",
   "usd_jpy": 158.4,
   "series": {
     "18promax": [
@@ -17,8 +17,8 @@
             "rShift": "down",
             "rudeya": 230000,
             "uShift": "down",
-            "mobilemix": 232000,
-            "mShift": "down",
+            "mobilemix": 237000,
+            "mShift": "up",
             "mobaste": 230000,
             "sShift": "down",
             "trend": "下降↓"
@@ -33,8 +33,8 @@
             "rShift": "down",
             "rudeya": 222500,
             "uShift": "",
-            "mobilemix": 224000,
-            "mShift": "down",
+            "mobilemix": 229000,
+            "mShift": "up",
             "mobaste": 221000,
             "sShift": "down",
             "trend": "横ばい→"
@@ -49,7 +49,7 @@
             "rShift": "down",
             "rudeya": 220000,
             "uShift": "",
-            "mobilemix": 223000,
+            "mobilemix": 228000,
             "mShift": "up",
             "mobaste": 218500,
             "sShift": "down",
@@ -65,7 +65,7 @@
             "rShift": "down",
             "rudeya": 224500,
             "uShift": "",
-            "mobilemix": 227000,
+            "mobilemix": 232000,
             "mShift": "up",
             "mobaste": 223000,
             "sShift": "down",
