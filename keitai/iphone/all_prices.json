@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/05 15:00:00",
+  "updated_at": "2026/11/05 16:00:00",
   "usd_jpy": 158.38,
   "series": {
     "18promax": [
@@ -231,7 +231,7 @@
             "mShift": "",
             "mobaste": 390000,
             "sShift": "down",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           },
           {
             "name": "ブラック",
