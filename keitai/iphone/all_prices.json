@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/08 04:00:00",
+  "updated_at": "2026/11/08 05:00:00",
   "usd_jpy": 158.37,
   "series": {
     "18promax": [
@@ -459,7 +459,7 @@
             "mShift": "",
             "mobaste": 292000,
             "sShift": "down",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           },
           {
             "name": "シルバー",
@@ -475,7 +475,7 @@
             "mShift": "",
             "mobaste": 292000,
             "sShift": "down",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           },
           {
             "name": "グレイシャー",
@@ -513,7 +513,7 @@
             "mShift": "",
             "mobaste": 375000,
             "sShift": "down",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           },
           {
             "name": "ブラック",
