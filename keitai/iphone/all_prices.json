@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/07 16:00:00",
+  "updated_at": "2026/11/07 17:00:00",
   "usd_jpy": 158.37,
   "series": {
     "18promax": [
@@ -9,7 +9,7 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 230000,
+            "chome": 230500,
             "cShift": "up",
             "ichiban": 230500,
             "iShift": "up",
@@ -19,13 +19,13 @@
             "uShift": "up",
             "mobilemix": 232000,
             "mShift": "down",
-            "mobaste": 230000,
+            "mobaste": 230500,
             "sShift": "up",
             "trend": "下降↓"
           },
           {
             "name": "ブラック",
-            "chome": 227000,
+            "chome": 227500,
             "cShift": "up",
             "ichiban": 224500,
             "iShift": "up",
@@ -35,13 +35,13 @@
             "uShift": "up",
             "mobilemix": 225000,
             "mShift": "down",
-            "mobaste": 224000,
+            "mobaste": 224500,
             "sShift": "up",
             "trend": "下降↓"
           },
           {
             "name": "シルバー",
-            "chome": 226000,
+            "chome": 226500,
             "cShift": "up",
             "ichiban": 223500,
             "iShift": "up",
@@ -51,13 +51,13 @@
             "uShift": "up",
             "mobilemix": 224000,
             "mShift": "down",
-            "mobaste": 223000,
+            "mobaste": 223500,
             "sShift": "up",
             "trend": "下降↓"
           },
           {
             "name": "グレイシャー",
-            "chome": 230000,
+            "chome": 230500,
             "cShift": "up",
             "ichiban": 227500,
             "iShift": "up",
@@ -67,7 +67,7 @@
             "uShift": "up",
             "mobilemix": 229000,
             "mShift": "up",
-            "mobaste": 227000,
+            "mobaste": 227500,
             "sShift": "up",
             "trend": "下降↓"
           }
@@ -131,8 +131,8 @@
             "cShift": "up",
             "ichiban": 260000,
             "iShift": "up",
-            "rakuen": 259500,
-            "rShift": "down",
+            "rakuen": 260000,
+            "rShift": "up",
             "rudeya": 260500,
             "uShift": "up",
             "mobilemix": 260000,
@@ -299,8 +299,8 @@
             "rShift": "up",
             "rudeya": 201500,
             "uShift": "up",
-            "mobilemix": 201000,
-            "mShift": "",
+            "mobilemix": 201500,
+            "mShift": "up",
             "mobaste": 201000,
             "sShift": "up",
             "trend": "下降↓"
