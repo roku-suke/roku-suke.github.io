@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/08 17:00:00",
+  "updated_at": "2026/11/08 18:00:00",
   "usd_jpy": 158.32,
   "series": {
     "18promax": [
@@ -432,7 +432,7 @@
           {
             "name": "バーガンディ",
             "chome": 302000,
-            "cShift": "down",
+            "cShift": "",
             "ichiban": 300000,
             "iShift": "down",
             "rakuen": 302000,
@@ -448,7 +448,7 @@
           {
             "name": "ブラック",
             "chome": 292000,
-            "cShift": "down",
+            "cShift": "",
             "ichiban": 290000,
             "iShift": "down",
             "rakuen": 292000,
@@ -464,7 +464,7 @@
           {
             "name": "シルバー",
             "chome": 292000,
-            "cShift": "down",
+            "cShift": "",
             "ichiban": 290000,
             "iShift": "down",
             "rakuen": 292000,
@@ -480,7 +480,7 @@
           {
             "name": "グレイシャー",
             "chome": 292000,
-            "cShift": "down",
+            "cShift": "",
             "ichiban": 290000,
             "iShift": "down",
             "rakuen": 292000,
