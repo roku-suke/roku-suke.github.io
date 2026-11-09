@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/09 08:00:00",
+  "updated_at": "2026/11/09 09:00:00",
   "usd_jpy": 158.32,
   "series": {
     "18promax": [
@@ -504,7 +504,7 @@
             "chome": 375000,
             "cShift": "",
             "ichiban": 375000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 373000,
             "rShift": "",
             "rudeya": null,
@@ -520,7 +520,7 @@
             "chome": 365000,
             "cShift": "",
             "ichiban": 365000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 363000,
             "rShift": "",
             "rudeya": null,
@@ -536,7 +536,7 @@
             "chome": 365000,
             "cShift": "",
             "ichiban": 365000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 363000,
             "rShift": "",
             "rudeya": null,
@@ -552,7 +552,7 @@
             "chome": 365000,
             "cShift": "",
             "ichiban": 365000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 363000,
             "rShift": "",
             "rudeya": null,
