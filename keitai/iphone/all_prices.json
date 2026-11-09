@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/10 07:00:00",
+  "updated_at": "2026/11/10 08:00:00",
   "usd_jpy": 158.33,
   "series": {
     "18promax": [
@@ -405,7 +405,7 @@
             "mShift": "up",
             "mobaste": 229000,
             "sShift": "up",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           },
           {
             "name": "グレイシャー",
