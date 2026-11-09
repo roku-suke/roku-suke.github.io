@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/09 12:00:01",
+  "updated_at": "2026/11/09 13:00:00",
   "usd_jpy": 158.33,
   "series": {
     "18promax": [
@@ -581,7 +581,7 @@
             "rShift": "down",
             "rudeya": 366500,
             "uShift": "down",
-            "mobilemix": 372000,
+            "mobilemix": 372500,
             "mShift": "up",
             "mobaste": 366000,
             "sShift": "up",
@@ -597,7 +597,7 @@
             "rShift": "",
             "rudeya": 368500,
             "uShift": "down",
-            "mobilemix": 372000,
+            "mobilemix": 372500,
             "mShift": "up",
             "mobaste": 368000,
             "sShift": "up",
@@ -611,8 +611,8 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 423000,
-            "cShift": "up",
+            "chome": 418000,
+            "cShift": "down",
             "ichiban": 418000,
             "iShift": "down",
             "rakuen": 418000,
@@ -621,14 +621,14 @@
             "uShift": "down",
             "mobilemix": 426000,
             "mShift": "up",
-            "mobaste": 423000,
-            "sShift": "up",
+            "mobaste": 418000,
+            "sShift": "down",
             "trend": "横ばい→"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 423000,
-            "cShift": "",
+            "chome": 418000,
+            "cShift": "down",
             "ichiban": 418000,
             "iShift": "down",
             "rakuen": 419000,
@@ -637,8 +637,8 @@
             "uShift": "up",
             "mobilemix": 426000,
             "mShift": "up",
-            "mobaste": 423000,
-            "sShift": "",
+            "mobaste": 418000,
+            "sShift": "down",
             "trend": "下降↓"
           }
         ]
