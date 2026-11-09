@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/09 23:00:00",
+  "updated_at": "2026/11/10 00:00:00",
   "usd_jpy": 158.33,
   "series": {
     "18promax": [
@@ -17,8 +17,8 @@
             "rShift": "up",
             "rudeya": 231000,
             "uShift": "up",
-            "mobilemix": 237000,
-            "mShift": "up",
+            "mobilemix": 232000,
+            "mShift": "down",
             "mobaste": 231000,
             "sShift": "up",
             "trend": "下降↓"
@@ -33,8 +33,8 @@
             "rShift": "down",
             "rudeya": 227000,
             "uShift": "up",
-            "mobilemix": 232000,
-            "mShift": "up",
+            "mobilemix": 227000,
+            "mShift": "down",
             "mobaste": 225500,
             "sShift": "up",
             "trend": "下降↓"
@@ -49,8 +49,8 @@
             "rShift": "down",
             "rudeya": 226000,
             "uShift": "up",
-            "mobilemix": 231000,
-            "mShift": "up",
+            "mobilemix": 226000,
+            "mShift": "down",
             "mobaste": 224500,
             "sShift": "up",
             "trend": "横ばい→"
@@ -65,8 +65,8 @@
             "rShift": "down",
             "rudeya": 228500,
             "uShift": "up",
-            "mobilemix": 236000,
-            "mShift": "up",
+            "mobilemix": 231000,
+            "mShift": "down",
             "mobaste": 228000,
             "sShift": "up",
             "trend": "下降↓"
@@ -581,8 +581,8 @@
             "rShift": "down",
             "rudeya": 367000,
             "uShift": "up",
-            "mobilemix": 378000,
-            "mShift": "up",
+            "mobilemix": 372500,
+            "mShift": "down",
             "mobaste": 366000,
             "sShift": "up",
             "trend": "下降↓"
@@ -597,8 +597,8 @@
             "rShift": "up",
             "rudeya": 373000,
             "uShift": "up",
-            "mobilemix": 378000,
-            "mShift": "up",
+            "mobilemix": 372500,
+            "mShift": "down",
             "mobaste": 372500,
             "sShift": "up",
             "trend": "下降↓"
@@ -619,8 +619,8 @@
             "rShift": "",
             "rudeya": 418500,
             "uShift": "down",
-            "mobilemix": 433000,
-            "mShift": "up",
+            "mobilemix": 428500,
+            "mShift": "down",
             "mobaste": 426500,
             "sShift": "up",
             "trend": "横ばい→"
@@ -635,8 +635,8 @@
             "rShift": "up",
             "rudeya": 429000,
             "uShift": "up",
-            "mobilemix": 433000,
-            "mShift": "up",
+            "mobilemix": 428500,
+            "mShift": "down",
             "mobaste": 428500,
             "sShift": "up",
             "trend": "下降↓"
@@ -657,8 +657,8 @@
             "rShift": "",
             "rudeya": 502500,
             "uShift": "up",
-            "mobilemix": 507000,
-            "mShift": "up",
+            "mobilemix": 502000,
+            "mShift": "down",
             "mobaste": 502000,
             "sShift": "up",
             "trend": "下降↓"
@@ -673,8 +673,8 @@
             "rShift": "",
             "rudeya": 502500,
             "uShift": "up",
-            "mobilemix": 507000,
-            "mShift": "up",
+            "mobilemix": 502000,
+            "mShift": "down",
             "mobaste": 502000,
             "sShift": "up",
             "trend": "下降↓"
@@ -695,8 +695,8 @@
             "rShift": "",
             "rudeya": 606000,
             "uShift": "up",
-            "mobilemix": 610500,
-            "mShift": "up",
+            "mobilemix": 607000,
+            "mShift": "down",
             "mobaste": 605500,
             "sShift": "up",
             "trend": "上昇↑"
@@ -711,8 +711,8 @@
             "rShift": "",
             "rudeya": 606000,
             "uShift": "up",
-            "mobilemix": 610500,
-            "mShift": "up",
+            "mobilemix": 607000,
+            "mShift": "down",
             "mobaste": 605500,
             "sShift": "up",
             "trend": "上昇↑"
