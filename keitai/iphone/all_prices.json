@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/10 13:00:00",
+  "updated_at": "2026/11/10 14:00:00",
   "usd_jpy": 158.02,
   "series": {
     "18promax": [
@@ -37,7 +37,7 @@
             "mShift": "down",
             "mobaste": 225500,
             "sShift": "up",
-            "trend": "下降↓"
+            "trend": "横ばい→"
           },
           {
             "name": "シルバー",
@@ -649,7 +649,7 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 503000,
+            "chome": 504000,
             "cShift": "up",
             "ichiban": 502000,
             "iShift": "up",
@@ -659,13 +659,13 @@
             "uShift": "up",
             "mobilemix": 504000,
             "mShift": "up",
-            "mobaste": 503000,
+            "mobaste": 504000,
             "sShift": "up",
             "trend": "下降↓"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 503000,
+            "chome": 504000,
             "cShift": "up",
             "ichiban": 502000,
             "iShift": "up",
@@ -675,7 +675,7 @@
             "uShift": "up",
             "mobilemix": 504000,
             "mShift": "up",
-            "mobaste": 503000,
+            "mobaste": 504000,
             "sShift": "up",
             "trend": "下降↓"
           }
