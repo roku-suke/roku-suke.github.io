@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/10 20:00:00",
+  "updated_at": "2026/11/10 21:00:00",
   "usd_jpy": 158.02,
   "series": {
     "18promax": [
@@ -105,8 +105,8 @@
             "uShift": "up",
             "mobilemix": 262000,
             "mShift": "up",
-            "mobaste": 258000,
-            "sShift": "down",
+            "mobaste": 262000,
+            "sShift": "up",
             "trend": "下降↓"
           },
           {
@@ -137,8 +137,8 @@
             "uShift": "up",
             "mobilemix": 262000,
             "mShift": "up",
-            "mobaste": 260000,
-            "sShift": "",
+            "mobaste": 262000,
+            "sShift": "up",
             "trend": "下降↓"
           }
         ]
