@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/12 16:00:00",
+  "updated_at": "2026/11/12 17:00:00",
   "usd_jpy": 159.51,
   "series": {
     "18promax": [
@@ -69,7 +69,7 @@
             "mShift": "",
             "mobaste": 231000,
             "sShift": "down",
-            "trend": "下降↓"
+            "trend": "横ばい→"
           }
         ]
       },
@@ -79,8 +79,8 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 262000,
-            "cShift": "",
+            "chome": 264000,
+            "cShift": "up",
             "ichiban": 262000,
             "iShift": "",
             "rakuen": 262000,
@@ -152,7 +152,7 @@
             "chome": 334000,
             "cShift": "up",
             "ichiban": 331000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 331500,
             "rShift": "down",
             "rudeya": 334000,
@@ -295,7 +295,7 @@
             "cShift": "up",
             "ichiban": 203500,
             "iShift": "up",
-            "rakuen": 203000,
+            "rakuen": 203500,
             "rShift": "up",
             "rudeya": 203000,
             "uShift": "up",
