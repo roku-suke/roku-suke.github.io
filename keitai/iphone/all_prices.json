@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/12 08:00:00",
+  "updated_at": "2026/11/12 09:00:00",
   "usd_jpy": 158.56,
   "series": {
     "18promax": [
@@ -616,7 +616,7 @@
             "ichiban": 418000,
             "iShift": "",
             "rakuen": 416000,
-            "rShift": "down",
+            "rShift": "",
             "rudeya": 419000,
             "uShift": "up",
             "mobilemix": null,
@@ -632,7 +632,7 @@
             "ichiban": 426000,
             "iShift": "",
             "rakuen": 417000,
-            "rShift": "down",
+            "rShift": "",
             "rudeya": 419000,
             "uShift": "down",
             "mobilemix": null,
