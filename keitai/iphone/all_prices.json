@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026/11/12 09:00:00",
-  "usd_jpy": 158.56,
+  "updated_at": "2026/11/12 10:00:00",
+  "usd_jpy": 159.51,
   "series": {
     "18promax": [
       {
@@ -116,7 +116,7 @@
             "ichiban": 257000,
             "iShift": "",
             "rakuen": 257500,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 258000,
             "uShift": "up",
             "mobilemix": 258000,
@@ -612,7 +612,7 @@
           {
             "name": "スターホワイト",
             "chome": 418000,
-            "cShift": "down",
+            "cShift": "",
             "ichiban": 418000,
             "iShift": "",
             "rakuen": 416000,
@@ -654,7 +654,7 @@
             "ichiban": 502000,
             "iShift": "",
             "rakuen": 501000,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 502000,
             "uShift": "down",
             "mobilemix": 502000,
@@ -670,7 +670,7 @@
             "ichiban": 502000,
             "iShift": "",
             "rakuen": 501000,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 502000,
             "uShift": "down",
             "mobilemix": 502000,
@@ -692,7 +692,7 @@
             "ichiban": 605000,
             "iShift": "",
             "rakuen": 604000,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 605000,
             "uShift": "down",
             "mobilemix": 605000,
@@ -708,7 +708,7 @@
             "ichiban": 605000,
             "iShift": "",
             "rakuen": 604000,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 605000,
             "uShift": "down",
             "mobilemix": 605000,
