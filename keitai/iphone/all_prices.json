@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/14 14:00:00",
+  "updated_at": "2026/11/14 15:00:00",
   "usd_jpy": 159.8,
   "series": {
     "18promax": [
@@ -90,7 +90,7 @@
             "mobilemix": 262000,
             "mShift": "",
             "mobaste": 262000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
@@ -106,7 +106,7 @@
             "mobilemix": 262000,
             "mShift": "",
             "mobaste": 262000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
@@ -138,7 +138,7 @@
             "mobilemix": 262000,
             "mShift": "",
             "mobaste": 262000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           }
         ]
@@ -219,8 +219,8 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 395000,
-            "cShift": "down",
+            "chome": 397000,
+            "cShift": "up",
             "ichiban": 395000,
             "iShift": "",
             "rakuen": 395000,
@@ -235,8 +235,8 @@
           },
           {
             "name": "ブラック",
-            "chome": 385000,
-            "cShift": "down",
+            "chome": 387000,
+            "cShift": "up",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 385000,
@@ -251,8 +251,8 @@
           },
           {
             "name": "シルバー",
-            "chome": 385000,
-            "cShift": "down",
+            "chome": 387000,
+            "cShift": "up",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 385000,
@@ -267,8 +267,8 @@
           },
           {
             "name": "グレイシャー",
-            "chome": 385000,
-            "cShift": "down",
+            "chome": 387000,
+            "cShift": "up",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 385000,
@@ -697,8 +697,8 @@
             "uShift": "down",
             "mobilemix": 585000,
             "mShift": "down",
-            "mobaste": 586000,
-            "sShift": "down",
+            "mobaste": 587000,
+            "sShift": "up",
             "trend": "横ばい→"
           },
           {
@@ -713,8 +713,8 @@
             "uShift": "down",
             "mobilemix": 585000,
             "mShift": "down",
-            "mobaste": 586000,
-            "sShift": "down",
+            "mobaste": 587000,
+            "sShift": "up",
             "trend": "横ばい→"
           }
         ]
