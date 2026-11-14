@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/14 15:00:00",
+  "updated_at": "2026/11/14 16:00:00",
   "usd_jpy": 159.8,
   "series": {
     "18promax": [
@@ -229,8 +229,8 @@
             "uShift": "",
             "mobilemix": 395000,
             "mShift": "",
-            "mobaste": 395000,
-            "sShift": "down",
+            "mobaste": 397000,
+            "sShift": "up",
             "trend": "下降↓"
           },
           {
@@ -245,8 +245,8 @@
             "uShift": "",
             "mobilemix": 385000,
             "mShift": "",
-            "mobaste": 385000,
-            "sShift": "down",
+            "mobaste": 387000,
+            "sShift": "up",
             "trend": "横ばい→"
           },
           {
@@ -261,8 +261,8 @@
             "uShift": "",
             "mobilemix": 385000,
             "mShift": "",
-            "mobaste": 385000,
-            "sShift": "down",
+            "mobaste": 387000,
+            "sShift": "up",
             "trend": "横ばい→"
           },
           {
@@ -277,8 +277,8 @@
             "uShift": "",
             "mobilemix": null,
             "mShift": "",
-            "mobaste": 385000,
-            "sShift": "down",
+            "mobaste": 387000,
+            "sShift": "up",
             "trend": "横ばい→"
           }
         ]
@@ -295,7 +295,7 @@
             "cShift": "up",
             "ichiban": 204500,
             "iShift": "up",
-            "rakuen": 204000,
+            "rakuen": 204500,
             "rShift": "up",
             "rudeya": 204500,
             "uShift": "up",
@@ -365,7 +365,7 @@
             "cShift": "up",
             "ichiban": 238000,
             "iShift": "up",
-            "rakuen": 236500,
+            "rakuen": 238000,
             "rShift": "up",
             "rudeya": 238000,
             "uShift": "up",
@@ -381,7 +381,7 @@
             "cShift": "up",
             "ichiban": 238000,
             "iShift": "up",
-            "rakuen": 236500,
+            "rakuen": 238000,
             "rShift": "up",
             "rudeya": 238000,
             "uShift": "up",
@@ -397,7 +397,7 @@
             "cShift": "up",
             "ichiban": 232000,
             "iShift": "up",
-            "rakuen": 231000,
+            "rakuen": 232000,
             "rShift": "up",
             "rudeya": 231000,
             "uShift": "up",
@@ -413,7 +413,7 @@
             "cShift": "up",
             "ichiban": 238000,
             "iShift": "up",
-            "rakuen": 236500,
+            "rakuen": 238000,
             "rShift": "up",
             "rudeya": 238000,
             "uShift": "up",
