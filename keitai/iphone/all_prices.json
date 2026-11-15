@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/15 13:00:00",
+  "updated_at": "2026/11/15 14:00:00",
   "usd_jpy": 159.78,
   "series": {
     "18promax": [
@@ -190,7 +190,7 @@
             "rudeya": 328000,
             "uShift": "",
             "mobilemix": 328000,
-            "mShift": "up",
+            "mShift": "",
             "mobaste": 326000,
             "sShift": "down",
             "trend": "下降↓"
@@ -456,7 +456,7 @@
             "rudeya": null,
             "uShift": "",
             "mobilemix": 295000,
-            "mShift": "up",
+            "mShift": "",
             "mobaste": 294000,
             "sShift": "down",
             "trend": "下降↓"
@@ -472,7 +472,7 @@
             "rudeya": null,
             "uShift": "",
             "mobilemix": 295000,
-            "mShift": "up",
+            "mShift": "",
             "mobaste": 294000,
             "sShift": "down",
             "trend": "下降↓"
@@ -488,7 +488,7 @@
             "rudeya": 295000,
             "uShift": "",
             "mobilemix": 295000,
-            "mShift": "up",
+            "mShift": "",
             "mobaste": 294000,
             "sShift": "down",
             "trend": "下降↓"
@@ -656,7 +656,7 @@
             "rakuen": 483000,
             "rShift": "up",
             "rudeya": 480000,
-            "uShift": "down",
+            "uShift": "",
             "mobilemix": 481000,
             "mShift": "up",
             "mobaste": 481000,
@@ -672,7 +672,7 @@
             "rakuen": 483000,
             "rShift": "up",
             "rudeya": 480000,
-            "uShift": "down",
+            "uShift": "",
             "mobilemix": 481000,
             "mShift": "up",
             "mobaste": 481000,
@@ -694,7 +694,7 @@
             "rakuen": 580000,
             "rShift": "up",
             "rudeya": 585000,
-            "uShift": "down",
+            "uShift": "",
             "mobilemix": 585000,
             "mShift": "down",
             "mobaste": 586000,
@@ -710,7 +710,7 @@
             "rakuen": 580000,
             "rShift": "up",
             "rudeya": 585000,
-            "uShift": "down",
+            "uShift": "",
             "mobilemix": 585000,
             "mShift": "down",
             "mobaste": 586000,
