@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/16 13:00:00",
+  "updated_at": "2026/11/16 14:00:00",
   "usd_jpy": 159.78,
   "series": {
     "18promax": [
@@ -220,7 +220,7 @@
           {
             "name": "バーガンディ",
             "chome": 397000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 395000,
             "iShift": "",
             "rakuen": 395000,
@@ -236,7 +236,7 @@
           {
             "name": "ブラック",
             "chome": 387000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 385000,
@@ -252,7 +252,7 @@
           {
             "name": "シルバー",
             "chome": 387000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 385000,
@@ -268,7 +268,7 @@
           {
             "name": "グレイシャー",
             "chome": 387000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 385000,
             "iShift": "",
             "rakuen": 385000,
@@ -577,8 +577,8 @@
             "cShift": "down",
             "ichiban": 360000,
             "iShift": "",
-            "rakuen": 361000,
-            "rShift": "up",
+            "rakuen": 360000,
+            "rShift": "down",
             "rudeya": 360500,
             "uShift": "down",
             "mobilemix": 360000,
@@ -593,8 +593,8 @@
             "cShift": "down",
             "ichiban": 360000,
             "iShift": "",
-            "rakuen": 361000,
-            "rShift": "up",
+            "rakuen": 360000,
+            "rShift": "down",
             "rudeya": 361500,
             "uShift": "up",
             "mobilemix": 360000,
