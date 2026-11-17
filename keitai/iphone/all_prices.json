@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026/11/17 09:00:00",
-  "usd_jpy": 159.78,
+  "updated_at": "2026/11/17 10:00:00",
+  "usd_jpy": 159.58,
   "series": {
     "18promax": [
       {
@@ -9,10 +9,10 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 228000,
-            "cShift": "up",
-            "ichiban": 227000,
-            "iShift": "",
+            "chome": 221000,
+            "cShift": "down",
+            "ichiban": 226000,
+            "iShift": "down",
             "rakuen": 229000,
             "rShift": "up",
             "rudeya": 227000,
@@ -25,10 +25,10 @@
           },
           {
             "name": "ブラック",
-            "chome": 227000,
-            "cShift": "up",
-            "ichiban": 227000,
-            "iShift": "",
+            "chome": 220000,
+            "cShift": "down",
+            "ichiban": 226000,
+            "iShift": "down",
             "rakuen": 227500,
             "rShift": "up",
             "rudeya": 227000,
@@ -41,10 +41,10 @@
           },
           {
             "name": "シルバー",
-            "chome": 226000,
-            "cShift": "up",
-            "ichiban": 226000,
-            "iShift": "",
+            "chome": 219000,
+            "cShift": "down",
+            "ichiban": 225000,
+            "iShift": "down",
             "rakuen": 226500,
             "rShift": "down",
             "rudeya": 226000,
@@ -57,10 +57,10 @@
           },
           {
             "name": "グレイシャー",
-            "chome": 228000,
-            "cShift": "up",
-            "ichiban": 227000,
-            "iShift": "",
+            "chome": 221000,
+            "cShift": "down",
+            "ichiban": 226000,
+            "iShift": "down",
             "rakuen": 229000,
             "rShift": "up",
             "rudeya": 228000,
@@ -79,8 +79,8 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 262000,
-            "cShift": "up",
+            "chome": 261000,
+            "cShift": "down",
             "ichiban": 261000,
             "iShift": "",
             "rakuen": 262500,
@@ -95,8 +95,8 @@
           },
           {
             "name": "ブラック",
-            "chome": 262000,
-            "cShift": "up",
+            "chome": 261000,
+            "cShift": "down",
             "ichiban": 261000,
             "iShift": "",
             "rakuen": 262500,
@@ -111,8 +111,8 @@
           },
           {
             "name": "シルバー",
-            "chome": 258000,
-            "cShift": "up",
+            "chome": 257000,
+            "cShift": "down",
             "ichiban": 258000,
             "iShift": "",
             "rakuen": 258500,
@@ -127,8 +127,8 @@
           },
           {
             "name": "グレイシャー",
-            "chome": 262000,
-            "cShift": "up",
+            "chome": 261000,
+            "cShift": "down",
             "ichiban": 261000,
             "iShift": "",
             "rakuen": 262500,
@@ -149,8 +149,8 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 332000,
-            "cShift": "up",
+            "chome": 331000,
+            "cShift": "down",
             "ichiban": 331000,
             "iShift": "",
             "rakuen": 332000,
@@ -165,8 +165,8 @@
           },
           {
             "name": "ブラック",
-            "chome": 332000,
-            "cShift": "up",
+            "chome": 331000,
+            "cShift": "down",
             "ichiban": 331000,
             "iShift": "",
             "rakuen": 332000,
@@ -181,8 +181,8 @@
           },
           {
             "name": "シルバー",
-            "chome": 328000,
-            "cShift": "up",
+            "chome": 327000,
+            "cShift": "down",
             "ichiban": 326000,
             "iShift": "",
             "rakuen": 328500,
@@ -197,8 +197,8 @@
           },
           {
             "name": "グレイシャー",
-            "chome": 332000,
-            "cShift": "up",
+            "chome": 331000,
+            "cShift": "down",
             "ichiban": 331000,
             "iShift": "",
             "rakuen": 332000,
@@ -442,7 +442,7 @@
             "mobilemix": 302000,
             "mShift": "",
             "mobaste": 301000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
@@ -458,7 +458,7 @@
             "mobilemix": 295000,
             "mShift": "",
             "mobaste": 294000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "横ばい→"
           },
           {
@@ -474,7 +474,7 @@
             "mobilemix": 295000,
             "mShift": "",
             "mobaste": 294000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "横ばい→"
           },
           {
@@ -490,7 +490,7 @@
             "mobilemix": 295000,
             "mShift": "",
             "mobaste": 294000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           }
         ]
@@ -573,8 +573,8 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 360000,
-            "cShift": "down",
+            "chome": 361000,
+            "cShift": "up",
             "ichiban": 360000,
             "iShift": "",
             "rakuen": 360000,
@@ -584,13 +584,13 @@
             "mobilemix": 360000,
             "mShift": "",
             "mobaste": 358000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 360000,
-            "cShift": "down",
+            "chome": 361000,
+            "cShift": "up",
             "ichiban": 360000,
             "iShift": "",
             "rakuen": 360000,
@@ -600,7 +600,7 @@
             "mobilemix": 360000,
             "mShift": "",
             "mobaste": 358000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           }
         ]
@@ -611,8 +611,8 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 401000,
-            "cShift": "",
+            "chome": 402000,
+            "cShift": "up",
             "ichiban": 401000,
             "iShift": "",
             "rakuen": 402000,
@@ -627,8 +627,8 @@
           },
           {
             "name": "ナイトスカイ",
-            "chome": 401000,
-            "cShift": "",
+            "chome": 402000,
+            "cShift": "up",
             "ichiban": 401000,
             "iShift": "",
             "rakuen": 402000,
@@ -698,7 +698,7 @@
             "mobilemix": 585000,
             "mShift": "",
             "mobaste": 586000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
@@ -714,7 +714,7 @@
             "mobilemix": 585000,
             "mShift": "",
             "mobaste": 586000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           }
         ]
