@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026/11/18 09:00:00",
-  "usd_jpy": 159.58,
+  "updated_at": "2026/11/18 10:00:00",
+  "usd_jpy": 159.39,
   "series": {
     "18promax": [
       {
@@ -79,8 +79,8 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 261000,
-            "cShift": "up",
+            "chome": 259000,
+            "cShift": "down",
             "ichiban": 261000,
             "iShift": "",
             "rakuen": 260000,
@@ -95,8 +95,8 @@
           },
           {
             "name": "ブラック",
-            "chome": 263000,
-            "cShift": "up",
+            "chome": 261000,
+            "cShift": "down",
             "ichiban": 261000,
             "iShift": "down",
             "rakuen": 260000,
@@ -111,8 +111,8 @@
           },
           {
             "name": "シルバー",
-            "chome": 260000,
-            "cShift": "up",
+            "chome": 258000,
+            "cShift": "down",
             "ichiban": 260000,
             "iShift": "up",
             "rakuen": 258000,
@@ -127,8 +127,8 @@
           },
           {
             "name": "グレイシャー",
-            "chome": 263000,
-            "cShift": "up",
+            "chome": 261000,
+            "cShift": "down",
             "ichiban": 261000,
             "iShift": "down",
             "rakuen": 260000,
@@ -228,9 +228,9 @@
             "rudeya": 395000,
             "uShift": "",
             "mobilemix": 397000,
-            "mShift": "up",
+            "mShift": "",
             "mobaste": 397000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
@@ -244,9 +244,9 @@
             "rudeya": 385000,
             "uShift": "",
             "mobilemix": 387000,
-            "mShift": "up",
+            "mShift": "",
             "mobaste": 387000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "横ばい→"
           },
           {
@@ -260,9 +260,9 @@
             "rudeya": 385000,
             "uShift": "",
             "mobilemix": 387000,
-            "mShift": "up",
+            "mShift": "",
             "mobaste": 387000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "横ばい→"
           },
           {
@@ -278,7 +278,7 @@
             "mobilemix": null,
             "mShift": "",
             "mobaste": 387000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "横ばい→"
           }
         ]
