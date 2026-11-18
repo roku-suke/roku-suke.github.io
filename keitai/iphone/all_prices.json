@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/18 08:00:00",
+  "updated_at": "2026/11/18 09:00:00",
   "usd_jpy": 159.58,
   "series": {
     "18promax": [
@@ -37,7 +37,7 @@
             "mShift": "down",
             "mobaste": 226000,
             "sShift": "up",
-            "trend": "上昇↑"
+            "trend": "横ばい→"
           },
           {
             "name": "シルバー",
