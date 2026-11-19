@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/19 16:00:00",
+  "updated_at": "2026/11/19 17:00:00",
   "usd_jpy": 159.36,
   "series": {
     "18promax": [
@@ -25,8 +25,8 @@
           },
           {
             "name": "ブラック",
-            "chome": 226000,
-            "cShift": "",
+            "chome": 225000,
+            "cShift": "down",
             "ichiban": 225000,
             "iShift": "down",
             "rakuen": 226000,
@@ -36,13 +36,13 @@
             "mobilemix": 226000,
             "mShift": "up",
             "mobaste": 226000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "横ばい→"
           },
           {
             "name": "シルバー",
-            "chome": 226000,
-            "cShift": "",
+            "chome": 224000,
+            "cShift": "down",
             "ichiban": 226000,
             "iShift": "",
             "rakuen": 226000,
@@ -52,7 +52,7 @@
             "mobilemix": 226000,
             "mShift": "up",
             "mobaste": 226000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "上昇↑"
           },
           {
@@ -695,8 +695,8 @@
             "rShift": "down",
             "rudeya": 570000,
             "uShift": "down",
-            "mobilemix": null,
-            "mShift": "",
+            "mobilemix": 570000,
+            "mShift": "down",
             "mobaste": 570000,
             "sShift": "down",
             "trend": "下降↓"
@@ -711,8 +711,8 @@
             "rShift": "down",
             "rudeya": 570000,
             "uShift": "down",
-            "mobilemix": null,
-            "mShift": "",
+            "mobilemix": 570000,
+            "mShift": "down",
             "mobaste": 570000,
             "sShift": "down",
             "trend": "下降↓"
