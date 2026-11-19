@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026/11/19 09:00:00",
-  "usd_jpy": 159.39,
+  "updated_at": "2026/11/19 10:00:00",
+  "usd_jpy": 159.36,
   "series": {
     "18promax": [
       {
@@ -26,7 +26,7 @@
           {
             "name": "ブラック",
             "chome": 226000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 226000,
             "iShift": "down",
             "rakuen": 226000,
@@ -113,8 +113,8 @@
             "name": "シルバー",
             "chome": 260000,
             "cShift": "up",
-            "ichiban": 259000,
-            "iShift": "down",
+            "ichiban": 260000,
+            "iShift": "up",
             "rakuen": 260000,
             "rShift": "up",
             "rudeya": 260000,
@@ -611,7 +611,7 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 401000,
+            "chome": 400000,
             "cShift": "down",
             "ichiban": 400000,
             "iShift": "down",
@@ -627,7 +627,7 @@
           },
           {
             "name": "ナイトスカイ",
-            "chome": 401000,
+            "chome": 400000,
             "cShift": "down",
             "ichiban": 400000,
             "iShift": "down",
@@ -687,7 +687,7 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 575000,
+            "chome": 570000,
             "cShift": "down",
             "ichiban": 570000,
             "iShift": "down",
@@ -703,7 +703,7 @@
           },
           {
             "name": "ナイトスカイ",
-            "chome": 575000,
+            "chome": 570000,
             "cShift": "down",
             "ichiban": 570000,
             "iShift": "down",
