@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/19 15:00:00",
+  "updated_at": "2026/11/19 16:00:00",
   "usd_jpy": 159.36,
   "series": {
     "18promax": [
@@ -12,7 +12,7 @@
             "chome": 226000,
             "cShift": "",
             "ichiban": 226000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 226000,
             "rShift": "up",
             "rudeya": 226000,
@@ -20,7 +20,7 @@
             "mobilemix": 226000,
             "mShift": "down",
             "mobaste": 226000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
@@ -44,11 +44,11 @@
             "chome": 226000,
             "cShift": "",
             "ichiban": 226000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 226000,
             "rShift": "up",
             "rudeya": 226000,
-            "uShift": "up",
+            "uShift": "",
             "mobilemix": 226000,
             "mShift": "up",
             "mobaste": 226000,
@@ -60,15 +60,15 @@
             "chome": 226000,
             "cShift": "",
             "ichiban": 226000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 226000,
             "rShift": "up",
             "rudeya": 226000,
-            "uShift": "down",
+            "uShift": "",
             "mobilemix": 225000,
             "mShift": "down",
             "mobaste": 226000,
-            "sShift": "down",
+            "sShift": "",
             "trend": "下降↓"
           }
         ]
@@ -98,7 +98,7 @@
             "chome": 262000,
             "cShift": "up",
             "ichiban": 261000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 261000,
             "rShift": "up",
             "rudeya": 262000,
@@ -130,7 +130,7 @@
             "chome": 263000,
             "cShift": "up",
             "ichiban": 261000,
-            "iShift": "down",
+            "iShift": "",
             "rakuen": 261000,
             "rShift": "up",
             "rudeya": 262000,
@@ -231,7 +231,7 @@
             "mShift": "",
             "mobaste": 397000,
             "sShift": "",
-            "trend": "下降↓"
+            "trend": "横ばい→"
           },
           {
             "name": "ブラック",
