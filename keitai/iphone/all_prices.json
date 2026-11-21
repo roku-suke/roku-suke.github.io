@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/21 15:00:00",
+  "updated_at": "2026/11/21 16:00:00",
   "usd_jpy": 159.75,
   "series": {
     "18promax": [
@@ -42,7 +42,7 @@
           {
             "name": "シルバー",
             "chome": 224000,
-            "cShift": "down",
+            "cShift": "",
             "ichiban": 224000,
             "iShift": "down",
             "rakuen": 224000,
