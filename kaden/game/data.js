@@ -50,17 +50,17 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sqgso.mmy99927.g00sqgso.mmy9ab8a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmandai%2F2100080000632864%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmandai%2Fi%2F10538158%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "販売一丁目",
-        "shop_code": "alljapan-online-shop",
-        "price": 59000,
-        "profit": -5200,
-        "profit_rate": -8.81,
+        "shop": "arianna 楽天市場",
+        "shop_code": "arianna",
+        "price": 58280,
+        "profit": -4480,
+        "profit_rate": -7.69,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00tseno.mmy9915d.g00tseno.mmy9a463/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falljapan-online-shop%2F4902370553024%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Falljapan-online-shop%2Fi%2F10021278%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00twmmo.mmy99963.g00twmmo.mmy9a7e9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Farianna%2F4902370553024%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Farianna%2Fi%2F10000263%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2（日本語・国内専用）マリオカート ワールドセット",
@@ -102,7 +102,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2F4902370553031%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10009257%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2（日本語・国内専用）スプラトゥーン レイダース セット",
@@ -167,15 +167,15 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 61317,
-        "profit": -6117,
-        "profit_rate": -9.98,
+        "price": 61313,
+        "profit": -6113,
+        "profit_rate": -9.97,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021235%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021135%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2（日本語・国内専用） Pokemon LEGENDS Z-A Nintendo Switch 2 Edition セット",
@@ -217,7 +217,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r6fso.mmy99cbe.g00r6fso.mmy9a0d7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffinebookpremiere%2F10002949%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffinebookpremiere%2Fi%2F10002949%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2（日本語・国内専用）ゼルダの伝説 40周年 アニバーサリーエディション",
@@ -228,16 +228,6 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/11041/11077",
     "official_top3": [],
     "all_top3": [
-      {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 61898,
-        "profit": -5898,
-        "profit_rate": -9.53,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021809%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021669%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
       {
         "shop": "販売一丁目",
         "shop_code": "alljapan-online-shop",
@@ -257,9 +247,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370554595%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10011333%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "電子問屋ワールドいち",
+        "shop_code": "auc-worldichi",
+        "price": 62960,
+        "profit": -6960,
+        "profit_rate": -11.05,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370554595%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037202%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2（日本語・国内専用）選べるソフト セット",
@@ -302,6 +302,16 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
+        "shop": "TB SHOP 楽天市場",
+        "shop_code": "tbshop",
+        "price": 63890,
+        "profit": -6890,
+        "profit_rate": -10.78,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00utsmo.mmy99a24.g00utsmo.mmy9adfa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftbshop%2F4902370555257%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftbshop%2Fi%2F10000210%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "販売一丁目",
         "shop_code": "alljapan-online-shop",
         "price": 63900,
@@ -320,19 +330,9 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18846756%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F22127024%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "カメラのキタムラ",
-        "shop_code": "emedama",
-        "price": 63980,
-        "profit": -6980,
-        "profit_rate": -10.91,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q3omo.mmy99e98.g00q3omo.mmy9a134/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femedama%2F4902370555257%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femedama%2Fi%2F11358909%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2 多言語版",
@@ -344,37 +344,37 @@ window.GAME_DATA = [
     "official_top3": [],
     "all_top3": [
       {
-        "shop": "電子問屋ワールドいち",
-        "shop_code": "auc-worldichi",
-        "price": 95767,
-        "profit": -13767,
-        "profit_rate": -14.38,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370552683%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10028945%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 95771,
-        "profit": -13771,
-        "profit_rate": -14.38,
+        "price": 95799,
+        "profit": -13799,
+        "profit_rate": -14.4,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018515%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10018405%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "電子問屋 2号店",
-        "shop_code": "uriurishop",
-        "price": 95772,
-        "profit": -13772,
-        "profit_rate": -14.38,
+        "shop": "カラフルスター",
+        "shop_code": "colorfulstar",
+        "price": 95800,
+        "profit": -13800,
+        "profit_rate": -14.41,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370552683%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10008055%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u9gwo.mmy99193.g00u9gwo.mmy9a2c6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcolorfulstar%2F4902370552683%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcolorfulstar%2Fi%2F10002945%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "家電問屋 楽天市場店",
+        "shop_code": "icockaden",
+        "price": 97609,
+        "profit": -15609,
+        "profit_rate": -15.99,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00trgdo.mmy99dc5.g00trgdo.mmy9ad26/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ficockaden%2F4902370552683%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ficockaden%2Fi%2F10005410%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con 2 (L) ブルー/(R) ライトイエロー",
@@ -437,7 +437,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q3omo.mmy99e98.g00q3omo.mmy9a134/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femedama%2F4902370554205%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femedama%2Fi%2F11297328%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー/(R) ライトレッド",
@@ -500,7 +500,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00twveo.mmy9915e.g00twveo.mmy9a3d4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakibasoko%2F4902370552744%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakibasoko%2Fi%2F10005039%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con 2 (L) ライトパープル/(R) ライトグリーン",
@@ -553,17 +553,17 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8so.mmy99b4f.g00tw8so.mmy9a740/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F223044941-223%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10919344%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "カメラのキタムラ",
-        "shop_code": "emedama",
+        "shop": "チャンプネット758 楽",
+        "shop_code": "champ758",
         "price": 9980,
         "profit": -1680,
         "profit_rate": -16.83,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q3omo.mmy99e98.g00q3omo.mmy9a134/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femedama%2F4902370553871%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femedama%2Fi%2F11237932%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370553871%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10005193%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2 Proコントローラー",
@@ -626,33 +626,43 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t2ngo.mmy998cd.g00t2ngo.mmy9a6c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhikaritv%2F2010126235%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhikaritv%2Fi%2F10255525%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "Outlet Plaza",
-        "shop_code": "outletplaza",
+        "shop": "赤い熊さん 楽天市場店",
+        "shop_code": "akaikumasan",
         "price": 9900,
         "profit": -1300,
         "profit_rate": -13.13,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001073017%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11413523%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sctio.mmy99a94.g00sctio.mmy9a171/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakaikumasan%2F4902370552843%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakaikumasan%2Fi%2F10067194%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2 Proコントローラー ゼルダの伝説 40周年 アニバーサリーエディション （ディスプレイスタンド付き）BEE-A-FSTDA",
     "memo": "コントローラー | （ディスプレイスタンド付き）",
     "category": "コントローラー",
     "jan": "4902370554564",
-    "buy_price": 11800,
+    "buy_price": 12300,
     "chome_url": "https://www.1-chome.com/wineDetail/11043/11079",
     "official_top3": [],
     "all_top3": [
       {
+        "shop": "らいぶshop",
+        "shop_code": "lcs-live",
+        "price": 15938,
+        "profit": -3638,
+        "profit_rate": -22.83,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021703%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021564%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "販売一丁目",
         "shop_code": "alljapan-online-shop",
         "price": 15940,
-        "profit": -4140,
-        "profit_rate": -25.97,
+        "profit": -3640,
+        "profit_rate": -22.84,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tseno.mmy9915d.g00tseno.mmy9a463/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falljapan-online-shop%2F4902370554564%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Falljapan-online-shop%2Fi%2F10022367%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -661,24 +671,14 @@ window.GAME_DATA = [
         "shop": "ロジカルセレクト 楽天市",
         "shop_code": "zononetshop",
         "price": 15950,
-        "profit": -4150,
-        "profit_rate": -26.02,
+        "profit": -3650,
+        "profit_rate": -22.88,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u5vio.mmy9980b.g00u5vio.mmy9abe6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fzononetshop%2F4902370554564%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fzononetshop%2Fi%2F10002870%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "バーズアイ",
-        "shop_code": "birdseye1220",
-        "price": 15980,
-        "profit": -4180,
-        "profit_rate": -26.16,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7hao.mmy992be.g00u7hao.mmy9a0a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbirdseye1220%2F4902370554564%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbirdseye1220%2Fi%2F10001340%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2 Samsung Micro SD Express 256GB SDカード",
@@ -713,9 +713,9 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 8099,
-        "profit": -1099,
-        "profit_rate": -13.57,
+        "price": 8199,
+        "profit": -1199,
+        "profit_rate": -14.62,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018584%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10018472%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -723,9 +723,9 @@ window.GAME_DATA = [
       {
         "shop": "ギズモオンラインショップ",
         "shop_code": "gizmo",
-        "price": 8100,
-        "profit": -1100,
-        "profit_rate": -13.58,
+        "price": 8200,
+        "profit": -1200,
+        "profit_rate": -14.63,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ulk9o.mmy997a2.g00ulk9o.mmy9a21b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgizmo%2Fr-2726%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgizmo%2Fi%2F10000833%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -741,7 +741,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001075916%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11413544%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2 Sandisk Micro SD Express 256GB SDカード",
@@ -753,37 +753,37 @@ window.GAME_DATA = [
     "official_top3": [],
     "all_top3": [
       {
-        "shop": "モバイル販売2号店",
-        "shop_code": "keitai-god2a",
-        "price": 10451,
-        "profit": -2851,
-        "profit_rate": -27.28,
+        "shop": "Cosme Tokyo",
+        "shop_code": "cosmetokyo",
+        "price": 10680,
+        "profit": -3080,
+        "profit_rate": -28.84,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4523052030185%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10003471%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8o8o.mmy99bf3.g00u8o8o.mmy9ac5f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmetokyo%2Fsw2samu2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmetokyo%2Fi%2F10000189%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "モバイル販売",
-        "shop_code": "mobileshop1",
-        "price": 10451,
-        "profit": -2851,
-        "profit_rate": -27.28,
+        "shop": "トレンドカプセル 楽天市",
+        "shop_code": "trendcapsule",
+        "price": 10980,
+        "profit": -3380,
+        "profit_rate": -30.78,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2F4523052030185%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10009276%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00uucvo.mmy99ff7.g00uucvo.mmy9a8e5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftrendcapsule%2F4523052030185%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftrendcapsule%2Fi%2F10000092%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "JUGEM 楽天市場店",
         "shop_code": "jugem2020",
-        "price": 10500,
-        "profit": -2900,
-        "profit_rate": -27.62,
+        "price": 11500,
+        "profit": -3900,
+        "profit_rate": -33.91,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tkd8o.mmy99b46.g00tkd8o.mmy9a8da/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjugem2020%2F85574030%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjugem2020%2Fi%2F10002644%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 新型 バッテリー強化版 グレー",
@@ -825,7 +825,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370551198%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10001150%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 新型 バッテリー強化版 ネオンブルー/(R) ネオンレッド",
@@ -878,7 +878,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370550733-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037719%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch (有機ELモデル) ホワイト",
@@ -931,7 +931,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rug6o.mmy99be8.g00rug6o.mmy9aaaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fotakarakan%2F010-48-261023game6445%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fotakarakan%2Fi%2F10184396%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch (有機ELモデル) ネオンブルー・ネオンレッド",
@@ -973,14 +973,14 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sldxo.mmy99fd6.g00sldxo.mmy9a77d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fekosuta%2Fxtj10576986684%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fekosuta%2Fi%2F10427620%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Lite ブルー",
     "memo": "ゲーム機本体",
     "category": "ゲーム機本体",
     "jan": "4902370547672",
-    "buy_price": 27500,
+    "buy_price": 27700,
     "chome_url": "https://www.1-chome.com/wineDetail/1384/1384",
     "official_top3": [],
     "all_top3": [
@@ -988,8 +988,8 @@ window.GAME_DATA = [
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
         "price": 33299,
-        "profit": -5799,
-        "profit_rate": -17.41,
+        "profit": -5599,
+        "profit_rate": -16.81,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10007885%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10007885%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -998,8 +998,8 @@ window.GAME_DATA = [
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
         "price": 33300,
-        "profit": -5800,
-        "profit_rate": -17.42,
+        "profit": -5600,
+        "profit_rate": -16.82,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370547672%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10008748%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1008,14 +1008,14 @@ window.GAME_DATA = [
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
         "price": 33300,
-        "profit": -5800,
-        "profit_rate": -17.42,
+        "profit": -5600,
+        "profit_rate": -16.82,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370547672%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10000055%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Lite ターコイズ",
@@ -1068,7 +1068,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tbj7o.mmy9909e.g00tbj7o.mmy9a2d7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobaxfukuokahakata%2Fhdh-s-bazaa-sa%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobaxfukuokahakata%2Fi%2F10002823%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Lite コーラル",
@@ -1110,7 +1110,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tw8so.mmy99b4f.g00tw8so.mmy9a740/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjanpara%2F69282647-69%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjanpara%2Fi%2F10931337%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Lite グレー",
@@ -1163,14 +1163,14 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q3omo.mmy99e98.g00q3omo.mmy9a134/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femedama%2F4902370542929%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Femedama%2Fi%2F11090855%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Lite イエロー",
     "memo": "ゲーム機本体",
     "category": "ゲーム機本体",
     "jan": "4902370542936",
-    "buy_price": 27500,
+    "buy_price": 27700,
     "chome_url": "https://www.1-chome.com/wineDetail/1117/1117",
     "official_top3": [],
     "all_top3": [
@@ -1178,8 +1178,8 @@ window.GAME_DATA = [
         "shop": "モバイル販売2号店",
         "shop_code": "keitai-god2a",
         "price": 20380,
-        "profit": 7120,
-        "profit_rate": 34.94,
+        "profit": 7320,
+        "profit_rate": 35.92,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2Fz902370542936%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10004906%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1188,8 +1188,8 @@ window.GAME_DATA = [
         "shop": "モバックス福岡博多駅前店",
         "shop_code": "withmobile",
         "price": 28800,
-        "profit": -1300,
-        "profit_rate": -4.51,
+        "profit": -1100,
+        "profit_rate": -3.82,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00twtuo.mmy99c40.g00twtuo.mmy9a588/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwithmobile%2Fnintendo-lite-yellow-s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwithmobile%2Fi%2F10000699%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1198,71 +1198,71 @@ window.GAME_DATA = [
         "shop": "NRFオンラインショップ",
         "shop_code": "nrfonline",
         "price": 37777,
-        "profit": -10277,
-        "profit_rate": -27.2,
+        "profit": -10077,
+        "profit_rate": -26.67,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u5nyo.mmy99adf.g00u5nyo.mmy9aec7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnrfonline%2Fnrf984ee52094%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnrfonline%2Fi%2F10144865%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation5 Pro CFI-7100B01",
     "memo": "ゲーム機本体",
     "category": "ゲーム機本体",
     "jan": "4948872417075",
-    "buy_price": 215700,
+    "buy_price": 216700,
     "chome_url": "https://www.1-chome.com/wineDetail/6122/6122",
     "official_top3": [],
     "all_top3": [
       {
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
-        "price": 231000,
-        "profit": -15300,
-        "profit_rate": -6.62,
+        "price": 245000,
+        "profit": -28300,
+        "profit_rate": -11.55,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417075-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037647%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "ノア商社 楽天市場店",
-        "shop_code": "noah-shopping",
-        "price": 241980,
-        "profit": -26280,
-        "profit_rate": -10.86,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4948872417075%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10003686%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417075%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10032128%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
         "price": 245000,
-        "profit": -29300,
-        "profit_rate": -11.96,
+        "profit": -28300,
+        "profit_rate": -11.55,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4948872417075%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10009436%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "Quality Spac",
+        "shop_code": "qualityspace",
+        "price": 247928,
+        "profit": -31228,
+        "profit_rate": -12.6,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00si9ho.mmy99142.g00si9ho.mmy9a2cb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fqualityspace%2Fplaystation5procfi-7100b01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fqualityspace%2Fi%2F10026109%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation 5 デジタル ・ エディション 日本語 専用 CFI-2200B01",
     "memo": "ゲーム機本体",
     "category": "ゲーム機本体",
     "jan": "4948872417419",
-    "buy_price": 49500,
+    "buy_price": 49700,
     "chome_url": "https://www.1-chome.com/wineDetail/7825/7855",
     "official_top3": [
       {
         "shop": "ソフマップ",
         "shop_code": "dtc",
         "price": 55000,
-        "profit": -5500,
-        "profit_rate": -10.0,
+        "profit": -5300,
+        "profit_rate": -9.64,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pyd1o.mmy99a62.g00pyd1o.mmy9ad3f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdtc%2F4948872417419%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdtc%2Fi%2F13146629%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1271,8 +1271,8 @@ window.GAME_DATA = [
         "shop": "Joshin web",
         "shop_code": "jism",
         "price": 55000,
-        "profit": -5500,
-        "profit_rate": -10.0,
+        "profit": -5300,
+        "profit_rate": -9.64,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4948872417419-54-56666-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14906162%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1281,8 +1281,8 @@ window.GAME_DATA = [
         "shop": "楽天ブックス",
         "shop_code": "book",
         "price": 55000,
-        "profit": -5500,
-        "profit_rate": -10.0,
+        "profit": -5300,
+        "profit_rate": -9.64,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18440637%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21800394%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1293,8 +1293,8 @@ window.GAME_DATA = [
         "shop": "OCNオンラインショップ",
         "shop_code": "nttxstore",
         "price": 54999,
-        "profit": -5499,
-        "profit_rate": -10.0,
+        "profit": -5299,
+        "profit_rate": -9.63,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rwjto.mmy99731.g00rwjto.mmy9abe5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnttxstore%2Fqzx0031399%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnttxstore%2Fi%2F10005014%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1303,8 +1303,8 @@ window.GAME_DATA = [
         "shop": "ソフマップ",
         "shop_code": "dtc",
         "price": 55000,
-        "profit": -5500,
-        "profit_rate": -10.0,
+        "profit": -5300,
+        "profit_rate": -9.64,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pyd1o.mmy99a62.g00pyd1o.mmy9ad3f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdtc%2F4948872417419%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdtc%2Fi%2F13146629%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1313,14 +1313,14 @@ window.GAME_DATA = [
         "shop": "Joshin web",
         "shop_code": "jism",
         "price": 55000,
-        "profit": -5500,
-        "profit_rate": -10.0,
+        "profit": -5300,
+        "profit_rate": -9.64,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4948872417419-54-56666-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14906162%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation 5 デジタル ・ エディション ミッドナイト ブラック 日本語 専用 CFI-2200B02S",
@@ -1332,37 +1332,37 @@ window.GAME_DATA = [
     "official_top3": [],
     "all_top3": [
       {
-        "shop": "モバックス",
-        "shop_code": "auc-mobax",
-        "price": 62800,
-        "profit": -14300,
-        "profit_rate": -22.77,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r3dto.mmy99dcf.g00r3dto.mmy9a9d0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-mobax%2Fsony-ps5de-2200b02s-black%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-mobax%2Fi%2F10014779%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 63299,
-        "profit": -14799,
-        "profit_rate": -23.38,
+        "price": 62699,
+        "profit": -14199,
+        "profit_rate": -22.65,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021848%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021696%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "MoriMoriStor",
-        "shop_code": "sokutei",
-        "price": 63399,
-        "profit": -14899,
-        "profit_rate": -23.5,
+        "shop": "モバイル販売",
+        "shop_code": "mobileshop1",
+        "price": 62799,
+        "profit": -14299,
+        "profit_rate": -22.77,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872418249%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10196155%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2F4948872418249%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10012949%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "モバイル販売2号店",
+        "shop_code": "keitai-god2a",
+        "price": 62799,
+        "profit": -14299,
+        "profit_rate": -22.77,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4948872418249%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10007213%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation 5 デジタルED ダブルパック 日本語専用 CFIJ-10032",
@@ -1415,14 +1415,14 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18576435%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21914190%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation5 Slim Digital エディション CFI-2000B01",
     "memo": "ゲーム機本体",
     "category": "ゲーム機本体",
     "jan": "4948872415910",
-    "buy_price": 108200,
+    "buy_price": 108400,
     "chome_url": "https://www.1-chome.com/wineDetail/5402/5402",
     "official_top3": [],
     "all_top3": [
@@ -1430,41 +1430,41 @@ window.GAME_DATA = [
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
         "price": 115000,
-        "profit": -6800,
-        "profit_rate": -5.91,
+        "profit": -6600,
+        "profit_rate": -5.74,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872415910-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037670%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 124609,
-        "profit": -16409,
-        "profit_rate": -13.17,
+        "shop": "電子問屋 2号店",
+        "shop_code": "uriurishop",
+        "price": 125500,
+        "profit": -17100,
+        "profit_rate": -13.63,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10014124%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10014112%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4948872415910%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10002002%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "ディーライズ2号店",
         "shop_code": "e-cutestyle",
-        "price": 124610,
-        "profit": -16410,
-        "profit_rate": -13.17,
+        "price": 125780,
+        "profit": -17380,
+        "profit_rate": -13.82,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00o.mmy99ced.g00rd00o.mmy9a93c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000848788%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19779009%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation5 Slim Disc CFI-2000A01",
     "memo": "ゲーム機本体",
     "category": "ゲーム機本体",
     "jan": "4948872415934",
-    "buy_price": 118400,
+    "buy_price": 118600,
     "chome_url": "https://www.1-chome.com/wineDetail/5401/5401",
     "official_top3": [],
     "all_top3": [
@@ -1472,8 +1472,8 @@ window.GAME_DATA = [
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
         "price": 130000,
-        "profit": -11600,
-        "profit_rate": -8.92,
+        "profit": -11400,
+        "profit_rate": -8.77,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872415934-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037671%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1482,24 +1482,24 @@ window.GAME_DATA = [
         "shop": "お宝五番街",
         "shop_code": "otakarakan",
         "price": 130000,
-        "profit": -11600,
-        "profit_rate": -8.92,
+        "profit": -11400,
+        "profit_rate": -8.77,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rug6o.mmy99be8.g00rug6o.mmy9aaaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fotakarakan%2F07-50-240707-game001h%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fotakarakan%2Fi%2F10185208%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "HOSHIGULF 楽天",
-        "shop_code": "hoshigulf",
-        "price": 134000,
-        "profit": -15600,
-        "profit_rate": -11.64,
+        "shop": "ディーライズ2号店",
+        "shop_code": "e-cutestyle",
+        "price": 131140,
+        "profit": -12540,
+        "profit_rate": -9.56,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jeo.mmy99a9e.g00t3jeo.mmy9ad6e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhoshigulf%2F4948872415934%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhoshigulf%2Fi%2F10002364%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00o.mmy99ced.g00rd00o.mmy9a93c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000848789%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19774102%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation VR2 CFIJ-17000",
@@ -1534,9 +1534,9 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 53569,
-        "profit": -7069,
-        "profit_rate": -13.2,
+        "price": 53533,
+        "profit": -7033,
+        "profit_rate": -13.14,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10012115%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10012115%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1552,7 +1552,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872016490-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037471%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation VR2 “Horizon Call of the Mountain” 同梱版 CFIJ-17001",
@@ -1594,14 +1594,14 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4948872016612%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10001070%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー “グランド・セフト・オートVI” ブラック リミテッドエディション CFI-ZCT2JZH",
     "memo": "コントローラー",
     "category": "コントローラー",
     "jan": "4948872417525",
-    "buy_price": 13200,
+    "buy_price": 13500,
     "chome_url": "https://www.1-chome.com/wineDetail/11046/11082",
     "official_top3": [],
     "all_top3": [
@@ -1609,8 +1609,8 @@ window.GAME_DATA = [
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
         "price": 16800,
-        "profit": -3600,
-        "profit_rate": -21.43,
+        "profit": -3300,
+        "profit_rate": -19.64,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417525-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037714%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1619,8 +1619,8 @@ window.GAME_DATA = [
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
         "price": 17200,
-        "profit": -4000,
-        "profit_rate": -23.26,
+        "profit": -3700,
+        "profit_rate": -21.51,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4948872417525%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10011448%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1629,40 +1629,40 @@ window.GAME_DATA = [
         "shop": "ロジカルセレクト 楽天市",
         "shop_code": "zononetshop",
         "price": 17200,
-        "profit": -4000,
-        "profit_rate": -23.26,
+        "profit": -3700,
+        "profit_rate": -21.51,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u5vio.mmy9980b.g00u5vio.mmy9abe6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fzononetshop%2F4948872417525%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fzononetshop%2Fi%2F10002994%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー “グランド・セフト・オートVI” ホワイト リミテッドエディション CFI-ZCT2JZI",
     "memo": "コントローラー",
     "category": "コントローラー",
     "jan": "4948872417501",
-    "buy_price": 13200,
+    "buy_price": 13500,
     "chome_url": "https://www.1-chome.com/wineDetail/10834/10870",
     "official_top3": [],
     "all_top3": [
       {
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
-        "price": 15500,
-        "profit": -2300,
-        "profit_rate": -14.84,
+        "price": 15300,
+        "profit": -1800,
+        "profit_rate": -11.76,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417501-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037718%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417501%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037662%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
-        "price": 16055,
-        "profit": -2855,
-        "profit_rate": -17.78,
+        "price": 15300,
+        "profit": -1800,
+        "profit_rate": -11.76,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4948872417501%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10011454%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1671,14 +1671,14 @@ window.GAME_DATA = [
         "shop": "ロジカルセレクト 楽天市",
         "shop_code": "zononetshop",
         "price": 17200,
-        "profit": -4000,
-        "profit_rate": -23.26,
+        "profit": -3700,
+        "profit_rate": -21.51,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u5vio.mmy9980b.g00u5vio.mmy9abe6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fzononetshop%2F4948872417501%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fzononetshop%2Fi%2F10002995%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Series X 1TB RRT-00015",
@@ -1689,7 +1689,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/1191/1191",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Series X 1TB デジタル EP2-00708",
@@ -1723,30 +1723,30 @@ window.GAME_DATA = [
       {
         "shop": "ディーライズ2号店",
         "shop_code": "e-cutestyle",
-        "price": 126520,
-        "profit": -15720,
-        "profit_rate": -12.42,
+        "price": 126630,
+        "profit": -15830,
+        "profit_rate": -12.5,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00o.mmy99ced.g00rd00o.mmy9a93c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000885113%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19794720%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Meta Quest 3 512GB",
     "memo": "周辺機器",
     "category": "周辺機器",
     "jan": "0815820024170",
-    "buy_price": 92500,
+    "buy_price": 92300,
     "chome_url": "https://www.1-chome.com/wineDetail/5320/5320",
     "official_top3": [
       {
         "shop": "楽天ビック",
         "shop_code": "biccamera",
         "price": 102300,
-        "profit": -9800,
-        "profit_rate": -9.58,
+        "profit": -10000,
+        "profit_rate": -9.78,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.mmy992f6.g00r7ldo.mmy9a682/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F0815820024170%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F14393171%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1757,8 +1757,8 @@ window.GAME_DATA = [
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
         "price": 101000,
-        "profit": -8500,
-        "profit_rate": -8.42,
+        "profit": -8700,
+        "profit_rate": -8.61,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F0815820024170-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037700%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1767,8 +1767,8 @@ window.GAME_DATA = [
         "shop": "ディーライズ2号店",
         "shop_code": "e-cutestyle",
         "price": 102190,
-        "profit": -9690,
-        "profit_rate": -9.48,
+        "profit": -9890,
+        "profit_rate": -9.68,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00o.mmy99ced.g00rd00o.mmy9a93c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000847100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19773591%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1777,14 +1777,14 @@ window.GAME_DATA = [
         "shop": "楽天ビック",
         "shop_code": "biccamera",
         "price": 102300,
-        "profit": -9800,
-        "profit_rate": -9.58,
+        "profit": -10000,
+        "profit_rate": -9.78,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.mmy992f6.g00r7ldo.mmy9a682/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F0815820024170%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F14393171%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Meta Quest 3S 128GB",
@@ -1837,22 +1837,22 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2F815820025238%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10012196%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Meta Quest 3S 256GB",
     "memo": "周辺機器",
     "category": "周辺機器",
     "jan": "0815820025290",
-    "buy_price": 62400,
+    "buy_price": 62300,
     "chome_url": "https://www.1-chome.com/wineDetail/6095/6095",
     "official_top3": [
       {
         "shop": "楽天ビック",
         "shop_code": "biccamera",
         "price": 77000,
-        "profit": -14600,
-        "profit_rate": -18.96,
+        "profit": -14700,
+        "profit_rate": -19.09,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.mmy992f6.g00r7ldo.mmy9a682/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F0815820025290%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F14904850%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1863,8 +1863,8 @@ window.GAME_DATA = [
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
         "price": 68200,
-        "profit": -5800,
-        "profit_rate": -8.5,
+        "profit": -5900,
+        "profit_rate": -8.65,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F0815820025290-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037636%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1872,9 +1872,9 @@ window.GAME_DATA = [
       {
         "shop": "アークマーケット",
         "shop_code": "arc-market-kaden",
-        "price": 69786,
-        "profit": -7386,
-        "profit_rate": -10.58,
+        "price": 69300,
+        "profit": -7000,
+        "profit_rate": -10.1,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t9goo.mmy99d36.g00t9goo.mmy9a719/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Farc-market-kaden%2F0815820025290%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Farc-market-kaden%2Fi%2F10012406%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -1882,15 +1882,15 @@ window.GAME_DATA = [
       {
         "shop": "モバイル販売2号店",
         "shop_code": "keitai-god2a",
-        "price": 70078,
-        "profit": -7678,
-        "profit_rate": -10.96,
+        "price": 69785,
+        "profit": -7485,
+        "profit_rate": -10.73,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F815820025290%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10006453%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con 2 (L) ライトブルー",
@@ -1953,7 +1953,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18216612%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21600511%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con 2 (R) ライトレッド",
@@ -2016,7 +2016,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370552720-54-73615-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14578139%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch 2 Proコントローラー バイオハザード レクイエム エディション BEEAFSSKD",
@@ -2058,7 +2058,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uv57o.mmy99161.g00uv57o.mmy9a625/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fone-for-all%2F20260331233602_235%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fone-for-all%2Fi%2F10007687%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch (有機ELモデル) マリオレッド",
@@ -2072,9 +2072,9 @@ window.GAME_DATA = [
       {
         "shop": "モバイル販売2号店",
         "shop_code": "keitai-god2a",
-        "price": 37980,
-        "profit": 7520,
-        "profit_rate": 19.8,
+        "price": 37800,
+        "profit": 7700,
+        "profit_rate": 20.37,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2Fz902370551495%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10004847%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -2082,9 +2082,9 @@ window.GAME_DATA = [
       {
         "shop": "モバイル販売",
         "shop_code": "mobileshop1",
-        "price": 37980,
-        "profit": 7520,
-        "profit_rate": 19.8,
+        "price": 37800,
+        "profit": 7700,
+        "profit_rate": 20.37,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2Fz902370551495%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10010623%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -2100,7 +2100,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370551495%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10001514%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch (有機ELモデル) スカーレット・バイオレット",
@@ -2112,16 +2112,6 @@ window.GAME_DATA = [
     "official_top3": [],
     "all_top3": [
       {
-        "shop": "モバイル販売2号店",
-        "shop_code": "keitai-god2a",
-        "price": 35980,
-        "profit": 9520,
-        "profit_rate": 26.46,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2Fz902370550412%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10004949%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "モバイル販売",
         "shop_code": "mobileshop1",
         "price": 35980,
@@ -2130,6 +2120,16 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2Fz902370550412%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10010725%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "モバイル販売2号店",
+        "shop_code": "keitai-god2a",
+        "price": 35980,
+        "profit": 9520,
+        "profit_rate": 26.46,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2Fz902370550412%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10004949%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "アキバ倉庫",
@@ -2142,7 +2142,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00twveo.mmy9915e.g00twveo.mmy9a3d4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakibasoko%2F4902370550412%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakibasoko%2Fi%2F10005622%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch (有機ELモデル) スプラトゥーン3",
@@ -2184,7 +2184,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tu72o.mmy99d4a.g00tu72o.mmy9a61c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Feta8%2Fel-261109-0005%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Feta8%2Fi%2F10003467%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch (有機ELモデル) ゼルダの伝説",
@@ -2226,7 +2226,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r3dto.mmy99dcf.g00r3dto.mmy9a9d0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-mobax%2F2021nintendo-switch-zelda-hn%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-mobax%2Fi%2F10014678%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Lite コーラル あつまれ どうぶつの森セット",
@@ -2248,7 +2248,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rw28o.mmy996fe.g00rw28o.mmy9a8ab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspeedwagon%2F10011532%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspeedwagon%2Fi%2F10011551%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Lite ターコイズ あつまれ どうぶつの森セット",
@@ -2290,7 +2290,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370551457%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10001811%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Lite ハイラルエディション",
@@ -2302,24 +2302,24 @@ window.GAME_DATA = [
     "official_top3": [],
     "all_top3": [
       {
-        "shop": "MoriMoriStor",
-        "shop_code": "sokutei",
-        "price": 36473,
-        "profit": -6973,
-        "profit_rate": -19.12,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370552232%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10190358%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 36474,
-        "profit": -6974,
-        "profit_rate": -19.12,
+        "price": 36462,
+        "profit": -6962,
+        "profit_rate": -19.09,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10016720%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10016630%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "MoriMoriStor",
+        "shop_code": "sokutei",
+        "price": 36463,
+        "profit": -6963,
+        "profit_rate": -19.1,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370552232%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10190358%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "モバイル販売",
@@ -2332,7 +2332,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2F4902370552232%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10007935%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Sports セット",
@@ -2374,7 +2374,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u1n4o.mmy99ad3.g00u1n4o.mmy9ac3e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Filmondomall%2Fgr-e9e7x4rj5u%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Filmondomall%2Fi%2F10089102%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】スーパー マリオパーティ ジャンボリー",
@@ -2427,16 +2427,6 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370552430%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10004393%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 6178,
-        "profit": -778,
-        "profit_rate": -12.59,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10016875%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10016786%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "エディオン",
         "shop_code": "edion",
         "price": 6260,
@@ -2445,9 +2435,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r9svo.mmy9928f.g00r9svo.mmy9a42c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4902370552430%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10848007%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "Joshin web",
+        "shop_code": "jism",
+        "price": 6260,
+        "profit": -860,
+        "profit_rate": -13.74,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370552430-54-46585-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14255912%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】スーパーマリオ オデッセイ",
@@ -2520,7 +2520,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2Fsoft-4%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10000380%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ルイージマンション3",
@@ -2593,7 +2593,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15990415%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F19697672%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】It Takes Two",
@@ -2626,16 +2626,6 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "ノア商社 楽天市場店",
-        "shop_code": "noah-shopping",
-        "price": 3510,
-        "profit": -610,
-        "profit_rate": -17.38,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4938833024404%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10001843%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
         "price": 3600,
@@ -2644,6 +2634,16 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4938833024404%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10000878%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "モバイル販売2号店",
+        "shop_code": "keitai-god2a",
+        "price": 3600,
+        "profit": -700,
+        "profit_rate": -19.44,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4938833024404%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10000631%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "電子問屋ワールドいち",
@@ -2656,7 +2656,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4938833024404%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10017061%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ゼルダの伝説 夢をみる島",
@@ -2669,25 +2669,15 @@ window.GAME_DATA = [
       {
         "shop": "楽天ブックス",
         "shop_code": "book",
-        "price": 5788,
-        "profit": -1188,
-        "profit_rate": -20.53,
+        "price": 5920,
+        "profit": -1320,
+        "profit_rate": -22.3,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15949054%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F19659865%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
     "all_top3": [
-      {
-        "shop": "楽天ブックス",
-        "shop_code": "book",
-        "price": 5788,
-        "profit": -1188,
-        "profit_rate": -20.53,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15949054%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F19659865%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
       {
         "shop": "Outlet Plaza",
         "shop_code": "outletplaza",
@@ -2697,6 +2687,16 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40000886841%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11244973%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "楽天ブックス",
+        "shop_code": "book",
+        "price": 5920,
+        "profit": -1320,
+        "profit_rate": -22.3,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15949054%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F19659865%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "エルエルハット",
@@ -2709,7 +2709,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rav4o.mmy99a2e.g00rav4o.mmy9a1a0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fllhat%2F4902370543940%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fllhat%2Fi%2F10017081%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ゼルダの伝説 知恵のかりもの",
@@ -2782,7 +2782,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qxpno.mmy993bb.g00qxpno.mmy9a042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fall-kimuraya-jimbocho%2F2819905019%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fall-kimuraya-jimbocho%2Fi%2F10317405%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】星のカービィ ディスカバリー",
@@ -2825,37 +2825,37 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 5607,
-        "profit": -907,
-        "profit_rate": -16.18,
+        "shop": "チャンプネット758 楽",
+        "shop_code": "champ758",
+        "price": 5650,
+        "profit": -950,
+        "profit_rate": -16.81,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10009657%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10009657%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370549454%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10005132%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "電子問屋ワールドいち",
-        "shop_code": "auc-worldichi",
-        "price": 5608,
-        "profit": -908,
-        "profit_rate": -16.19,
+        "shop": "Dandyストア",
+        "shop_code": "dandystore",
+        "price": 5708,
+        "profit": -1008,
+        "profit_rate": -17.66,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370549454%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10013038%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00tdfzo.mmy99275.g00tdfzo.mmy9a558/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdandystore%2F4902370549454%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdandystore%2Fi%2F10002946%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "電子問屋 2号店",
-        "shop_code": "uriurishop",
-        "price": 5609,
-        "profit": -909,
-        "profit_rate": -16.21,
+        "shop": "Joshin web",
+        "shop_code": "jism",
+        "price": 5720,
+        "profit": -1020,
+        "profit_rate": -17.83,
         "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370549454%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10001642%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370549454-54-40560-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F13340134%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】マリオカート8 デラックス",
@@ -2928,7 +2928,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4902370536485%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10000086%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】デイヴ・ザ・ダイバー ANNIVERSARY EDITION",
@@ -2981,7 +2981,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qo03o.mmy990ee.g00qo03o.mmy9a431/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsurprise-web%2Faznhac-p-bgzsa%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsurprise-web%2Fi%2F13625264%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】Nintendo Switch Sports",
@@ -3054,7 +3054,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q1a0o.mmy99762.g00q1a0o.mmy9ace5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmurauchi-dvd%2F4902370549263%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmurauchi-dvd%2Fi%2F134745766%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】スプラトゥーン３",
@@ -3127,7 +3127,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370550337-54-40560-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F13463165%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】Pokemon LEGENDS アルセウス",
@@ -3170,6 +3170,16 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
+        "shop": "らいぶshop",
+        "shop_code": "lcs-live",
+        "price": 5668,
+        "profit": -968,
+        "profit_rate": -17.08,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10009300%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10009300%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "モバイル販売",
         "shop_code": "mobileshop1",
         "price": 5669,
@@ -3188,19 +3198,9 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4902370549034%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10000109%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "Joshin web",
-        "shop_code": "jism",
-        "price": 5720,
-        "profit": -1020,
-        "profit_rate": -17.83,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370549034-54-40561-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F13565308%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ルイージマンション2 HD",
@@ -3233,16 +3233,6 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 5179,
-        "profit": -1679,
-        "profit_rate": -32.42,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10015642%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10015594%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "FJOオンライン",
         "shop_code": "fjoonline",
         "price": 5180,
@@ -3261,9 +3251,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uci6o.mmy990af.g00uci6o.mmy9abab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshopypp%2F3799-006469%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshopypp%2Fi%2F10004247%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "ファミコンプラザ",
+        "shop_code": "famicom-plaza",
+        "price": 5400,
+        "profit": -1900,
+        "profit_rate": -35.19,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q6lto.mmy9981b.g00q6lto.mmy9ad58/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffamicom-plaza%2F95519%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffamicom-plaza%2Fi%2F10026551%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】スーパーマリオ ３Ｄワールド ＋ フューリーワールド",
@@ -3336,7 +3336,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00utsmo.mmy99a24.g00utsmo.mmy9adfa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftbshop%2F4902370547115%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftbshop%2Fi%2F10000059%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】スーパーマリオブラザーズ ワンダー",
@@ -3409,7 +3409,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001022419%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11365240%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】超おどる メイド イン ワリオ",
@@ -3452,16 +3452,6 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "MoriMoriStor",
-        "shop_code": "sokutei",
-        "price": 4088,
-        "profit": -888,
-        "profit_rate": -21.72,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370551600%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10187210%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
         "price": 4089,
@@ -3470,6 +3460,16 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10014123%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10014111%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "MoriMoriStor",
+        "shop_code": "sokutei",
+        "price": 4189,
+        "profit": -989,
+        "profit_rate": -23.61,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370551600%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10187210%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "電子問屋ワールドいち",
@@ -3482,7 +3482,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370551600%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10020870%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】スーパーマリオブラザーズ U デラックス",
@@ -3555,7 +3555,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4902370541281%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10000094%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】大乱闘スマッシュブラザーズ SPECIAL",
@@ -3628,7 +3628,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tl2ko.mmy9942b.g00tl2ko.mmy9afec/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsuyadenki%2F2815503011%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmatsuyadenki%2Fi%2F10051510%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ポケットモンスター スカーレット",
@@ -3701,7 +3701,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r9svo.mmy9928f.g00r9svo.mmy9a42c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4902370550542%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10790460%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ポケットモンスター バイオレット",
@@ -3756,9 +3756,9 @@ window.GAME_DATA = [
       {
         "shop": "モバイル販売2号店",
         "shop_code": "keitai-god2a",
-        "price": 5694,
-        "profit": -894,
-        "profit_rate": -15.7,
+        "price": 5717,
+        "profit": -917,
+        "profit_rate": -16.04,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4902370550559%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10000082%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -3766,15 +3766,15 @@ window.GAME_DATA = [
       {
         "shop": "モバイル販売",
         "shop_code": "mobileshop1",
-        "price": 5694,
-        "profit": -894,
-        "profit_rate": -15.7,
+        "price": 5717,
+        "profit": -917,
+        "profit_rate": -16.04,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2F4902370550559%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10003379%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】マリオテニスエース",
@@ -3837,7 +3837,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15390534%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F19046294%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】星のカービィ Wii デラックス",
@@ -3900,17 +3900,17 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370550870%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10003906%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "モバイル販売2号店",
-        "shop_code": "keitai-god2a",
-        "price": 5438,
-        "profit": -838,
-        "profit_rate": -15.41,
+        "shop": "MoriMoriStor",
+        "shop_code": "sokutei",
+        "price": 5428,
+        "profit": -828,
+        "profit_rate": -15.25,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4902370550870%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10000171%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370550870%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10160200%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】桃太郎電鉄 〜昭和 平成 令和も定番",
@@ -3973,7 +3973,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tni6o.mmy99b75.g00tni6o.mmy9a8c9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgamearc%2F4988602173222n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgamearc%2Fi%2F10003457%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ゼルダの伝説 ブレス オブ ザ ワイルド",
@@ -4018,9 +4018,9 @@ window.GAME_DATA = [
       {
         "shop": "ノア商社 楽天市場店",
         "shop_code": "noah-shopping",
-        "price": 6461,
-        "profit": -761,
-        "profit_rate": -11.78,
+        "price": 6451,
+        "profit": -751,
+        "profit_rate": -11.64,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370536058%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10000419%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -4028,25 +4028,25 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 6462,
-        "profit": -762,
-        "profit_rate": -11.79,
+        "price": 6452,
+        "profit": -752,
+        "profit_rate": -11.66,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10006054%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10006054%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "エディオン",
-        "shop_code": "edion",
-        "price": 6570,
-        "profit": -870,
-        "profit_rate": -13.24,
+        "shop": "MoriMoriStor",
+        "shop_code": "sokutei",
+        "price": 6500,
+        "profit": -800,
+        "profit_rate": -12.31,
         "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r9svo.mmy9928f.g00r9svo.mmy9a42c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4902370536058%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10393246%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370536058%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10002563%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ゼルダの伝説 ティアーズ オブ ザ キングダム",
@@ -4119,7 +4119,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370550979%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10003946%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ピクミン4",
@@ -4192,7 +4192,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qxpno.mmy993bb.g00qxpno.mmy9a042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fall-kimuraya-jimbocho%2F2818740017%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fall-kimuraya-jimbocho%2Fi%2F10201854%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】星のカービィ スターアライズ",
@@ -4255,7 +4255,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370539073%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10100169%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】モンスターハンターライズ Best Price",
@@ -4297,7 +4297,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ploto.mmy9945e.g00ploto.mmy9a49c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkimuraya%2F2818594016%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkimuraya%2Fi%2F10224053%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】世界のアソビ大全51",
@@ -4330,16 +4330,6 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 3719,
-        "profit": -719,
-        "profit_rate": -19.33,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10007991%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10007991%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "チャンプネット758 楽",
         "shop_code": "champ758",
         "price": 3720,
@@ -4358,9 +4348,19 @@ window.GAME_DATA = [
         "postage_flag": 0,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qr6go.mmy99356.g00qr6go.mmy9a35c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakibaoo-r%2Fhm002411385%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakibaoo-r%2Fi%2F12512449%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "キムラヤ楽天市場店",
+        "shop_code": "all-kimuraya-jimbocho",
+        "price": 3980,
+        "profit": -980,
+        "profit_rate": -24.62,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00qxpno.mmy993bb.g00qxpno.mmy9a042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fall-kimuraya-jimbocho%2F2816617014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fall-kimuraya-jimbocho%2Fi%2F10201309%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】マインクラフト",
@@ -4433,7 +4433,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4549576094113-54-40560-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F12036273%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】Minecraft Legends",
@@ -4506,7 +4506,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qxpno.mmy993bb.g00qxpno.mmy9a042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fall-kimuraya-jimbocho%2F2818715015%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fall-kimuraya-jimbocho%2Fi%2F10202359%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】桃太郎電鉄ワールド ～地球は希望でまわってる！～ T",
@@ -4569,17 +4569,17 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tseno.mmy9915d.g00tseno.mmy9a463/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falljapan-online-shop%2F4988602176490%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Falljapan-online-shop%2Fi%2F10019713%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "セレクトストアレインボー",
-        "shop_code": "select-rainbow",
-        "price": 4930,
-        "profit": -1930,
-        "profit_rate": -39.15,
+        "shop": "ヴァルハラストア楽天市場",
+        "shop_code": "valhallastore",
+        "price": 4800,
+        "profit": -1800,
+        "profit_rate": -37.5,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00s9lzo.mmy99cf5.g00s9lzo.mmy9afed/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fselect-rainbow%2F4988602176490%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fselect-rainbow%2Fi%2F10027901%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00uvtno.mmy99311.g00uvtno.mmy9af19/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvalhallastore%2F4988602176490%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvalhallastore%2Fi%2F10000112%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ゼノブレイドクロス ディフィニティブエディション",
@@ -4622,16 +4622,6 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 5750,
-        "profit": -950,
-        "profit_rate": -16.52,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018042%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10017946%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "お宝五番街",
         "shop_code": "otakarakan",
         "price": 5800,
@@ -4650,9 +4640,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sctio.mmy99a94.g00sctio.mmy9a171/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fakaikumasan%2F4902370552935%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fakaikumasan%2Fi%2F10065585%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "楽天ブックス",
+        "shop_code": "book",
+        "price": 6028,
+        "profit": -1228,
+        "profit_rate": -20.37,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18055092%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21444091%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】スーパーマリオギャラクシー + スーパーマリオギャラクシー 2",
@@ -4725,7 +4725,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370553611%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10009183%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】Fit Boxing 3 -Your パーソナルトレーナー",
@@ -4798,7 +4798,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4965857104454%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10002685%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】ドンキーコング リターンズ HD",
@@ -4843,9 +4843,9 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 5454,
-        "profit": -954,
-        "profit_rate": -17.49,
+        "price": 5444,
+        "profit": -944,
+        "profit_rate": -17.34,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10017536%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10017433%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -4853,9 +4853,9 @@ window.GAME_DATA = [
       {
         "shop": "MoriMoriStor",
         "shop_code": "sokutei",
-        "price": 5455,
-        "profit": -955,
-        "profit_rate": -17.51,
+        "price": 5445,
+        "profit": -945,
+        "profit_rate": -17.36,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370552492%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10189276%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -4871,7 +4871,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ploto.mmy9945e.g00ploto.mmy9a49c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkimuraya%2F2819908010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkimuraya%2Fi%2F10360471%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】Pokemon LEGENDS Z-A",
@@ -4944,7 +4944,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370553550%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10003607%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】リズム天国 ミラクルスターズ T",
@@ -4955,6 +4955,26 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/9671/9704",
     "official_top3": [
       {
+        "shop": "Joshin web",
+        "shop_code": "jism",
+        "price": 5760,
+        "profit": -960,
+        "profit_rate": -16.67,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370554298-54-46583-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14788711%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "楽天ブックス",
+        "shop_code": "book",
+        "price": 5762,
+        "profit": -962,
+        "profit_rate": -16.7,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18600497%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21931441%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "ヤマダデンキ",
         "shop_code": "yamada-denki",
         "price": 5770,
@@ -4963,26 +4983,6 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.mmy99eb2.g00t3jpo.mmy9a87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821537017%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamada-denki%2Fi%2F10683372%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "Joshin web",
-        "shop_code": "jism",
-        "price": 5770,
-        "profit": -970,
-        "profit_rate": -16.81,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370554298-54-46583-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14788711%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "楽天ブックス",
-        "shop_code": "book",
-        "price": 5784,
-        "profit": -984,
-        "profit_rate": -17.01,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18600497%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21931441%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
     "all_top3": [
@@ -4997,27 +4997,27 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370554298%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10005385%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "ヤマダデンキ",
-        "shop_code": "yamada-denki",
-        "price": 5770,
-        "profit": -970,
-        "profit_rate": -16.81,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.mmy99eb2.g00t3jpo.mmy9a87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821537017%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamada-denki%2Fi%2F10683372%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "Joshin web",
         "shop_code": "jism",
-        "price": 5770,
-        "profit": -970,
-        "profit_rate": -16.81,
+        "price": 5760,
+        "profit": -960,
+        "profit_rate": -16.67,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370554298-54-46583-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14788711%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "楽天ブックス",
+        "shop_code": "book",
+        "price": 5762,
+        "profit": -962,
+        "profit_rate": -16.7,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18600497%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21931441%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】桃太郎電鉄2 ～あなたの町も きっとある～ 東日本編＋西日本編 T",
@@ -5060,14 +5060,14 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 4979,
-        "profit": -1479,
-        "profit_rate": -29.7,
+        "shop": "トリプルハート",
+        "shop_code": "tripleheart",
+        "price": 4975,
+        "profit": -1475,
+        "profit_rate": -29.65,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10019829%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10019719%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00tu7lo.mmy9917e.g00tu7lo.mmy9a218/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftripleheart%2F0352-017400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftripleheart%2Fi%2F10006068%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "楽天ブックス",
@@ -5080,17 +5080,17 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18328072%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21691858%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "電子問屋 2号店",
-        "shop_code": "uriurishop",
-        "price": 5000,
-        "profit": -1500,
-        "profit_rate": -30.0,
+        "shop": "MoriMoriStor",
+        "shop_code": "sokutei",
+        "price": 5969,
+        "profit": -2469,
+        "profit_rate": -41.36,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4988602179248%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10009509%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4988602179248%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10193772%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS1】トモダチコレクション わくわく生活",
@@ -5100,6 +5100,16 @@ window.GAME_DATA = [
     "buy_price": 5100,
     "chome_url": "https://www.1-chome.com/wineDetail/8505/8536",
     "official_top3": [
+      {
+        "shop": "楽天ブックス",
+        "shop_code": "book",
+        "price": 6325,
+        "profit": -1225,
+        "profit_rate": -19.37,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18522186%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21864503%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
       {
         "shop": "Joshin web",
         "shop_code": "jism",
@@ -5119,25 +5129,15 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.mmy99eb2.g00t3jpo.mmy9a87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821346015%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamada-denki%2Fi%2F10677676%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "楽天ブックス",
-        "shop_code": "book",
-        "price": 6343,
-        "profit": -1243,
-        "profit_rate": -19.6,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18522186%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21864503%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
     "all_top3": [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 6327,
-        "profit": -1227,
-        "profit_rate": -19.39,
+        "price": 6316,
+        "profit": -1216,
+        "profit_rate": -19.25,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10020768%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020666%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -5145,40 +5145,40 @@ window.GAME_DATA = [
       {
         "shop": "ノア商社 楽天市場店",
         "shop_code": "noah-shopping",
-        "price": 6328,
-        "profit": -1228,
-        "profit_rate": -19.41,
+        "price": 6317,
+        "profit": -1217,
+        "profit_rate": -19.27,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370553963%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004020%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "Joshin web",
-        "shop_code": "jism",
-        "price": 6330,
-        "profit": -1230,
-        "profit_rate": -19.43,
+        "shop": "楽天ブックス",
+        "shop_code": "book",
+        "price": 6325,
+        "profit": -1225,
+        "profit_rate": -19.37,
         "postage_flag": 1,
         "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370553963-54-46585-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14731450%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18522186%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21864503%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ぽこ あ ポケモン",
     "memo": "ゲームソフト | 【NS2】",
     "category": "ゲームソフト",
     "jan": "4521329460420",
-    "buy_price": 6900,
+    "buy_price": 6800,
     "chome_url": "https://www.1-chome.com/wineDetail/8344/8374",
     "official_top3": [
       {
         "shop": "ヤマダデンキ",
         "shop_code": "yamada-denki",
         "price": 7870,
-        "profit": -970,
-        "profit_rate": -12.33,
+        "profit": -1070,
+        "profit_rate": -13.6,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.mmy99eb2.g00t3jpo.mmy9a87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821187014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamada-denki%2Fi%2F10676486%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -5187,8 +5187,8 @@ window.GAME_DATA = [
         "shop": "Joshin web",
         "shop_code": "jism",
         "price": 7870,
-        "profit": -970,
-        "profit_rate": -12.33,
+        "profit": -1070,
+        "profit_rate": -13.6,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4521329460420-54-73638-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14681292%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -5197,8 +5197,8 @@ window.GAME_DATA = [
         "shop": "楽天ブックス",
         "shop_code": "book",
         "price": 7879,
-        "profit": -979,
-        "profit_rate": -12.43,
+        "profit": -1079,
+        "profit_rate": -13.69,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18437525%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21800325%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -5209,8 +5209,8 @@ window.GAME_DATA = [
         "shop": "ヤマダデンキ",
         "shop_code": "yamada-denki",
         "price": 7870,
-        "profit": -970,
-        "profit_rate": -12.33,
+        "profit": -1070,
+        "profit_rate": -13.6,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.mmy99eb2.g00t3jpo.mmy9a87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2821187014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamada-denki%2Fi%2F10676486%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -5219,24 +5219,24 @@ window.GAME_DATA = [
         "shop": "Joshin web",
         "shop_code": "jism",
         "price": 7870,
-        "profit": -970,
-        "profit_rate": -12.33,
+        "profit": -1070,
+        "profit_rate": -13.6,
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4521329460420-54-73638-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14681292%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "楽天ブックス",
-        "shop_code": "book",
-        "price": 7879,
-        "profit": -979,
-        "profit_rate": -12.43,
+        "shop": "キムラヤ楽天市場店",
+        "shop_code": "all-kimuraya-jimbocho",
+        "price": 7870,
+        "profit": -1070,
+        "profit_rate": -13.6,
         "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18437525%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21800325%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00qxpno.mmy993bb.g00qxpno.mmy9a042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fall-kimuraya-jimbocho%2F2821187014%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fall-kimuraya-jimbocho%2Fi%2F10365823%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】マリオカート ワールド",
@@ -5309,7 +5309,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18210489%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21599807%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】マリオテニス フィーバー",
@@ -5354,9 +5354,9 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 7513,
-        "profit": -1413,
-        "profit_rate": -18.81,
+        "price": 7503,
+        "profit": -1403,
+        "profit_rate": -18.7,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10020429%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020328%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -5364,9 +5364,9 @@ window.GAME_DATA = [
       {
         "shop": "MoriMoriStor",
         "shop_code": "sokutei",
-        "price": 7514,
-        "profit": -1414,
-        "profit_rate": -18.82,
+        "price": 7504,
+        "profit": -1404,
+        "profit_rate": -18.71,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370553932%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10194737%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -5382,7 +5382,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370553932%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10032836%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ドンキーコング バナンザ",
@@ -5425,16 +5425,6 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 7849,
-        "profit": -949,
-        "profit_rate": -12.09,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018943%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10018823%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "チャンプネット758 楽",
         "shop_code": "champ758",
         "price": 7850,
@@ -5453,9 +5443,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370553413-54-73632-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14595003%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "ヤマダデンキ",
+        "shop_code": "yamada-denki",
+        "price": 7900,
+        "profit": -1000,
+        "profit_rate": -12.66,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.mmy99eb2.g00t3jpo.mmy9a87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2820624015%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamada-denki%2Fi%2F10654043%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】スプラトゥーン レイダース",
@@ -5510,25 +5510,25 @@ window.GAME_DATA = [
       {
         "shop": "Brass 楽天市場店",
         "shop_code": "brass-esp",
-        "price": 5681,
-        "profit": -781,
-        "profit_rate": -13.75,
+        "price": 5750,
+        "profit": -850,
+        "profit_rate": -14.78,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t2z4o.mmy99cc5.g00t2z4o.mmy9a080/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrass-esp%2Fnet-4902370554359-005576%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrass-esp%2Fi%2F10011390%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "OCNオンラインショップ",
-        "shop_code": "nttxstore",
-        "price": 5760,
-        "profit": -860,
-        "profit_rate": -14.93,
+        "shop": "モバイル販売",
+        "shop_code": "mobileshop1",
+        "price": 5759,
+        "profit": -859,
+        "profit_rate": -14.92,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00rwjto.mmy99731.g00rwjto.mmy9abe5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnttxstore%2Fqzx8428%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnttxstore%2Fi%2F10005659%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2F4902370554359%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10012191%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ドラゴンズドグマ 2:ダークアリズン",
@@ -5573,25 +5573,25 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 5211,
-        "profit": -1211,
-        "profit_rate": -23.24,
+        "price": 5201,
+        "profit": -1201,
+        "profit_rate": -23.09,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021626%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021492%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "MoriMoriStor",
-        "shop_code": "sokutei",
-        "price": 5212,
-        "profit": -1212,
-        "profit_rate": -23.25,
+        "shop": "電子問屋 2号店",
+        "shop_code": "uriurishop",
+        "price": 5201,
+        "profit": -1201,
+        "profit_rate": -23.09,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4976219140690%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10196213%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4976219140690%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10011280%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ゼノブレイド2",
@@ -5664,7 +5664,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370554410%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10005500%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】eFootball Kick-Off！",
@@ -5674,16 +5674,6 @@ window.GAME_DATA = [
     "buy_price": 2300,
     "chome_url": "https://www.1-chome.com/wineDetail/9355/9388",
     "official_top3": [
-      {
-        "shop": "楽天ブックス",
-        "shop_code": "book",
-        "price": 2480,
-        "profit": -180,
-        "profit_rate": -7.26,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18557553%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21894203%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
       {
         "shop": "Joshin web",
         "shop_code": "jism",
@@ -5696,16 +5686,6 @@ window.GAME_DATA = [
       }
     ],
     "all_top3": [
-      {
-        "shop": "楽天ブックス",
-        "shop_code": "book",
-        "price": 2480,
-        "profit": -180,
-        "profit_rate": -7.26,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18557553%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21894203%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
       {
         "shop": "Joshin web",
         "shop_code": "jism",
@@ -5725,9 +5705,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021056%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020952%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "キムラヤ楽天市場店",
+        "shop_code": "all-kimuraya-jimbocho",
+        "price": 3500,
+        "profit": -1200,
+        "profit_rate": -34.29,
+        "postage_flag": 0,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00qxpno.mmy993bb.g00qxpno.mmy9a042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fall-kimuraya-jimbocho%2F2821430011%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fall-kimuraya-jimbocho%2Fi%2F10385198%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】『オクトパストラベラー』＋『オクトパストラベラーII』",
@@ -5790,7 +5780,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tni6o.mmy99b75.g00tni6o.mmy9a8c9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgamearc%2F4988601012287n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgamearc%2Fi%2F10350653%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】It takes two",
@@ -5863,7 +5853,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001115929%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11442686%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】Lies of P: Complete Edition",
@@ -5916,7 +5906,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4595057030378%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10006917%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】Minecraft",
@@ -5989,7 +5979,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4549576308470%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10005519%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】Minecraft Dungeons II",
@@ -6042,14 +6032,14 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4549576299433%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10005484%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 4322,
-        "profit": -1322,
-        "profit_rate": -30.59,
+        "shop": "お宝五番街",
+        "shop_code": "otakarakan",
+        "price": 4300,
+        "profit": -1300,
+        "profit_rate": -30.23,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021631%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021497%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00rug6o.mmy99be8.g00rug6o.mmy9aaaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fotakarakan%2F013-37-261030game566s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fotakarakan%2Fi%2F10184727%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "楽天ブックス",
@@ -6062,7 +6052,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18713094%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F22026233%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ゼノブレイド ディフィニティブ・エディション Nintendo Switch 2 Edition",
@@ -6135,7 +6125,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370554380%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10010787%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ゼノブレイドクロス ディフィニティブエディション Nintendo Switch 2 Edition",
@@ -6198,7 +6188,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370554243%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004036%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】スーパーマリオブラザーズ ワンダー Nintendo Switch 2 Edition + みんなでリンリンパーク",
@@ -6271,7 +6261,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u78wo.mmy99924.g00u78wo.mmy9a08b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-wellness%2F2821322019%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-wellness%2Fi%2F10202638%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】スーパー マリオパーティ ジャンボリー Nintendo Switch 2 Edition ＋ ジャンボリーTV",
@@ -6316,9 +6306,9 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 7568,
-        "profit": -1068,
-        "profit_rate": -14.11,
+        "price": 7558,
+        "profit": -1058,
+        "profit_rate": -14.0,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018996%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10018878%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -6326,9 +6316,9 @@ window.GAME_DATA = [
       {
         "shop": "MoriMoriStor",
         "shop_code": "sokutei",
-        "price": 7568,
-        "profit": -1068,
-        "profit_rate": -14.11,
+        "price": 7559,
+        "profit": -1059,
+        "profit_rate": -14.01,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370553352%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10192125%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -6344,7 +6334,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00utsmo.mmy99a24.g00utsmo.mmy9adfa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftbshop%2F4902370553352%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftbshop%2Fi%2F10000022%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】Nintendo Switch Sports Resort",
@@ -6387,6 +6377,16 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
+        "shop": "OCNオンラインショップ",
+        "shop_code": "nttxstore",
+        "price": 5960,
+        "profit": -660,
+        "profit_rate": -11.07,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00rwjto.mmy99731.g00rwjto.mmy9abe5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnttxstore%2Fqzx8712%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnttxstore%2Fi%2F10005859%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "楽天ブックス",
         "shop_code": "book",
         "price": 5979,
@@ -6405,19 +6405,9 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370554892-54-73634-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14841149%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "チャンプネット758 楽",
-        "shop_code": "champ758",
-        "price": 6250,
-        "profit": -950,
-        "profit_rate": -15.2,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370554892%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10005518%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】Pokemon LEGENDS Z-A Nintendo Switch 2 Edition",
@@ -6462,9 +6452,9 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 5709,
-        "profit": -1409,
-        "profit_rate": -24.68,
+        "price": 5699,
+        "profit": -1399,
+        "profit_rate": -24.55,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10019647%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10019540%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -6472,9 +6462,9 @@ window.GAME_DATA = [
       {
         "shop": "MoriMoriStor",
         "shop_code": "sokutei",
-        "price": 5710,
-        "profit": -1410,
-        "profit_rate": -24.69,
+        "price": 5700,
+        "profit": -1400,
+        "profit_rate": -24.56,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370553574%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10193492%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -6490,7 +6480,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tseno.mmy9915d.g00tseno.mmy9a463/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Falljapan-online-shop%2F4902370553574%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Falljapan-online-shop%2Fi%2F10022032%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】REANIMAL",
@@ -6543,7 +6533,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4571574970410%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10010120%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】Split Fiction",
@@ -6596,7 +6586,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ua2zo.mmy99890.g00ua2zo.mmy9ac09/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhomeystore%2F20261028095346_19%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhomeystore%2Fi%2F10168655%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】カービィのエアライダー T",
@@ -6641,9 +6631,9 @@ window.GAME_DATA = [
       {
         "shop": "ノア商社 楽天市場店",
         "shop_code": "noah-shopping",
-        "price": 6318,
-        "profit": -2318,
-        "profit_rate": -36.69,
+        "price": 6317,
+        "profit": -2317,
+        "profit_rate": -36.68,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370553642%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10003593%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -6651,9 +6641,9 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 6319,
-        "profit": -2319,
-        "profit_rate": -36.7,
+        "price": 6318,
+        "profit": -2318,
+        "profit_rate": -36.69,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10019833%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10019724%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -6669,7 +6659,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00teeeo.mmy993d6.g00teeeo.mmy9a851/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsydenki%2F4902370553642%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsydenki%2Fi%2F10008900%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ファイナルファンタジーレゾナンス T",
@@ -6732,7 +6722,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pxeio.mmy99a2e.g00pxeio.mmy9ab43/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmachida%2F4988601012164%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmachida%2Fi%2F10543823%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ドラゴンクエストVII Reimagined -Switch T",
@@ -6785,6 +6775,16 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4988601012089%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10003778%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
+        "shop": "ヴァルハラストア楽天市場",
+        "shop_code": "valhallastore",
+        "price": 5900,
+        "profit": -1900,
+        "profit_rate": -32.2,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00uvtno.mmy99311.g00uvtno.mmy9af19/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvalhallastore%2F4988601012089%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvalhallastore%2Fi%2F10000079%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "Outlet Plaza",
         "shop_code": "outletplaza",
         "price": 6600,
@@ -6793,19 +6793,9 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001092902%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11423222%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "ヴァルハラストア楽天市場",
-        "shop_code": "valhallastore",
-        "price": 6800,
-        "profit": -2800,
-        "profit_rate": -41.18,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00uvtno.mmy99311.g00uvtno.mmy9af19/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvalhallastore%2F4988601012089%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvalhallastore%2Fi%2F10000079%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ファイアーエムブレム 万紫千紅",
@@ -6878,7 +6868,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370554472-54-73630-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14841150%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ゼルダの伝説 ブレス オブ ザ ワイルド Nintendo Switch 2 Edition",
@@ -6941,7 +6931,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370553291-54-73632-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14526064%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ゼルダの伝説 ティアーズ オブ ザ キングダム Nintendo Switch 2 Edition",
@@ -6962,16 +6952,6 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18223361%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21600509%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "エディオン",
-        "shop_code": "edion",
-        "price": 7830,
-        "profit": -830,
-        "profit_rate": -10.6,
-        "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r9svo.mmy9928f.g00r9svo.mmy9a42c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4902370553321%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10873003%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "ヤマダデンキ",
         "shop_code": "yamada-denki",
         "price": 7830,
@@ -6980,6 +6960,16 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.mmy99eb2.g00t3jpo.mmy9a87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2820623018%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamada-denki%2Fi%2F10654399%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "Joshin web",
+        "shop_code": "jism",
+        "price": 7830,
+        "profit": -830,
+        "profit_rate": -10.6,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370553321-54-73632-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14526065%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
     "all_top3": [
@@ -7004,17 +6994,17 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18223361%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21600509%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "エディオン",
-        "shop_code": "edion",
+        "shop": "ヤマダデンキ",
+        "shop_code": "yamada-denki",
         "price": 7830,
         "profit": -830,
         "profit_rate": -10.6,
         "postage_flag": 1,
         "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r9svo.mmy9928f.g00r9svo.mmy9a42c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4902370553321%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10873003%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00t3jpo.mmy99eb2.g00t3jpo.mmy9a87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F2820623018%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyamada-denki%2Fi%2F10654399%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ゼルダの伝説 時のオカリナ",
@@ -7087,7 +7077,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r9svo.mmy9928f.g00r9svo.mmy9a42c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedion%2F4902370554922%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedion%2Fi%2F10925821%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】ヨッシーとフカシギの図鑑",
@@ -7130,16 +7120,6 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "ノア商社 楽天市場店",
-        "shop_code": "noah-shopping",
-        "price": 6939,
-        "profit": -1939,
-        "profit_rate": -27.94,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370554151%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004103%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "楽天ブックス",
         "shop_code": "book",
         "price": 6979,
@@ -7148,6 +7128,16 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pul2o.mmy99d21.g00pul2o.mmy9a248/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frdownload%2F803135109%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frdownload%2Fi%2F18493108%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "ノア商社 楽天市場店",
+        "shop_code": "noah-shopping",
+        "price": 7098,
+        "profit": -2098,
+        "profit_rate": -29.56,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370554151%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004103%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "チャンプネット758 楽",
@@ -7160,7 +7150,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s2a5o.mmy9935c.g00s2a5o.mmy9a5b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchamp758%2F4902370554151%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchamp758%2Fi%2F10005323%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】星のカービィ ディスカバリー Nintendo Switch 2 Edition ＋ スターリーワールド",
@@ -7233,7 +7223,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qxpno.mmy993bb.g00qxpno.mmy9a042/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fall-kimuraya-jimbocho%2F2820626019%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fall-kimuraya-jimbocho%2Fi%2F10353856%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】桃太郎電鉄2 ～あなたの町も きっとある～ Nintendo Switch 2 Edition 東日本編＋西日本編/Switch 2 T",
@@ -7298,15 +7288,15 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 6511,
-        "profit": -2111,
-        "profit_rate": -32.42,
+        "price": 6466,
+        "profit": -2066,
+        "profit_rate": -31.95,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10019828%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10019720%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【NS2】牧場物語 Lets！風のグランドバザール Nintendo Switch 2 Edition",
@@ -7379,7 +7369,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4535506303950%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10030728%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Proコントローラー ゼルダの伝説",
@@ -7390,16 +7380,6 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/4974/4974",
     "official_top3": [],
     "all_top3": [
-      {
-        "shop": "ノア商社 楽天市場店",
-        "shop_code": "noah-shopping",
-        "price": 11399,
-        "profit": -4899,
-        "profit_rate": -42.98,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370550504%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10001212%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
       {
         "shop": "K and Y雑貨店 楽",
         "shop_code": "ky-zakkaten-r",
@@ -7419,9 +7399,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ty2so.mmy99cc6.g00ty2so.mmy9acf7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkm-select%2F20241217074732_9%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkm-select%2Fi%2F10058934%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "梵たん 楽天市場店",
+        "shop_code": "bontan108",
+        "price": 13937,
+        "profit": -7437,
+        "profit_rate": -53.36,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u0eoo.mmy99926.g00u0eoo.mmy9ac68/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbontan108%2F20241208224801_104%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbontan108%2Fi%2F10010848%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Proコントローラー スプラトゥーン3エディション",
@@ -7433,24 +7423,24 @@ window.GAME_DATA = [
     "official_top3": [],
     "all_top3": [
       {
-        "shop": "MoriMoriStor",
-        "shop_code": "sokutei",
-        "price": 13673,
-        "profit": -7173,
-        "profit_rate": -52.46,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370549560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10147138%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "ノア商社 楽天市場店",
         "shop_code": "noah-shopping",
-        "price": 13674,
-        "profit": -7174,
-        "profit_rate": -52.46,
+        "price": 13668,
+        "profit": -7168,
+        "profit_rate": -52.44,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4902370549560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10000811%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "MoriMoriStor",
+        "shop_code": "sokutei",
+        "price": 13669,
+        "profit": -7169,
+        "profit_rate": -52.45,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4902370549560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10147138%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "月光堂",
@@ -7463,7 +7453,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhico.mmy9933f.g00uhico.mmy9a33f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiranaoblog1128%2F4902370549560%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiranaoblog1128%2Fi%2F10000036%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con (L)/(R) ネオンレッド/ネオンブルー",
@@ -7505,7 +7495,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uujuo.mmy997b4.g00uujuo.mmy9af89/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhemukichi%2F4902370536034%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhemukichi%2Fi%2F10002257%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con (L)/(R) ネオングリーン/ネオンピンク",
@@ -7516,16 +7506,6 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/851/851",
     "official_top3": [],
     "all_top3": [
-      {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 10688,
-        "profit": -4188,
-        "profit_rate": -39.18,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10006068%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10006068%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
       {
         "shop": "ECJOY!楽天市場店",
         "shop_code": "ecjoy",
@@ -7545,9 +7525,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ulk9o.mmy997a2.g00ulk9o.mmy9a21b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgizmo%2Fr-26%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgizmo%2Fi%2F10000020%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "U-JIN SHOP 楽",
+        "shop_code": "u-jinshop78",
+        "price": 11780,
+        "profit": -5280,
+        "profit_rate": -44.82,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00trpoo.mmy99634.g00trpoo.mmy9a6d7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fu-jinshop78%2F2026-002716%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fu-jinshop78%2Fi%2F10015046%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con(L)/(R) ネオンブルー/ネオンイエロー",
@@ -7610,7 +7600,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F15990416%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F19697673%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con(L)/(R) ネオンパープル/ネオンオレンジ",
@@ -7622,37 +7612,37 @@ window.GAME_DATA = [
     "official_top3": [],
     "all_top3": [
       {
-        "shop": "電子問屋ワールドいち",
-        "shop_code": "auc-worldichi",
-        "price": 10072,
-        "profit": -3572,
-        "profit_rate": -35.46,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370544077%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10004679%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 10083,
-        "profit": -3583,
-        "profit_rate": -35.54,
+        "price": 10035,
+        "profit": -3535,
+        "profit_rate": -35.23,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10006325%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10006325%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
+        "shop": "電子問屋ワールドいち",
+        "shop_code": "auc-worldichi",
+        "price": 10036,
+        "profit": -3536,
+        "profit_rate": -35.23,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4902370544077%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10004679%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
-        "price": 10095,
-        "profit": -3595,
-        "profit_rate": -35.61,
+        "price": 10047,
+        "profit": -3547,
+        "profit_rate": -35.3,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4902370544077%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10000308%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con (L)/(R)パステルパープル/ パステルグリーン",
@@ -7705,7 +7695,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rug6o.mmy99be8.g00rug6o.mmy9aaaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fotakarakan%2F07-43-261027game700w%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fotakarakan%2Fi%2F10184541%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con (L)/(R)パステルピンク/パステルイエロー",
@@ -7747,7 +7737,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ut4qo.mmy99c16.g00ut4qo.mmy9ac9d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgameskshop%2F20251227104626_220%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgameskshop%2Fi%2F10047627%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch Joy-Con (L)/(R) パステルピンク",
@@ -7789,7 +7779,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ulaso.mmy992ad.g00ulaso.mmy9a4ff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkankapro%2F20240602130646_138%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkankapro%2Fi%2F10004103%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Nintendo Switch ニンテンドーサウンドクロック Alarmo",
@@ -7832,17 +7822,17 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001071685%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11413858%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "Joshin web",
-        "shop_code": "jism",
-        "price": 12670,
-        "profit": -2070,
-        "profit_rate": -16.34,
+        "shop": "らいぶshop",
+        "shop_code": "lcs-live",
+        "price": 12664,
+        "profit": -2064,
+        "profit_rate": -16.3,
         "postage_flag": 1,
-        "is_official": true,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4902370552195-54-65027-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14578135%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10016889%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10016802%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "ポケモン ポケなで モンスターボール",
@@ -7905,7 +7895,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rwjto.mmy99731.g00rwjto.mmy9abe5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnttxstore%2Fqzx0031202%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnttxstore%2Fi%2F10004936%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Pokemon GO Plus +",
@@ -7919,9 +7909,9 @@ window.GAME_DATA = [
       {
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
-        "price": 18575,
-        "profit": -7075,
-        "profit_rate": -38.09,
+        "price": 18566,
+        "profit": -7066,
+        "profit_rate": -38.06,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4521329368009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10020069%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -7929,9 +7919,9 @@ window.GAME_DATA = [
       {
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
-        "price": 18577,
-        "profit": -7077,
-        "profit_rate": -38.1,
+        "price": 18568,
+        "profit": -7068,
+        "profit_rate": -38.07,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4521329368009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10001504%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -7947,7 +7937,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F4521329368009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10005472%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "ゲーム＆ウオッチ ゼルダの伝説",
@@ -7989,7 +7979,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uujuo.mmy997b4.g00uujuo.mmy9af89/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhemukichi%2F4902370548419%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhemukichi%2Fi%2F10002379%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "ゲーム＆ウオッチ スーパーマリオブラザーズ",
@@ -8021,24 +8011,24 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00twv4o.mmy994fa.g00twv4o.mmy9ad57/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhobbyshopakari%2Fgamewatchnintendo%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhobbyshopakari%2Fi%2F10000400%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "Trend Item S",
-        "shop_code": "trenditemshop",
-        "price": 9230,
-        "profit": -6730,
-        "profit_rate": -72.91,
+        "shop": "さくら組 楽天市場店",
+        "shop_code": "aims-sakura",
+        "price": 8100,
+        "profit": -5600,
+        "profit_rate": -69.14,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u2g5o.mmy9927c.g00u2g5o.mmy9a963/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftrenditemshop%2Fb08hvggpxk%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftrenditemshop%2Fi%2F10064889%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00umv0o.mmy99d82.g00umv0o.mmy9a0c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faims-sakura%2Fgr-e9t4608jda%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faims-sakura%2Fi%2F10369881%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "HORI エレクトリック 時のオカリナ ゼルダの伝説 Nintendo Switch 2 Switch2 任天堂ライセンス商品 NSX-261 ホリ",
     "memo": "ゲームソフト",
     "category": "ゲームソフト",
     "jan": "4961818045378",
-    "buy_price": 7000,
+    "buy_price": 7100,
     "chome_url": "https://www.1-chome.com/wineDetail/11810/11846",
     "official_top3": [],
     "all_top3": [
@@ -8046,8 +8036,8 @@ window.GAME_DATA = [
         "shop": "Outlet Plaza",
         "shop_code": "outletplaza",
         "price": 12480,
-        "profit": -5480,
-        "profit_rate": -43.91,
+        "profit": -5380,
+        "profit_rate": -43.11,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001117747%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11445945%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -8056,8 +8046,8 @@ window.GAME_DATA = [
         "shop": "はるぽよ 楽天市場店",
         "shop_code": "harupoyo",
         "price": 12980,
-        "profit": -5980,
-        "profit_rate": -46.07,
+        "profit": -5880,
+        "profit_rate": -45.3,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ueuvo.mmy993a1.g00ueuvo.mmy9acec/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fharupoyo%2Fcompass1795422760%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fharupoyo%2Fi%2F10001741%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -8066,14 +8056,14 @@ window.GAME_DATA = [
         "shop": "LaffeyStore",
         "shop_code": "laffeystore",
         "price": 13380,
-        "profit": -6380,
-        "profit_rate": -47.68,
+        "profit": -6280,
+        "profit_rate": -46.94,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8hdo.mmy9920b.g00u8hdo.mmy9a615/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flaffeystore%2Fzzz-20261020-02%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flaffeystore%2Fi%2F10003321%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation5 Slim コントローラー ダブルパック CFIJ-10018",
@@ -8105,7 +8095,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tdfzo.mmy99275.g00tdfzo.mmy9a558/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdandystore%2F4948872016940%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdandystore%2Fi%2F10004174%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation5 Slim デジタル・エディション コントローラー ダブルパック CFIJ-10019",
@@ -8147,7 +8137,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ugjso.mmy9961f.g00ugjso.mmy9a1d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkbshop%2F3701-003867%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkbshop%2Fi%2F10004028%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation5 デジタル・エディション 30周年 CFI-2000B30",
@@ -8169,7 +8159,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tth2o.mmy99d81.g00tth2o.mmy9ace7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F14promo%2F2024-1001-79980%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F14promo%2Fi%2F10026560%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation5 ”Ghost of Yotei” ゴールド リミテッドエディション CFIJ-10029",
@@ -8211,7 +8201,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qj7mo.mmy99b27.g00qj7mo.mmy9a23b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-rise%2Fp000000915381%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-rise%2Fi%2F23277471%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PlayStation5 デジタル・エディション “Marvel’s Wolverine” バトルイエロー リミテッドエディション",
@@ -8225,22 +8215,12 @@ window.GAME_DATA = [
       {
         "shop": "Quality Spac",
         "shop_code": "qualityspace",
-        "price": 137258,
-        "profit": -28358,
-        "profit_rate": -20.66,
+        "price": 137248,
+        "profit": -28348,
+        "profit_rate": -20.65,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00si9ho.mmy99142.g00si9ho.mmy9a2cb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fqualityspace%2Fsonycfij-100330995%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fqualityspace%2Fi%2F10026849%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "ノア商社 楽天市場店",
-        "shop_code": "noah-shopping",
-        "price": 137480,
-        "profit": -28580,
-        "profit_rate": -20.79,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4948872850995%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004417%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
         "shop": "電子問屋 2号店",
@@ -8251,9 +8231,19 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4948872850995%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10011013%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "電子問屋ワールドいち",
+        "shop_code": "auc-worldichi",
+        "price": 139000,
+        "profit": -30100,
+        "profit_rate": -21.65,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872850995%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10036224%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー ホワイト CFI-ZCT1J",
@@ -8316,7 +8306,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4948872417303%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004038%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー ブラック CFI-ZCT1J01",
@@ -8349,6 +8339,16 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
+        "shop": "ディーライズ2号店",
+        "shop_code": "e-cutestyle",
+        "price": 8751,
+        "profit": -351,
+        "profit_rate": -4.01,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00o.mmy99ced.g00rd00o.mmy9a93c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000930698%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19802135%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
         "shop": "Joshin web",
         "shop_code": "jism",
         "price": 8880,
@@ -8367,19 +8367,9 @@ window.GAME_DATA = [
         "postage_flag": 1,
         "is_official": true,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18440639%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21807581%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "MoriMoriStor",
-        "shop_code": "sokutei",
-        "price": 10523,
-        "profit": -2123,
-        "profit_rate": -20.17,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872417242%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10194671%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー レッド CFI-ZCT1J02",
@@ -8442,7 +8432,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417228%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10031723%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー パープル CFI-ZCT1J04",
@@ -8485,27 +8475,27 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18440642%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21807580%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "MoriMoriStor",
-        "shop_code": "sokutei",
-        "price": 10641,
-        "profit": -2141,
-        "profit_rate": -20.12,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872417280%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10194670%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
-        "price": 10642,
-        "profit": -2142,
-        "profit_rate": -20.13,
+        "price": 10634,
+        "profit": -2134,
+        "profit_rate": -20.07,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417280%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10032021%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "MoriMoriStor",
+        "shop_code": "sokutei",
+        "price": 10635,
+        "profit": -2135,
+        "profit_rate": -20.08,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872417280%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10194670%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー ブルー CFI-ZCT1J05",
@@ -8550,9 +8540,9 @@ window.GAME_DATA = [
       {
         "shop": "MoriMoriStor",
         "shop_code": "sokutei",
-        "price": 10849,
-        "profit": -2449,
-        "profit_rate": -22.57,
+        "price": 10806,
+        "profit": -2406,
+        "profit_rate": -22.27,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872417266%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10194374%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -8560,15 +8550,15 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 10850,
-        "profit": -2450,
-        "profit_rate": -22.58,
+        "price": 10807,
+        "profit": -2407,
+        "profit_rate": -22.27,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10019944%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10019831%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー ピンク CFI-ZCT1J03",
@@ -8613,15 +8603,15 @@ window.GAME_DATA = [
       {
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
-        "price": 11016,
-        "profit": -2516,
-        "profit_rate": -22.84,
+        "price": 11009,
+        "profit": -2509,
+        "profit_rate": -22.79,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417204%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10031668%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー グレー カモフラージュ CFI-ZCT1J06",
@@ -8684,7 +8674,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417402-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10036698%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー スターリング シルバー CFI-ZCT1J08",
@@ -8726,7 +8716,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uci6o.mmy990af.g00uci6o.mmy9abab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshopypp%2F3799-004613%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshopypp%2Fi%2F10002991%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー ヴォルカニック レッド CFI-ZCT1J07",
@@ -8768,7 +8758,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uvbco.mmy997b8.g00uvbco.mmy9a40a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fand-u-online%2Fs-b0ck86zxhj-20260511%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fand-u-online%2Fi%2F10005417%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー コバルト ブルー CFI-ZCT1J09",
@@ -8810,7 +8800,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qet1o.mmy997a4.g00qet1o.mmy9a0f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecjoy%2F21134939%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecjoy%2Fi%2F92949236%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー クロマ グリーン CFI-ZCT1J10",
@@ -8873,7 +8863,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rug6o.mmy99be8.g00rug6o.mmy9aaaa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fotakarakan%2F013-45-260730game2862h%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fotakarakan%2Fi%2F10179372%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー インディゴ CFI-ZCT1J11",
@@ -8926,7 +8916,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18440646%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21807575%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー クロマ パール CFI-ZCT1J12",
@@ -8989,7 +8979,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qj7mo.mmy99b27.g00qj7mo.mmy9a23b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-rise%2Fp000000930706%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-rise%2Fi%2F23284818%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー “モンスターハンターワイルズ” CFI-ZCT1JZ5",
@@ -9031,7 +9021,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7hao.mmy992be.g00u7hao.mmy9a0a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbirdseye1220%2F4948872416726%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbirdseye1220%2Fi%2F10001020%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー “Marathon” リミテッドエディション CFI-ZCT1JZD",
@@ -9055,9 +9045,9 @@ window.GAME_DATA = [
       {
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
-        "price": 11829,
-        "profit": -3229,
-        "profit_rate": -27.3,
+        "price": 11825,
+        "profit": -3225,
+        "profit_rate": -27.27,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872417167%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10033018%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -9065,15 +9055,15 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 11839,
-        "profit": -3239,
-        "profit_rate": -27.36,
+        "price": 11835,
+        "profit": -3235,
+        "profit_rate": -27.33,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10020565%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020469%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 ワイヤレスコントローラー “ゴッド・オブ・ウォー” 20th Anniversary リミテッドエディション CFI-ZCT1JZA",
@@ -9095,27 +9085,27 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872416948-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037098%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "MoriMoriStor",
-        "shop_code": "sokutei",
-        "price": 12275,
-        "profit": -2475,
-        "profit_rate": -20.16,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872416948%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10193763%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
-        "price": 12277,
-        "profit": -2477,
-        "profit_rate": -20.18,
+        "price": 12269,
+        "profit": -2469,
+        "profit_rate": -20.12,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4948872416948%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10008972%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "MoriMoriStor",
+        "shop_code": "sokutei",
+        "price": 12269,
+        "profit": -2469,
+        "profit_rate": -20.12,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872416948%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10193763%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー フォートナイ CFI-ZCT1JZ4",
@@ -9157,7 +9147,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7hao.mmy992be.g00u7hao.mmy9a0a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbirdseye1220%2F4948872416702%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbirdseye1220%2Fi%2F10000869%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラーアストロボット ジョイフル リミテッドエディション CFI-ZCT1JZC",
@@ -9189,7 +9179,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rw28o.mmy996fe.g00rw28o.mmy9a8ab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspeedwagon%2F10014183%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspeedwagon%2Fi%2F10014562%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 ワイヤレスコントローラー “DEATH STRANDING 2: ON THE BEACH”リミテッドエディション",
@@ -9231,7 +9221,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uu0po.mmy9925d.g00uu0po.mmy9a977/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhappysss%2Fhpp-5f48us5j8bbdp444%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhappysss%2Fi%2F10175125%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 ワイヤレスコントローラー “Ghost of Yotei” ゴールド リミテッドエディション CFI-ZCT1JZ7",
@@ -9273,7 +9263,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rw28o.mmy996fe.g00rw28o.mmy9a8ab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspeedwagon%2F10014163%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspeedwagon%2Fi%2F10014542%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 ワイヤレスコントローラー “Ghost of Yotei” ブラック リミテッドエディション CFI-ZCT1JZ8",
@@ -9315,7 +9305,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uubvo.mmy992a5.g00uubvo.mmy9a542/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fone-derfulshop%2Fs-b0fpfnlxh5-20260930%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fone-derfulshop%2Fi%2F10069752%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 ワイヤレスコントローラー “原神” リミテッドエディション CFI-ZCT2JZE",
@@ -9347,7 +9337,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rw28o.mmy996fe.g00rw28o.mmy9a8ab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspeedwagon%2F10014434%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspeedwagon%2Fi%2F10014843%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー ロボット CFI-ZCT1JZ3",
@@ -9389,7 +9379,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhico.mmy9933f.g00uhico.mmy9a33f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiranaoblog1128%2F4948872416306%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiranaoblog1128%2Fi%2F10000068%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー テクノ レッド CFI-ZCT2J13",
@@ -9452,7 +9442,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10020587%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10020492%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー リミックス グリーン CFI-ZCT2J14",
@@ -9515,7 +9505,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pxeio.mmy99a2e.g00pxeio.mmy9ab43/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmachida%2F4948872417129%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmachida%2Fi%2F10542188%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー リズム ブルー CFI-ZCT2J15",
@@ -9578,7 +9568,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sk0yo.mmy9964e.g00sk0yo.mmy9a82f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgeoonline1%2F509550801%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgeoonline1%2Fi%2F12054625%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー “Spider-Man 2” CFI-ZCT1JZ2",
@@ -9589,7 +9579,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5212/5212",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー “FINAL FANTASY” CFIJ-15500",
@@ -9631,7 +9621,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tf5po.mmy993b5.g00tf5po.mmy9af46/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fr-style-ra%2F20250328191315_67%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fr-style-ra%2Fi%2F10056551%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー 30周年 CFI-ZCT1J30",
@@ -9673,7 +9663,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tkd8o.mmy99b46.g00tkd8o.mmy9a8da/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjugem2020%2F3655541240%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjugem2020%2Fi%2F10002775%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー “ゴッド・オブ・ウォー” CFI-ZCT1JZ1",
@@ -9695,7 +9685,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4948872415620%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10000948%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 Edge コントローラー 30周年 CFI-ZCP1J30",
@@ -9727,7 +9717,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00twmvo.mmy9926f.g00twmvo.mmy9a8c9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fselectkoh%2Fwho601%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fselectkoh%2Fi%2F10000792%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 Edge コントローラー CFI-ZCP1J",
@@ -9769,7 +9759,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uomqo.mmy99e93.g00uomqo.mmy9a9a8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fseishinjapan%2F4948872415712%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fseishinjapan%2Fi%2F10000870%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 Edge コントローラー ブラック CFI-ZCP1J01",
@@ -9811,7 +9801,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s75po.mmy996c0.g00s75po.mmy9a7d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhome-carpentry%2F1300012060%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhome-carpentry%2Fi%2F10628083%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 ワイヤレスコントローラー“007 First Light“ リミテッドエディション CFI-ZCT2JZF",
@@ -9853,7 +9843,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4948872417433%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10010322%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー アイコン ブルー CFI-ZCT2JZB",
@@ -9916,7 +9906,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001113806%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11441006%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー LiSA リミテッドエディション CFIJ-15504",
@@ -9948,7 +9938,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7hao.mmy992be.g00u7hao.mmy9a0a1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbirdseye1220%2F4948872851091%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbirdseye1220%2Fi%2F10001346%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー “Marvel’s Wolverine” バトルイエロー リミテッドエディション CFI-ZCT2JZJ",
@@ -9990,7 +9980,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021467%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021348%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 コントローラー ミッドナイト ブラック + USBケーブル for PC CFIJ15502",
@@ -10032,7 +10022,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qet1o.mmy997a4.g00qet1o.mmy9a0f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecjoy%2F22051058%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecjoy%2Fi%2F92861752%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】アストロボット",
@@ -10065,16 +10055,6 @@ window.GAME_DATA = [
     ],
     "all_top3": [
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 4967,
-        "profit": -767,
-        "profit_rate": -15.44,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10016529%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10016443%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "楽天ブックス",
         "shop_code": "book",
         "price": 4968,
@@ -10085,17 +10065,27 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00q072o.mmy9928e.g00q072o.mmy9a8c2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F17898988%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbook%2Fi%2F21296418%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "電子問屋ワールドいち",
-        "shop_code": "auc-worldichi",
-        "price": 5100,
-        "profit": -900,
-        "profit_rate": -17.65,
+        "shop": "Joshin web",
+        "shop_code": "jism",
+        "price": 5280,
+        "profit": -1080,
+        "profit_rate": -20.45,
+        "postage_flag": 1,
+        "is_official": true,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4948872017183-54-71482-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14266466%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "TB SHOP 楽天市場",
+        "shop_code": "tbshop",
+        "price": 5555,
+        "profit": -1355,
+        "profit_rate": -24.39,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4948872017183%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10025136%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00utsmo.mmy99a24.g00utsmo.mmy9adfa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftbshop%2F4948872017183%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftbshop%2Fi%2F10000091%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】007 ファースト・ライト",
@@ -10158,7 +10148,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F8809459216602%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10010476%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】DEATH STRANDING 2: ON THE BEACH",
@@ -10221,7 +10211,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872017213%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10191740%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】Ghost of Yotei",
@@ -10235,35 +10225,35 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 6309,
-        "profit": -1809,
-        "profit_rate": -28.67,
+        "price": 6491,
+        "profit": -1991,
+        "profit_rate": -30.67,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10019535%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10019427%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "ディーライズ2号店",
-        "shop_code": "e-cutestyle",
-        "price": 6310,
-        "profit": -1810,
-        "profit_rate": -28.68,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00o.mmy99ced.g00rd00o.mmy9a93c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000909494%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19796752%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "MoriMoriStor",
         "shop_code": "sokutei",
-        "price": 6619,
-        "profit": -2119,
-        "profit_rate": -32.01,
+        "price": 6492,
+        "profit": -1992,
+        "profit_rate": -30.68,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872017305%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10193521%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "ディーライズ2号店",
+        "shop_code": "e-cutestyle",
+        "price": 6630,
+        "profit": -2130,
+        "profit_rate": -32.13,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00rd00o.mmy99ced.g00rd00o.mmy9a93c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-cutestyle%2Fp000000909494%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-cutestyle%2Fi%2F19796752%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】Minecraft",
@@ -10326,7 +10316,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u78wo.mmy99924.g00u78wo.mmy9a08b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fe-wellness%2F2820182010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fe-wellness%2Fi%2F10166258%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】Split Fiction",
@@ -10361,9 +10351,9 @@ window.GAME_DATA = [
       {
         "shop": "MoriMoriStor",
         "shop_code": "sokutei",
-        "price": 3971,
-        "profit": -771,
-        "profit_rate": -19.42,
+        "price": 4451,
+        "profit": -1251,
+        "profit_rate": -28.11,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4938833024749%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10190235%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -10389,7 +10379,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00upmyo.mmy99280.g00upmyo.mmy9ab25/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhosket%2Fb0dq58s3lc%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhosket%2Fi%2F10172364%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】Stellar Blade",
@@ -10444,57 +10434,47 @@ window.GAME_DATA = [
       {
         "shop": "MoriMoriStor",
         "shop_code": "sokutei",
-        "price": 4899,
-        "profit": -1399,
-        "profit_rate": -28.56,
+        "price": 4919,
+        "profit": -1419,
+        "profit_rate": -28.85,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4948872016858%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10187700%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "PS5 ゲームソフト グランド・セフト・オートVI パッケージ版 コードインボックス T",
     "memo": "ゲームソフト",
     "category": "ゲームソフト",
     "jan": "4571304479312",
-    "buy_price": 7500,
+    "buy_price": 8000,
     "chome_url": "https://www.1-chome.com/wineDetail/11736/11772",
     "official_top3": [],
     "all_top3": [
       {
-        "shop": "らいぶshop",
-        "shop_code": "lcs-live",
-        "price": 9990,
-        "profit": -2490,
-        "profit_rate": -24.92,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021815%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021674%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
-        "shop": "Outlet Plaza",
-        "shop_code": "outletplaza",
-        "price": 12980,
-        "profit": -5480,
-        "profit_rate": -42.22,
-        "postage_flag": 1,
-        "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001113432%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11440440%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
-      },
-      {
         "shop": "ゲームだらけ 楽天市場店",
         "shop_code": "gamedarake",
         "price": 14300,
-        "profit": -6800,
-        "profit_rate": -47.55,
+        "profit": -6300,
+        "profit_rate": -44.06,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00s448o.mmy99f6d.g00s448o.mmy9a69c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgamedarake%2F070225-4571304479312%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgamedarake%2Fi%2F10007718%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+      },
+      {
+        "shop": "ヴァルハラストア楽天市場",
+        "shop_code": "valhallastore",
+        "price": 14800,
+        "profit": -6800,
+        "profit_rate": -45.95,
+        "postage_flag": 1,
+        "is_official": false,
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00uvtno.mmy99311.g00uvtno.mmy9af19/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvalhallastore%2F4571304479312%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvalhallastore%2Fi%2F10000199%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】鬼武者 Way of the Sword",
@@ -10547,7 +10527,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uujuo.mmy997b4.g00uujuo.mmy9af89/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhemukichi%2F4976219137751%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhemukichi%2Fi%2F10003497%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "【PS5】黒神話：悟空",
@@ -10600,7 +10580,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4580695760930-54-71482-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14374179%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Series S 1TB ホワイト EP2-00650",
@@ -10642,7 +10622,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qet1o.mmy997a4.g00qet1o.mmy9a0f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecjoy%2F21134928%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecjoy%2Fi%2F92808815%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Series S 1TB ブラック XXU-00015",
@@ -10653,7 +10633,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5271/5271",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Series S 512GB EP2-10065",
@@ -10695,7 +10675,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F4549576250632%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10006427%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Elite コントローラー シリーズ 2 ブラック FST-00009",
@@ -10758,7 +10738,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10008429%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10008429%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Elite コントローラー シリーズ 2 ホワイト 4IK-00003",
@@ -10811,7 +10791,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tqv7o.mmy99659.g00tqv7o.mmy9a453/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhappyandhappy%2Fwss201501b0bcvrv6cw%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhappyandhappy%2Fi%2F10002247%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Elite コントローラー シリーズ 2 レッド RFZ-00015",
@@ -10833,7 +10813,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4549576206837-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037529%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox Elite コントローラー シリーズ 2 ブルー RFZ-00019",
@@ -10855,7 +10835,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4549576206844%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10001206%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "XBOX Nano コントローラー EP2-69817",
@@ -10918,7 +10898,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pm32o.mmy9974c.g00pm32o.mmy9ae9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Foutletplaza%2F40001117754%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Foutletplaza%2Fi%2F11445420%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ロボット ホワイト EP2-29921",
@@ -10981,7 +10961,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4549576262703%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10003503%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー カーボン ブラック EP2-29931",
@@ -11034,7 +11014,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00powoo.mmy994fe.g00powoo.mmy9aaf0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftuzukiya%2Fm1110-0009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftuzukiya%2Fi%2F22634817%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ショック ブルー EP2-29941/EP2-29945",
@@ -11087,7 +11067,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10019950%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10019838%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー パルス レッド EP2-29937",
@@ -11140,7 +11120,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00qet1o.mmy997a4.g00qet1o.mmy9a0f4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecjoy%2F21739728%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecjoy%2Fi%2F91985012%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー エレクトリック ボルト QAU-00023",
@@ -11172,7 +11152,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00txgvo.mmy991eb.g00txgvo.mmy9ab9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbearhomes%2F2025-02-05-25%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbearhomes%2Fi%2F10450856%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ディープ ピンク EP2-29913",
@@ -11214,7 +11194,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018539%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10018428%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー パープル QAU-00070",
@@ -11246,7 +11226,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.mmy996d9.g00sxgso.mmy9a3c4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F4549576186061%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10194667%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー グリーン EP2-29917",
@@ -11299,7 +11279,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10018192%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10018086%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー+USB-C EP2-29945",
@@ -11372,7 +11352,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00udjso.mmy99508.g00udjso.mmy9a0a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmicrosoft-store%2Fep2-29945%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmicrosoft-store%2Fi%2F10000273%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー パルス サイファー QAU-00166",
@@ -11383,7 +11363,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6406/6406",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー スカイ サイファー QAU-00152",
@@ -11394,7 +11374,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6012/6012",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ファイヤー ベイパー QAU-00145",
@@ -11405,7 +11385,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5860/5860",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ノクターナル ベイパー QAU-00105",
@@ -11427,7 +11407,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00ulp2o.mmy99096.g00ulp2o.mmy9a34e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbest-plice%2Fgr-e9rf2ueeeg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbest-plice%2Fi%2F10184417%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー アークティック カモ QAU-00140",
@@ -11449,7 +11429,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00txgvo.mmy991eb.g00txgvo.mmy9ab9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbearhomes%2F2025-02-05-49%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbearhomes%2Fi%2F10450860%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ドリーム ベイパー QAU-00127",
@@ -11460,7 +11440,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/5609/5609",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ストームクラウド ベイパー QAU-00131",
@@ -11482,7 +11462,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4549576210667-a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10037530%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー Arctic Camo WL3-00181",
@@ -11493,7 +11473,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/1647/1647",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ミネラルカモ QAU-00075",
@@ -11535,7 +11515,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00rw28o.mmy996fe.g00rw28o.mmy9a8ab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fspeedwagon%2F10008328%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fspeedwagon%2Fi%2F10008328%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ステラ シフト QAU-00088",
@@ -11557,7 +11537,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uhico.mmy9933f.g00uhico.mmy9a33f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhiranaoblog1128%2F4549576183398%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhiranaoblog1128%2Fi%2F10000328%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー リミックス QAU-00115",
@@ -11568,7 +11548,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/4995/4995",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ゴールド シャドウ QAU-00123",
@@ -11590,7 +11570,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00us8vo.mmy9946a.g00us8vo.mmy9a31d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmino76market%2F4549576210643%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmino76market%2Fi%2F10000692%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ゴースト サイファー QAU-00159",
@@ -11601,7 +11581,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/6272/6272",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー デイストライク カモ QAU-00018",
@@ -11623,7 +11603,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u3gvo.mmy993ca.g00u3gvo.mmy9aa22/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnoah-shopping%2F4549576174266%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnoah-shopping%2Fi%2F10004381%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー アクア シフト QAU-00030",
@@ -11634,7 +11614,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/1878/1878",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ルナ シフト QAU-00041",
@@ -11676,7 +11656,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00txgvo.mmy991eb.g00txgvo.mmy9ab9f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbearhomes%2F2025-02-05-59%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbearhomes%2Fi%2F10450888%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー – DOOM: The Dark Ages 限定エディション EP2-23819",
@@ -11687,7 +11667,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/7001/7031",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ストームブレイカー EP2-29565",
@@ -11760,7 +11740,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10019455%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10019361%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー ハートブレイカー EP2-29569",
@@ -11823,7 +11803,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.mmy99a8e.g00pukwo.mmy9abd0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4549576261898-54-56693-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14632598%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Xbox コントローラー アイスブレイカー スペシャルエディション EP2-29573",
@@ -11876,7 +11856,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00uubvo.mmy992a5.g00uubvo.mmy9a542/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fone-derfulshop%2Fs-b0fp1z99nj-20260930%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fone-derfulshop%2Fi%2F10069816%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Steam Machine 512GB",
@@ -11890,9 +11870,9 @@ window.GAME_DATA = [
       {
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
-        "price": 190389,
-        "profit": -30389,
-        "profit_rate": -15.96,
+        "price": 190289,
+        "profit": -30289,
+        "profit_rate": -15.92,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.mmy99779.g00r2muo.mmy9ab41/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F0814585023510%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10035552%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -11900,9 +11880,9 @@ window.GAME_DATA = [
       {
         "shop": "電子問屋 2号店",
         "shop_code": "uriurishop",
-        "price": 190400,
-        "profit": -30400,
-        "profit_rate": -15.97,
+        "price": 190300,
+        "profit": -30300,
+        "profit_rate": -15.92,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F0814585023510%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10010786%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
@@ -11910,15 +11890,15 @@ window.GAME_DATA = [
       {
         "shop": "モバイル販売",
         "shop_code": "mobileshop1",
-        "price": 190400,
-        "profit": -30400,
-        "profit_rate": -15.97,
+        "price": 190300,
+        "profit": -30300,
+        "profit_rate": -15.92,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tfgho.mmy99ffb.g00tfgho.mmy9a9ef/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmobileshop1%2F0814585023510%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmobileshop1%2Fi%2F10012771%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Steam Machine 512GB + Steam Controller",
@@ -11932,8 +11912,8 @@ window.GAME_DATA = [
       {
         "shop": "電子問屋ワールドいち",
         "shop_code": "auc-worldichi",
-        "price": 210825,
-        "profit": -30325,
+        "price": 210810,
+        "profit": -30310,
         "profit_rate": -14.38,
         "postage_flag": 1,
         "is_official": false,
@@ -11942,25 +11922,25 @@ window.GAME_DATA = [
       {
         "shop": "らいぶshop",
         "shop_code": "lcs-live",
-        "price": 210836,
-        "profit": -30336,
-        "profit_rate": -14.39,
+        "price": 210820,
+        "profit": -30320,
+        "profit_rate": -14.38,
         "postage_flag": 1,
         "is_official": false,
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00r1fdo.mmy9914e.g00r1fdo.mmy9a1a2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flcs-live%2F10021184%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flcs-live%2Fi%2F10021083%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       },
       {
-        "shop": "電子問屋 2号店",
-        "shop_code": "uriurishop",
-        "price": 210836,
-        "profit": -30336,
-        "profit_rate": -14.39,
+        "shop": "モバイル販売2号店",
+        "shop_code": "keitai-god2a",
+        "price": 210821,
+        "profit": -30321,
+        "profit_rate": -14.38,
         "postage_flag": 1,
         "is_official": false,
-        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.mmy993e6.g00u7o7o.mmy9a7cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F0814585023497%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10010735%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
+        "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8q2o.mmy99f93.g00u8q2o.mmy9a997/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkeitai-god2a%2F0814585023497%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkeitai-god2a%2Fi%2F10007029%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Steam Machine 2TB",
@@ -11971,7 +11951,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/9628/9661",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Steam Machine 2TB + Steam Controller",
@@ -11982,7 +11962,7 @@ window.GAME_DATA = [
     "chome_url": "https://www.1-chome.com/wineDetail/9629/9662",
     "official_top3": [],
     "all_top3": [],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "Logicool G ステアリングコントローラー LPRC-15000D ブラック",
@@ -12024,7 +12004,7 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tpxdo.mmy99a02.g00tpxdo.mmy9a49a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flogicool%2Flprc-15000d%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flogicool%2Fi%2F10000324%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   },
   {
     "name": "NEOGEO mini ネオジオミニ",
@@ -12066,6 +12046,6 @@ window.GAME_DATA = [
         "url": "https://hb.afl.rakuten.co.jp/hgc/g00tvu9o.mmy994d0.g00tvu9o.mmy9a251/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhanamaruryohin%2F20261102131439_240%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhanamaruryohin%2Fi%2F10114504%2F&rafcid=wsc_i_is_465da92b-c7d4-49bf-b0bd-e435e19ec57f"
       }
     ],
-    "updated_at": "2026-11-24 12:01:44"
+    "updated_at": "2026-11-24 17:30:30"
   }
 ];
