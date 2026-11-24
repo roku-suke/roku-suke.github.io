@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/25 04:00:00",
+  "updated_at": "2026/11/25 05:00:00",
   "usd_jpy": 159.06,
   "series": {
     "18promax": [
@@ -10,9 +10,9 @@
           {
             "name": "バーガンディ",
             "chome": 225000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 225000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 224000,
             "rShift": "down",
             "rudeya": 225000,
@@ -20,15 +20,15 @@
             "mobilemix": 227000,
             "mShift": "up",
             "mobaste": 225000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
             "name": "ブラック",
             "chome": 224000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 224000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 223000,
             "rShift": "down",
             "rudeya": 224000,
@@ -36,15 +36,15 @@
             "mobilemix": 225000,
             "mShift": "up",
             "mobaste": 224000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
             "name": "シルバー",
             "chome": 224000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 224000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 223000,
             "rShift": "down",
             "rudeya": 224000,
@@ -52,15 +52,15 @@
             "mobilemix": 224000,
             "mShift": "down",
             "mobaste": 224000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "横ばい→"
           },
           {
             "name": "グレイシャー",
             "chome": 225000,
-            "cShift": "up",
+            "cShift": "",
             "ichiban": 225000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 224000,
             "rShift": "down",
             "rudeya": 225000,
@@ -68,7 +68,7 @@
             "mobilemix": 225000,
             "mShift": "up",
             "mobaste": 225000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "下降↓"
           }
         ]
