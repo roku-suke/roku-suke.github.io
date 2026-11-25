@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/25 20:00:00",
+  "updated_at": "2026/11/25 21:00:00",
   "usd_jpy": 159.24,
   "series": {
     "18promax": [
@@ -79,7 +79,7 @@
         "colors": [
           {
             "name": "バーガンディ",
-            "chome": 257800,
+            "chome": 258800,
             "cShift": "up",
             "ichiban": 258000,
             "iShift": "up",
