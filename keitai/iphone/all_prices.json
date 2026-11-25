@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/25 10:00:00",
+  "updated_at": "2026/11/25 11:00:00",
   "usd_jpy": 159.24,
   "series": {
     "18promax": [
@@ -19,8 +19,8 @@
             "uShift": "",
             "mobilemix": 227000,
             "mShift": "up",
-            "mobaste": 225000,
-            "sShift": "",
+            "mobaste": 225500,
+            "sShift": "up",
             "trend": "下降↓"
           },
           {
@@ -35,8 +35,8 @@
             "uShift": "",
             "mobilemix": 225000,
             "mShift": "up",
-            "mobaste": 224000,
-            "sShift": "",
+            "mobaste": 223500,
+            "sShift": "down",
             "trend": "下降↓"
           },
           {
@@ -51,8 +51,8 @@
             "uShift": "",
             "mobilemix": 224000,
             "mShift": "down",
-            "mobaste": 224000,
-            "sShift": "",
+            "mobaste": 223500,
+            "sShift": "down",
             "trend": "横ばい→"
           },
           {
@@ -67,8 +67,8 @@
             "uShift": "",
             "mobilemix": 225000,
             "mShift": "up",
-            "mobaste": 225000,
-            "sShift": "",
+            "mobaste": 225500,
+            "sShift": "up",
             "trend": "下降↓"
           }
         ]
@@ -157,8 +157,8 @@
             "rShift": "down",
             "rudeya": 327000,
             "uShift": "",
-            "mobilemix": 328000,
-            "mShift": "",
+            "mobilemix": 327000,
+            "mShift": "down",
             "mobaste": 325000,
             "sShift": "",
             "trend": "下降↓"
@@ -441,8 +441,8 @@
             "uShift": "",
             "mobilemix": 301000,
             "mShift": "",
-            "mobaste": 299000,
-            "sShift": "",
+            "mobaste": 301000,
+            "sShift": "up",
             "trend": "下降↓"
           },
           {
@@ -457,8 +457,8 @@
             "uShift": "",
             "mobilemix": 294000,
             "mShift": "",
-            "mobaste": 292000,
-            "sShift": "",
+            "mobaste": 294000,
+            "sShift": "up",
             "trend": "横ばい→"
           },
           {
@@ -473,8 +473,8 @@
             "uShift": "",
             "mobilemix": 294000,
             "mShift": "",
-            "mobaste": 292000,
-            "sShift": "",
+            "mobaste": 294000,
+            "sShift": "up",
             "trend": "横ばい→"
           },
           {
@@ -489,8 +489,8 @@
             "uShift": "",
             "mobilemix": 294000,
             "mShift": "",
-            "mobaste": 292000,
-            "sShift": "",
+            "mobaste": 294000,
+            "sShift": "up",
             "trend": "横ばい→"
           }
         ]
@@ -573,8 +573,8 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 352000,
-            "cShift": "up",
+            "chome": 350000,
+            "cShift": "down",
             "ichiban": 350000,
             "iShift": "",
             "rakuen": 350000,
@@ -583,14 +583,14 @@
             "uShift": "up",
             "mobilemix": 354000,
             "mShift": "",
-            "mobaste": 352000,
-            "sShift": "up",
+            "mobaste": 350000,
+            "sShift": "down",
             "trend": "下降↓"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 354000,
-            "cShift": "up",
+            "chome": 352000,
+            "cShift": "down",
             "ichiban": 352000,
             "iShift": "",
             "rakuen": 352000,
@@ -599,8 +599,8 @@
             "uShift": "up",
             "mobilemix": 354000,
             "mShift": "",
-            "mobaste": 354000,
-            "sShift": "up",
+            "mobaste": 352000,
+            "sShift": "down",
             "trend": "下降↓"
           }
         ]
@@ -611,24 +611,24 @@
         "colors": [
           {
             "name": "スターホワイト",
-            "chome": 392000,
-            "cShift": "up",
+            "chome": 390000,
+            "cShift": "down",
             "ichiban": 391000,
             "iShift": "",
-            "rakuen": 391000,
-            "rShift": "",
+            "rakuen": 390000,
+            "rShift": "down",
             "rudeya": 392000,
             "uShift": "up",
             "mobilemix": 395000,
             "mShift": "",
-            "mobaste": 393000,
-            "sShift": "up",
+            "mobaste": 390000,
+            "sShift": "down",
             "trend": "下降↓"
           },
           {
             "name": "ナイトスカイ",
-            "chome": 395000,
-            "cShift": "up",
+            "chome": 393000,
+            "cShift": "down",
             "ichiban": 393000,
             "iShift": "",
             "rakuen": 393000,
@@ -637,8 +637,8 @@
             "uShift": "up",
             "mobilemix": 395000,
             "mShift": "",
-            "mobaste": 395000,
-            "sShift": "up",
+            "mobaste": 393000,
+            "sShift": "down",
             "trend": "下降↓"
           }
         ]
@@ -695,7 +695,7 @@
             "rShift": "down",
             "rudeya": 565000,
             "uShift": "",
-            "mobilemix": 560000,
+            "mobilemix": null,
             "mShift": "",
             "mobaste": 563000,
             "sShift": "",
@@ -711,7 +711,7 @@
             "rShift": "down",
             "rudeya": 565000,
             "uShift": "",
-            "mobilemix": 560000,
+            "mobilemix": null,
             "mShift": "",
             "mobaste": 563000,
             "sShift": "",
