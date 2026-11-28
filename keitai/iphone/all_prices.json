@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/28 21:00:00",
+  "updated_at": "2026/11/28 22:00:01",
   "usd_jpy": 159.52,
   "series": {
     "18promax": [
@@ -326,7 +326,7 @@
             "chome": 204000,
             "cShift": "up",
             "ichiban": 204000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 204500,
             "rShift": "up",
             "rudeya": 204000,
@@ -364,7 +364,7 @@
             "chome": 243000,
             "cShift": "down",
             "ichiban": 243000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 243000,
             "rShift": "up",
             "rudeya": 244000,
@@ -372,7 +372,7 @@
             "mobilemix": 243000,
             "mShift": "down",
             "mobaste": 243000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "上昇↑"
           },
           {
@@ -380,7 +380,7 @@
             "chome": 243000,
             "cShift": "down",
             "ichiban": 243000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 243000,
             "rShift": "up",
             "rudeya": 243000,
@@ -388,7 +388,7 @@
             "mobilemix": 243000,
             "mShift": "down",
             "mobaste": 243000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "上昇↑"
           },
           {
@@ -396,7 +396,7 @@
             "chome": 237000,
             "cShift": "up",
             "ichiban": 237000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 237000,
             "rShift": "up",
             "rudeya": 238000,
@@ -412,7 +412,7 @@
             "chome": 243000,
             "cShift": "down",
             "ichiban": 243000,
-            "iShift": "up",
+            "iShift": "",
             "rakuen": 243000,
             "rShift": "up",
             "rudeya": 243000,
@@ -420,7 +420,7 @@
             "mobilemix": 243000,
             "mShift": "down",
             "mobaste": 243000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "上昇↑"
           }
         ]
