@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/28 14:53:05",
+  "updated_at": "2026/11/28 15:00:00",
   "usd_jpy": 159.52,
   "series": {
     "18promax": [
@@ -442,7 +442,7 @@
             "mobilemix": 301000,
             "mShift": "",
             "mobaste": 301000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "下降↓"
           },
           {
@@ -458,7 +458,7 @@
             "mobilemix": 294000,
             "mShift": "",
             "mobaste": 294000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "横ばい→"
           },
           {
@@ -474,7 +474,7 @@
             "mobilemix": 294000,
             "mShift": "",
             "mobaste": 294000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "横ばい→"
           },
           {
@@ -490,7 +490,7 @@
             "mobilemix": 294000,
             "mShift": "",
             "mobaste": 294000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "下降↓"
           }
         ]
