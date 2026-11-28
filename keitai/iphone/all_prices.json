@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026/11/28 17:00:00",
+  "updated_at": "2026/11/28 18:00:00",
   "usd_jpy": 159.52,
   "series": {
     "18promax": [
@@ -84,7 +84,7 @@
             "ichiban": 258000,
             "iShift": "",
             "rakuen": 258000,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 258000,
             "uShift": "up",
             "mobilemix": 258000,
@@ -100,7 +100,7 @@
             "ichiban": 260000,
             "iShift": "",
             "rakuen": 260000,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 260000,
             "uShift": "",
             "mobilemix": 260000,
@@ -116,7 +116,7 @@
             "ichiban": 259000,
             "iShift": "",
             "rakuen": 259000,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 259000,
             "uShift": "",
             "mobilemix": 259000,
@@ -132,7 +132,7 @@
             "ichiban": 260000,
             "iShift": "",
             "rakuen": 260000,
-            "rShift": "up",
+            "rShift": "",
             "rudeya": 260000,
             "uShift": "",
             "mobilemix": 260000,
@@ -247,7 +247,7 @@
             "mShift": "",
             "mobaste": 380000,
             "sShift": "down",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           },
           {
             "name": "シルバー",
@@ -263,7 +263,7 @@
             "mShift": "down",
             "mobaste": 375000,
             "sShift": "down",
-            "trend": "横ばい→"
+            "trend": "下降↓"
           },
           {
             "name": "グレイシャー",
@@ -334,7 +334,7 @@
             "mobilemix": 204000,
             "mShift": "down",
             "mobaste": 205000,
-            "sShift": "up",
+            "sShift": "",
             "trend": "上昇↑"
           },
           {
